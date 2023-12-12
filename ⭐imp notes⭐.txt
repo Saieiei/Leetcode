@@ -1,0 +1,100 @@
+XOR helps u to find out the ones thats not duplicating it self (^) {2^2}=0, {2^2^3}=3, {2^2^3^3}=0
+
+>> is right shift operator and divides the number by 2, << is left shift operator multiplies the number by 2
+for negative values it gives garbage value
+
+most significant bit is LHS, and least significant bit is RHS
+
+if u do & with a number and u get LHS as 0 then the number is even
+
+!n (where n is any non-zero number) evaluates to false.
+!0 evaluates to true.
+
+2's complement = 1's complement + 1.
+
+The bitwise XOR operator (^) is commonly used to swap two numbers without using a temporary variable.
+void swapNumbers(int &a, int &b) {
+    a = a ^ b;
+    b = a ^ b;
+    a = a ^ b;
+}
+
+cout<<~-10; // 9
+cout<<~0; // -1
+
+int arr[10];
+cout << "Base address if Arr is: " << &arr << endl;
+cout << "Base address if Arr is: " << arr << endl;
+both will return the same address eg: 0x61ff08
+
+int a = 5;
+cout << "Size of a: " << sizeof(a) << endl;
+the ans = 4
+
+int arr[10];
+cout << "Size of arr: " << sizeof(arr) << endl;
+the ans = 40
+
+int drr[2] = {1,2,3,44,5};
+./main.cpp:33:20: error: excess elements in array initializer
+
+#include <climits>
+INT_MIN= -2^31
+INT_MAX= 2^31-1
+
+non-const lvalue reference to type 'int' cannot bind to a temporary of type 'int'
+int &t = 6
+it cannot be assigned to a interger values , it can only be assigned to a variable
+
+Call by reference, No need to return the value, changes will be reflected in the values of the main function
+void incrementBy1(int &n)
+{
+    n++;
+}
+int main()
+{
+    int n;
+    cin >> n;
+    incrementBy1(n);
+    cout <<< n << end
+    return 0;
+}
+
+#include<vector>
+vector<int>v;
+v.push_back(x);
+v.pop_back();
+v.size();
+print(v)
+v.at(i) // v[i]
+v.clear();
+v.front();
+v.back();
+
+in a 2d array u need to mention then size of the column
+because of the formula c*i+j which helps to map 1d array with a 2d array
+bool findTarget(int arr[][4], int row, int col, int target ) {
+
+vector< vector<int> > arr(5, vector<int>(10,-1));
+//row size -> arr.size( )
+for(int i=0; i<arr.size( ); t++) {
+    for(int j=0; j<arr[i].size(); j++) {
+        cout << arr[i][j] << " ";
+    }
+    cout << endl;
+}
+
+jagged array
+vector< vector<int> > brr;
+vector<int> vec1(10,0);
+vector<int> vec2(5,1);
+vector<int> vec3(7,0);
+brr.push_back(vec1);
+brr.push_back(vec2);
+brr.push_back(vec3);
+
+//reverse each row
+    for(int i=0;i<matrix.size();i++)
+    {
+        reverse(matrix[i].begin(), matrix[i].end());
+    }
