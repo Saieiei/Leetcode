@@ -32,6 +32,7 @@ public:
                         if(sum==2)
                         {
                             ans++;
+                            break;
                         }
                     }
                 }
