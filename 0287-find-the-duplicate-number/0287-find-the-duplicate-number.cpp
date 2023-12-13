@@ -36,7 +36,7 @@ public:
 
 
 
-        //M3 this is easy but u need pen and paper, basically we r going to return the 0th element if its value is already present in the indexed place
+        //M3 this is easy but u need pen and paper, basically we r going to return the 0th element if its value is already present in the indexed place, we r able to do thos because the condition says N+1 integers so u can know that the ans is at 0th index.
 
         while(nums[0] != nums[nums[0]])
         {
