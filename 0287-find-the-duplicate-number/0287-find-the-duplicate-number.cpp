@@ -1,4 +1,4 @@
-class Solution {
+class Solution { //week3 assignments
 public:
     int findDuplicate(vector<int>& nums) {
 
@@ -17,21 +17,32 @@ public:
 
     //M2-makrking it has negative because the elemey=t should not be revisited
 
-        int ans=-1;
-        for(int i=0;i<nums.size();i++)
+        //int ans=-1;
+        //for(int i=0;i<nums.size();i++)
+        //{
+        //   int index = abs(nums[i]);
+        //   if(nums[index]<0) //negative (marked already)
+        //   {
+        //       ans=index;
+        //       break;
+        //   }
+        //   //else
+        //  // {
+        //       nums[index]*=-1;
+        //   //}
+        //}
+        //return ans;
+
+
+
+
+        //M3 this is easy but u need pen and paper, basically we r going to return the 0th element if its value is already present in the indexed place
+
+        while(nums[0] != nums[nums[0]])
         {
-           int index = abs(nums[i]);
-           if(nums[index]<0) //negative (marked already)
-           {
-               ans=index;
-               break;
-           }
-           //else
-          // {
-               nums[index]*=-1;
-           //}
+            swap(nums[0], nums[nums[0]])
         }
-        return ans;
+        return nums[0];
     }
    
 };
