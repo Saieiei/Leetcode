@@ -41,6 +41,7 @@ int drr[2] = {1,2,3,44,5};
 #include <climits>
 INT_MIN= -2^31
 INT_MAX= 2^31-1
+max(a, b)
 
 non-const lvalue reference to type 'int' cannot bind to a temporary of type 'int'
 int &t = 6
@@ -98,3 +99,36 @@ brr.push_back(vec3);
     {
         reverse(matrix[i].begin(), matrix[i].end());
     }
+
+//sort the vector
+    sort(v.begin(), v.end());
+
+To calculate the address of a specific element in a two-dimensional array stored in row-major order, you can use the following formula:
+Address=Base Address+(Row Index×Number of Columns+Column Index)×Size of each element
+
+
+The length of an array with indices from i,  j (inclusive) is given by (j - i + 1). This is because there are ((j - i) + 1) elements between indices (i) and (j), and adding 1 accounts for the inclusive range.
+
+sets in c++
+#include<set>
+set<int> s;
+s.insert(1);
+for(auto i: s) {
+    cout << i << " ";
+}
+
+strings
+#include<string>
+string s;
+s.push_back(1+'0');
+
+//good practice
+mid=start+(end-start)/2;
+
+//duplicates
+set<vector<int>> x;
+x.insert({a,b});
+if(x.find({a,b}) != x.end()) {
+    cout << "found";
+}
+x.insert({a,b})
