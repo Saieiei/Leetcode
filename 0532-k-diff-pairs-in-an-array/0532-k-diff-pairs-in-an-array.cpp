@@ -1,36 +1,45 @@
 class Solution {
 public:
-    int findPairs(vector<int>& nums, int k) {
-        //sorting
-        sort(nums.begin(), nums.end());
-        //2 pairs method
-        int i=0, j=1;
-        //we will use 'set and pair' to store the unique pairs
-        set<pair<int,int>> ans;
-        int n=nums.size();
-        // this is for the test case where nums=[1] so no possible solution
-        if(n==1)
-            return 0;
-        int diff=abs(nums[j]-nums[i]);
-        while(i < n && j < n)
+    int binarysearch(vector<int>& nums,  int start, int target)
+    {
+        int end=nums.size()-1;
+        int mid=start+(end-start)/2;
+        while(end>=start)
         {
-            diff=abs(nums[j]-nums[i]);
-            if(diff==k)
+            mid=start+(end-start)/2;
+            if(nums[mid]==target)
             {
-                ans.insert({nums[i], nums[j]});
-                i++, j++;
+                return 1; //found
             }
-            else if(diff>k) //the diff is high, so to lower it we need to move i to right side
-            { 
-                i++;
+            else if(nums[mid]<target)
+            {
+                start=mid+1;
             }
-            else //diff<k, teh diff is low, so to increase it we need to more j to right side
-                j++;
-            if(i==j) //it is mentioned in teh conditions
-                j++;
+            else //nums[mid]>target
+            {
+                end=mid-1;
+            }
         }
-        int answer=ans.size();
-        return answer;
+        return -1;
+    }
+    int findPairs(vector<int>& nums, int k) {
+        //method 2:
+        //we will sort it and then use binary search 
+        //we know that nums[j]-nums[i]=k, hence, we can say that the target = k+nums[i]
+        //so we will go through each element (nums[i]) and try to find out the target
+        //if we r able to find out the target then we will store the pair ain the set as i!=j
+
+        sort(nums.begin(), nums.end());
+        set<pair<int, int>> ans;
+
+        for(int i=0;i<nums.size();i++)
+        {
+            if(binarysearch(nums, i+1, nums[i]+k)!=-1) //TARGET FOUND
+            {
+                ans.insert({nums[i], nums[i]+k});
+            }
+        }
+        return ans.size();
         
     }
 };
