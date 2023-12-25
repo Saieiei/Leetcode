@@ -1,3 +1,3 @@
 # Leetcode
-All the leet codes i try to solve with the solution 
+All the leet codes I try to solve with the solution 
 
