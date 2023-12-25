@@ -8,6 +8,7 @@ public:
         //we will use 'set and pair' to store the unique pairs
         set<pair<int,int>> ans;
         int n=nums.size();
+        // this is for the test case where nums=[1] so no possible solution
         if(n==1)
             return 0;
         int diff=abs(nums[j]-nums[i]);
