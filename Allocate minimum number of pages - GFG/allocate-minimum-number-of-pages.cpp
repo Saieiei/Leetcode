@@ -13,7 +13,7 @@ class Solution
     public:
     bool possibleSolution(int A[], int N, int M, int sol)
     {
-        int c=1;
+        int c=1; //keep it as 1 and not 0 because we starting it with the 1st person itself
         int pageSum=0;
         for(int i=0;i<N;i++)
         {
@@ -21,18 +21,18 @@ class Solution
             {
                 return false;
             }
-            if(pageSum+A[i]>sol)
+            if(pageSum+A[i]>sol)//checking the maximum possible of books that can be alloted to 1 person
             {
-                c++;
-                pageSum=A[i];
-                if(c>M)
+                c++; //allocating books to a new peson 
+                pageSum=A[i]; //initialising it again for the new person
+                if(c>M) //if the number of poeple has exceeded, its not a solution
                 {
                     return false;
                 }
             }
-            else
+            else //more books can be added to the person
             {
-                pageSum=pageSum+A[i];
+                pageSum=pageSum+A[i]; 
             }
         }
         return true;
@@ -56,7 +56,7 @@ class Solution
                 //but we need to find minal solution so we have to move left
                 end=mid-1;
             }
-            else
+            else //we were not bale to find a solution so we should move right as there is more chnaces for the pages to fit with a bigger number(pages to fit per person)
             {
                 start=mid+1;
             }
