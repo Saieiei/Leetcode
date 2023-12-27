@@ -11,7 +11,7 @@ public:
         //then subtract the max value of that range to get the final value
         //we will add the final value of each range to get the final answer
         int ans=0;
-        while(j<=n)
+        while(j<=n) //this has to be <=
         {
             if(colors[i]==colors[j])
             {
