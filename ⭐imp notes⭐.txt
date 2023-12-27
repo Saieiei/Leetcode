@@ -103,6 +103,16 @@ brr.push_back(vec3);
 //sort the vector
     sort(v.begin(), v.end());
 
+//custom sorting vector
+	// sorting based on the difference from an element
+auto cmp = [&](int a, int b)
+{
+	int diffa=abs(a, k);
+	int diffb=abd(b, k);
+	return diffa<diffb
+}
+sort(arr.begin(), arr.end(), cmp)
+
 To calculate the address of a specific element in a two-dimensional array stored in row-major order, you can use the following formula:
 Address=Base Address+(Row Index×Number of Columns+Column Index)×Size of each element
 
@@ -124,6 +134,7 @@ s.push_back(1+'0');
 
 //good practice
 mid=start+(end-start)/2;
+mid=(start+end)>>1;
 
 //duplicates
 set<vector<int>> x;
@@ -132,3 +143,55 @@ if(x.find({a,b}) != x.end()) {
     cout << "found";
 }
 x.insert({a,b})
+
+//pairs
+#include<utility>
+set<pair<int,int>> ans;
+ans.insert({nums[i], nums[j]});
+
+
+//extracting 1st few elements(k) of a vector to a new vector
+vector<int> newarr=(arr.begin(), arr.begin() + k)
+
+//add all the elements of a vector
+#include<numeric>
+int sum = accumulate(arr.begin(), arr.end(), 0);
+int sum = accumulate(arr.begin()+i, arr.end()+j); // from i to (j-1)
+int sum = accumulate(arr, arr + n, 0); // n is the size of the array
+
+//max element from the vector
+int max = *max_element(arr.begin(), arr.end());
+int max = *max_element(arr.begin()+i, arr.end()+j); // from i to (j-1)
+
+//maths
+1r+2r+3r+...+nr=r(1+2+3+...+n)=r(n(n+1)/2)
+
+//characters
+//ascii value of a character
+a=97, A=65, 0=48, space=32
+char ch[100];
+cin.getline(ch, 100); // to take input with spaces
+//null character is added at the end of the string which is not visible. it is denaoted as '\0'
+//there r 2 ways to input a character array(string)
+1. cin >> ch; // it will take input till it encounters a space, and then it will add a null character, this can only print a word
+2. cin.getline(ch, 100); // it will take input till it encounters a new line, and then it will add a null character, this can print a sentence
+//function to reverse a string
+strrev(str);
+
+//strings
+str.length(); (int)
+str.empty(); (bool)
+str.find(str)!=string::npos; (bool, found), npos is negative
+str.clear(); (void)
+str.substr(starting index, length required); (string)
+str.name.at(0) (char)
+str.front() (char)
+str.back() (char)
+str.push_back('a') (void)
+str.pop_back() (void)
+str.insert(2, "lol") (void)
+** str.append(str2) (void)
+** str.erase(2, 3) (void) from 2nd index remove 4 characters
+** str.replace(2, 3, "lol") (void) from 2nd index remove 3 characters and replace it with "lol"
+str.compare(str2) (int) returns 0 if equal, 1 if str>str2, -1 if str<str2
+
