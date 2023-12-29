@@ -13,12 +13,12 @@ public:
         //access each charcter in string s
         for(auto i:s)
         {
-            freqTable[s[i]]++; //automatic convertion of char to int
+            freqTable[i]++; //automatic convertion of char to int
         }
         //access each charcter in string t
         for(auto i:t)
         {
-            freqTable[t[i]]--;//automatic convertion of char to int
+            freqTable[i]--;//automatic convertion of char to int
         }
         //checking all th elements in freqTable == 0 or not
         for(int i=0;i<256;i++)
