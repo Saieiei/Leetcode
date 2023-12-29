@@ -11,12 +11,12 @@ public:
         int freqTable[256]={0}; //calles as hashing table also
 
         //access each charcter in string s
-        for(int i=0;i<s.length();i++)
+        for(auto i:s)
         {
             freqTable[s[i]]++; //automatic convertion of char to int
         }
         //access each charcter in string t
-        for(int i=0;i<t.length();i++)
+        for(auto i:t)
         {
             freqTable[t[i]]--;//automatic convertion of char to int
         }
