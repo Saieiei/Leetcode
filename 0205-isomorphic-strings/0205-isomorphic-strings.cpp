@@ -19,14 +19,14 @@ public:
             //if so then true, else false
         
         int mapping[256]={0};
-        bool checker[256]={0};
+        int checker[256]={0};
 
         for(int i=0;i<s.size();i++)
         {
             if(checker[t[i]]==0 && mapping[s[i]]==0  ) //not mapped yet
             {
                 mapping[s[i]]=t[i]; //update the mapping
-                checker[t[i]]=true; //update the checker
+                checker[t[i]]=1; //update the checker
             }
         }
         
