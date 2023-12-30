@@ -18,7 +18,8 @@ public:
         for(auto word:strs)
         {
             string value=word;
-            string key=sort(word.begin(), word.end()); //key
+            sort(word.begin(), word.end()); //key
+            string key=word;
             mp[key].push_back(value);
         }
 
