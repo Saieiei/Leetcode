@@ -18,8 +18,8 @@ public:
         for(auto word:strs)
         {
             string value=word;
-            sort(word.begin(), word.end()); //key
-            mp[word].push_back(value);
+            string key=sort(word.begin(), word.end()); //key
+            mp[key].push_back(value);
         }
 
         for(auto it=mp.begin();it!=mp.end();it++) //iterator, to travel through each i of map
