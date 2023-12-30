@@ -23,7 +23,7 @@ public:
 
         for(int i=0;i<s.size();i++)
         {
-            if(mapping[s[i]]==0 && checker[t[i]]==0) //not mapped yet
+            if(checker[t[i]]==0 && mapping[s[i]]==0  ) //not mapped yet
             {
                 mapping[s[i]]=t[i]; //update the mapping
                 checker[t[i]]=true; //update the checker
