@@ -2,17 +2,18 @@ class Solution {
 public:
     int maxLengthBetweenEqualCharacters(string s) {
         // we will use 2 pointers approach
-        int start=0;
-        int end=s.size()-1;
+        //int start=0; ->i
+        //int end=s.size()-1; ->j
         int ans=-1;
-        while(start<=end)
+        for(int i=0;i<s.size();i++)
         {
-            if(s[start]==s[end])
+            for(int j=s.size()-1;j>i;j--)
             {
-                ans=((end-start)-1>ans)?(end-start)-1:ans;
+                if(s[i]==s[j])
+                {
+                    ans=((j-i)-1>ans)?(j-i)-1:ans;
+                }
             }
-            start++;
-            end--;
         }
         return ans;
         
