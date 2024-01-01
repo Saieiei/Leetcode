@@ -1,18 +1,6 @@
 class Solution {
 public:
 
-    bool greedyFound(int target, vector<int>& g)
-    {
-        int valueToBeDeleted = target;
-        auto it = find(g.begin(), g.end(), valueToBeDeleted);
- 
-        if (it != g.end()) {
-            g.erase(it);
-            return true;
-        }
-        return false;
-    }
-
 
     int findContentChildren(vector<int>& g, vector<int>& s) {
         
