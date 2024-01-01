@@ -5,21 +5,25 @@ public:
     int findContentChildren(vector<int>& g, vector<int>& s) {
         
         
-        std::sort(g.begin(), g.end());
-        std::sort(s.begin(), s.end());
+        sort(s.begin(), s.end());
+        sort(g.begin(), g.end());
+        int sPointer=0;
+        int gPointer=0;
+        int ans=0;
 
-        int gSize = g.size();
-        int sSize = s.size();
-        int ans = 0;
-        int gIndex = 0;
-
-        for (int i = 0; i < sSize && gIndex < gSize; i++) {
-            if (s[i] >= g[gIndex]) {
+        while(sPointer<s.size() && gPointer<g.size())
+        {
+            if(s[sPointer]>=g[gPointer])
+            {
+                sPointer++;
+                gPointer++;
                 ans++;
-                gIndex++;
             }
+           else
+           {
+              sPointer++; 
+           }
         }
-
         return ans;
     }
 };
