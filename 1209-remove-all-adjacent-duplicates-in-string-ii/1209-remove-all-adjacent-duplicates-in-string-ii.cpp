@@ -1,51 +1,37 @@
 class Solution {
 public:
-    bool last_k_digits_same(string& ans, char& newChar, int k_1)
-    {
-        int it=ans.size()-1; //pointer pointing to the last char
-        for(int i=0;i<k_1;i++)
-        {
-            if(ans[it]!=newChar) 
-            {
-                return false;
-
-                
-            }
-            it--;
-        }
-        return true;
-    }
-
     string removeDuplicates(string s, int k) {
-        //everything is based on k-1 as we will b starting from 0
-        //1st we will check if the string ans is less than k-1 size, if not then we will simply push in 
-            //if not then we will have to check if the last (k-1) char r same, if same then we will simple pop k-1 chars
-                //else we will simple push in
-        //finally we will return the ans
+        //special 2 pointers approach (all will be done inplace)
+        //we will use i where the element has to be inserted
+            //we will use j will keep on iterating through the string
+            //1st s[i]=s[j]
+            //2nd count[i]=1;
+            //3rd if(i>0 && s[i]==s[i-1])
+                //count[i]=count[i-1]
+            //if(count[i]==k)
+                //i=i-k (we dont have yo pop anything, automatically it will be overridden)
+            //i++; j++;
+            //finally when j becomes out of bound then we can return the ans that is from 0 to i (substring)
 
-        string ans;
-        for(int i=0;i<s.size();i++)
+        int i=0, j=0;
+        vector<int>count(s.size());
+        //You are using the vector<int> count without initializing its size. This can lead to undefined behavior when you try to access elements using the index. You should either initialize the vector with a specific size or use push_back to dynamically grow the vector. Hence mention the size
+        while(j<s.size())
         {
-            char& newChar=s[i];
-            if(ans.size()<k-1) //no need to worry just simply push
+            s[i]=s[j];
+            count[i]=1;
+            if(i>0 && s[i]==s[i-1])
             {
-                ans.push_back(newChar);
-            } 
-            else //checking if the last 2 chars in string ans r same to newChar if k=3(eg)
-            {
-                if(last_k_digits_same(ans, newChar, k-1)) //if they r same, then we will have to remove k-1 chars from ans
-                {
-                    for(int j=0;j<k-1;j++)
-                    {
-                        ans.pop_back(); //u can also use erase fuction but u should know the indexs
-                    }
-                }
-                else //if the last 2 chars r not the same as the newChar then we can simply push it in if k=3(eg)
-                {
-                    ans.push_back(newChar);
-                }
+                count[i]=count[i]+count[i-1];
             }
+            if(count[i]==k)
+            {
+                i=i-k;
+            }
+            i++; j++;
         }
+        string ans=s.substr(0, i);
         return ans;
+
     }
 };
