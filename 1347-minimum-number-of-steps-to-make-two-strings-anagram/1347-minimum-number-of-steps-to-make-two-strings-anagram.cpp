@@ -34,12 +34,12 @@ public:
         int steps=0;
         for(auto pair:sFreq)
         {
-            char ch=sFreq.first;
-            int sCount=sFreq.second;
+            char ch=pair.first;
+            int sCount=pair.second;
             int tCount=tFreq[ch];
-            if(tCount>cCount)
+            if(sCount>tCount)
             {
-                steps=steps+tCount-sCount;
+                steps=steps+sCount-tCount;
             }
         }
         return steps;
