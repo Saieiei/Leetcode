@@ -1,3 +1,4 @@
+//https://www.youtube.com/watch?v=2JNe1QZI7KE
 class Solution {
 public:
     int pivotInteger(int n) {
