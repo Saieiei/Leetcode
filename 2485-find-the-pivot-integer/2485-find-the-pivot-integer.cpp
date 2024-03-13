@@ -1,11 +1,12 @@
 class Solution {
 public:
     int pivotInteger(int n) {
-        int sum = ((n * (n + 1)) / 2), sum2 = 0;
+        int sum = ((n * (n + 1)) / 2), sumLeft = 0;
 
         for (int i = 0; i <= n; i++) {
-            sum2 += i;
-            if (sum - sum2 + i == sum2) {
+            sumLeft += i;
+            int sumRight=sum-sumLeft+i;
+            if (sumLeft==sumRight) {
                 return i;
             }
         }
