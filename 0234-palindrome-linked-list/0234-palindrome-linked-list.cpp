@@ -31,7 +31,7 @@ public:
         }
 
         //3rd we will reverse the 2nd half of the LL
-        ListNode* prev=nullptr; ListNode* temp=head;
+        ListNode* prev=nullptr; ListNode* temp;
         while(slow)
         {
             temp=slow->next;
