@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/longest-palindrome">409. Longest Palindrome</a></h2><h3>Easy</h3><hr><p>Given a string <code>s</code> which consists of lowercase or uppercase letters, return the length of the <strong>longest <span data-keyword="palindrome-string">palindrome</span></strong>&nbsp;that can be built with those letters.</p>
+<h2><a href="https://leetcode.com/problems/longest-palindrome/?envType=daily-question&envId=2024-06-04">409. Longest Palindrome</a></h2><h3>Easy</h3><hr><p>Given a string <code>s</code> which consists of lowercase or uppercase letters, return the length of the <strong>longest <span data-keyword="palindrome-string">palindrome</span></strong>&nbsp;that can be built with those letters.</p>
 
 <p>Letters are <strong>case sensitive</strong>, for example, <code>&quot;Aa&quot;</code> is not considered a palindrome.</p>
 
