@@ -15,8 +15,18 @@ All the leet codes I try to solve with the solution
 |  |
 | ------- |
 | [0409-longest-palindrome](https://github.com/Saieiei/Leetcode/tree/master/0409-longest-palindrome) |
+| [0876-hand-of-straights](https://github.com/Saieiei/Leetcode/tree/master/0876-hand-of-straights) |
 | [2572-append-characters-to-string-to-make-subsequence](https://github.com/Saieiei/Leetcode/tree/master/2572-append-characters-to-string-to-make-subsequence) |
 # Hash Table
 |  |
 | ------- |
 | [0409-longest-palindrome](https://github.com/Saieiei/Leetcode/tree/master/0409-longest-palindrome) |
+| [0876-hand-of-straights](https://github.com/Saieiei/Leetcode/tree/master/0876-hand-of-straights) |
+# Array
+|  |
+| ------- |
+| [0876-hand-of-straights](https://github.com/Saieiei/Leetcode/tree/master/0876-hand-of-straights) |
+# Sorting
+|  |
+| ------- |
+| [0876-hand-of-straights](https://github.com/Saieiei/Leetcode/tree/master/0876-hand-of-straights) |
