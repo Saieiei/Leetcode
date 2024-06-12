@@ -5,6 +5,7 @@ All the leet codes I try to solve with the solution
 # Two Pointers
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/Saieiei/Leetcode/tree/master/0075-sort-colors) |
 | [2572-append-characters-to-string-to-make-subsequence](https://github.com/Saieiei/Leetcode/tree/master/2572-append-characters-to-string-to-make-subsequence) |
 # String
 |  |
@@ -25,8 +26,10 @@ All the leet codes I try to solve with the solution
 # Array
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/Saieiei/Leetcode/tree/master/0075-sort-colors) |
 | [0876-hand-of-straights](https://github.com/Saieiei/Leetcode/tree/master/0876-hand-of-straights) |
 # Sorting
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/Saieiei/Leetcode/tree/master/0075-sort-colors) |
 | [0876-hand-of-straights](https://github.com/Saieiei/Leetcode/tree/master/0876-hand-of-straights) |
