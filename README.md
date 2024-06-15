@@ -12,6 +12,7 @@ All the leet codes I try to solve with the solution
 | ------- |
 | [0409-longest-palindrome](https://github.com/Saieiei/Leetcode/tree/master/0409-longest-palindrome) |
 | [0415-add-strings](https://github.com/Saieiei/Leetcode/tree/master/0415-add-strings) |
+| [2021-remove-all-occurrences-of-a-substring](https://github.com/Saieiei/Leetcode/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2572-append-characters-to-string-to-make-subsequence](https://github.com/Saieiei/Leetcode/tree/master/2572-append-characters-to-string-to-make-subsequence) |
 # Greedy
 |  |
