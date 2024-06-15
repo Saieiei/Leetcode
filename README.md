@@ -29,6 +29,7 @@ All the leet codes I try to solve with the solution
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/Saieiei/Leetcode/tree/master/0075-sort-colors) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/Saieiei/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0876-hand-of-straights](https://github.com/Saieiei/Leetcode/tree/master/0876-hand-of-straights) |
 # Sorting
 |  |
@@ -43,3 +44,7 @@ All the leet codes I try to solve with the solution
 |  |
 | ------- |
 | [0415-add-strings](https://github.com/Saieiei/Leetcode/tree/master/0415-add-strings) |
+# Dynamic Programming
+|  |
+| ------- |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/Saieiei/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
