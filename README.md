@@ -39,6 +39,7 @@ All the leet codes I try to solve with the solution
 # Math
 |  |
 | ------- |
+| [0279-perfect-squares](https://github.com/Saieiei/Leetcode/tree/master/0279-perfect-squares) |
 | [0415-add-strings](https://github.com/Saieiei/Leetcode/tree/master/0415-add-strings) |
 # Simulation
 |  |
@@ -48,3 +49,8 @@ All the leet codes I try to solve with the solution
 |  |
 | ------- |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Saieiei/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0279-perfect-squares](https://github.com/Saieiei/Leetcode/tree/master/0279-perfect-squares) |
+# Breadth-First Search
+|  |
+| ------- |
+| [0279-perfect-squares](https://github.com/Saieiei/Leetcode/tree/master/0279-perfect-squares) |
