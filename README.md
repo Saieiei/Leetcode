@@ -32,6 +32,7 @@ All the leet codes I try to solve with the solution
 |  |
 | ------- |
 | [0039-combination-sum](https://github.com/Saieiei/Leetcode/tree/master/0039-combination-sum) |
+| [0040-combination-sum-ii](https://github.com/Saieiei/Leetcode/tree/master/0040-combination-sum-ii) |
 | [0075-sort-colors](https://github.com/Saieiei/Leetcode/tree/master/0075-sort-colors) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Saieiei/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0853-most-profit-assigning-work](https://github.com/Saieiei/Leetcode/tree/master/0853-most-profit-assigning-work) |
@@ -98,3 +99,4 @@ All the leet codes I try to solve with the solution
 |  |
 | ------- |
 | [0039-combination-sum](https://github.com/Saieiei/Leetcode/tree/master/0039-combination-sum) |
+| [0040-combination-sum-ii](https://github.com/Saieiei/Leetcode/tree/master/0040-combination-sum-ii) |
