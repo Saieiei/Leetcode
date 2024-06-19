@@ -37,6 +37,7 @@ All the leet codes I try to solve with the solution
 | [0853-most-profit-assigning-work](https://github.com/Saieiei/Leetcode/tree/master/0853-most-profit-assigning-work) |
 | [0876-hand-of-straights](https://github.com/Saieiei/Leetcode/tree/master/0876-hand-of-straights) |
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
+| [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/Saieiei/Leetcode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 # Sorting
 |  |
 | ------- |
@@ -68,6 +69,7 @@ All the leet codes I try to solve with the solution
 | ------- |
 | [0633-sum-of-square-numbers](https://github.com/Saieiei/Leetcode/tree/master/0633-sum-of-square-numbers) |
 | [0853-most-profit-assigning-work](https://github.com/Saieiei/Leetcode/tree/master/0853-most-profit-assigning-work) |
+| [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/Saieiei/Leetcode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 # Divide and Conquer
 |  |
 | ------- |
