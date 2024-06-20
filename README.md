@@ -39,6 +39,7 @@ All the leet codes I try to solve with the solution
 | [0876-hand-of-straights](https://github.com/Saieiei/Leetcode/tree/master/0876-hand-of-straights) |
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/Saieiei/Leetcode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
+| [1758-distribute-repeating-integers](https://github.com/Saieiei/Leetcode/tree/master/1758-distribute-repeating-integers) |
 # Sorting
 |  |
 | ------- |
@@ -61,6 +62,7 @@ All the leet codes I try to solve with the solution
 | ------- |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Saieiei/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0279-perfect-squares](https://github.com/Saieiei/Leetcode/tree/master/0279-perfect-squares) |
+| [1758-distribute-repeating-integers](https://github.com/Saieiei/Leetcode/tree/master/1758-distribute-repeating-integers) |
 # Breadth-First Search
 |  |
 | ------- |
@@ -100,3 +102,12 @@ All the leet codes I try to solve with the solution
 | ------- |
 | [0039-combination-sum](https://github.com/Saieiei/Leetcode/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/Saieiei/Leetcode/tree/master/0040-combination-sum-ii) |
+| [1758-distribute-repeating-integers](https://github.com/Saieiei/Leetcode/tree/master/1758-distribute-repeating-integers) |
+# Bit Manipulation
+|  |
+| ------- |
+| [1758-distribute-repeating-integers](https://github.com/Saieiei/Leetcode/tree/master/1758-distribute-repeating-integers) |
+# Bitmask
+|  |
+| ------- |
+| [1758-distribute-repeating-integers](https://github.com/Saieiei/Leetcode/tree/master/1758-distribute-repeating-integers) |
