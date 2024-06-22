@@ -28,6 +28,7 @@ All the leet codes I try to solve with the solution
 | ------- |
 | [0409-longest-palindrome](https://github.com/Saieiei/Leetcode/tree/master/0409-longest-palindrome) |
 | [0876-hand-of-straights](https://github.com/Saieiei/Leetcode/tree/master/0876-hand-of-straights) |
+| [1370-count-number-of-nice-subarrays](https://github.com/Saieiei/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 # Array
 |  |
 | ------- |
@@ -38,6 +39,7 @@ All the leet codes I try to solve with the solution
 | [0853-most-profit-assigning-work](https://github.com/Saieiei/Leetcode/tree/master/0853-most-profit-assigning-work) |
 | [0876-hand-of-straights](https://github.com/Saieiei/Leetcode/tree/master/0876-hand-of-straights) |
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
+| [1370-count-number-of-nice-subarrays](https://github.com/Saieiei/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/Saieiei/Leetcode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1758-distribute-repeating-integers](https://github.com/Saieiei/Leetcode/tree/master/1758-distribute-repeating-integers) |
 # Sorting
@@ -53,6 +55,7 @@ All the leet codes I try to solve with the solution
 | [0279-perfect-squares](https://github.com/Saieiei/Leetcode/tree/master/0279-perfect-squares) |
 | [0415-add-strings](https://github.com/Saieiei/Leetcode/tree/master/0415-add-strings) |
 | [0633-sum-of-square-numbers](https://github.com/Saieiei/Leetcode/tree/master/0633-sum-of-square-numbers) |
+| [1370-count-number-of-nice-subarrays](https://github.com/Saieiei/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 # Simulation
 |  |
 | ------- |
@@ -111,3 +114,7 @@ All the leet codes I try to solve with the solution
 |  |
 | ------- |
 | [1758-distribute-repeating-integers](https://github.com/Saieiei/Leetcode/tree/master/1758-distribute-repeating-integers) |
+# Sliding Window
+|  |
+| ------- |
+| [1370-count-number-of-nice-subarrays](https://github.com/Saieiei/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
