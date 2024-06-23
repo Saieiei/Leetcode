@@ -118,3 +118,11 @@ All the leet codes I try to solve with the solution
 |  |
 | ------- |
 | [1370-count-number-of-nice-subarrays](https://github.com/Saieiei/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
+# Linked List
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/Saieiei/Leetcode/tree/master/0206-reverse-linked-list) |
+# Recursion
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/Saieiei/Leetcode/tree/master/0206-reverse-linked-list) |
