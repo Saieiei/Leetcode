@@ -126,3 +126,22 @@ All the leet codes I try to solve with the solution
 |  |
 | ------- |
 | [0206-reverse-linked-list](https://github.com/Saieiei/Leetcode/tree/master/0206-reverse-linked-list) |
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Greedy
+|  |
+| ------- |
+| [2379-maximum-total-importance-of-roads](https://github.com/Saieiei/Leetcode/tree/master/2379-maximum-total-importance-of-roads) |
+## Graph
+|  |
+| ------- |
+| [2379-maximum-total-importance-of-roads](https://github.com/Saieiei/Leetcode/tree/master/2379-maximum-total-importance-of-roads) |
+## Sorting
+|  |
+| ------- |
+| [2379-maximum-total-importance-of-roads](https://github.com/Saieiei/Leetcode/tree/master/2379-maximum-total-importance-of-roads) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [2379-maximum-total-importance-of-roads](https://github.com/Saieiei/Leetcode/tree/master/2379-maximum-total-importance-of-roads) |
+<!---LeetCode Topics End-->
