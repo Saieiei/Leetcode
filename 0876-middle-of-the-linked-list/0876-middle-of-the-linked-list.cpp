@@ -10,6 +10,7 @@
  */
 class Solution {
 public:
+//we can solve this using slow and fast approach in 1 go, or if u want u can find out the length and then proceed
     ListNode* middleNode(ListNode* head) {
         ListNode* slowPointer = head;
         ListNode* fastPointer = head;
