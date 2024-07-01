@@ -38,13 +38,13 @@ public:
         }
 
         //if 1 of the lists expires
-        if(list1ptr) //list2ptr expired, and it will continue until list1ptr expires
+        while(list1ptr) //list2ptr expired, and it will continue until list1ptr expires
         {
             iterator->next = list1ptr;
             iterator = list1ptr;
             list1ptr = list1ptr->next;
         }
-        if(list2ptr) //list1ptr expired, and it will continue until list2ptr expires
+        while(list2ptr) //list1ptr expired, and it will continue until list2ptr expires
         {
             iterator->next = list2ptr;
             iterator = list2ptr;
