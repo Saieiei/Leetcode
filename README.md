@@ -153,6 +153,7 @@ All the leet codes I try to solve with the solution
 | ------- |
 | [0142-linked-list-cycle-ii](https://github.com/Saieiei/Leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Saieiei/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [1267-remove-zero-sum-consecutive-nodes-from-linked-list](https://github.com/Saieiei/Leetcode/tree/master/1267-remove-zero-sum-consecutive-nodes-from-linked-list) |
 ## Linked List
 |  |
 | ------- |
@@ -161,6 +162,7 @@ All the leet codes I try to solve with the solution
 | [0061-rotate-list](https://github.com/Saieiei/Leetcode/tree/master/0061-rotate-list) |
 | [0142-linked-list-cycle-ii](https://github.com/Saieiei/Leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0148-sort-list](https://github.com/Saieiei/Leetcode/tree/master/0148-sort-list) |
+| [1267-remove-zero-sum-consecutive-nodes-from-linked-list](https://github.com/Saieiei/Leetcode/tree/master/1267-remove-zero-sum-consecutive-nodes-from-linked-list) |
 | [2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/Saieiei/Leetcode/tree/master/2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/Saieiei/Leetcode/tree/master/2299-merge-nodes-in-between-zeros) |
 ## Two Pointers
