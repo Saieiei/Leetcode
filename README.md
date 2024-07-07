@@ -200,9 +200,14 @@ All the leet codes I try to solve with the solution
 ## Simulation
 |  |
 | ------- |
+| [1642-water-bottles](https://github.com/Saieiei/Leetcode/tree/master/1642-water-bottles) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/Saieiei/Leetcode/tree/master/2299-merge-nodes-in-between-zeros) |
 ## String
 |  |
 | ------- |
 | [0344-reverse-string](https://github.com/Saieiei/Leetcode/tree/master/0344-reverse-string) |
+## Math
+|  |
+| ------- |
+| [1642-water-bottles](https://github.com/Saieiei/Leetcode/tree/master/1642-water-bottles) |
 <!---LeetCode Topics End-->
