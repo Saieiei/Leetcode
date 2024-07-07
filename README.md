@@ -210,4 +210,12 @@ All the leet codes I try to solve with the solution
 |  |
 | ------- |
 | [1642-water-bottles](https://github.com/Saieiei/Leetcode/tree/master/1642-water-bottles) |
+## Stack
+|  |
+| ------- |
+| [0155-min-stack](https://github.com/Saieiei/Leetcode/tree/master/0155-min-stack) |
+## Design
+|  |
+| ------- |
+| [0155-min-stack](https://github.com/Saieiei/Leetcode/tree/master/0155-min-stack) |
 <!---LeetCode Topics End-->
