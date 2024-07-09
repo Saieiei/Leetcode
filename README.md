@@ -178,6 +178,7 @@ All the leet codes I try to solve with the solution
 | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/Saieiei/Leetcode/tree/master/0021-merge-two-sorted-lists) |
 | [0025-reverse-nodes-in-k-group](https://github.com/Saieiei/Leetcode/tree/master/0025-reverse-nodes-in-k-group) |
+| [0394-decode-string](https://github.com/Saieiei/Leetcode/tree/master/0394-decode-string) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Saieiei/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## Divide and Conquer
 |  |
@@ -212,6 +213,7 @@ All the leet codes I try to solve with the solution
 |  |
 | ------- |
 | [0344-reverse-string](https://github.com/Saieiei/Leetcode/tree/master/0344-reverse-string) |
+| [0394-decode-string](https://github.com/Saieiei/Leetcode/tree/master/0394-decode-string) |
 | [1045-check-if-word-is-valid-after-substitutions](https://github.com/Saieiei/Leetcode/tree/master/1045-check-if-word-is-valid-after-substitutions) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/Saieiei/Leetcode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 ## Math
@@ -224,6 +226,7 @@ All the leet codes I try to solve with the solution
 | ------- |
 | [0084-largest-rectangle-in-histogram](https://github.com/Saieiei/Leetcode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0155-min-stack](https://github.com/Saieiei/Leetcode/tree/master/0155-min-stack) |
+| [0394-decode-string](https://github.com/Saieiei/Leetcode/tree/master/0394-decode-string) |
 | [1045-check-if-word-is-valid-after-substitutions](https://github.com/Saieiei/Leetcode/tree/master/1045-check-if-word-is-valid-after-substitutions) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/Saieiei/Leetcode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 ## Design
