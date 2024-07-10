@@ -196,6 +196,7 @@ All the leet codes I try to solve with the solution
 | [0084-largest-rectangle-in-histogram](https://github.com/Saieiei/Leetcode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Saieiei/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0735-asteroid-collision](https://github.com/Saieiei/Leetcode/tree/master/0735-asteroid-collision) |
+| [0739-daily-temperatures](https://github.com/Saieiei/Leetcode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/Saieiei/Leetcode/tree/master/0883-car-fleet) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/Saieiei/Leetcode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1720-crawler-log-folder](https://github.com/Saieiei/Leetcode/tree/master/1720-crawler-log-folder) |
@@ -236,6 +237,7 @@ All the leet codes I try to solve with the solution
 | [0155-min-stack](https://github.com/Saieiei/Leetcode/tree/master/0155-min-stack) |
 | [0394-decode-string](https://github.com/Saieiei/Leetcode/tree/master/0394-decode-string) |
 | [0735-asteroid-collision](https://github.com/Saieiei/Leetcode/tree/master/0735-asteroid-collision) |
+| [0739-daily-temperatures](https://github.com/Saieiei/Leetcode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/Saieiei/Leetcode/tree/master/0883-car-fleet) |
 | [1045-check-if-word-is-valid-after-substitutions](https://github.com/Saieiei/Leetcode/tree/master/1045-check-if-word-is-valid-after-substitutions) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/Saieiei/Leetcode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
@@ -248,6 +250,7 @@ All the leet codes I try to solve with the solution
 |  |
 | ------- |
 | [0084-largest-rectangle-in-histogram](https://github.com/Saieiei/Leetcode/tree/master/0084-largest-rectangle-in-histogram) |
+| [0739-daily-temperatures](https://github.com/Saieiei/Leetcode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/Saieiei/Leetcode/tree/master/0883-car-fleet) |
 ## Queue
 |  |
