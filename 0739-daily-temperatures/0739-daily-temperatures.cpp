@@ -1,5 +1,6 @@
 class Solution {
 public:
+//week 11
     vector<int> dailyTemperatures(vector<int>& temperatures) {
         //we will use stack and a new vector concept
         //the stack will be used to refer the index of the temperature vector
@@ -12,6 +13,7 @@ public:
         //this process will be going on until we find a number in the stack that is greater than the temp
         //but if all the elements have been popped then we will have to push the element in the stack(index) and push 0 in the ans vector
         //in the end reverse the ans vector
+        //https://www.youtube.com/watch?v=7MIXlgBfr_U
 
         stack<int>s;
         vector<int> ans;
