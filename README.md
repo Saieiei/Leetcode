@@ -212,6 +212,7 @@ All the leet codes I try to solve with the solution
 ## String
 |  |
 | ------- |
+| [0071-simplify-path](https://github.com/Saieiei/Leetcode/tree/master/0071-simplify-path) |
 | [0344-reverse-string](https://github.com/Saieiei/Leetcode/tree/master/0344-reverse-string) |
 | [0394-decode-string](https://github.com/Saieiei/Leetcode/tree/master/0394-decode-string) |
 | [1045-check-if-word-is-valid-after-substitutions](https://github.com/Saieiei/Leetcode/tree/master/1045-check-if-word-is-valid-after-substitutions) |
@@ -224,6 +225,7 @@ All the leet codes I try to solve with the solution
 ## Stack
 |  |
 | ------- |
+| [0071-simplify-path](https://github.com/Saieiei/Leetcode/tree/master/0071-simplify-path) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Saieiei/Leetcode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0155-min-stack](https://github.com/Saieiei/Leetcode/tree/master/0155-min-stack) |
 | [0394-decode-string](https://github.com/Saieiei/Leetcode/tree/master/0394-decode-string) |
