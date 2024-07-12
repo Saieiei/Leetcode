@@ -244,6 +244,7 @@ All the leet codes I try to solve with the solution
 | [0071-simplify-path](https://github.com/Saieiei/Leetcode/tree/master/0071-simplify-path) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Saieiei/Leetcode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0155-min-stack](https://github.com/Saieiei/Leetcode/tree/master/0155-min-stack) |
+| [0225-implement-stack-using-queues](https://github.com/Saieiei/Leetcode/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/Saieiei/Leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [0394-decode-string](https://github.com/Saieiei/Leetcode/tree/master/0394-decode-string) |
 | [0735-asteroid-collision](https://github.com/Saieiei/Leetcode/tree/master/0735-asteroid-collision) |
@@ -259,6 +260,7 @@ All the leet codes I try to solve with the solution
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/Saieiei/Leetcode/tree/master/0155-min-stack) |
+| [0225-implement-stack-using-queues](https://github.com/Saieiei/Leetcode/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/Saieiei/Leetcode/tree/master/0232-implement-queue-using-stacks) |
 ## Monotonic Stack
 |  |
@@ -269,6 +271,7 @@ All the leet codes I try to solve with the solution
 ## Queue
 |  |
 | ------- |
+| [0225-implement-stack-using-queues](https://github.com/Saieiei/Leetcode/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/Saieiei/Leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [0239-sliding-window-maximum](https://github.com/Saieiei/Leetcode/tree/master/0239-sliding-window-maximum) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Saieiei/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
