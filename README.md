@@ -133,6 +133,7 @@ All the leet codes I try to solve with the solution
 | ------- |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/Saieiei/Leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/Saieiei/Leetcode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
+| [1818-maximum-score-from-removing-substrings](https://github.com/Saieiei/Leetcode/tree/master/1818-maximum-score-from-removing-substrings) |
 | [2379-maximum-total-importance-of-roads](https://github.com/Saieiei/Leetcode/tree/master/2379-maximum-total-importance-of-roads) |
 ## Graph
 |  |
@@ -229,6 +230,7 @@ All the leet codes I try to solve with the solution
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/Saieiei/Leetcode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Saieiei/Leetcode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1720-crawler-log-folder](https://github.com/Saieiei/Leetcode/tree/master/1720-crawler-log-folder) |
+| [1818-maximum-score-from-removing-substrings](https://github.com/Saieiei/Leetcode/tree/master/1818-maximum-score-from-removing-substrings) |
 ## Math
 |  |
 | ------- |
@@ -249,6 +251,7 @@ All the leet codes I try to solve with the solution
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/Saieiei/Leetcode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Saieiei/Leetcode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1720-crawler-log-folder](https://github.com/Saieiei/Leetcode/tree/master/1720-crawler-log-folder) |
+| [1818-maximum-score-from-removing-substrings](https://github.com/Saieiei/Leetcode/tree/master/1818-maximum-score-from-removing-substrings) |
 ## Design
 |  |
 | ------- |
