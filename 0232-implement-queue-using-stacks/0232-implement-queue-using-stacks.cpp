@@ -3,6 +3,7 @@ class MyQueue {
 private:
     stack<int> s1;
     stack<int> s2;
+    //we will keep s1 as our main stack
 
 public:
     MyQueue() {}
