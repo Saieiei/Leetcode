@@ -146,6 +146,7 @@ All the leet codes I try to solve with the solution
 | [0148-sort-list](https://github.com/Saieiei/Leetcode/tree/master/0148-sort-list) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Saieiei/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0883-car-fleet](https://github.com/Saieiei/Leetcode/tree/master/0883-car-fleet) |
+| [0987-reveal-cards-in-increasing-order](https://github.com/Saieiei/Leetcode/tree/master/0987-reveal-cards-in-increasing-order) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/Saieiei/Leetcode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [2379-maximum-total-importance-of-roads](https://github.com/Saieiei/Leetcode/tree/master/2379-maximum-total-importance-of-roads) |
 ## Heap (Priority Queue)
@@ -204,6 +205,7 @@ All the leet codes I try to solve with the solution
 | [0735-asteroid-collision](https://github.com/Saieiei/Leetcode/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/Saieiei/Leetcode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/Saieiei/Leetcode/tree/master/0883-car-fleet) |
+| [0987-reveal-cards-in-increasing-order](https://github.com/Saieiei/Leetcode/tree/master/0987-reveal-cards-in-increasing-order) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/Saieiei/Leetcode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1720-crawler-log-folder](https://github.com/Saieiei/Leetcode/tree/master/1720-crawler-log-folder) |
 | [1803-average-waiting-time](https://github.com/Saieiei/Leetcode/tree/master/1803-average-waiting-time) |
@@ -217,6 +219,7 @@ All the leet codes I try to solve with the solution
 |  |
 | ------- |
 | [0735-asteroid-collision](https://github.com/Saieiei/Leetcode/tree/master/0735-asteroid-collision) |
+| [0987-reveal-cards-in-increasing-order](https://github.com/Saieiei/Leetcode/tree/master/0987-reveal-cards-in-increasing-order) |
 | [1642-water-bottles](https://github.com/Saieiei/Leetcode/tree/master/1642-water-bottles) |
 | [1803-average-waiting-time](https://github.com/Saieiei/Leetcode/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Saieiei/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
@@ -276,6 +279,7 @@ All the leet codes I try to solve with the solution
 | [0232-implement-queue-using-stacks](https://github.com/Saieiei/Leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [0239-sliding-window-maximum](https://github.com/Saieiei/Leetcode/tree/master/0239-sliding-window-maximum) |
 | [0969-number-of-recent-calls](https://github.com/Saieiei/Leetcode/tree/master/0969-number-of-recent-calls) |
+| [0987-reveal-cards-in-increasing-order](https://github.com/Saieiei/Leetcode/tree/master/0987-reveal-cards-in-increasing-order) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Saieiei/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## Sliding Window
 |  |
