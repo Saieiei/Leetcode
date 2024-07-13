@@ -20,7 +20,7 @@ public:
 
        //return ls.front();
 
-       //week11
+       //week12
        //we can also solve this q using queue
        queue<int> q;
 
@@ -28,12 +28,12 @@ public:
        for(int i=1;i<=n;i++) q.push(i);
 
        //now poppin agame
-       while(q.size() != 1)
+       while(q.size() != 1) //only 1 element should remain in the queue
         {
-            for(int i=0;i<k;i++)
+            for(int i=0;i<k;i++) //the kth element will be popped
             {
-                if(i == k-1) q.pop();
-                else
+                if(i == k-1) q.pop(); //killed
+                else //else push it behind to maintain circularity
                 {
                     int tempNum = q.front();
                     q.pop();
@@ -41,6 +41,6 @@ public:
                 }
             }
         }
-        return q.front();
+        return q.front(); //only 1 element in the queue
     }
 };
