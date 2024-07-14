@@ -1,5 +1,6 @@
 class Solution {
 public:
+//week12
     int peopleAwareOfSecret(int n, int delay, int forget) {
         const int MOD = 1'000'000'007;
         int cur = 0; // Current number of active spreaders
