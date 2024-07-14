@@ -228,6 +228,7 @@ All the leet codes I try to solve with the solution
 | [1803-average-waiting-time](https://github.com/Saieiei/Leetcode/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Saieiei/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/Saieiei/Leetcode/tree/master/2299-merge-nodes-in-between-zeros) |
+| [2408-number-of-people-aware-of-a-secret](https://github.com/Saieiei/Leetcode/tree/master/2408-number-of-people-aware-of-a-secret) |
 | [2846-robot-collisions](https://github.com/Saieiei/Leetcode/tree/master/2846-robot-collisions) |
 ## String
 |  |
@@ -289,6 +290,7 @@ All the leet codes I try to solve with the solution
 | [0969-number-of-recent-calls](https://github.com/Saieiei/Leetcode/tree/master/0969-number-of-recent-calls) |
 | [0987-reveal-cards-in-increasing-order](https://github.com/Saieiei/Leetcode/tree/master/0987-reveal-cards-in-increasing-order) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Saieiei/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [2408-number-of-people-aware-of-a-secret](https://github.com/Saieiei/Leetcode/tree/master/2408-number-of-people-aware-of-a-secret) |
 ## Sliding Window
 |  |
 | ------- |
@@ -301,4 +303,8 @@ All the leet codes I try to solve with the solution
 |  |
 | ------- |
 | [0969-number-of-recent-calls](https://github.com/Saieiei/Leetcode/tree/master/0969-number-of-recent-calls) |
+## Dynamic Programming
+|  |
+| ------- |
+| [2408-number-of-people-aware-of-a-secret](https://github.com/Saieiei/Leetcode/tree/master/2408-number-of-people-aware-of-a-secret) |
 <!---LeetCode Topics End-->
