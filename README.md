@@ -159,6 +159,7 @@ All the leet codes I try to solve with the solution
 ## Hash Table
 |  |
 | ------- |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0142-linked-list-cycle-ii](https://github.com/Saieiei/Leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Saieiei/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0726-number-of-atoms](https://github.com/Saieiei/Leetcode/tree/master/0726-number-of-atoms) |
@@ -194,6 +195,7 @@ All the leet codes I try to solve with the solution
 ## Divide and Conquer
 |  |
 | ------- |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0148-sort-list](https://github.com/Saieiei/Leetcode/tree/master/0148-sort-list) |
 ## Merge Sort
 |  |
@@ -204,6 +206,7 @@ All the leet codes I try to solve with the solution
 | ------- |
 | [0035-search-insert-position](https://github.com/Saieiei/Leetcode/tree/master/0035-search-insert-position) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Saieiei/Leetcode/tree/master/0084-largest-rectangle-in-histogram) |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0134-gas-station](https://github.com/Saieiei/Leetcode/tree/master/0134-gas-station) |
 | [0239-sliding-window-maximum](https://github.com/Saieiei/Leetcode/tree/master/0239-sliding-window-maximum) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Saieiei/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
@@ -320,6 +323,7 @@ All the leet codes I try to solve with the solution
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0110-balanced-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0110-balanced-binary-tree) |
 | [0112-path-sum](https://github.com/Saieiei/Leetcode/tree/master/0112-path-sum) |
 | [0113-path-sum-ii](https://github.com/Saieiei/Leetcode/tree/master/0113-path-sum-ii) |
@@ -334,6 +338,7 @@ All the leet codes I try to solve with the solution
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0110-balanced-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0110-balanced-binary-tree) |
 | [0112-path-sum](https://github.com/Saieiei/Leetcode/tree/master/0112-path-sum) |
 | [0113-path-sum-ii](https://github.com/Saieiei/Leetcode/tree/master/0113-path-sum-ii) |
