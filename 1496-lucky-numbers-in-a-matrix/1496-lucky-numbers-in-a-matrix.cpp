@@ -43,13 +43,14 @@ public:
 
         vector<int> ans;
         //now we will try to find the common element, if found push it in the ans vector
-        for(int i=0; i<rowSize; i++)
-        {
-            for(int j=0; j<colSize; j++)
-            {
-                if(minRow.count(matrix[i][j]) && maxCol.count(matrix[i][j])) ans.push_back(matrix[i][j]);
-            }
-        }
+        for(int ele: minRow) if(maxCol.count(ele)) ans.push_back(ele);    
+        //for(int i=0; i<rowSize; i++)
+        //{
+        //    for(int j=0; j<colSize; j++)
+        //    {
+        //        if(minRow.count(matrix[i][j]) && maxCol.count(matrix[i][j])) ans.push_back(matrix[i][j]);
+        //    }
+        //}
         return ans;
     }
 };
