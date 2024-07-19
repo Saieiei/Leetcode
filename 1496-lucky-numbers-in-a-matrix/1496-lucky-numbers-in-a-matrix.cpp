@@ -1,5 +1,6 @@
 class Solution {
 public:
+//https://www.youtube.com/watch?v=k_rtL5iUp-A
     vector<int> luckyNumbers (vector<vector<int>>& matrix) {
         //we will save the min element of every rown in 1 set
         //we will save the max element of every col in 1 set
