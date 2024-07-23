@@ -1,6 +1,6 @@
 class Solution {
 public:
-    static bool compare (const  pair<int, int>& a, const  pair<int, int>& b )
+    static bool compare (pair<int, int> a, pair<int, int> b )
     {
         //if freq same, then sort in decresing order
         if(a.second == b.second) return a.first > b.first;
