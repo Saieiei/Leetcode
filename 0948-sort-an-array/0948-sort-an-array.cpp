@@ -1,6 +1,6 @@
 class Solution {
 public:
-//we will do imple merge ort, which will be done baed on recurssion
+//we will do simple merge sort, which will be done baed on recurssion
 
     void merge(vector<int> &nums, vector<int> &temp, int start, int mid, int end)
     {
