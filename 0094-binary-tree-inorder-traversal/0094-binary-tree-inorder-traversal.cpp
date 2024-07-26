@@ -36,7 +36,7 @@ public:
     vector<int> inorderTraversal(TreeNode* root)
     {
         //this is rather moris traverasl
-        //we will use this as it is done in O(N)
+        //we will use this as it is done in O(1) space complexity
         //instrad of backtracking and recurssion, this form the path directly
         //the idea is to go left then keep going right and we also have to make ure that the right of the predecessor is not curr
         vector<int> ans;
