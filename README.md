@@ -170,6 +170,7 @@ All the leet codes I try to solve with the solution
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0142-linked-list-cycle-ii](https://github.com/Saieiei/Leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Saieiei/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0652-find-duplicate-subtrees](https://github.com/Saieiei/Leetcode/tree/master/0652-find-duplicate-subtrees) |
 | [0726-number-of-atoms](https://github.com/Saieiei/Leetcode/tree/master/0726-number-of-atoms) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1207-delete-nodes-and-return-forest](https://github.com/Saieiei/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
@@ -355,6 +356,7 @@ All the leet codes I try to solve with the solution
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0437-path-sum-iii](https://github.com/Saieiei/Leetcode/tree/master/0437-path-sum-iii) |
 | [0543-diameter-of-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0543-diameter-of-binary-tree) |
+| [0652-find-duplicate-subtrees](https://github.com/Saieiei/Leetcode/tree/master/0652-find-duplicate-subtrees) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1207-delete-nodes-and-return-forest](https://github.com/Saieiei/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1653-number-of-good-leaf-nodes-pairs](https://github.com/Saieiei/Leetcode/tree/master/1653-number-of-good-leaf-nodes-pairs) |
@@ -375,6 +377,7 @@ All the leet codes I try to solve with the solution
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0437-path-sum-iii](https://github.com/Saieiei/Leetcode/tree/master/0437-path-sum-iii) |
 | [0543-diameter-of-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0543-diameter-of-binary-tree) |
+| [0652-find-duplicate-subtrees](https://github.com/Saieiei/Leetcode/tree/master/0652-find-duplicate-subtrees) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1207-delete-nodes-and-return-forest](https://github.com/Saieiei/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1653-number-of-good-leaf-nodes-pairs](https://github.com/Saieiei/Leetcode/tree/master/1653-number-of-good-leaf-nodes-pairs) |
@@ -393,6 +396,7 @@ All the leet codes I try to solve with the solution
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0437-path-sum-iii](https://github.com/Saieiei/Leetcode/tree/master/0437-path-sum-iii) |
 | [0543-diameter-of-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0543-diameter-of-binary-tree) |
+| [0652-find-duplicate-subtrees](https://github.com/Saieiei/Leetcode/tree/master/0652-find-duplicate-subtrees) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1207-delete-nodes-and-return-forest](https://github.com/Saieiei/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1653-number-of-good-leaf-nodes-pairs](https://github.com/Saieiei/Leetcode/tree/master/1653-number-of-good-leaf-nodes-pairs) |
