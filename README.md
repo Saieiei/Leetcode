@@ -348,6 +348,7 @@ All the leet codes I try to solve with the solution
 |  |
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0094-binary-tree-inorder-traversal) |
+| [0098-validate-binary-search-tree](https://github.com/Saieiei/Leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/Saieiei/Leetcode/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
@@ -369,6 +370,7 @@ All the leet codes I try to solve with the solution
 |  |
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0094-binary-tree-inorder-traversal) |
+| [0098-validate-binary-search-tree](https://github.com/Saieiei/Leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/Saieiei/Leetcode/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
@@ -390,6 +392,7 @@ All the leet codes I try to solve with the solution
 |  |
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0094-binary-tree-inorder-traversal) |
+| [0098-validate-binary-search-tree](https://github.com/Saieiei/Leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0110-balanced-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0110-balanced-binary-tree) |
 | [0112-path-sum](https://github.com/Saieiei/Leetcode/tree/master/0112-path-sum) |
@@ -442,4 +445,8 @@ All the leet codes I try to solve with the solution
 |  |
 | ------- |
 | [1511-count-number-of-teams](https://github.com/Saieiei/Leetcode/tree/master/1511-count-number-of-teams) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0098-validate-binary-search-tree](https://github.com/Saieiei/Leetcode/tree/master/0098-validate-binary-search-tree) |
 <!---LeetCode Topics End-->
