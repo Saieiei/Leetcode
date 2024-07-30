@@ -28,16 +28,16 @@ public:
         }
 
         //case3: if p is on the left side and q is on the right side of the root
-        if(p->val < root->val && q->val > root->val)
-        {
-            return root;
-        }
-
-        //case4: if q is on the left side and p is on the right side of the root
-        if(q->val < root->val && p->val > root->val)
-        {
-            return root;
-        }
-        return root; //this wont happen mostly
+        //if(p->val < root->val && q->val > root->val)
+        //{
+        //    return root;
+        //}
+//
+        ////case4: if q is on the left side and p is on the right side of the root
+        //if(q->val < root->val && p->val > root->val)
+        //{
+        //    return root;
+        //}
+        return root; 
     }
 };
