@@ -273,6 +273,7 @@ All the leet codes I try to solve with the solution
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/Saieiei/Leetcode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Saieiei/Leetcode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1720-crawler-log-folder](https://github.com/Saieiei/Leetcode/tree/master/1720-crawler-log-folder) |
+| [1756-minimum-deletions-to-make-string-balanced](https://github.com/Saieiei/Leetcode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/Saieiei/Leetcode/tree/master/1818-maximum-score-from-removing-substrings) |
 | [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/Saieiei/Leetcode/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
 | [2502-sort-the-people](https://github.com/Saieiei/Leetcode/tree/master/2502-sort-the-people) |
@@ -303,6 +304,7 @@ All the leet codes I try to solve with the solution
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/Saieiei/Leetcode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Saieiei/Leetcode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1720-crawler-log-folder](https://github.com/Saieiei/Leetcode/tree/master/1720-crawler-log-folder) |
+| [1756-minimum-deletions-to-make-string-balanced](https://github.com/Saieiei/Leetcode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/Saieiei/Leetcode/tree/master/1818-maximum-score-from-removing-substrings) |
 | [2846-robot-collisions](https://github.com/Saieiei/Leetcode/tree/master/2846-robot-collisions) |
 ## Design
@@ -345,6 +347,7 @@ All the leet codes I try to solve with the solution
 | ------- |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/Saieiei/Leetcode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [1511-count-number-of-teams](https://github.com/Saieiei/Leetcode/tree/master/1511-count-number-of-teams) |
+| [1756-minimum-deletions-to-make-string-balanced](https://github.com/Saieiei/Leetcode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
 | [2408-number-of-people-aware-of-a-secret](https://github.com/Saieiei/Leetcode/tree/master/2408-number-of-people-aware-of-a-secret) |
 ## Tree
 |  |
