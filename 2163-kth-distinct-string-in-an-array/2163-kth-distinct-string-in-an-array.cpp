@@ -24,14 +24,11 @@ public:
             mp[arr[i]]++;
         }
 
-        for(string s: arr)
-        {
-            if(mp[s] == 1)
-            {
-                count++;
-                if(count == k) return s;
-            }
+        for(auto& s : arr) {
+            if(mp[s] == 1 && --k == 0)
+                return s;
         }
+ 
         return "";
     }
 };
