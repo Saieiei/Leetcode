@@ -236,6 +236,7 @@ All the leet codes I try to solve with the solution
 | [0883-car-fleet](https://github.com/Saieiei/Leetcode/tree/master/0883-car-fleet) |
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
 | [0987-reveal-cards-in-increasing-order](https://github.com/Saieiei/Leetcode/tree/master/0987-reveal-cards-in-increasing-order) |
+| [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1196-filling-bookcase-shelves](https://github.com/Saieiei/Leetcode/tree/master/1196-filling-bookcase-shelves) |
 | [1207-delete-nodes-and-return-forest](https://github.com/Saieiei/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1333-sort-the-jumbled-numbers](https://github.com/Saieiei/Leetcode/tree/master/1333-sort-the-jumbled-numbers) |
@@ -312,6 +313,7 @@ All the leet codes I try to solve with the solution
 | [0883-car-fleet](https://github.com/Saieiei/Leetcode/tree/master/0883-car-fleet) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/Saieiei/Leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1045-check-if-word-is-valid-after-substitutions](https://github.com/Saieiei/Leetcode/tree/master/1045-check-if-word-is-valid-after-substitutions) |
+| [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/Saieiei/Leetcode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Saieiei/Leetcode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1720-crawler-log-folder](https://github.com/Saieiei/Leetcode/tree/master/1720-crawler-log-folder) |
@@ -331,6 +333,7 @@ All the leet codes I try to solve with the solution
 | [0084-largest-rectangle-in-histogram](https://github.com/Saieiei/Leetcode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0739-daily-temperatures](https://github.com/Saieiei/Leetcode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/Saieiei/Leetcode/tree/master/0883-car-fleet) |
+| [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 ## Queue
 |  |
 | ------- |
@@ -383,6 +386,7 @@ All the leet codes I try to solve with the solution
 | [0652-find-duplicate-subtrees](https://github.com/Saieiei/Leetcode/tree/master/0652-find-duplicate-subtrees) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Saieiei/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
+| [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1207-delete-nodes-and-return-forest](https://github.com/Saieiei/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1653-number-of-good-leaf-nodes-pairs](https://github.com/Saieiei/Leetcode/tree/master/1653-number-of-good-leaf-nodes-pairs) |
 | [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/Saieiei/Leetcode/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
@@ -408,6 +412,7 @@ All the leet codes I try to solve with the solution
 | [0652-find-duplicate-subtrees](https://github.com/Saieiei/Leetcode/tree/master/0652-find-duplicate-subtrees) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Saieiei/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
+| [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1207-delete-nodes-and-return-forest](https://github.com/Saieiei/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1653-number-of-good-leaf-nodes-pairs](https://github.com/Saieiei/Leetcode/tree/master/1653-number-of-good-leaf-nodes-pairs) |
 | [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/Saieiei/Leetcode/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
@@ -480,4 +485,5 @@ All the leet codes I try to solve with the solution
 | [0230-kth-smallest-element-in-a-bst](https://github.com/Saieiei/Leetcode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Saieiei/Leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Saieiei/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
+| [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 <!---LeetCode Topics End-->
