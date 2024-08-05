@@ -18,10 +18,8 @@ public:
 
         //using unordered_map
         unordered_map<string, int> mp;
-        int count = 0;
-        for(int i=0; i<arr.size(); i++)
-        {
-            mp[arr[i]]++;
+        for(string x : arr) {
+            mp[x]++;
         }
 
         for(auto& s : arr) {
