@@ -7,10 +7,10 @@ public:
             if(count(arr.begin(), arr.end(), s)==1)
             {
                 //cout<<"inside 1st if statement " << s<< endl;
-                if(count(ans.begin(), ans.end(), s) == 0)
-                {
+                //if(count(ans.begin(), ans.end(), s) == 0)
+               // {
                     ans.push_back(s);
-                }
+                //}
             }
         }
         if(ans.size() < k) return "";
