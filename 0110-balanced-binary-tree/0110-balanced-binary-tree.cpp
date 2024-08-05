@@ -60,10 +60,11 @@ public:
         int leftHeight = height(root->left);
         int rightHeight = height(root->right);
 
-        //calculate its height
+        //check if balanced
         int balanced = abs(leftHeight - rightHeight);
         if( ans && balanced>1) ans = false;
 
+        //calculate its height
         return (max(leftHeight, rightHeight) + 1);
     }
     bool isBalanced(TreeNode* root)
