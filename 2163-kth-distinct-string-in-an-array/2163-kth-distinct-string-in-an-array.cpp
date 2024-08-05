@@ -1,22 +1,37 @@
 class Solution {
 public:
     string kthDistinct(vector<string>& arr, int k) {
-        vector<string> ans;
+        //using count
+        //vector<string> ans;
+        //for(string s: arr)
+        //{
+        //    if(count(arr.begin(), arr.end(), s)==1)
+        //    {
+        //        ans.push_back(s);
+        //    }
+        //}
+        //if(ans.size() < k) return "";
+        //else
+        //{
+        //    return ans[k-1];
+        //}
+
+        //using unordered_map
+        unordered_map<string, int> mp;
+        int count = 0;
+        for(int i=0; i<arr.size(); i++)
+        {
+            mp[arr[i]]++;
+        }
+
         for(string s: arr)
         {
-            if(count(arr.begin(), arr.end(), s)==1)
+            if(mp[s] == 1)
             {
-                //cout<<"inside 1st if statement " << s<< endl;
-                //if(count(ans.begin(), ans.end(), s) == 0)
-               // {
-                    ans.push_back(s);
-                //}
+                count++;
+                if(count == k) return s;
             }
         }
-        if(ans.size() < k) return "";
-        else
-        {
-            return ans[k-1];
-        }
+        return "";
     }
 };
