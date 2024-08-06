@@ -1,5 +1,4 @@
 # Leetcode
-All the leet codes I try to solve with the solution
 https://leetcode.com/u/saiei/
 
 
