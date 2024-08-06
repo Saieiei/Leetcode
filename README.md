@@ -242,6 +242,7 @@ All the leet codes I try to solve with the solution
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1196-filling-bookcase-shelves](https://github.com/Saieiei/Leetcode/tree/master/1196-filling-bookcase-shelves) |
 | [1207-delete-nodes-and-return-forest](https://github.com/Saieiei/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
+| [1231-replace-elements-with-greatest-element-on-right-side](https://github.com/Saieiei/Leetcode/tree/master/1231-replace-elements-with-greatest-element-on-right-side) |
 | [1333-sort-the-jumbled-numbers](https://github.com/Saieiei/Leetcode/tree/master/1333-sort-the-jumbled-numbers) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/Saieiei/Leetcode/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1511-count-number-of-teams](https://github.com/Saieiei/Leetcode/tree/master/1511-count-number-of-teams) |
