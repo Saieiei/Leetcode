@@ -132,6 +132,7 @@ https://leetcode.com/u/saiei/
 |  |
 | ------- |
 | [0134-gas-station](https://github.com/Saieiei/Leetcode/tree/master/0134-gas-station) |
+| [0890-lemonade-change](https://github.com/Saieiei/Leetcode/tree/master/0890-lemonade-change) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/Saieiei/Leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1285-balance-a-binary-search-tree](https://github.com/Saieiei/Leetcode/tree/master/1285-balance-a-binary-search-tree) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/Saieiei/Leetcode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
@@ -249,6 +250,7 @@ https://leetcode.com/u/saiei/
 | [0739-daily-temperatures](https://github.com/Saieiei/Leetcode/tree/master/0739-daily-temperatures) |
 | [0870-magic-squares-in-grid](https://github.com/Saieiei/Leetcode/tree/master/0870-magic-squares-in-grid) |
 | [0883-car-fleet](https://github.com/Saieiei/Leetcode/tree/master/0883-car-fleet) |
+| [0890-lemonade-change](https://github.com/Saieiei/Leetcode/tree/master/0890-lemonade-change) |
 | [0921-spiral-matrix-iii](https://github.com/Saieiei/Leetcode/tree/master/0921-spiral-matrix-iii) |
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
 | [0987-reveal-cards-in-increasing-order](https://github.com/Saieiei/Leetcode/tree/master/0987-reveal-cards-in-increasing-order) |
