@@ -28,9 +28,9 @@ public:
         //return ans;
 
         //Initialize the minimum and maximum values with the first array's elements
-        int globalMin = arrays[0][0];
+        int globalMin = arrays[0].front();
         int globalMax = arrays[0].back();
-        int maxDiff = 0;
+        int ans = 0;
         
         // Iterate over the arrays starting from the second one
         for (int i = 1; i < arrays.size(); i++) {
@@ -38,14 +38,19 @@ public:
             int localMax = arrays[i].back();
             
             // Calculate the possible maximum differences using the current array
-            maxDiff = max(maxDiff, abs(localMax - globalMin));
-            maxDiff = max(maxDiff, abs(globalMax - localMin));
+            int diff1 = localMax - globalMin;
+            int diff2 = globalMax - localMin;
+            int MaxDiff = max(diff1, diff2);
+            ans = max(MaxDiff, ans);
+            //maxDiff = max(maxDiff, )
+            //maxDiff = max(maxDiff, abs(localMax - globalMin));
+            //maxDiff = max(maxDiff, abs(globalMax - localMin));
             
             // Update the global minimum and maximum
             globalMin = min(globalMin, localMin);
             globalMax = max(globalMax, localMax);
         }
         
-        return maxDiff;
+        return ans;
     }
 };
