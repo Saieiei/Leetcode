@@ -572,4 +572,8 @@ https://leetcode.com/u/saiei/
 |  |
 | ------- |
 | [1240-stone-game-ii](https://github.com/Saieiei/Leetcode/tree/master/1240-stone-game-ii) |
+## Bit Manipulation
+|  |
+| ------- |
+| [1054-complement-of-base-10-integer](https://github.com/Saieiei/Leetcode/tree/master/1054-complement-of-base-10-integer) |
 <!---LeetCode Topics End-->
