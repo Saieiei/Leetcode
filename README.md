@@ -575,5 +575,6 @@ https://leetcode.com/u/saiei/
 ## Bit Manipulation
 |  |
 | ------- |
+| [0476-number-complement](https://github.com/Saieiei/Leetcode/tree/master/0476-number-complement) |
 | [1054-complement-of-base-10-integer](https://github.com/Saieiei/Leetcode/tree/master/1054-complement-of-base-10-integer) |
 <!---LeetCode Topics End-->
