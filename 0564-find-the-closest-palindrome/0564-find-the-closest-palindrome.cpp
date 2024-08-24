@@ -6,13 +6,10 @@ public:
         //u just have to know various cases there can be
         //there will be 3 cases
 
-        //caes1
-        //here we will divide the number in to half
-        //and we will reverse the 1st half and keep it in 2nd half
-            //either the number itself, +1, -1
-        // the same n cannot be accepted
         long long num = stoll(n);
         int len = n.length();
+        if (num <= 10) return to_string(num - 1);  // Handle single-digit cases
+        if (num == 11) return "9";  // Special case for 11
         
         vector<long long> candidates;
         
