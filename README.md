@@ -257,6 +257,7 @@ https://leetcode.com/u/saiei/
 | [0870-magic-squares-in-grid](https://github.com/Saieiei/Leetcode/tree/master/0870-magic-squares-in-grid) |
 | [0883-car-fleet](https://github.com/Saieiei/Leetcode/tree/master/0883-car-fleet) |
 | [0890-lemonade-change](https://github.com/Saieiei/Leetcode/tree/master/0890-lemonade-change) |
+| [0909-stone-game](https://github.com/Saieiei/Leetcode/tree/master/0909-stone-game) |
 | [0921-spiral-matrix-iii](https://github.com/Saieiei/Leetcode/tree/master/0921-spiral-matrix-iii) |
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
 | [0987-reveal-cards-in-increasing-order](https://github.com/Saieiei/Leetcode/tree/master/0987-reveal-cards-in-increasing-order) |
@@ -338,6 +339,7 @@ https://leetcode.com/u/saiei/
 | [0592-fraction-addition-and-subtraction](https://github.com/Saieiei/Leetcode/tree/master/0592-fraction-addition-and-subtraction) |
 | [0650-2-keys-keyboard](https://github.com/Saieiei/Leetcode/tree/master/0650-2-keys-keyboard) |
 | [0870-magic-squares-in-grid](https://github.com/Saieiei/Leetcode/tree/master/0870-magic-squares-in-grid) |
+| [0909-stone-game](https://github.com/Saieiei/Leetcode/tree/master/0909-stone-game) |
 | [1240-stone-game-ii](https://github.com/Saieiei/Leetcode/tree/master/1240-stone-game-ii) |
 | [1642-water-bottles](https://github.com/Saieiei/Leetcode/tree/master/1642-water-bottles) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Saieiei/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
@@ -412,6 +414,7 @@ https://leetcode.com/u/saiei/
 | [0264-ugly-number-ii](https://github.com/Saieiei/Leetcode/tree/master/0264-ugly-number-ii) |
 | [0650-2-keys-keyboard](https://github.com/Saieiei/Leetcode/tree/master/0650-2-keys-keyboard) |
 | [0664-strange-printer](https://github.com/Saieiei/Leetcode/tree/master/0664-strange-printer) |
+| [0909-stone-game](https://github.com/Saieiei/Leetcode/tree/master/0909-stone-game) |
 | [1196-filling-bookcase-shelves](https://github.com/Saieiei/Leetcode/tree/master/1196-filling-bookcase-shelves) |
 | [1240-stone-game-ii](https://github.com/Saieiei/Leetcode/tree/master/1240-stone-game-ii) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/Saieiei/Leetcode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
@@ -579,6 +582,7 @@ https://leetcode.com/u/saiei/
 ## Game Theory
 |  |
 | ------- |
+| [0909-stone-game](https://github.com/Saieiei/Leetcode/tree/master/0909-stone-game) |
 | [1240-stone-game-ii](https://github.com/Saieiei/Leetcode/tree/master/1240-stone-game-ii) |
 ## Bit Manipulation
 |  |
