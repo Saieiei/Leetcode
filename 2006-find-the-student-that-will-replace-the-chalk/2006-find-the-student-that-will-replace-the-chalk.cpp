@@ -1,22 +1,30 @@
 class Solution {
 public:
     int chalkReplacer(vector<int>& chalk, int k) {
-        // Step 1: Calculate the total sum of chalk
+        //this is a easy problem only 
+        //u can do this with %, which saves u many rounds
+
+        //1st we will find out the total sum
         long long int totalSum = 0;
-        for(int i = 0; i < chalk.size(); i++) {
+        for(int i=0; i<chalk.size(); i++)
+        {
             totalSum += chalk[i];
         }
 
-        // Step 2: Use modulo to reduce the problem size
-        int rem = k % totalSum;
+        //now after u have found out the total sum
+        //we will reduce the number of rounds by %
+        int rem = 0;
+        rem = (int) k % totalSum;
 
-        // Step 3: Determine which student will need to replace the chalk
-        for(int i = 0; i < chalk.size(); i++) {
-            if(chalk[i] > rem) return i;
-            rem -= chalk[i];
+        //now after we have reduced the rounds
+        //we have to find which student will take the bait now
+        for(int i=0; i<chalk.size(); i++)
+        {
+            if(chalk[i]>rem) return i;
+            else rem = rem - chalk[i];
+            //cout<<rem<<endl;
         }
 
-        // Just a fallback return, this case won't really happen given the problem constraints
         return -1;
     }
 };
