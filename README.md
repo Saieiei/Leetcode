@@ -192,6 +192,7 @@ https://leetcode.com/u/saiei/
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Saieiei/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0726-number-of-atoms](https://github.com/Saieiei/Leetcode/tree/master/0726-number-of-atoms) |
 | [0870-magic-squares-in-grid](https://github.com/Saieiei/Leetcode/tree/master/0870-magic-squares-in-grid) |
+| [0906-walking-robot-simulation](https://github.com/Saieiei/Leetcode/tree/master/0906-walking-robot-simulation) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Saieiei/Leetcode/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [0999-regions-cut-by-slashes](https://github.com/Saieiei/Leetcode/tree/master/0999-regions-cut-by-slashes) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
@@ -263,6 +264,7 @@ https://leetcode.com/u/saiei/
 | [0870-magic-squares-in-grid](https://github.com/Saieiei/Leetcode/tree/master/0870-magic-squares-in-grid) |
 | [0883-car-fleet](https://github.com/Saieiei/Leetcode/tree/master/0883-car-fleet) |
 | [0890-lemonade-change](https://github.com/Saieiei/Leetcode/tree/master/0890-lemonade-change) |
+| [0906-walking-robot-simulation](https://github.com/Saieiei/Leetcode/tree/master/0906-walking-robot-simulation) |
 | [0909-stone-game](https://github.com/Saieiei/Leetcode/tree/master/0909-stone-game) |
 | [0921-spiral-matrix-iii](https://github.com/Saieiei/Leetcode/tree/master/0921-spiral-matrix-iii) |
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
@@ -308,6 +310,7 @@ https://leetcode.com/u/saiei/
 | ------- |
 | [0592-fraction-addition-and-subtraction](https://github.com/Saieiei/Leetcode/tree/master/0592-fraction-addition-and-subtraction) |
 | [0735-asteroid-collision](https://github.com/Saieiei/Leetcode/tree/master/0735-asteroid-collision) |
+| [0906-walking-robot-simulation](https://github.com/Saieiei/Leetcode/tree/master/0906-walking-robot-simulation) |
 | [0921-spiral-matrix-iii](https://github.com/Saieiei/Leetcode/tree/master/0921-spiral-matrix-iii) |
 | [0987-reveal-cards-in-increasing-order](https://github.com/Saieiei/Leetcode/tree/master/0987-reveal-cards-in-increasing-order) |
 | [1642-water-bottles](https://github.com/Saieiei/Leetcode/tree/master/1642-water-bottles) |
