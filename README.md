@@ -290,6 +290,7 @@ https://leetcode.com/u/saiei/
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/Saieiei/Leetcode/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2035-count-sub-islands](https://github.com/Saieiei/Leetcode/tree/master/2035-count-sub-islands) |
 | [2067-maximum-number-of-points-with-cost](https://github.com/Saieiei/Leetcode/tree/master/2067-maximum-number-of-points-with-cost) |
+| [2155-find-missing-observations](https://github.com/Saieiei/Leetcode/tree/master/2155-find-missing-observations) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/Saieiei/Leetcode/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/Saieiei/Leetcode/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/Saieiei/Leetcode/tree/master/2306-create-binary-tree-from-descriptions) |
@@ -318,6 +319,7 @@ https://leetcode.com/u/saiei/
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Saieiei/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/Saieiei/Leetcode/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2076-sum-of-digits-of-string-after-convert](https://github.com/Saieiei/Leetcode/tree/master/2076-sum-of-digits-of-string-after-convert) |
+| [2155-find-missing-observations](https://github.com/Saieiei/Leetcode/tree/master/2155-find-missing-observations) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/Saieiei/Leetcode/tree/master/2299-merge-nodes-in-between-zeros) |
 | [2408-number-of-people-aware-of-a-secret](https://github.com/Saieiei/Leetcode/tree/master/2408-number-of-people-aware-of-a-secret) |
 | [2846-robot-collisions](https://github.com/Saieiei/Leetcode/tree/master/2846-robot-collisions) |
@@ -359,6 +361,7 @@ https://leetcode.com/u/saiei/
 | [1240-stone-game-ii](https://github.com/Saieiei/Leetcode/tree/master/1240-stone-game-ii) |
 | [1642-water-bottles](https://github.com/Saieiei/Leetcode/tree/master/1642-water-bottles) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Saieiei/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [2155-find-missing-observations](https://github.com/Saieiei/Leetcode/tree/master/2155-find-missing-observations) |
 ## Stack
 |  |
 | ------- |
