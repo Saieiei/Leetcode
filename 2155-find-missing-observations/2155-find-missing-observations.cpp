@@ -1,68 +1,36 @@
 class Solution {
 public:
     vector<int> missingRolls(vector<int>& rolls, int mean, int n) {
-        vector<int> ans(n, 0);
-        //this game is based on average
-        //1st we will find the sum to be found
-        
+        vector<int> ans;
+
+        // Find the sum of the already known rolls
         int sum = 0;
-        for(int num: rolls)
-        {
-            sum = sum + num;
-        }
-        //now we will find the actual sum of the missing elements
-        sum = mean*(rolls.size() + n) - sum;
-
-        //now we have to find out n different elemtns
-        //this can be done by finding the avg
-        int avg = sum / n;
-        int rem = sum % n;
-
-        for(int i=0; i<n; i++)
-        {
-            ans[i]=avg;
-            if(ans[i] < 0 || ans[i] >= 7)
-            {
-                ans.clear();
-                return ans;
-            }
+        for (int num : rolls) {
+            sum += num;
         }
 
-        int index = 0;
-        while(rem>0)
-        {
-            ans[index%n]++;
-            if(ans[index]>6)
-            {
-                ans.clear();
-                return ans;
-            }
-            rem--;
-            index++;
+        // Calculate the total sum we need to achieve with the missing rolls
+        int totalSum = mean * (rolls.size() + n);  // Total expected sum from all rolls
+        int missingSum = totalSum - sum;           // Sum we need to achieve with the missing rolls
+
+        // Check if it is possible to split the missingSum into 'n' valid dice rolls
+        if (missingSum < n || missingSum > 6 * n) {
+            // If missingSum is too small (< n) or too large (> 6 * n), it's impossible
+            return {};
         }
 
-        if(find(ans.begin(), ans.end(), 0) != ans.end())
-        {
-            ans.clear();
-            return ans;
+        // Distribute the sum as evenly as possible
+        int avg = missingSum / n;   // Average value for each missing roll
+        int rem = missingSum % n;   // Remainder to distribute among the rolls
+
+        // Resize the vector to hold the 'n' missing rolls
+        ans.resize(n, avg);  // Initialize all elements to the average value
+
+        // Distribute the remainder by adding 1 to the first 'rem' elements
+        for (int i = 0; i < rem; i++) {
+            ans[i]++;
         }
 
-        //if(find(ans.begin(), ans.end(), 7) != ans.end()) //not possible
-        //{
-        //    vector<int> ans1;
-        //    return ans1;
-        //}
-
-        //for(int i=0; i<n; i++)
-        //{
-        //    if(ans[i]>6 || ans[i]<0)
-        //    {
-        //        //vector<int> ans1;
-        //        ans.clear();
-        //        return ans;
-        //    }
-        //}
-        //cout<<sum;
         return ans;
     }
 };
