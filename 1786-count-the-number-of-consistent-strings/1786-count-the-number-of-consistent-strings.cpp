@@ -25,7 +25,8 @@ public:
         //for(string word: words) checker(alloChar, ans, word);
 //
         //return ans;
-                int ans = 0;
+        
+        int ans = 0;
 
         // Use unordered_set for faster lookups
         unordered_set<char> allowedSet(allowed.begin(), allowed.end());
