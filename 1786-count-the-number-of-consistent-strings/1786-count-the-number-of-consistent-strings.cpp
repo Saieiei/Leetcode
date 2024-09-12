@@ -7,7 +7,8 @@ public:
         {
             auto it = alloChar.find(ch);
             if(it != alloChar.end()) continue; //the element is there 
-            else flag = 0; //the element is not there
+            else 
+            {flag = 0; break;} //the element is not there
         }
         if(flag == 1) ans = ans+1;
     }
