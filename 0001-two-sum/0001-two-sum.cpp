@@ -25,6 +25,7 @@ public:
     //    return indxs;  
     //}
 
+    //its very simple bro
     //we will solve this using hashmap
     //1st we will put all the elements in the index order only
     //next we will see if its complement is there in the hashmap
