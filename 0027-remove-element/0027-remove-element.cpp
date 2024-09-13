@@ -10,7 +10,7 @@ public:
                 nums[index] = nums[i];
                 index++;
             }
-            else continue;
+            //else continue;
         }
         return index;
     }
