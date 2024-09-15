@@ -1,38 +1,43 @@
 class Solution {
 public:
-//the intiution is impossibleeeeee
     int findTheLongestSubstring(string s) {
-    unordered_map<int, int> maskMap;
-    int mask = 0;
-    maskMap[0] = -1;  // base case for the scenario when the entire string has even vowel count
-    int maxLength = 0;
-    
-    for (int i = 0; i < s.size(); ++i) {
-        char c = s[i];
+        // Mapping vowels to their respective bit positions
+        unordered_map<char, int> vowel_to_bit = {
+            {'a', 0},
+            {'e', 1},
+            {'i', 2},
+            {'o', 3},
+            {'u', 4}
+        };
         
-        // Update mask for vowels
-        if (c == 'a') 
-        {mask ^= 1 << 0;
-        cout<<"mask a: "<<mask<<endl;}
-        else if (c == 'e') {mask ^= 1 << 1;
-        cout<<"mask e: "<<mask<<endl;}
-        else if (c == 'i') {mask ^= 1 << 2;
-        cout<<"mask i: "<<mask<<endl;}
-        else if (c == 'o') {mask ^= 1 << 3;
-        cout<<"mask o: "<<mask<<endl;}
-        else if (c == 'u') {mask ^= 1 << 4;
-        cout<<"mask u: "<<mask<<endl;}
+        // Dictionary to store the first occurrence of each mask
+        unordered_map<int, int> mask_dict;
+        mask_dict[0] = -1; // Initialize with mask 0 at index -1
         
-        // Check if this mask has been seen before
-        if (maskMap.find(mask) != maskMap.end()) {
-            // If found, update the maxLength by calculating the difference in indices
-            maxLength = max(maxLength, i - maskMap[mask]);
-        } else {
-            // If not found, store the first occurrence of this mask
-            maskMap[mask] = i;
+        int mask = 0;
+        int max_len = 0;
+        
+        for(int index = 0; index < s.size(); ++index){
+            char char_current = tolower(s[index]); // Ensure case-insensitivity
+            // If the character is a vowel, toggle its corresponding bit
+            if(vowel_to_bit.find(char_current) != vowel_to_bit.end()){
+                int bit = vowel_to_bit[char_current];
+                mask ^= (1 << bit);
+            }
+            
+            // If this mask has been seen before, update max_len
+            if(mask_dict.find(mask) != mask_dict.end()){
+                int current_len = index - mask_dict[mask];
+                if(current_len > max_len){
+                    max_len = current_len;
+                }
+            }
+            else{
+                // Store the first occurrence of this mask
+                mask_dict[mask] = index;
+            }
         }
+        
+        return max_len;
     }
-    
-    return maxLength;
-}
 };
