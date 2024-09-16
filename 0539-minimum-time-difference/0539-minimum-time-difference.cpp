@@ -32,6 +32,7 @@ public:
         {
             ans=min(ans, (mins[i+1]-mins[i]));
         }
+        //it is obvious that to find out teh reverse time we will have to subtarct the largest time with the smallest time (think of a loop, circle etc)
         int reverseTime=(1440+mins[0])-(mins[mins.size()-1]);
         ans=min(ans, reverseTime);
         return ans;
