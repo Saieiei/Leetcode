@@ -10,23 +10,48 @@ public:
         //but in c++ it is had to extract each word from the sentence
         //for this case we will be using stringstream #include <sstream>
 
-        stringstream ss (s1 + " " + s2);
-        string word = "";
-        unordered_map<string, int> wordFreq; //to find the freq of each word
-        vector<string> ans;
+        //stringstream ss (s1 + " " + s2);
+        //string word = "";
+        //unordered_map<string, int> wordFreq; //to find the freq of each word
+        //vector<string> ans;
+//
+        //while(ss >> word)
+        //{   
+        //    wordFreq[word]++;
+        //}
+//
+        //for(auto& it: wordFreq)
+        //{
+        //    if(it.second == 1)
+        //    {
+        //        ans.push_back(it.first);
+        //    }
+        //}
+        //return ans;
 
-        while(ss >> word)
-        {   
-            wordFreq[word]++;
+
+        //this could be the brute force approach in 1 way 
+        unordered_map<string, int> count1, count2;
+        istringstream iss1(s1);
+        string word;
+        while (iss1 >> word) {
+            count1[word]++;
         }
-
-        for(auto& it: wordFreq)
-        {
-            if(it.second == 1)
-            {
-                ans.push_back(it.first);
+        istringstream iss2(s2);
+        while (iss2 >> word) {
+            count2[word]++;
+        }
+        vector<string> result;
+        for (auto& p : count1) {
+            if (p.second == 1 && count2.find(p.first) == count2.end()) {
+                result.push_back(p.first);
             }
         }
-        return ans;
-    }
+        for (auto& p : count2) {
+            if (p.second == 1 && count1.find(p.first) == count1.end()) {
+                result.push_back(p.first);
+            }
+        }
+        return result;
+    }   
 };
