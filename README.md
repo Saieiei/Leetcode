@@ -546,6 +546,7 @@ https://leetcode.com/u/saiei/
 | [0230-kth-smallest-element-in-a-bst](https://github.com/Saieiei/Leetcode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Saieiei/Leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0386-lexicographical-numbers](https://github.com/Saieiei/Leetcode/tree/master/0386-lexicographical-numbers) |
 | [0437-path-sum-iii](https://github.com/Saieiei/Leetcode/tree/master/0437-path-sum-iii) |
 | [0543-diameter-of-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0652-find-duplicate-subtrees](https://github.com/Saieiei/Leetcode/tree/master/0652-find-duplicate-subtrees) |
@@ -685,4 +686,8 @@ https://leetcode.com/u/saiei/
 |  |
 | ------- |
 | [0214-shortest-palindrome](https://github.com/Saieiei/Leetcode/tree/master/0214-shortest-palindrome) |
+## Trie
+|  |
+| ------- |
+| [0386-lexicographical-numbers](https://github.com/Saieiei/Leetcode/tree/master/0386-lexicographical-numbers) |
 <!---LeetCode Topics End-->
