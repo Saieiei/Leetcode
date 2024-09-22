@@ -284,6 +284,7 @@ https://leetcode.com/u/saiei/
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
 | [0987-reveal-cards-in-increasing-order](https://github.com/Saieiei/Leetcode/tree/master/0987-reveal-cards-in-increasing-order) |
 | [0999-regions-cut-by-slashes](https://github.com/Saieiei/Leetcode/tree/master/0999-regions-cut-by-slashes) |
+| [1025-minimum-cost-for-tickets](https://github.com/Saieiei/Leetcode/tree/master/1025-minimum-cost-for-tickets) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1196-filling-bookcase-shelves](https://github.com/Saieiei/Leetcode/tree/master/1196-filling-bookcase-shelves) |
 | [1207-delete-nodes-and-return-forest](https://github.com/Saieiei/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
@@ -464,6 +465,7 @@ https://leetcode.com/u/saiei/
 | [0650-2-keys-keyboard](https://github.com/Saieiei/Leetcode/tree/master/0650-2-keys-keyboard) |
 | [0664-strange-printer](https://github.com/Saieiei/Leetcode/tree/master/0664-strange-printer) |
 | [0909-stone-game](https://github.com/Saieiei/Leetcode/tree/master/0909-stone-game) |
+| [1025-minimum-cost-for-tickets](https://github.com/Saieiei/Leetcode/tree/master/1025-minimum-cost-for-tickets) |
 | [1196-filling-bookcase-shelves](https://github.com/Saieiei/Leetcode/tree/master/1196-filling-bookcase-shelves) |
 | [1240-stone-game-ii](https://github.com/Saieiei/Leetcode/tree/master/1240-stone-game-ii) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/Saieiei/Leetcode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
