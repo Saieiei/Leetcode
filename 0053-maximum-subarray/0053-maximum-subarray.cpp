@@ -34,7 +34,25 @@ public:
     }
 
     int maxSubArray(vector<int>& nums) {
-        int ans=maxSumArrayHelper(nums, 0, nums.size()-1);
-        return ans;
+        //int ans=maxSumArrayHelper(nums, 0, nums.size()-1);
+        //return ans;
+        // Initialize currentSum and maxSum
+    int currentSum = nums[0];
+    int maxSum = nums[0];
+
+    // Iterate through the array starting from the second element
+    for(int i = 1; i < nums.size(); i++) {
+        // Update currentSum by either adding the current element to the previous sum
+        // or starting a new subarray from the current element
+        currentSum = max(nums[i], currentSum + nums[i]);
+
+        // Update maxSum if currentSum is greater
+        maxSum = max(maxSum, currentSum);
+    }
+
+    // Output the result, which is the maximum sum of any subarray
+    //cout << maxSum << endl;
+
+    return maxSum;
     }
 };
