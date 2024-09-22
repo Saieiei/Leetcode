@@ -315,6 +315,7 @@ https://leetcode.com/u/saiei/
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/Saieiei/Leetcode/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/Saieiei/Leetcode/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2411-spiral-matrix-iv](https://github.com/Saieiei/Leetcode/tree/master/2411-spiral-matrix-iv) |
+| [2432-number-of-zero-filled-subarrays](https://github.com/Saieiei/Leetcode/tree/master/2432-number-of-zero-filled-subarrays) |
 | [2502-sort-the-people](https://github.com/Saieiei/Leetcode/tree/master/2502-sort-the-people) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/Saieiei/Leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2727-number-of-senior-citizens](https://github.com/Saieiei/Leetcode/tree/master/2727-number-of-senior-citizens) |
@@ -395,6 +396,7 @@ https://leetcode.com/u/saiei/
 | [1642-water-bottles](https://github.com/Saieiei/Leetcode/tree/master/1642-water-bottles) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Saieiei/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2155-find-missing-observations](https://github.com/Saieiei/Leetcode/tree/master/2155-find-missing-observations) |
+| [2432-number-of-zero-filled-subarrays](https://github.com/Saieiei/Leetcode/tree/master/2432-number-of-zero-filled-subarrays) |
 | [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/Saieiei/Leetcode/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
 ## Stack
 |  |
