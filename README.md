@@ -209,6 +209,7 @@ https://leetcode.com/u/saiei/
 | [2163-kth-distinct-string-in-an-array](https://github.com/Saieiei/Leetcode/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/Saieiei/Leetcode/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2502-sort-the-people](https://github.com/Saieiei/Leetcode/tree/master/2502-sort-the-people) |
+| [2755-extra-characters-in-a-string](https://github.com/Saieiei/Leetcode/tree/master/2755-extra-characters-in-a-string) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Saieiei/Leetcode/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/Saieiei/Leetcode/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 ## Linked List
@@ -321,6 +322,7 @@ https://leetcode.com/u/saiei/
 | [2502-sort-the-people](https://github.com/Saieiei/Leetcode/tree/master/2502-sort-the-people) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/Saieiei/Leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2727-number-of-senior-citizens](https://github.com/Saieiei/Leetcode/tree/master/2727-number-of-senior-citizens) |
+| [2755-extra-characters-in-a-string](https://github.com/Saieiei/Leetcode/tree/master/2755-extra-characters-in-a-string) |
 | [2846-robot-collisions](https://github.com/Saieiei/Leetcode/tree/master/2846-robot-collisions) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/Saieiei/Leetcode/tree/master/3235-minimum-cost-to-convert-string-i) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/Saieiei/Leetcode/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
@@ -382,6 +384,7 @@ https://leetcode.com/u/saiei/
 | [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/Saieiei/Leetcode/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
 | [2502-sort-the-people](https://github.com/Saieiei/Leetcode/tree/master/2502-sort-the-people) |
 | [2727-number-of-senior-citizens](https://github.com/Saieiei/Leetcode/tree/master/2727-number-of-senior-citizens) |
+| [2755-extra-characters-in-a-string](https://github.com/Saieiei/Leetcode/tree/master/2755-extra-characters-in-a-string) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/Saieiei/Leetcode/tree/master/3235-minimum-cost-to-convert-string-i) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Saieiei/Leetcode/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 ## Math
@@ -488,6 +491,7 @@ https://leetcode.com/u/saiei/
 | [1756-minimum-deletions-to-make-string-balanced](https://github.com/Saieiei/Leetcode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
 | [2067-maximum-number-of-points-with-cost](https://github.com/Saieiei/Leetcode/tree/master/2067-maximum-number-of-points-with-cost) |
 | [2408-number-of-people-aware-of-a-secret](https://github.com/Saieiei/Leetcode/tree/master/2408-number-of-people-aware-of-a-secret) |
+| [2755-extra-characters-in-a-string](https://github.com/Saieiei/Leetcode/tree/master/2755-extra-characters-in-a-string) |
 ## Tree
 |  |
 | ------- |
@@ -709,4 +713,5 @@ https://leetcode.com/u/saiei/
 | ------- |
 | [0386-lexicographical-numbers](https://github.com/Saieiei/Leetcode/tree/master/0386-lexicographical-numbers) |
 | [0440-k-th-smallest-in-lexicographical-order](https://github.com/Saieiei/Leetcode/tree/master/0440-k-th-smallest-in-lexicographical-order) |
+| [2755-extra-characters-in-a-string](https://github.com/Saieiei/Leetcode/tree/master/2755-extra-characters-in-a-string) |
 <!---LeetCode Topics End-->
