@@ -10,9 +10,9 @@ public:
     int rank = 1;
     
     // Assign ranks to the sorted elements, ensuring unique elements get unique ranks
-    for (int num : sortedArr) {
-        if (rankMap.find(num) == rankMap.end()) {  // Only assign rank if not already assigned
-            rankMap[num] = rank;
+    for (int i=0; i<sortedArr.size();  i++) {
+        if (rankMap.find(sortedArr[i]) == rankMap.end()) {  // Only assign rank if not already assigned
+            rankMap[sortedArr[i]] = rank;
             rank++;
         }
     }
