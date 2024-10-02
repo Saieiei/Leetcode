@@ -19,8 +19,8 @@ public:
     
     // Step 3: Replace each element in the original array with its rank
     vector<int> result;
-    for (int num : arr) {
-        result.push_back(rankMap[num]);
+    for (int i=0; i<arr.size(); i++) {
+        result.push_back(rankMap[arr[i]]);
     }
     
     return result;
