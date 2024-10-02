@@ -6,7 +6,7 @@ public:
     sort(sortedArr.begin(), sortedArr.end());
     
     // Step 2: Use a map to assign ranks to each unique element
-    map<int, int> rankMap;
+    unordered_map<int, int> rankMap;
     int rank = 1;
     
     // Assign ranks to the sorted elements, ensuring unique elements get unique ranks
