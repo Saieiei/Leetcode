@@ -163,6 +163,7 @@ https://leetcode.com/u/saiei/
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
 | [0987-reveal-cards-in-increasing-order](https://github.com/Saieiei/Leetcode/tree/master/0987-reveal-cards-in-increasing-order) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
+| [1256-rank-transform-of-an-array](https://github.com/Saieiei/Leetcode/tree/master/1256-rank-transform-of-an-array) |
 | [1333-sort-the-jumbled-numbers](https://github.com/Saieiei/Leetcode/tree/master/1333-sort-the-jumbled-numbers) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/Saieiei/Leetcode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/Saieiei/Leetcode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
@@ -202,6 +203,7 @@ https://leetcode.com/u/saiei/
 | [0999-regions-cut-by-slashes](https://github.com/Saieiei/Leetcode/tree/master/0999-regions-cut-by-slashes) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1207-delete-nodes-and-return-forest](https://github.com/Saieiei/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
+| [1256-rank-transform-of-an-array](https://github.com/Saieiei/Leetcode/tree/master/1256-rank-transform-of-an-array) |
 | [1267-remove-zero-sum-consecutive-nodes-from-linked-list](https://github.com/Saieiei/Leetcode/tree/master/1267-remove-zero-sum-consecutive-nodes-from-linked-list) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/Saieiei/Leetcode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/Saieiei/Leetcode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
@@ -304,6 +306,7 @@ https://leetcode.com/u/saiei/
 | [1207-delete-nodes-and-return-forest](https://github.com/Saieiei/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1231-replace-elements-with-greatest-element-on-right-side](https://github.com/Saieiei/Leetcode/tree/master/1231-replace-elements-with-greatest-element-on-right-side) |
 | [1240-stone-game-ii](https://github.com/Saieiei/Leetcode/tree/master/1240-stone-game-ii) |
+| [1256-rank-transform-of-an-array](https://github.com/Saieiei/Leetcode/tree/master/1256-rank-transform-of-an-array) |
 | [1325-path-with-maximum-probability](https://github.com/Saieiei/Leetcode/tree/master/1325-path-with-maximum-probability) |
 | [1333-sort-the-jumbled-numbers](https://github.com/Saieiei/Leetcode/tree/master/1333-sort-the-jumbled-numbers) |
 | [1435-xor-queries-of-a-subarray](https://github.com/Saieiei/Leetcode/tree/master/1435-xor-queries-of-a-subarray) |
