@@ -5,7 +5,7 @@ public:
         string s1 = "AB";
         string s2 = "CD";
     
-        while(true)
+        while(s.find(s1) != string::npos || s.find(s2) != string::npos)
         {
             if(s.find(s1) != string::npos)
             {
@@ -17,11 +17,11 @@ public:
                 int index = s.find(s2);
                 s = s.erase(index, 2);
             }
-            else
-            {
-                //no more possible
-                break;
-            }
+            //else
+            //{
+            //    //no more possible
+            //    break;
+            //}
         }
         return s.length();
     }
