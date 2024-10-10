@@ -309,6 +309,7 @@ https://leetcode.com/u/saiei/
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
 | [0987-reveal-cards-in-increasing-order](https://github.com/Saieiei/Leetcode/tree/master/0987-reveal-cards-in-increasing-order) |
 | [0999-regions-cut-by-slashes](https://github.com/Saieiei/Leetcode/tree/master/0999-regions-cut-by-slashes) |
+| [1002-maximum-width-ramp](https://github.com/Saieiei/Leetcode/tree/master/1002-maximum-width-ramp) |
 | [1025-minimum-cost-for-tickets](https://github.com/Saieiei/Leetcode/tree/master/1025-minimum-cost-for-tickets) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1196-filling-bookcase-shelves](https://github.com/Saieiei/Leetcode/tree/master/1196-filling-bookcase-shelves) |
@@ -460,6 +461,7 @@ https://leetcode.com/u/saiei/
 | [0776-n-ary-tree-postorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [0883-car-fleet](https://github.com/Saieiei/Leetcode/tree/master/0883-car-fleet) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/Saieiei/Leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
+| [1002-maximum-width-ramp](https://github.com/Saieiei/Leetcode/tree/master/1002-maximum-width-ramp) |
 | [1045-check-if-word-is-valid-after-substitutions](https://github.com/Saieiei/Leetcode/tree/master/1045-check-if-word-is-valid-after-substitutions) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/Saieiei/Leetcode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
@@ -491,6 +493,7 @@ https://leetcode.com/u/saiei/
 | [0316-remove-duplicate-letters](https://github.com/Saieiei/Leetcode/tree/master/0316-remove-duplicate-letters) |
 | [0739-daily-temperatures](https://github.com/Saieiei/Leetcode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/Saieiei/Leetcode/tree/master/0883-car-fleet) |
+| [1002-maximum-width-ramp](https://github.com/Saieiei/Leetcode/tree/master/1002-maximum-width-ramp) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 ## Queue
 |  |
