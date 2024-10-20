@@ -1,4 +1,5 @@
 class Solution {
+    //https://www.youtube.com/watch?v=7MODP3hx3yw
 public:
 //this is not a hard q, its medium level only and little lengthy
 //we have to use stacks, FILO  or LIFO
@@ -62,4 +63,5 @@ public:
         if(st.top() == 't') return true;
         else return false;
     }
+    //proud of u brother
 };
