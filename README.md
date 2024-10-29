@@ -377,6 +377,7 @@ https://leetcode.com/u/saiei/
 | [2616-maximal-score-after-applying-k-operations](https://github.com/Saieiei/Leetcode/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2727-number-of-senior-citizens](https://github.com/Saieiei/Leetcode/tree/master/2727-number-of-senior-citizens) |
 | [2755-extra-characters-in-a-string](https://github.com/Saieiei/Leetcode/tree/master/2755-extra-characters-in-a-string) |
+| [2794-maximum-number-of-moves-in-a-grid](https://github.com/Saieiei/Leetcode/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 | [2846-robot-collisions](https://github.com/Saieiei/Leetcode/tree/master/2846-robot-collisions) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/Saieiei/Leetcode/tree/master/3235-minimum-cost-to-convert-string-i) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Saieiei/Leetcode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
@@ -578,6 +579,7 @@ https://leetcode.com/u/saiei/
 | [2408-number-of-people-aware-of-a-secret](https://github.com/Saieiei/Leetcode/tree/master/2408-number-of-people-aware-of-a-secret) |
 | [2586-longest-square-streak-in-an-array](https://github.com/Saieiei/Leetcode/tree/master/2586-longest-square-streak-in-an-array) |
 | [2755-extra-characters-in-a-string](https://github.com/Saieiei/Leetcode/tree/master/2755-extra-characters-in-a-string) |
+| [2794-maximum-number-of-moves-in-a-grid](https://github.com/Saieiei/Leetcode/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 ## Tree
 |  |
 | ------- |
@@ -716,6 +718,7 @@ https://leetcode.com/u/saiei/
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/Saieiei/Leetcode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [2035-count-sub-islands](https://github.com/Saieiei/Leetcode/tree/master/2035-count-sub-islands) |
 | [2411-spiral-matrix-iv](https://github.com/Saieiei/Leetcode/tree/master/2411-spiral-matrix-iv) |
+| [2794-maximum-number-of-moves-in-a-grid](https://github.com/Saieiei/Leetcode/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 ## Bucket Sort
 |  |
 | ------- |
