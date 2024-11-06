@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/find-if-array-can-be-sorted">3291. Find if Array Can Be Sorted</a></h2><h3>Medium</h3><hr><p>You are given a <strong>0-indexed</strong> array of <strong>positive</strong> integers <code>nums</code>.</p>
+<h2><a href="https://leetcode.com/problems/find-if-array-can-be-sorted">Find if Array Can Be Sorted</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>You are given a <strong>0-indexed</strong> array of <strong>positive</strong> integers <code>nums</code>.</p>
 
 <p>In one <strong>operation</strong>, you can swap any two <strong>adjacent</strong> elements if they have the <strong>same</strong> number of <span data-keyword="set-bit">set bits</span>. You are allowed to do this operation <strong>any</strong> number of times (<strong>including zero</strong>).</p>
 
