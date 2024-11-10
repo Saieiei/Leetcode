@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii">3380. Shortest Subarray With OR at Least K II</a></h2><h3>Medium</h3><hr><p>You are given an array <code>nums</code> of <strong>non-negative</strong> integers and an integer <code>k</code>.</p>
+<h2><a href="https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii">Shortest Subarray With OR at Least K II</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>You are given an array <code>nums</code> of <strong>non-negative</strong> integers and an integer <code>k</code>.</p>
 
 <p>An array is called <strong>special</strong> if the bitwise <code>OR</code> of all of its elements is <strong>at least</strong> <code>k</code>.</p>
 
