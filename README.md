@@ -384,6 +384,7 @@ https://leetcode.com/u/saiei/
 | [2188-minimized-maximum-of-products-distributed-to-any-store](https://github.com/Saieiei/Leetcode/tree/master/2188-minimized-maximum-of-products-distributed-to-any-store) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/Saieiei/Leetcode/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/Saieiei/Leetcode/tree/master/2306-create-binary-tree-from-descriptions) |
+| [2343-count-unguarded-cells-in-the-grid](https://github.com/Saieiei/Leetcode/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/Saieiei/Leetcode/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
 | [2411-spiral-matrix-iv](https://github.com/Saieiei/Leetcode/tree/master/2411-spiral-matrix-iv) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/Saieiei/Leetcode/tree/master/2432-number-of-zero-filled-subarrays) |
@@ -443,6 +444,7 @@ https://leetcode.com/u/saiei/
 | [2076-sum-of-digits-of-string-after-convert](https://github.com/Saieiei/Leetcode/tree/master/2076-sum-of-digits-of-string-after-convert) |
 | [2155-find-missing-observations](https://github.com/Saieiei/Leetcode/tree/master/2155-find-missing-observations) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/Saieiei/Leetcode/tree/master/2299-merge-nodes-in-between-zeros) |
+| [2343-count-unguarded-cells-in-the-grid](https://github.com/Saieiei/Leetcode/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2408-number-of-people-aware-of-a-secret](https://github.com/Saieiei/Leetcode/tree/master/2408-number-of-people-aware-of-a-secret) |
 | [2411-spiral-matrix-iv](https://github.com/Saieiei/Leetcode/tree/master/2411-spiral-matrix-iv) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/Saieiei/Leetcode/tree/master/2800-minimum-string-length-after-removing-substrings) |
@@ -774,6 +776,7 @@ https://leetcode.com/u/saiei/
 | [1496-lucky-numbers-in-a-matrix](https://github.com/Saieiei/Leetcode/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/Saieiei/Leetcode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [2035-count-sub-islands](https://github.com/Saieiei/Leetcode/tree/master/2035-count-sub-islands) |
+| [2343-count-unguarded-cells-in-the-grid](https://github.com/Saieiei/Leetcode/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2411-spiral-matrix-iv](https://github.com/Saieiei/Leetcode/tree/master/2411-spiral-matrix-iv) |
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/Saieiei/Leetcode/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 ## Bucket Sort
