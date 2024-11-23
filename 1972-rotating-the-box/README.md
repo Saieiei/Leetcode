@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/rotating-the-box">1972. Rotating the Box</a></h2><h3>Medium</h3><hr><p>You are given an <code>m x n</code> matrix of characters <code>box</code> representing a side-view of a box. Each cell of the box is one of the following:</p>
+<h2><a href="https://leetcode.com/problems/rotating-the-box">Rotating the Box</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>You are given an <code>m x n</code> matrix of characters <code>box</code> representing a side-view of a box. Each cell of the box is one of the following:</p>
 
 <ul>
 	<li>A stone <code>&#39;#&#39;</code></li>
