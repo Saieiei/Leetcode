@@ -333,6 +333,7 @@ https://leetcode.com/u/saiei/
 | [0731-my-calendar-ii](https://github.com/Saieiei/Leetcode/tree/master/0731-my-calendar-ii) |
 | [0735-asteroid-collision](https://github.com/Saieiei/Leetcode/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/Saieiei/Leetcode/tree/master/0739-daily-temperatures) |
+| [0787-sliding-puzzle](https://github.com/Saieiei/Leetcode/tree/master/0787-sliding-puzzle) |
 | [0859-design-circular-deque](https://github.com/Saieiei/Leetcode/tree/master/0859-design-circular-deque) |
 | [0870-magic-squares-in-grid](https://github.com/Saieiei/Leetcode/tree/master/0870-magic-squares-in-grid) |
 | [0883-car-fleet](https://github.com/Saieiei/Leetcode/tree/master/0883-car-fleet) |
@@ -756,6 +757,7 @@ https://leetcode.com/u/saiei/
 | [0104-maximum-depth-of-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0112-path-sum](https://github.com/Saieiei/Leetcode/tree/master/0112-path-sum) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Saieiei/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
+| [0787-sliding-puzzle](https://github.com/Saieiei/Leetcode/tree/master/0787-sliding-puzzle) |
 | [0999-regions-cut-by-slashes](https://github.com/Saieiei/Leetcode/tree/master/0999-regions-cut-by-slashes) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
@@ -775,6 +777,7 @@ https://leetcode.com/u/saiei/
 ## Matrix
 |  |
 | ------- |
+| [0787-sliding-puzzle](https://github.com/Saieiei/Leetcode/tree/master/0787-sliding-puzzle) |
 | [0870-magic-squares-in-grid](https://github.com/Saieiei/Leetcode/tree/master/0870-magic-squares-in-grid) |
 | [0921-spiral-matrix-iii](https://github.com/Saieiei/Leetcode/tree/master/0921-spiral-matrix-iii) |
 | [0999-regions-cut-by-slashes](https://github.com/Saieiei/Leetcode/tree/master/0999-regions-cut-by-slashes) |
