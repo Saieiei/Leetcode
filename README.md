@@ -159,6 +159,7 @@ https://leetcode.com/u/saiei/
 | [2171-second-minimum-time-to-reach-destination](https://github.com/Saieiei/Leetcode/tree/master/2171-second-minimum-time-to-reach-destination) |
 | [2379-maximum-total-importance-of-roads](https://github.com/Saieiei/Leetcode/tree/master/2379-maximum-total-importance-of-roads) |
 | [2803-modify-graph-edge-weights](https://github.com/Saieiei/Leetcode/tree/master/2803-modify-graph-edge-weights) |
+| [3189-find-champion-ii](https://github.com/Saieiei/Leetcode/tree/master/3189-find-champion-ii) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/Saieiei/Leetcode/tree/master/3235-minimum-cost-to-convert-string-i) |
 ## Sorting
 |  |
