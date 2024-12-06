@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-i">2640. Maximum Number of Integers to Choose From a Range I</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>banned</code> and two integers <code>n</code> and <code>maxSum</code>. You are choosing some number of integers following the below rules:</p>
+<h2><a href="https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-i">Maximum Number of Integers to Choose From a Range I</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>You are given an integer array <code>banned</code> and two integers <code>n</code> and <code>maxSum</code>. You are choosing some number of integers following the below rules:</p>
 
 <ul>
 	<li>The chosen integers have to be in the range <code>[1, n]</code>.</li>
