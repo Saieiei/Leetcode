@@ -427,6 +427,7 @@ https://leetcode.com/u/saiei/
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/Saieiei/Leetcode/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [2502-sort-the-people](https://github.com/Saieiei/Leetcode/tree/master/2502-sort-the-people) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/Saieiei/Leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
+| [2533-bitwise-xor-of-all-pairings](https://github.com/Saieiei/Leetcode/tree/master/2533-bitwise-xor-of-all-pairings) |
 | [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/Saieiei/Leetcode/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Saieiei/Leetcode/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2554-minimum-total-distance-traveled](https://github.com/Saieiei/Leetcode/tree/master/2554-minimum-total-distance-traveled) |
@@ -935,6 +936,7 @@ https://leetcode.com/u/saiei/
 | [2323-minimum-bit-flips-to-convert-number](https://github.com/Saieiei/Leetcode/tree/master/2323-minimum-bit-flips-to-convert-number) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/Saieiei/Leetcode/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/Saieiei/Leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
+| [2533-bitwise-xor-of-all-pairings](https://github.com/Saieiei/Leetcode/tree/master/2533-bitwise-xor-of-all-pairings) |
 | [3291-find-if-array-can-be-sorted](https://github.com/Saieiei/Leetcode/tree/master/3291-find-if-array-can-be-sorted) |
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/Saieiei/Leetcode/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 | [3394-minimum-array-end](https://github.com/Saieiei/Leetcode/tree/master/3394-minimum-array-end) |
@@ -947,6 +949,7 @@ https://leetcode.com/u/saiei/
 |  |
 | ------- |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/Saieiei/Leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
+| [2533-bitwise-xor-of-all-pairings](https://github.com/Saieiei/Leetcode/tree/master/2533-bitwise-xor-of-all-pairings) |
 ## Memoization
 |  |
 | ------- |
