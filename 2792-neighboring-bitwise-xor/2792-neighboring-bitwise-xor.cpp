@@ -32,6 +32,6 @@ public:
         {
             ans = ans^element;
         }
-        if(ans == 0) return 1; else return 0;
+        return ans == 0;
     }
 };
