@@ -416,6 +416,7 @@ https://leetcode.com/u/saiei/
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/Saieiei/Leetcode/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2067-maximum-number-of-points-with-cost](https://github.com/Saieiei/Leetcode/tree/master/2067-maximum-number-of-points-with-cost) |
 | [2089-maximum-matrix-sum](https://github.com/Saieiei/Leetcode/tree/master/2089-maximum-matrix-sum) |
+| [2145-grid-game](https://github.com/Saieiei/Leetcode/tree/master/2145-grid-game) |
 | [2155-find-missing-observations](https://github.com/Saieiei/Leetcode/tree/master/2155-find-missing-observations) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/Saieiei/Leetcode/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2164-two-best-non-overlapping-events](https://github.com/Saieiei/Leetcode/tree/master/2164-two-best-non-overlapping-events) |
@@ -856,6 +857,7 @@ https://leetcode.com/u/saiei/
 | [1972-rotating-the-box](https://github.com/Saieiei/Leetcode/tree/master/1972-rotating-the-box) |
 | [2035-count-sub-islands](https://github.com/Saieiei/Leetcode/tree/master/2035-count-sub-islands) |
 | [2089-maximum-matrix-sum](https://github.com/Saieiei/Leetcode/tree/master/2089-maximum-matrix-sum) |
+| [2145-grid-game](https://github.com/Saieiei/Leetcode/tree/master/2145-grid-game) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/Saieiei/Leetcode/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/Saieiei/Leetcode/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
 | [2411-spiral-matrix-iv](https://github.com/Saieiei/Leetcode/tree/master/2411-spiral-matrix-iv) |
@@ -930,6 +932,7 @@ https://leetcode.com/u/saiei/
 | [1694-make-sum-divisible-by-p](https://github.com/Saieiei/Leetcode/tree/master/1694-make-sum-divisible-by-p) |
 | [1940-maximum-xor-for-each-query](https://github.com/Saieiei/Leetcode/tree/master/1940-maximum-xor-for-each-query) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/Saieiei/Leetcode/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
+| [2145-grid-game](https://github.com/Saieiei/Leetcode/tree/master/2145-grid-game) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/Saieiei/Leetcode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [3427-special-array-ii](https://github.com/Saieiei/Leetcode/tree/master/3427-special-array-ii) |
 ## Game Theory
