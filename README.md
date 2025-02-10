@@ -517,6 +517,7 @@ https://leetcode.com/u/saiei/
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/Saieiei/Leetcode/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/Saieiei/Leetcode/tree/master/2800-minimum-string-length-after-removing-substrings) |
 | [2846-robot-collisions](https://github.com/Saieiei/Leetcode/tree/master/2846-robot-collisions) |
+| [3447-clear-digits](https://github.com/Saieiei/Leetcode/tree/master/3447-clear-digits) |
 ## String
 |  |
 | ------- |
@@ -573,6 +574,7 @@ https://leetcode.com/u/saiei/
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/Saieiei/Leetcode/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Saieiei/Leetcode/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Saieiei/Leetcode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
+| [3447-clear-digits](https://github.com/Saieiei/Leetcode/tree/master/3447-clear-digits) |
 | [3451-string-compression-iii](https://github.com/Saieiei/Leetcode/tree/master/3451-string-compression-iii) |
 ## Math
 |  |
@@ -628,6 +630,7 @@ https://leetcode.com/u/saiei/
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/Saieiei/Leetcode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/Saieiei/Leetcode/tree/master/2800-minimum-string-length-after-removing-substrings) |
 | [2846-robot-collisions](https://github.com/Saieiei/Leetcode/tree/master/2846-robot-collisions) |
+| [3447-clear-digits](https://github.com/Saieiei/Leetcode/tree/master/3447-clear-digits) |
 ## Design
 |  |
 | ------- |
