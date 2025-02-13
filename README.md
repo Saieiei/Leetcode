@@ -226,6 +226,7 @@ https://leetcode.com/u/saiei/
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/Saieiei/Leetcode/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [2711-minimum-time-to-visit-a-cell-in-a-grid](https://github.com/Saieiei/Leetcode/tree/master/2711-minimum-time-to-visit-a-cell-in-a-grid) |
 | [2803-modify-graph-edge-weights](https://github.com/Saieiei/Leetcode/tree/master/2803-modify-graph-edge-weights) |
+| [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/Saieiei/Leetcode/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 ## Hash Table
 |  |
 | ------- |
@@ -464,6 +465,7 @@ https://leetcode.com/u/saiei/
 | [3235-minimum-cost-to-convert-string-i](https://github.com/Saieiei/Leetcode/tree/master/3235-minimum-cost-to-convert-string-i) |
 | [3291-find-if-array-can-be-sorted](https://github.com/Saieiei/Leetcode/tree/master/3291-find-if-array-can-be-sorted) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Saieiei/Leetcode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
+| [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/Saieiei/Leetcode/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/Saieiei/Leetcode/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 | [3427-special-array-ii](https://github.com/Saieiei/Leetcode/tree/master/3427-special-array-ii) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/Saieiei/Leetcode/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
@@ -518,6 +520,7 @@ https://leetcode.com/u/saiei/
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/Saieiei/Leetcode/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/Saieiei/Leetcode/tree/master/2800-minimum-string-length-after-removing-substrings) |
 | [2846-robot-collisions](https://github.com/Saieiei/Leetcode/tree/master/2846-robot-collisions) |
+| [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/Saieiei/Leetcode/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 | [3447-clear-digits](https://github.com/Saieiei/Leetcode/tree/master/3447-clear-digits) |
 ## String
 |  |
