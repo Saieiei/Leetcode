@@ -413,6 +413,7 @@ https://leetcode.com/u/saiei/
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/Saieiei/Leetcode/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/Saieiei/Leetcode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1803-average-waiting-time](https://github.com/Saieiei/Leetcode/tree/master/1803-average-waiting-time) |
+| [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/Saieiei/Leetcode/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [1876-map-of-highest-peak](https://github.com/Saieiei/Leetcode/tree/master/1876-map-of-highest-peak) |
 | [1886-minimum-limit-of-balls-in-a-bag](https://github.com/Saieiei/Leetcode/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
 | [1923-sentence-similarity-iii](https://github.com/Saieiei/Leetcode/tree/master/1923-sentence-similarity-iii) |
@@ -868,6 +869,7 @@ https://leetcode.com/u/saiei/
 | [0040-combination-sum-ii](https://github.com/Saieiei/Leetcode/tree/master/0040-combination-sum-ii) |
 | [0113-path-sum-ii](https://github.com/Saieiei/Leetcode/tree/master/0113-path-sum-ii) |
 | [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/Saieiei/Leetcode/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
+| [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/Saieiei/Leetcode/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/Saieiei/Leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2802-find-the-punishment-number-of-an-integer](https://github.com/Saieiei/Leetcode/tree/master/2802-find-the-punishment-number-of-an-integer) |
 ## Matrix
