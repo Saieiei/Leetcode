@@ -1,50 +1,49 @@
-//mapping function
-//week5 cl3
-//we will map the pattern and each string on vector words
-    //then we will compare the outputs of the mapped pattern and  each string on vector words
-    //if same push back the words in a vector called ans and return it in the end
 class Solution {
 public:
-    //mapping the strings and implementation
-    void mappingTheString(string& str) //make sure to give &, or else it wont work
+    //normalisation
+    void normaliseString(string& s)
     {
-        char start='a';
-        char mapping[200]={0};
-        for(auto ch:str)
+        //1st create normalisation
+        unordered_map<char, char> mp;
+        char start = 'a';
+        for(int i=0; i<s.length(); i++)
         {
-            if(mapping[ch]==0) //not mapping[ch]=='0'
+            char ch = s[i];
+            if(mp.find(ch) == mp.end())
             {
-                mapping[ch]=start;
+                mp[ch] = start;
                 start++;
             }
         }
 
-        //implementation of the mapping on the string, this will affect the string which will be trasformed according to the mapping condition
-
-        //for(auto ch:str) //this is not corect
-        //{
-            //str[ch]=mapping[ch];  Here, ch is a character from the string str, but you are using it as an index to access elements in the string, which is incorrect.
-       // }
-
-       for(int i=0;i<str.length();i++)
-       {
-           char ch=str[i];
-           str[i]=mapping[ch];
-       }
-    }
-    vector<string> findAndReplacePattern(vector<string>& words, string pattern) {
-        vector<string> ans;
-        mappingTheString(pattern);
-
-        for(string str:words) //for every string in the vector words
+        //2nd apply the normalisation
+        for(int i=0; i<s.length(); i++)
         {
-            string temp=str; //we should not affect the str as we need the orginal string to be displayed
-            mappingTheString(temp);
-            if(temp==pattern)
-            {
-                ans.push_back(str);
-            }
+            char ch = s[i];
+            s[i] = mp[ch];
         }
+    }
+
+    vector<string> findAndReplacePattern(vector<string>& words, string pattern) {
+        //so basicall u have no otion to solve this untill u normalise these strings
+        //so u normalise the list of strings and u also normalise the pattern
+        //and if the normalised list of strings and the pattern are the same, then that string from the list of string is considered for output
+
+        
+
+        vector<string> ans;
+
+        //take the pattern and normalise it
+        normaliseString(pattern);
+
+        //now normalise the list of strings and check if they are matching with the normalised pattern
+        for(int i=0; i<words.size(); i++)
+        {
+            string checkPattern = words[i];
+            normaliseString(checkPattern);
+            if(checkPattern == pattern) ans.push_back(words[i]);
+        }
+
         return ans;
     }
 };
