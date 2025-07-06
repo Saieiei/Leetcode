@@ -9,6 +9,8 @@ public:
         string prefix = strs[0];
 
         for (int i = 1; i < strs.size(); i++) {
+
+            //this will keep shrinking as it goes through the strings
             while (strs[i].find(prefix) != 0) {
                 prefix = prefix.substr(0, prefix.length() - 1);
                 
