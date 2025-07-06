@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/reverse-only-letters">917. Reverse Only Letters</a></h2><h3>Easy</h3><hr><p>Given a string <code>s</code>, reverse the string according to the following rules:</p>
+<h2><a href="https://leetcode.com/problems/reverse-only-letters/">917. Reverse Only Letters</a></h2><h3>Easy</h3><hr><p>Given a string <code>s</code>, reverse the string according to the following rules:</p>
 
 <ul>
 	<li>All the characters that are not English letters remain in the same position.</li>
