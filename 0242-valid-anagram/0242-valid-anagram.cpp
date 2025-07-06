@@ -21,7 +21,7 @@ public:
             freqTable[i]--;//automatic convertion of char to int
         }
         //checking all th elements in freqTable == 0 or not
-        for(auto i:256)
+        for(int i=0;i<256;i++)
         {
             if(freqTable[i]!=0)
             {
