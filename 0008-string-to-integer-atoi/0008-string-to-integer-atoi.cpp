@@ -1,36 +1,30 @@
 class Solution {
 public:
-    int myAtoi(string s) {
-       
-        int i=0; //iterate through each charcter
-        int num=0; //final answer builder
-        int sign=1; //this will tell us if the number should be + || -
-        //lets omit white spaces 1st
-        while(i<s.size() && s[i]==' ') //found the space
-        {
-            i++;
+    int myAtoi(const string& s) {
+        int i = 0, n = s.size();
+        // 1) skip leading spaces
+        while (i < n && isspace(s[i])) 
+            ++i;
+        // 2) handle optional sign
+        int sign = 1;
+        if (i < n && (s[i] == '+' || s[i] == '-')) {
+            sign = (s[i] == '-') ? -1 : 1;
+            ++i;
         }
-        //now lets check if the number is + || -
-        while(i<s.size() && (s[i]=='+' || s[i]=='-')) //foud the sign
-        {
-            sign=(s[i]=='+')?1:-1;
-            i++;
-            break;
+        // 3) if next char isn't a digit, we return 0
+        if (i >= n || !isdigit(s[i])) 
+            return 0;
+        // 4) parse digits
+        long long result = 0;  // use long long to detect overflow
+        while (i < n && isdigit(s[i])) {
+            result = result * 10 + (s[i] - '0');
+            // 5) clamp if overflow
+            if (sign == 1 && result > INT_MAX) 
+                return INT_MAX;
+            if (sign == -1 && -result < INT_MIN) 
+                return INT_MIN;
+            ++i;
         }
-        //now if we get numbers then we will add accordingly but we also have to check [-2^(31), 2^(31) - 1] condition
-        //we should know that INT_MAX=2^(31)-1=2147483647 and INT_MIN=-2^31=-2147483648, so we will have to clamp it to these values if tthey are exceeding
-        while(i<s.size() && isdigit(s[i]))
-        {
-            if(num>INT_MAX/10 || (num==INT_MAX/10 && s[i]>'7')) //checking for [-2^(31), 2^(31) - 1] condition
-                                                              //num>214748365, num>214748364 +8, num>214748364 +9
-            {
-                return (sign==-1)?INT_MIN:INT_MAX;
-            }
-            num=num*10+(s[i]-'0');
-            i++;
-
-        }
-        return (sign==-1)?-num:num;
-
+        return int(sign * result);
     }
 };
