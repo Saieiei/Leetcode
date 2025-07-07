@@ -1,41 +1,30 @@
-//week5_ass_7
 class Solution {
 public:
-    bool palindromeChecker(string& s, int start, int end)
-    {
-        while(start<=end) //should be <=, consider if the string is only 1 character and check eg:"a"
-        {
-            if(s[start]!=s[end])
-            {
-                return false;
-                // dont put start++; end--; inside, inf loop
-            }
-            start++;
-            end--;
+    string longestPalindrome(const string& s) {
+        if (s.empty()) return "";
+        start = 0;
+        max_len = 1;
+        for (int i = 0; i < (int)s.size(); i++) {
+            expand_around_centre(i, i, s);
+            expand_around_centre(i, i + 1, s);
         }
-        return true;
+        return s.substr(start, max_len);
     }
-    string longestPalindrome(string s) {
-        //we will use 2 pointer approach and not dp
-        //we will try to find each possible substrng and check if its palindrom or nor
-            //if its palindrome we will check if it > than the lasrgest palindromic string, if so assign it to the ans
-        
-       // int p1=0; ->i
-       // int p2=0; ->j
-        string ans="";
-        for(int i=0;i<s.size();i++)
-        {
-            for(int j=i;j<s.size();j++)
-            {
-                //ans="";
-                if(palindromeChecker(s, i, j))
-                {
-                    string palinstring=s.substr(i, (j-i)+1); //str.substr(starting index, length required);
-                    ans=(palinstring.size()>ans.size())?palinstring:ans;
-                }
+
+private:
+    int start;
+    int max_len;
+
+    // now private—only callable from within Solution
+    void expand_around_centre(int l, int r, const string& s) {
+        while (l >= 0 && r < (int)s.size() && s[l] == s[r]) {
+            int curr_len = r - l + 1;
+            if (curr_len > max_len) {
+                max_len = curr_len;
+                start = l;
             }
+            l--;
+            r++;
         }
-        return ans;
-        
     }
 };
