@@ -1,5 +1,8 @@
 class Solution {
 public:
+    unordered_map<int, bool> leftHorizontalCheck;
+    unordered_map<int, bool> upperDiagonalCheck;
+    unordered_map<int, bool> lowerDiagonalCheck;
     void storeSolution(vector<vector<char>> &board, vector<vector<string>> &ans, int n)
     {
         //1st we need to create the string
@@ -19,35 +22,40 @@ public:
     }
     bool isSafe(vector<vector<char>> &board, int row, int col)
     {
-        int n = board.size();
-        //i need to check 3 directions only, not all 8
-        //left horizontal
-        for(int i=0; i<=col; i++)
-        {
-            if(board[row][i] == 'Q') return false;
-        }
-        //left upper dia
-        int i = row - 1;
-        int j = col - 1;
-        while(i>=0 && j>=0)
-        {
-            if(board[i][j] == 'Q') return false;
-            i--;
-            j--;
-        }
-        //left lower dia
-        int x = row +1;
-        int y = col -1;
-        while(x<n && y>=0)
-        {
-            if(board[x][y] == 'Q') return false;
-            x++;
-            y--;
-        }
+        //int n = board.size();
+        ////i need to check 3 directions only, not all 8
+        ////left horizontal
+        //for(int i=0; i<=col; i++)
+        //{
+        //    if(board[row][i] == 'Q') return false;
+        //}
+        ////left upper dia
+        //int i = row - 1;
+        //int j = col - 1;
+        //while(i>=0 && j>=0)
+        //{
+        //    if(board[i][j] == 'Q') return false;
+        //    i--;
+        //    j--;
+        //}
+        ////left lower dia
+        //int x = row +1;
+        //int y = col -1;
+        //while(x<n && y>=0)
+        //{
+        //    if(board[x][y] == 'Q') return false;
+        //    x++;
+        //    y--;
+        //}
 
+        //leftHorizontal
+        if(leftHorizontalCheck[row] == true) return false;
+        //upperDiagonal
+        if(upperDiagonalCheck[row-col] == true) return false;
+        //lowerDiagonal
+        if(lowerDiagonalCheck[row+col] == true) return false;
         //there is no attack
         return true;
-
     } 
     void solve(vector<vector<char>> &board, vector<vector<string>> &ans, int n, int col)
     {
@@ -65,10 +73,16 @@ public:
             if(isSafe(board, row, col))
             {
                 board[row][col] = 'Q';
+                leftHorizontalCheck[row]=true;
+                upperDiagonalCheck[row-col]=true;
+                lowerDiagonalCheck[row+col]=true;
                 //the rest recurssion will take care
                 solve(board, ans, n, col+1);
                 //backtracking
                 board[row][col] = '.';
+                leftHorizontalCheck[row]=false;
+                upperDiagonalCheck[row-col]=false;
+                lowerDiagonalCheck[row+col]=false;
             }
             
         }
