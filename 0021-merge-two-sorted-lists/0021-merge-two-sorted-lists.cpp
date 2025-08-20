@@ -10,46 +10,31 @@
  */
 class Solution {
 public:
-    ListNode* mergeTwoLists(ListNode* list1ptr, ListNode* list2ptr) {
-        //lets go with the base cases 1st
-        if(!list1ptr) return list2ptr;
-        if(!list2ptr) return list1ptr;
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+        //we will create a new LL which will connect the nodes of the existing LL
 
-        //go we will start with a dummy node called ans
-        ListNode* ans = new ListNode(-1);
-        //we will start with the iterator whih is pointing to ans
-        ListNode* iterator = ans;
+        ListNode* ll = new ListNode();
+        ListNode* tail = ll;
 
-        //now we will point each 1 of them in ascending order
-        while(list1ptr && list2ptr)
+        while(list1 && list2)
         {
-            if(list1ptr->val  <= list2ptr->val)
+            if(list1->val < list2->val)
             {
-                iterator->next = list1ptr;
-                iterator = list1ptr;
-                list1ptr = list1ptr->next;
+                tail->next = list1;
+                list1 = list1->next;
             }
-            else //list1ptr->val  >= list2ptr->val
+            else
             {
-                iterator->next = list2ptr;
-                iterator = list2ptr;
-                list2ptr = list2ptr->next;
+                tail->next = list2;
+                list2 = list2->next;
             }
+            tail = tail->next;
         }
 
-        //if 1 of the lists expires
-        while(list1ptr) //list2ptr expired, and it will continue until list1ptr expires
-        {
-            iterator->next = list1ptr;
-            iterator = list1ptr;
-            list1ptr = list1ptr->next;
-        }
-        while(list2ptr) //list1ptr expired, and it will continue until list2ptr expires
-        {
-            iterator->next = list2ptr;
-            iterator = list2ptr;
-            list2ptr = list2ptr->next;
-        }
-        return ans->next;
+        //incase somethign is left out
+        if(list1) tail->next = list1;
+        if(list2) tail->next = list2;
+
+        return ll->next;
     }
 };
