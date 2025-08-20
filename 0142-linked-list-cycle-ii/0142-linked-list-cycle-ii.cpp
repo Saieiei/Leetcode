@@ -9,41 +9,24 @@
 class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
-        //basically we have to use fast-slow method
-        //wait for them to join
-        //then we have to put 1 of them back at the head and ask it to move by 1 by until they meet
-        //that meeting point is the node where the cycle begins
+        //here we will use extra space <unordered_map>
+        //we will iterate through the list and update the map as visited, until we reach true or temp->next = NULL return the node
+        //else return false (NULL)
 
-        ListNode* fast = head;
-        ListNode* slow = head;
+        if(!head || !head->next) return NULL;
 
-        //slow-fast method (to check for loop)
-        while(fast && fast->next)
+        unordered_map<ListNode*, bool> mp;
+        ListNode* temp = head;
+
+        while(temp)
         {
-            fast = fast->next->next;
-            slow = slow->next;
-            if(fast == slow) break;
+            if(mp[temp] == true) return temp;
+            else
+            {
+                mp[temp] =  true;
+                temp = temp->next;
+            }
         }
-
-        //no loop?
-        if(fast == NULL || fast->next == NULL) return NULL;
-
-        //then we have to put 1 of them back at the head and ask it to move by 1 by until they meet
-        fast = head; //or slow
-        while (fast != slow)
-        {
-            fast = fast->next;
-            slow = slow ->next;
-        }
-        return fast; //or slow
+        return NULL;
     }
 };
-
-
-const auto __ = []() {
-    struct ___ {
-        static void _() { std::ofstream("display_runtime.txt") << 0 << '\n'; }
-    };
-    std::atexit(&___::_);
-    return 0;
-}();
