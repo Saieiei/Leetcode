@@ -9,35 +9,32 @@
 class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
-        //1st we will check if ther eis a loop or not
-        //we can do this with a slow fast approach
+        //basically we have to use fast-slow method
+        //wait for them to join
+        //then we have to put 1 of them back at the head and ask it to move by 1 by until they meet
+        //that meeting point is the node where the cycle begins
 
-        ListNode* slow = head;
         ListNode* fast = head;
+        ListNode* slow = head;
 
-        //now we will do a looping and apply the algo
-        while(fast != NULL)
+        //slow-fast method (to check for loop)
+        while(fast && fast->next)
         {
-            fast = fast->next;
-            if(fast != NULL)
-            {
-                fast = fast->next;
-                slow = slow->next;
-            }
-            if(fast == slow) break; //there is a loop
-        }
-
-        //to check if tere is no loop
-        if(fast == NULL) return NULL;
-
-        //now lets find the position (this is the algo)
-        slow = head;
-        while(slow != fast)
-        {
-            fast = fast->next;
+            fast = fast->next->next;
             slow = slow->next;
+            if(fast == slow) break;
         }
 
-        return slow; //or even fast, both same
+        //no loop?
+        if(fast == NULL || fast->next == NULL) return NULL;
+
+        //then we have to put 1 of them back at the head and ask it to move by 1 by until they meet
+        fast = head; //or slow
+        while (fast != slow)
+        {
+            fast = fast->next;
+            slow = slow ->next;
+        }
+        return fast; //or slow
     }
 };
