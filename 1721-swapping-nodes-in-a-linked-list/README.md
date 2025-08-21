@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/swapping-nodes-in-a-linked-list">1721. Swapping Nodes in a Linked List</a></h2><h3>Medium</h3><hr><p>You are given the <code>head</code> of a linked list, and an integer <code>k</code>.</p>
+<h2><a href="https://leetcode.com/problems/swapping-nodes-in-a-linked-list/">1721. Swapping Nodes in a Linked List</a></h2><h3>Medium</h3><hr><p>You are given the <code>head</code> of a linked list, and an integer <code>k</code>.</p>
 
 <p>Return <em>the head of the linked list after <strong>swapping</strong> the values of the </em><code>k<sup>th</sup></code> <em>node from the beginning and the </em><code>k<sup>th</sup></code> <em>node from the end (the list is <strong>1-indexed</strong>).</em></p>
 
