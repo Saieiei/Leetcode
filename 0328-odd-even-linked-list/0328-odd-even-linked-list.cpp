@@ -10,34 +10,26 @@
  */
 class Solution {
 public:
-//week 10
     ListNode* oddEvenList(ListNode* head) {
-        //we can solve this by using additional space but, we will not do that
-        //we will solve this in constant linear time and space
+        if (!head || !head->next) return head;
 
-        //we will use 2 pointers, even and odd
-        //but before that we have to check with the base case
-        if(head == NULL || head->next == NULL) return head; //cant do anything
+        //its simple only, while iterating ther LL we will rearrange its next pointers
         ListNode* odd = head;
         ListNode* even = head->next;
 
-        //we will store the pointer of the 1st even head as we will have to link the last of the odd lists with this pointer(starting even node)
-        ListNode* firstEvenNode = head->next;
+        //we will need to save the even head because, when we r done iterating, the odd->next =evenHead
+        ListNode* evenHead = even;
 
-        //now we will link odd lists and even list (making 2 separe lists)
-        while(even && even->next)
-        {
-            //1st we will link then 
+        //we will have to stop when there is no more even nodes
+        while (even && even->next) {
             odd->next = even->next;
-            even->next = even->next->next;
-            //now we will move them 
             odd = odd->next;
+            
+            even->next = odd->next;
             even = even->next;
         }
 
-        //after we have linked all we will connect the last of the odd node to the 1st of the even node
-        odd->next = firstEvenNode;
-        return head; 
-        
+        odd->next = evenHead;
+        return head;
     }
 };
