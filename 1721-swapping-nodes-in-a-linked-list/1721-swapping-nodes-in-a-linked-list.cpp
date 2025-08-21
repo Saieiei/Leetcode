@@ -11,36 +11,24 @@
 class Solution {
 public:
     ListNode* swapNodes(ListNode* head, int k) {
-        //we will have 2 separate pointers
-        //1st pointer is temp1
-        ListNode* temp1 = head;
-        for(int i=1; i<k; i++)
-        {
-            temp1 = temp1->next;
-        }
-        int temp11 = temp1->val;
 
-        //now we will go till the end
-        ListNode* temp2 = head;
-        int count = 0;
-        while(temp2->next)
-        {
-            count++;
-            temp2 = temp2->next;
+        // 1) Find k-th node from the beginning
+        ListNode* first = head;
+        for (int i = 1; i < k && first; ++i) first = first->next;
+
+        // 2) Find k-th node from the end:
+        //    Start a runner at 'first' and a chaser at head.
+        //    When runner hits the end, chaser will be k-th from end.
+        //    u can take this as a sliding window type
+        ListNode* runner = first;
+        ListNode* chaser = head;
+        while (runner->next) {
+            runner = runner->next;
+            chaser = chaser->next;
         }
 
-        //now since we have reached till the end
-        //we shall go k elements back 
-        temp2 = head;
-        for(int i=1; i<=count-(k-1); i++)
-        {
-            temp2 = temp2->next;
-        }
-        int temp22 = temp2->val;
-
-        //swap now
-        temp1->val = temp22;
-        temp2->val = temp11;
+        // 3) Swap values
+        swap(first->val, chaser->val);
         return head;
     }
 };
