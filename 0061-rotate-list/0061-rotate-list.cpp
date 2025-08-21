@@ -10,58 +10,43 @@
  */
 class Solution {
 public:
-//week 10
-    int lengthFinder(ListNode* head)
-    {
-        int count = 0;
-        ListNode* temp = head;
-        while(temp != NULL)
-        {
-            temp = temp->next;
-            count++;
-        }
-        return count;
-    }
-
     ListNode* rotateRight(ListNode* head, int k) {
-        //we will solve this by finding out how much we r suppose to rotate,
-        //for example if the length of the LL is 5 then rotating it 10 times (k) is vasically the same as not rotating at all
-        //to find out the actual rotation we can use modulus 
 
-        //base case
-        if (head == NULL || head->next == NULL || k == 0) return head;
+        if (!head || k == 0) return head;
+        
+        //there are 2 methods to this
+        //1 is using the iterative approach
+        //another is using the circular approach
 
-        int len = lengthFinder(head);
-        int actualRotation = k % len;
-
-        //now we will write the base condition
-        if(actualRotation == 0) return head; //no need to do rotation
-
-        //if the remainder is not 0, then we have to do rotation
-        //1st lets find the last node
-        int newLastNodePos = len - actualRotation - 1; //we r doing -1 because we will start the for loop with 0
-        ListNode* NewLastNode = head;
-        //now lets put LastNode to its proper position
-        for(int i=0; i<newLastNodePos; i++)
+        //1st we have to figure out actual rotations
+        // to do so we need to figure out the length of it
+        ListNode* curr = head;
+        int length =1;
+        while(curr->next != nullptr)
         {
-            NewLastNode = NewLastNode->next;
+            length++;
+            curr = curr->next;
         }
 
-        //now lets find the correct head, that is the next node of the last node
-        ListNode* newHead = NewLastNode->next;
-        //after finishing out the head make sure to make the lastNode point to nulll
-        NewLastNode->next = NULL;
+        //so now we have our curr at the last node and also the length of the ll
+        //now to figure out actual rotations 
+        k = k % length;
+        int stepsToGoAhead = length - k;
 
-        //now we will have to travel to the last node of the LL and link the last node of the LL to head for tthe flow
-        ListNode* iterator = newHead; //dont put head
-        while(iterator->next)
+        //make the ll circular
+        curr->next = head;
+
+        //now lets move forward to the last point of roatation and cut the chain
+        ListNode* tail = head;
+        for(int i=1; i<stepsToGoAhead; i++)
         {
-            iterator = iterator->next;
+            tail = tail->next;
         }
-        //now since we r at the end, we will point it to the head
-        iterator->next = head;
+        //before we destroy the connection we will have to get the correct head
+        ListNode* newHead = tail->next;
+        //now destroy the link
+        tail->next = nullptr;
 
         return newHead;
-        
     }
 };
