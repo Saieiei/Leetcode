@@ -10,58 +10,61 @@
  */
 class Solution {
 public:
-//week 10
     vector<int> nodesBetweenCriticalPoints(ListNode* head) {
-        vector<int> ans = {-1, -1}; //default ans
+        //no hacks, just simple thinking only, easy only
+        //to calc a CP, u need 3 pointers (prev, curr, frd)
+        //we need to keep a track on CP locations (CP_position), starting from pos CP_position=1 (curr)
+        //we need to update the minDist and maxDist in vector<int> ans;
+        //we should stop looking for CP when fwd becomes null
 
-
-
-        //so 1st we need 3 things to find CP (prev, curr, nxt) //if any1 of them doesnt exist then it is not possible 
-        if (!head || !head->next || !head->next->next) return ans;
-
+        //base cases
+        vector<int> ans = {-1, -1};
         ListNode* prev = head;
+        if(!prev) return ans;
         ListNode* curr = prev->next;
-        ListNode* nxt = prev->next->next;
+        if(!curr) return ans;
+        ListNode* fwd = prev->next->next;
+        if(!fwd) return ans;
 
-        //now we have to keep the track of cp to find out the minDistance and maxDistance
-        int firstCp = -1;
-        int lastCp = -1;
+        //initialisation
+        int curr_position=1;
         int minDist = INT_MAX;
-        //lets start from position 1 (curr) because 1st node (0th) can never be a cp
-        int i = 1;
-
-        //now we will traverse through the list as check if the node that we get is cp or not
-        //1st and last can never be a cp
-        while(nxt)
+        int maxDist = 0; //it will keep expanding as we find out new CP
+        int first_Position = -1;
+        int last_position = -1;
+        
+        //lets start now
+        while(fwd)
         {
-            //now we will check if the node is cp or not
-            bool cp = ( (curr->val > prev->val && curr->val > nxt->val) || (curr->val < prev->val && curr->val < nxt->val) );
-            //lets fix our 1st cp
-            if(cp && firstCp == -1)
+            bool isCP = ((curr->val < prev->val && curr->val < fwd->val)||(curr->val > prev->val && curr->val > fwd->val))?1:0;
+
+            //1st CP
+            if(isCP == true && first_Position == -1)
             {
-                firstCp = i;
-                lastCp = i;
+                first_Position = curr_position;
+                last_position = curr_position;
             }
-            else if(cp) //if its not the firstCp
+            else if(isCP) //not 1st CP
             {
-                
-                //check if this is minimum or not 
-                minDist = min(minDist, (i-lastCp));
-                //update last cp
-                lastCp = i;
-                
+                minDist = min(minDist, curr_position-last_position);
+                last_position = curr_position;
+                maxDist = last_position-first_Position;
             }
-            i++;
+
+            curr_position++;
             prev = prev->next;
             curr = curr->next;
-            nxt = nxt->next;
+            fwd = fwd->next;
         }
-        //now if our 1st and last cp is same, forexample array of 3 elements
-        if(firstCp == lastCp) return ans;
-        else
+
+        //found only 1 cp till now
+        if(first_Position == curr_position) return ans;
+        //0 cp
+        else if (minDist == INT_MAX &&  maxDist == 0) return ans;
+        else //found multiple CPs
         {
             ans[0] = minDist;
-            ans[1] = lastCp - firstCp;
+            ans[1] = maxDist;
         }
         return ans;
     }
