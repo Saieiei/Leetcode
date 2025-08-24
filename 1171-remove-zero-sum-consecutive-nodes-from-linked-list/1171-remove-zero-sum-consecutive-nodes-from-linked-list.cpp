@@ -10,31 +10,47 @@
  */
 class Solution {
 public:
-    ListNode* removeZeroSumSublists(ListNode* head) {
-        ListNode* dummy = new ListNode(0);
-        dummy->next = head;
-        int prefix_sum = 0;
-        std::unordered_map<int, ListNode*> prefix_sums;
-        prefix_sums[0] = dummy;
-        ListNode* current = head;
-
-        while (current) {
-            prefix_sum += current->val;
-            if (prefix_sums.find(prefix_sum) != prefix_sums.end()) {
-                ListNode* to_delete = prefix_sums[prefix_sum]->next;
-                int temp_sum = prefix_sum + to_delete->val;
-                while (to_delete != current) {
-                    prefix_sums.erase(temp_sum);
-                    to_delete = to_delete->next;
-                    temp_sum += to_delete->val;
-                }
-                prefix_sums[prefix_sum]->next = current->next;
-            } else {
-                prefix_sums[prefix_sum] = current;
-            }
-            current = current->next;
+//week 10, have to watch to understand, (cumulative deletion)
+    void sanitizeMap(ListNode*  head, unordered_map<int, ListNode*>& mp, int csum)
+    {
+        //deleting
+        int temp = csum;
+        while(true)
+        {
+            temp = temp + head->val;
+            if(temp == csum) break;
+            mp.erase(temp);
+            head = head->next;
         }
-
-        return dummy->next;
     }
+    ListNode* removeZeroSumSublists(ListNode* head) {
+        //we will do this using unorderd_map
+        //1t we will take care of bae cae
+        if(!head || (!head->next && head->val == 0) ) return 0;
+        //now we will create a unordered_map
+        unordered_map<int, ListNode*> mp;
+        ListNode* it = head;
+        //we will keep on adding thhe sum, if we get the sum == 0, then we will have to clear the mp and put the head to the next of the it, (becaue of it node we r getting sum as 0) this will automatically remove all the elements before it/lost
+        int csum = 0;
+        while(it)
+        {
+            csum = csum + it->val;
+            if(csum == 0)
+            {
+                mp.clear();
+                head = it->next;
+            }
+            else if(mp.find(csum) != mp.end())  //to check if th ecumulative is there or not in the mp
+            {
+                sanitizeMap(mp[csum]->next, mp, csum);
+                mp[csum]->next = it->next;
+            }
+            else{//else case- Add entries of prefix sum of each node into map 
+            mp[csum]=it;
+            }
+            it=it->next;
+        }
+        return head;
+    }
+        
 };
