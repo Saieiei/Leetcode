@@ -1,32 +1,41 @@
-class Solution {
+
+
+class Solution
+{
 public:
-    bool isValid(string s) {
-        //we will solve this using stacks
-        stack<char> st;
-        int len = s.length();
-        for(int i=0; i<len; i++)
+    bool isValid(string s)
+    {
+        stack<char> stk;
+        for (char c : s)
         {
-            char ch = s[i];
-            if(ch == '(' || ch == '{' || ch == '[')
+            if (c == '(' || c == '{' || c == '[')
             {
-                st.push(ch);
+                stk.push(c);
             }
-            else //clossing bracket, hence we have to pop
+            else
             {
-                //before we pop we have to see if the stack is empty or not
-                if(st.empty()) return false; //not possible to pop
-                else //if the stack is not empty, we have to check if the opening and closing bracket r matching
+                if (stk.empty())
                 {
-                    if(ch == ')' && st.top() == '(') st.pop();
-                    else if(ch == '}' && st.top() == '{') st.pop();
-                    else if(ch == ']' && st.top() == '[') st.pop();
-                    //wrong ordering 
-                    else return false;
+                    return false;
+                }
+                if (c == ')' && stk.top() == '(')
+                {
+                    stk.pop();
+                }
+                else if (c == '}' && stk.top() == '{')
+                {
+                    stk.pop();
+                }
+                else if (c == ']' && stk.top() == '[')
+                {
+                    stk.pop();
+                }
+                else
+                {
+                    return false;
                 }
             }
         }
-        if(st.empty()) return true;
-        else return false;   
-        
+        return stk.empty();
     }
 };
