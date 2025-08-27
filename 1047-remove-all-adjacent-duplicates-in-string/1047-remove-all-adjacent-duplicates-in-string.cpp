@@ -6,7 +6,7 @@ public:
         stack<char> st;
 
         //traverse through the string
-        for(char ch : s)
+        for(const auto& ch : s)
         {
             //if empty? simply push
             if(st.empty()) st.push(ch);
