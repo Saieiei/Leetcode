@@ -1,35 +1,16 @@
 class Solution {
 public:
-//week 11
     string removeDuplicates(string s) {
-        ////we will solve this by creating a new string method
-        //string s2="";
-        //int len=s.length();
-        //for(int i=0;i<len;i++)
-        //{
-        //    char ch=s[i];
-        //    if(s2.empty())
-        //    {
-        //        s2.push_back(ch);
-        //        continue;
-        //    }
-        //    if(s2.back()!=ch)
-        //    {
-        //        s2.push_back(ch);
-        //    }
-        //    else
-        //    {
-        //        s2.pop_back();
-        //    }
-        //}
-        //return s2;
-
-        //now we will try to do it using stacks
+        //this is super easy only becuse is just 2 elements
+        //it can be done using stacks
         stack<char> st;
+
+        //traverse through the string
         for(char ch : s)
         {
+            //if empty? simply push
             if(st.empty()) st.push(ch);
-            else
+            else //before poping always check if the stack is empty or not
             {
                 if(!st.empty() && st.top() == ch) //same, paired, hence pop 
                     st.pop();
@@ -37,13 +18,11 @@ public:
             }
         }
 
-        string ans = "";
+        string ans = ""; //its in the stack, but be careful of the order
         while(!st.empty())
         {
             ans = st.top() + ans; st.pop(); 
         }
         return ans;
-    }   
-
-   
+    }
 };
