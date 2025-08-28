@@ -73,7 +73,6 @@ public:
 
         //now lets make the correct path
         vector<string> parts;
-        parts.reserve(dir.size());
         while (!dir.empty()) { parts.push_back(dir.top()); dir.pop(); }
 
         string res;
