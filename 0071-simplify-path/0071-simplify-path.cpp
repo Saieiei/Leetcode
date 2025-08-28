@@ -1,41 +1,86 @@
 class Solution {
 public:
     string simplifyPath(string path) {
-        //we will solve this using stack
+        //this aint easy it may seem simple but it is not
+        //so 1st we have to capture each directory
+        //and then compare it with // or .. or .
+            //if something else then simply push it into the stack
+        
+        string token;
+        stack<string> dir;
 
-        stack<string> st;
-        //now we will try to find the 1st directory
-        int i = 0;
-        while(i < path.size())
+        //iterate through the path
+        for(int i=0; i<path.size(); i++)
         {
-            int start = i;
-            int end = i + 1;
-            // now we will keep on moving th eend pointer untill we get a / ,we will not take 2nd / in the directory
-            while(end < path.size() && path[end] != '/') end++;
-            //now since we have got a directory from the path, we will extract it and put it into a temp string
-            string foundDirectory = "";
-            foundDirectory = path.substr(start, end - start); //dont do path.substr(start, end); as it will not be able to find the next next directories
-            
-            //update ur next start
-            i = end;
-            //now we have to check if this directory is meant to go in the stack, or pop the elements from teh stack or do nothing
-            if(foundDirectory == "/" || foundDirectory == "/.") continue; //we have to do nothing, waste it is
-            else if(foundDirectory == "/.." && !st.empty()) st.pop(); //remove 1 directory from the stack
-            else if(foundDirectory == "/.." && st.empty()) continue; //do nothing
-            else st.push(foundDirectory);  //valid directory then push it in the stack
+            char ch = path[i];
+            if(path[i] == '/') // this means it cound be the begining of the token, or the end of the token, which we should insert
+            {   //we will check on the token that we formed
+                if(!token.empty())
+                {
+                    if(token == ".") 
+                    {
+                        //ignore, we dont have to do anything
+                    }
+                    else if(token == "..")
+                    {
+                        //we need to pop
+                        if(!dir.empty()) dir.pop();
+                    }
+                    else //its a valid directory, push it into the stack
+                    {
+                        dir.push(token);
+                    }
+                    //since we r done with the tokens from the operations above, we cam cleasr it of
+                    token.clear();
+
+                    //if its '/', ignore off
+                    //forget about '//'
+                }
+                
+            }
+            else // the char is not a /, then its part of the directory only
+            {
+                //its a part of the token
+                token.push_back(ch);
+            }
         }
 
-        //if we have come till the end and we r at the root then we have to display /
-        string ans= "";
-        ans = st.empty() ? "/" : "";
-
-        //now we have to reverse the stack
-        while(!st.empty())
+        //but for this case "/a/.//.." as u can see the last part will not be processed because we dont hit the '/' condition
+        if(!token.empty())
         {
-            ans = st.top() + ans;
-            st.pop();
+            if(token == ".") 
+            {
+                //ignore, we dont have to do anything
+            }
+            else if(token == "..")
+            {
+                //we need to pop
+                if(!dir.empty()) dir.pop();
+            }
+            else //its a valid directory, push it into the stack
+            {
+                dir.push(token);
+            }
+            //since we r done with the tokens from the operations above, we cam cleasr it of
+            token.clear();
+
+            //if its '/', ignore off
+            //forget about '//'
         }
 
-        return ans;
+        // Build canonical path
+        if (dir.empty()) return "/";
+
+        //now lets make the correct path
+        vector<string> parts;
+        parts.reserve(dir.size());
+        while (!dir.empty()) { parts.push_back(dir.top()); dir.pop(); }
+
+        string res;
+        for (int i = (int)parts.size() - 1; i >= 0; --i) {
+            res.push_back('/');
+            res += parts[i];
+        }
+        return res;
     }
-};
+}; 
