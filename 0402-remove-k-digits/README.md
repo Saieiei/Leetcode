@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/remove-k-digits">402. Remove K Digits</a></h2><h3>Medium</h3><hr><p>Given string num representing a non-negative integer <code>num</code>, and an integer <code>k</code>, return <em>the smallest possible integer after removing</em> <code>k</code> <em>digits from</em> <code>num</code>.</p>
+<h2><a href="https://leetcode.com/problems/remove-k-digits/">402. Remove K Digits</a></h2><h3>Medium</h3><hr><p>Given string num representing a non-negative integer <code>num</code>, and an integer <code>k</code>, return <em>the smallest possible integer after removing</em> <code>k</code> <em>digits from</em> <code>num</code>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
