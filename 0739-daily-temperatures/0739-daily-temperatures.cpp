@@ -53,6 +53,5 @@ public:
         //reverse and return 
         reverse(ans.begin(), ans.end());
         return ans;
-        
     }
 };
