@@ -1,46 +1,49 @@
-//this can be done using vectors and string, we will be doing this using vectors
-//we will keep the track of the maxIndex because incase we go back and go to a nex page then we need to update history completely
-//other than that its all fine
-//we will also keep the track of the currIndex
+//this can be done using vectors and stacks, we will be doing this using stacks
+//we will take the advantage of LIFO of stacks
+
 
 class BrowserHistory {
 //i am creating this private 1 for getting the tools
 private:
-    vector<string>history;
-    int maxIndex;
-    int currIndex;
+    stack<string>history; // back stack, top = current page
+    stack<string>front; // forward stack
 public:
 //ctor
     BrowserHistory(string homepage) {
         //this is the very 1st case of creating the object with the homepage 
-        history.push_back(homepage);
-        currIndex = 0;
-        maxIndex = currIndex;
+        history.push(homepage);
     }
     
     void visit(string url) {
         // drop any forward history
-        if (currIndex + 1 < (int)history.size()) {
-            history.resize(currIndex + 1);
+        if (!front.empty()) {
+            while(!front.empty()) front.pop();
         }
         // now append the new page
-        history.push_back(url);
-        currIndex++;
-        maxIndex = currIndex;  // new tail
+        history.push(url);
     }
     
     string back(int steps) {
-        //incase he presses too many backs than the required no of urls present in the history
-        currIndex = max(0, currIndex-steps);
-        //no need to update the maxIndex
-        return history[currIndex];
+        while(history.size()>1 && steps)
+        {
+
+            string temp = history.top(); history.pop();
+            front.push(temp);
+            steps--;
+
+        }
+        return history.top();
     }
     
     string forward(int steps) {
-        //incase he presses too many forward button than the required no of urls present in the history
-        currIndex = min(maxIndex, currIndex+steps);
-        //no need to update the maxIndex
-        return history[currIndex];
+        while(!front.empty() && steps){
+
+            string temp = front.top(); front.pop();
+            history.push(temp);
+            steps--;
+
+        }
+        return history.top();
     }
 };
 
