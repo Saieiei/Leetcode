@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/path-sum">112. Path Sum</a></h2><h3>Easy</h3><hr><p>Given the <code>root</code> of a binary tree and an integer <code>targetSum</code>, return <code>true</code> if the tree has a <strong>root-to-leaf</strong> path such that adding up all the values along the path equals <code>targetSum</code>.</p>
+<h2><a href="https://leetcode.com/problems/path-sum/">112. Path Sum</a></h2><h3>Easy</h3><hr><p>Given the <code>root</code> of a binary tree and an integer <code>targetSum</code>, return <code>true</code> if the tree has a <strong>root-to-leaf</strong> path such that adding up all the values along the path equals <code>targetSum</code>.</p>
 
 <p>A <strong>leaf</strong> is a node with no children.</p>
 
@@ -16,7 +16,7 @@
 <pre>
 <strong>Input:</strong> root = [1,2,3], targetSum = 5
 <strong>Output:</strong> false
-<strong>Explanation:</strong> There two root-to-leaf paths in the tree:
+<strong>Explanation:</strong> There are two root-to-leaf paths in the tree:
 (1 --&gt; 2): The sum is 3.
 (1 --&gt; 3): The sum is 4.
 There is no root-to-leaf path with sum = 5.
