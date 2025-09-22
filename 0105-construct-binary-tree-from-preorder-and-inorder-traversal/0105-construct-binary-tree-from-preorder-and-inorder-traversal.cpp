@@ -12,11 +12,11 @@
 class Solution {
 public:
 
-    int getIndex(int& preorderIndex, vector<int>& inorder)
+    int getIndex(int& element, vector<int>& inorder)
     {
         for(int i=0; i<inorder.size(); i++)
         {
-            if(preorderIndex == inorder[i])return i;
+            if(element == inorder[i])return i;
         }
         return -1; //this will never happen
     }
