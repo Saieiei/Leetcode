@@ -11,49 +11,69 @@
  */
 class Solution {
 public:
-    unordered_map<int, vector<int>> graph;
 
-    int amountOfTime(TreeNode* root, int start) {
-        constructGraph(root);
+    TreeNode* makeNodeToParentMappingAndFindTargetNode(TreeNode* root, unordered_map<TreeNode*, TreeNode*>& parentMap, int target){
+        //we will do this using level orderTraversal
+        queue<TreeNode*> q;
+        q.push(root);
+        parentMap[root] = nullptr;
+        TreeNode* targerNode = nullptr;
 
-        queue<int> q;
-        q.push(start);
+        while(!q.empty())
+        {
+            TreeNode* frontElement = q.front(); q.pop();
+            if(frontElement->val == target) targerNode = frontElement;
+            if(frontElement->left){
+                q.push(frontElement->left);
+                parentMap[frontElement->left] = frontElement;
+            }
+            if(frontElement->right){
+                q.push(frontElement->right);
+                parentMap[frontElement->right] = frontElement;
+            } 
+        }
+        return targerNode;
+    }
+    int burnTreeTime(unordered_map<TreeNode*, TreeNode*>& parentMap, TreeNode* targerNode){
+        //remember we have to burn the tree simultaneously, so make sure to take in the size of the q, (for loop)
+        unordered_map<TreeNode*, bool>isBurnt; //visited 
+        queue<TreeNode*> q; q.push(targerNode); isBurnt[targerNode] = 1;
+        int time = 0;
 
-        unordered_set<int> visited;
-
-        int minutesPassed = -1;
-
-        while (!q.empty()) {
-            ++minutesPassed;
-            for (int levelSize = q.size(); levelSize > 0; --levelSize) {
-                int currentNode = q.front();
-                q.pop();
-                visited.insert(currentNode);
-                for (int adjacentNode : graph[currentNode]) {
-                    if (!visited.count(adjacentNode)) {
-                        q.push(adjacentNode);
-                    }
+        while(!q.empty())
+        {
+            int size = q.size();
+            bool isFireSpredded = 0;
+            for(int i=0; i<size; i++)
+            {
+                TreeNode* front = q.front(); q.pop();
+                if(front->left && !isBurnt[front->left]){
+                    q.push(front->left);
+                    isBurnt[front->left]=1;
+                    isFireSpredded =1;
+                }
+                if(front->right && !isBurnt[front->right]){
+                    q.push(front->right);
+                    isBurnt[front->right]=1;
+                    isFireSpredded =1;
+                }
+                if(parentMap[front] && !isBurnt[parentMap[front]]){
+                    q.push(parentMap[front]);
+                    isBurnt[parentMap[front]]=1;
+                    isFireSpredded =1;
                 }
             }
+            if(isFireSpredded) time++;
         }
+        return time;
 
-        return minutesPassed;
     }
 
-    void constructGraph(TreeNode* root) {
-        if (!root) return;
+    int amountOfTime(TreeNode* root, int target) {
+        unordered_map<TreeNode*, TreeNode*> parentMap;
 
-        if (root->left) {
-            graph[root->val].push_back(root->left->val);
-            graph[root->left->val].push_back(root->val);
-        }
+        TreeNode* targerNode = makeNodeToParentMappingAndFindTargetNode(root, parentMap, target);
 
-        if (root->right) {
-            graph[root->val].push_back(root->right->val);
-            graph[root->right->val].push_back(root->val);
-        }
-
-        constructGraph(root->left);
-        constructGraph(root->right);
+        return burnTreeTime(parentMap, targerNode);
     }
 };
