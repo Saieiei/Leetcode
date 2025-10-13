@@ -10,25 +10,21 @@
  * };
  */
 class Solution {
-public: 
-    //week14
-    int kthSmallest(TreeNode* root, int& k) { //make sure to pass it as int& k, because we will be subtracting the value during recurssion
-        //this will be solved using inorder traversal
-        //base case (leaf node)
-        if(!root) return -1;
-        
-        //Inorder Treaversal
-        //L
-        int leftAns = kthSmallest(root->left, k);
-        if(leftAns != -1) return leftAns;
-        //return leftAns;
+public:
 
-        //N
-        k--;
-        if(k == 0) return root->val;
+    void  InorederTraversalVectorHelper(TreeNode* root, vector<int>& InorederTraversalVector){
+        //baseCase
+        if(root == NULL)return;
 
-        //R
-        int rightAns = kthSmallest(root->right, k);
-        return rightAns;
+        //recursion LNR
+        InorederTraversalVectorHelper(root->left, InorederTraversalVector);
+        InorederTraversalVector.push_back(root->val);
+        InorederTraversalVectorHelper(root->right, InorederTraversalVector);
+    }
+
+    int kthSmallest(TreeNode* root, int k) {
+        vector<int>InorederTraversalVector;
+        InorederTraversalVectorHelper(root, InorederTraversalVector);
+        return InorederTraversalVector[k-1];
     }
 };
