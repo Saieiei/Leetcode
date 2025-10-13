@@ -9,23 +9,26 @@
  */
 class Solution {
 public:
-//week 13
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        //we will solve this problem using recurssion only
+        //the logic is simple
+        //if the node is p then return , if the node is q then return
+        //if the node is null return null
+        //recursion, find out the same for the left sub tree and the rigth sub tree
+        //backtracking, return p and q if u get any1 of them
 
-        //base case
-        if(root == NULL) return NULL;
-        if(root->val == p->val) return p;
-        if(root->val == q->val) return q;
+        //basecase
+        if(root == NULL)return NULL;
+        if(root == p)return p;
+        if(root == q)return q;
 
-        //now we will do recurssion
-        TreeNode* leftAns= lowestCommonAncestor(root->left, p, q);
-        TreeNode* rightAns= lowestCommonAncestor(root->right, p, q);
+        //recursion
+        TreeNode* leftSubTree = lowestCommonAncestor(root->left, p, q);
+        TreeNode* rightSubTree = lowestCommonAncestor(root->right, p, q);
 
         //backtracking
-        if(leftAns == NULL && rightAns == NULL) return NULL;
-        if(leftAns != NULL && rightAns == NULL) return leftAns;
-        if(rightAns != NULL && leftAns == NULL) return rightAns;
-        else return root; //both found, from that root
+        if(leftSubTree == NULL && rightSubTree == NULL) return NULL;
+        if(leftSubTree != NULL && rightSubTree == NULL) return leftSubTree;
+        if(leftSubTree == NULL && rightSubTree != NULL) return rightSubTree;
+        return root; //both found, from that root
     }
 };
