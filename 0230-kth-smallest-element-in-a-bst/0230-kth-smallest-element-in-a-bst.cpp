@@ -12,19 +12,24 @@
 class Solution {
 public:
 
-    void  InorederTraversalVectorHelper(TreeNode* root, vector<int>& InorederTraversalVector){
+    void  kthSmallestHelper(TreeNode* root, int k, TreeNode*& ansRoot, int& counter){
         //baseCase
         if(root == NULL)return;
 
         //recursion LNR
-        InorederTraversalVectorHelper(root->left, InorederTraversalVector);
-        InorederTraversalVector.push_back(root->val);
-        InorederTraversalVectorHelper(root->right, InorederTraversalVector);
+        kthSmallestHelper(root->left, k, ansRoot, counter);
+        counter++;
+        if(counter == k){ 
+            ansRoot = root;
+            return;
+        }
+        kthSmallestHelper(root->right, k, ansRoot, counter);
     }
 
-    int kthSmallest(TreeNode* root, int k) {
-        vector<int>InorederTraversalVector;
-        InorederTraversalVectorHelper(root, InorederTraversalVector);
-        return InorederTraversalVector[k-1];
+    int kthSmallest(TreeNode* root, int k) { //we will have a counter that will go up as it covers 1 node
+        TreeNode* ansRoot = NULL;
+        int counter = 0;
+        kthSmallestHelper(root, k, ansRoot, counter);
+        return ansRoot->val;
     }
 };
