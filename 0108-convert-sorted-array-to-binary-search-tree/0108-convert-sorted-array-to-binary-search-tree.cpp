@@ -14,6 +14,7 @@ public:
 
     TreeNode* sortedArrayToBSTHelper(vector<int> nums, int start, int end)
     {
+        //basecase
         if(start>end)return NULL;
 
         int mid = start + (end-start)/2;
