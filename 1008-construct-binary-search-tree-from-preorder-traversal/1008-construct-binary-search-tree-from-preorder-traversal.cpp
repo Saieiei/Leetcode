@@ -11,27 +11,37 @@
  */
 class Solution {
 public:
-//week14
-    TreeNode* build(int& i, int min, int max, vector<int>& preorder)
-    {
-        TreeNode* root = NULL;
-        if(i>=preorder.size()) return NULL;
 
-        if(preorder[i]>min && preorder[i]<max)
-        {
-            root = new TreeNode(preorder[i]);
-            i++;
-            root->left = build(i, min, root->val, preorder);
-            root->right = build(i, root->val, max, preorder);
+    TreeNode* bstFromPreorderHelper(int start, int end, int& index, vector<int>&preorder){
+        //basecase
+        if(index>preorder.size()-1)return NULL;
+        
+        //leftRight
+        TreeNode* root = NULL; //we reach the leaf nodes
+        if(preorder[index] > start && preorder[index] < end){
+            root = new TreeNode(preorder[index]);
+            index++;
+
+            //recursion
+            root->left = bstFromPreorderHelper(start, root->val, index, preorder);
+            root->right = bstFromPreorderHelper(root->val, end, index, preorder);
         }
+
+        //backtrack
         return root;
     }
+
+
+    //this is method 3 where, u do it with limits
+    //as we go we get the indea where its goign to go
+    // O(n)
     TreeNode* bstFromPreorder(vector<int>& preorder) {
-        //we will solve this using recurssion
-        //the main idea is to maintain a min and max values for every node and move accordingly
-        int min = INT_MIN;
-        int max = INT_MAX;
-        int i = 0;
-        return build(i, min, max, preorder);
+        int start = INT_MIN;
+        int end = INT_MAX;  
+        int index = 0;
+
+        TreeNode* root =  bstFromPreorderHelper(start, end, index, preorder);
+
+        return root;
     }
 };
