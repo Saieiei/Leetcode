@@ -11,16 +11,27 @@
  */
 class Solution {
 public:
+
+
+    void inorderTraversal(TreeNode* root, vector<int>& inorderVector){
+        //basecase
+        if(root == NULL)return;
+
+        //recursion LNR
+        inorderTraversal(root->left, inorderVector);
+        inorderVector.push_back(root->val);
+        inorderTraversal(root->right, inorderVector);
+    }
+
     int rangeSumBST(TreeNode* root, int low, int high) {
-        if (!root) {
-            return 0;
+        vector<int> inorderVector;
+        inorderTraversal(root, inorderVector);
+
+        int sum = 0;
+        for(int i: inorderVector){
+            if(i>=low && i<=high) sum = sum + i;
         }
-        
-        int currentVal = (root->val >= low && root->val <= high) ? root->val : 0;
-        
-        int leftSum = rangeSumBST(root->left, low, high);
-        int rightSum = rangeSumBST(root->right, low, high);
-        
-        return currentVal + leftSum + rightSum;
+
+        return sum;
     }
 };
