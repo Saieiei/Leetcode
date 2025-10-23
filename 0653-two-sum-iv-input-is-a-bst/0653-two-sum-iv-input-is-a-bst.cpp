@@ -10,38 +10,28 @@
  * };
  */
 class Solution {
-public:
-//week14
-    void StoreInorder(TreeNode* root, vector<int>& inorder)
-    {
-        //perform inorder
-        //base case
-        if(!root) return;
-        //L
-        StoreInorder(root->left, inorder);
-        //N
-        inorder.push_back(root->val);
-        //R
-        StoreInorder(root->right, inorder);
+    void inorderTraversal(TreeNode* root, vector<int>& inorderVector){
+        //basecase
+        if(!root)return;
+
+        //recursion LNR
+        inorderTraversal(root->left, inorderVector);
+        inorderVector.push_back(root->val);
+        inorderTraversal(root->right, inorderVector);
     }
+public:
+// O(N) time, O(N) space
     bool findTarget(TreeNode* root, int k) {
-        //this can be done using inorder
-        //,ake the inorder vector (y inorder? because it will be in ascending order and we can apply 2 pointers on it)
-        //then use 2 pointers approach on the inorder vector
-        //simple
+        vector<int>inorderVector;
+        inorderTraversal(root, inorderVector);
 
-        vector<int> inorder;
-        StoreInorder(root, inorder);
-        //2 sum pointers approach
-        int start = 0;
-        int end = inorder.size() - 1;
-
-        while(start < end)
-        {
-            int sum = inorder[start] + inorder[end];
-            if(sum == k) return true;
-            else if(sum > k) end--;
-            else if(sum < k) start++;
+        //2 sum hashMap freq
+        unordered_map<int, int>freq;
+        for(int i: inorderVector){
+            int need = k-i;
+            auto it = freq.find(need);
+            if(it != freq.end()) return true;
+            freq[i]++;
         }
         return false;
     }
