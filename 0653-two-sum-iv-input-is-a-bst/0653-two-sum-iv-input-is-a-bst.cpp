@@ -14,7 +14,7 @@ class Solution {
         //basecase
         if(!root)return;
 
-        //recursion LNR
+        //recursion NLR
         inorderTraversal(root->left, inorderVector);
         inorderVector.push_back(root->val);
         inorderTraversal(root->right, inorderVector);
@@ -22,17 +22,18 @@ class Solution {
 public:
 // O(N) time, O(N) space
     bool findTarget(TreeNode* root, int k) {
-        vector<int>inorderVector;
+        vector<int> inorderVector;
         inorderTraversal(root, inorderVector);
-
-        //2 sum hashMap freq
-        unordered_map<int, int>freq;
-        for(int i: inorderVector){
-            int need = k-i;
-            auto it = freq.find(need);
-            if(it != freq.end()) return true;
-            freq[i]++;
+        
+        //2 pointers
+        int left = 0;
+        int right = inorderVector.size()-1;
+        while(left < right){
+            if(inorderVector[left] + inorderVector[right] == k)return true;
+            else if(inorderVector[left] + inorderVector[right] > k) right--;
+            else left++;
         }
         return false;
+
     }
 };
