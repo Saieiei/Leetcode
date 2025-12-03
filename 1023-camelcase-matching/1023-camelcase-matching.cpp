@@ -1,28 +1,25 @@
 class Solution {
 public:
-
-    bool matches(string& query, string& pattern) {
-        int j = 0; // pattern index
-        for (char c : query) {
-            if (j < pattern.size() && c == pattern[j]) {
-                // Use this query char to match current pattern char
+    bool check(string q, string p) {
+        int i = 0, j = 0;
+        
+        while (i < q.size()) {
+            if (j < p.size() && q[i] == p[j]) {
+                i++;
                 j++;
-            } else if (isupper(c)) {
-                // Uppercase that doesn't match pattern -> illegal
-                return false;
             } else {
-                // Lowercase that doesn't match -> allowed noise, skip
+                if (isupper(q[i])) return false;
+                i++;
             }
         }
-        // All pattern chars must have been matched
-        return j == pattern.size();
+        
+        return j == p.size();
     }
 
-    //its simple only but kinda tricky 
     vector<bool> camelMatch(vector<string>& queries, string pattern) {
         vector<bool> ans;
-        for(string query: queries){
-            ans.push_back(matches(query, pattern));
+        for (auto q : queries) {
+            ans.push_back(check(q, pattern));
         }
         return ans;
     }
