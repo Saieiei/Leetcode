@@ -18,6 +18,7 @@ public:
         return j == pattern.size();
     }
 
+    //its simple only but kinda tricky 
     vector<bool> camelMatch(vector<string>& queries, string pattern) {
         vector<bool> ans;
         for(string query: queries){
