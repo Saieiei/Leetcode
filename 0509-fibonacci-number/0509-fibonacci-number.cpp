@@ -2,25 +2,22 @@
 class Solution {
 public:
 
-    int recursionFib(int n, vector<int>& dp){
-        //basecase
+    int recursionFibTabulation(int n){
+        //instead of basecase we directly tabulate
+        vector<int> dp(n+1, -1); //always keep 1 extra
         if(n==0 || n==1) return n;
-        //check if we have the result usinf dp
-        if(dp[n] != -1){
-            return dp[n];
+        dp[0]=0; dp[1]=1;
+
+        //bottom up approach
+        for(int i=2; i<=n; i++){
+            dp[i] = dp[i-1] + dp[i-2];
         }
 
-        //recursion
-        int ans = recursionFib(n-1, dp) + recursionFib(n-2, dp);
-        //store the ans in dp
-        dp[n] = ans;
-        return ans;
+        return dp[n];
     }
 
     int fib(int n) {
         //for DP
-        vector<int> dp(100, -1);
-        int ans = recursionFib(n, dp);
-        return ans;
+        return recursionFibTabulation(n);
     }
 };
