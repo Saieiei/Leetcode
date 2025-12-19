@@ -1,4 +1,4 @@
-//we will be doing it using recustion 1st and then DP(memoization)
+//we will be doing it using recustion 1st and then DP(tabulation)
 class Solution {
 public:
 
