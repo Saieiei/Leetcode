@@ -1,23 +1,25 @@
-//we will be doing it using recustion 1st and then DP(tabulation)
+//we will be doing it using recustion 1st and then DP(tabulation) + space opti
 class Solution {
 public:
 
-    int recursionFibTabulation(int n){
-        //instead of basecase we directly tabulate
-        vector<int> dp(n+1, -1); //always keep 1 extra
+    int recursionFibTabulationSpace(int n){
+        //instead of basecase 
         if(n==0 || n==1) return n;
-        dp[0]=0; dp[1]=1;
+        int curr=0, prev1=1, prev2=0;
 
         //bottom up approach
         for(int i=2; i<=n; i++){
-            dp[i] = dp[i-1] + dp[i-2];
+            curr = prev2 + prev1;
+
+            prev2 = prev1;
+            prev1 = curr;
         }
 
-        return dp[n];
+        return curr;
     }
 
     int fib(int n) {
         //for DP
-        return recursionFibTabulation(n);
+        return recursionFibTabulationSpace(n);
     }
 };
