@@ -4,23 +4,24 @@
 class Solution {
 public:
 
-    int solveUsingRecurssionMemo(vector<int>& nums, int index, vector<int>& dp){
-        //basecase and check if the dp value is present
-        if(index >= nums.size()) return 0;
-        if(dp[index] != -1) return dp[index];
+    int solveUsingRecurssionTabu(vector<int>& nums, int index){
+        //basecase and create dp
+        vector<int>dp(nums.size()+2, 0);
+        //if(index >= nums.size()) return 0;
+        dp[nums.size()] = 0; 
 
-        //recursion
-        int include = nums[index] + solveUsingRecurssionMemo(nums, index+2, dp);
-        int exclude = 0 + solveUsingRecurssionMemo(nums, index+1, dp);
-
-        //store the value in dp and then return
-        dp[index] =  max(include, exclude);
-        return dp[index];
+        //bottom up and convertion
+        for(int i=nums.size()-1; i>=0; i--){
+            int include = nums[i] + dp[i+2];
+            int exclude = 0 + dp[i+1];
+            dp[i] = max(include, exclude);
+        }
+        
+        return dp[0];
     }
 
     int rob(vector<int>& nums) {
         int index=0;
-        vector<int>dp(nums.size()+1, -1);
-        return solveUsingRecurssionMemo(nums, index, dp);
+        return solveUsingRecurssionTabu(nums, index);
     }
 };
