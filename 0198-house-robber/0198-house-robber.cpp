@@ -6,13 +6,19 @@ public:
 
     int solveUsingRecurssionTabu(vector<int>& nums, int index){
         //basecase and create dp
-        vector<int>dp(nums.size()+2, 0);
+        int n = nums.size();
+        vector<int>dp(n+1, -1);
         //if(index >= nums.size()) return 0;
-        dp[nums.size()] = 0; 
+        dp[n] = 0; 
 
         //bottom up and convertion
-        for(int i=nums.size()-1; i>=0; i--){
-            int include = nums[i] + dp[i+2];
+        for(int i=n-1; i>=0; i--){
+            
+            int temp = 0;
+            if(i == n-1) temp = 0; //will go out of bounds or else
+            else temp = dp[i+2];
+
+            int include = nums[i] + temp;
             int exclude = 0 + dp[i+1];
             dp[i] = max(include, exclude);
         }
