@@ -1,5 +1,5 @@
 //M2
-//1st we will try to solve this using recursion+Memo
+//1st we will try to solve this using recursion+Tabu
 //we will solve it using include and exclude method
 class Solution {
 public:
