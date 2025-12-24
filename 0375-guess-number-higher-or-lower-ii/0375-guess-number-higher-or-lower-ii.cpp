@@ -1,9 +1,11 @@
 //M2 Memoization
 //it is somewhat related to include/exclude principal
-//The Idea: if we get into the worst path, we can get to know how much amount is required to burn (max)
+//The Idea: if we get into the worst path of each i, we can get to know how much amount is required to burn (max)
 //if the number we have selected is not the ans, then the posibility of that number lies between [start x-1] and [x+1, end]
 //we will be going into each of these ranges using recursion
 //add up the false number as we keep going
+//each index tell u the max amount needed to get the ans
+//from all these index we will pick the "min to get the minimum amount of money you need to guarantee a win regardless of what number I pick."
 class Solution {
 public:
 
