@@ -1,4 +1,4 @@
-//M2 Memoization
+//M3 Tabulation
 //it is somewhat related to include/exclude principal
 //The Idea: if we get into the worst path of each i, we can get to know how much amount is required to burn (max)
 //if the number we have selected is not the ans, then the posibility of that number lies between [start x-1] and [x+1, end]
@@ -9,30 +9,39 @@
 class Solution {
 public:
 
-    int recursionMemo(int start, int end, vector<vector<int>>& dp){
-        //3. basecase and check if its there in dp
-        if(start >= end) return 0; //only 1 element left, that is the ans, no need to add anything
-        if(dp[start][end] != -1) return dp[start][end];
+    int recursionMemo(int start, int end){
+        //1.create dp
+        vector<vector<int>> dp(end+2, vector<int>(end+2, 0));
 
-        int ans = INT_MAX;
-        //recursion
-        for(int i=start; i<=end; i++)
-        {
-            int LowerBound = recursionMemo(start, i-1, dp);
-            int UpperBound = recursionMemo(i+1, end, dp);
+        //2. for loop, reversed, copy-paste, fun-rec, indexing
+        for(int ss = end; ss>=1; ss--){
+            for(int ee = ss; ee<=end; ee++){
 
-            int cost = i + max(LowerBound, UpperBound);
-            ans = min(ans, cost);
-            //ans = min(ans, i + max(recursion(start, i-1), recursion(i+1, end)));
+                //bassecase
+                if(ss == ee) continue;
+
+                int ans = INT_MAX;
+                //recursion
+                for(int i=ss; i<=ee; i++)
+                {
+                    int LowerBound = dp[ss][i-1];
+                    int UpperBound = dp[i+1][ee];
+
+                    int cost = i + max(LowerBound, UpperBound);
+                    ans = min(ans, cost);
+                    //ans = min(ans, i + max(recursion(start, i-1), recursion(i+1, end)));
+                }
+                //2. store and update the dp
+                dp[ss][ee] = ans;
+            }  
+
         }
-        //2. store and update the dp
-        dp[start][end] = ans;
-        return ans;
+        //3. return accordingly
+        return dp[start][end];
     }
 
     int getMoneyAmount(int n) {
         //1. create DP vector<vector<int>> dp
-        vector<vector<int>> dp(n+1, vector<int>(n+1, -1));
-        return recursionMemo(1, n, dp);
+        return recursionMemo(1, n);
     }
 };
