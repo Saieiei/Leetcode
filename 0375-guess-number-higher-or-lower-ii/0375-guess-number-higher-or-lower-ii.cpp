@@ -1,4 +1,4 @@
-//M1 Recursion
+//M2 Memoization
 //it is somewhat related to include/exclude principal
 //The Idea: if we get into the worst path, we can get to know how much amount is required to burn (max)
 //if the number we have selected is not the ans, then the posibility of that number lies between [start x-1] and [x+1, end]
