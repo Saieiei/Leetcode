@@ -1,4 +1,4 @@
-//M2 Memoization
+//M3 Tabulation
 //the idea is that if they match then move th eindex ahead by 1 fot both
 //else we have to move either 1 cuz there is a posibility
     //now we have to move the index which was not moved before
@@ -9,30 +9,37 @@
 class Solution {
 public:
 
-    int recursion(string& text1, string& text2, int index1, int index2, vector<vector<int>>& dp){
-        //3.bc check if its there in dp
-        if(index1 >= text1.size()) return 0;
-        if(index2 >= text2.size()) return 0;
-        if(dp[index1][index2] != -1) return dp[index1][index2];
-        int ans = 0;
+    int recursionTabu(string& text1, string& text2, int index1, int index2){
 
-        if(text1[index1] == text2[index2]){
-            ans = 1 + recursion(text1, text2, index1+1, index2+1, dp);
+        //1. create dp
+        vector<vector<int>>dp(text1.length()+1, vector<int>(text2.length()+1, 0)); //bc
+
+        //2.for-loop, reversed, copy-paste, rec-fun, index
+        for(int i=text1.size()-1; i>=0; i--){ //bc
+            for(int j = text2.size()-1; j>=0; j--){ //bc
+
+                int ans =0;
+                if(text1[i] == text2[j]){
+                    ans = 1 + dp[i+1][j+1];
+                }
+                else{
+                    int pattern1 = dp[i][j+1];
+                    int pattern2 = dp[i+1][j];
+                    ans = 0 + max(pattern1, pattern2);
+                }
+                //2. store the ans in dp
+                dp[i][j] = ans;
+            }
         }
-        else{
-            int pattern1 = recursion(text1, text2, index1, index2+1, dp);
-            int pattern2 = recursion(text1, text2, index1+1, index2, dp);
-            ans = 0 + max(pattern1, pattern2);
-        }
-        //2. store the ans in dp
-        dp[index1][index2] = ans;
-        return ans;
+
+        //3. return accordingly
+        return dp[0][0];
     }
 
     int longestCommonSubsequence(string text1, string text2) {
         int index1=0, index2=0;
         //1. create dp
-        vector<vector<int>>dp(text1.length()+1, vector<int>(text2.length()+1, -1));
-        return recursion(text1, text2, index1, index2, dp);
+        //vector<vector<int>>dp(text1.length()+1, vector<int>(text2.length()+1, -1));
+        return recursionTabu(text1, text2, index1, index2);
     }
 };
