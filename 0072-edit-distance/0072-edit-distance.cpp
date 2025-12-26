@@ -1,4 +1,4 @@
-//M2 Memoization
+//M3 Tabulation
 //we have 3 operations if the chars dont match
     //if we use insertion(+1), we will move j++;
     //if we use deletion(+1) we will move i++
@@ -9,34 +9,39 @@
 //if we reach the end of w1, then we have to insert the remaing words in w1 from w2, so return (w2.length() -j)
 class Solution {
 public:
-
-
-    int recursionMemo(string& word1, string& word2, int i, int j, vector<vector<int>>& dp){
+    int recursionTabu(string& word1, string& word2, int i, int j){
+        //1. create dp
+        vector<vector<int>>dp(word1.length()+1, vector<int>(word2.length()+1, 0));
         //bc
-        if(i>=word1.length()){ //insertion
-            return word2.length()-j;
+        for(int i=0; i<=word2.length(); i++){ //insertion
+            dp[word1.length()][i] = word2.length()-i;
         }
-        if(j>=word2.length()){ //deletion
-            return word1.length()-i;
-        }
-        //2. with bc check if its there in dp
-        if(dp[i][j] != -1) return dp[i][j];
 
+        for(int i=0; i<=word1.length(); i++){ //deletion
+            dp[i][word2.length()] = word1.length()-i;
+        }
 
-        int ans =0;
-        if(word1[i] == word2[j]){ //do nothign, just move forward
-            ans =  recursionMemo(word1, word2, i+1, j+1, dp);
+        //2. for-loop, reversed, copy-paste, rec-func, indexing
+        for(int i = word1.length()-1; i>=0; i--){
+            for(int j = word2.length()-1; j>=0; j--){
+                int ans =0;
+                if(word1[i] == word2[j]){ //do nothign, just move forward
+                    ans =  dp[i+1][j+1];
+                }
+                else
+                {
+                    int inserted = 1 + dp[i][j+1];
+                    int deleted =  1 + dp[i+1][j];
+                    int replaced = 1 + dp[i+1][j+1];
+                    ans = min(replaced, min(inserted, deleted));
+                }
+                //2. save the results in dp
+                dp[i][j] = ans;
+            }
         }
-        else
-        {
-            int inserted = 1 + recursionMemo(word1, word2, i, j+1, dp);
-            int deleted =  1 + recursionMemo(word1, word2, i+1, j, dp);
-            int replaced = 1 + recursionMemo(word1, word2, i+1, j+1, dp);
-            ans = min(replaced, min(inserted, deleted));
-        }
-        //2. save the results in dp
-        dp[i][j] = ans;
-        return ans;
+        
+        //3. return accordingly
+        return dp[0][0];
     }
 
     int minDistance(string word1, string word2) {
@@ -45,8 +50,7 @@ public:
         if(word2.length() == 0) return word1.length(); //deletion
 
         int i=0, j = 0;
-        //1. create dp
-        vector<vector<int>>dp(word1.length()+1, vector<int>(word2.length()+1, -1));
-        return recursionMemo(word1, word2, i, j, dp);
+        
+        return recursionTabu(word1, word2, i, j);
     }
 };
