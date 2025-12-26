@@ -1,46 +1,49 @@
+//to dolve this we have to know LCS
+//in LCS view, string1 is s string2 is reversed(s)
+//same code as LCS
+//https://leetcode.com/problems/longest-common-subsequence/submissions/1865161144/
 class Solution {
 public:
-    ////O(2^n) time complexity (O(2^n) > O(n^2)) TLE 61 / 86 testcases passed
-    ////O(n) space complexity
-    //int recurssion_method(string& s, int low, int high)
-    //{
-    //    //if only 1 character in the string
-    //    if(low == high ) return 1;
-    //    //if only 2 characters in the string
-    //    if(s[low] == s[high] && low+1 == high) return 2;
-//
-    //    //if last character matches the first character
-    //    if(s[low] == s[high]) return recurssion_method(s, low+1, high-1) + 2;
-    //    //if last character does not match the first character
-    //    else return max(recurssion_method(s, low+1, high), recurssion_method(s, low, high-1));
-    //}
 
-    int recursion_method(string& s1, string& s2, int i, int j, vector<vector<int>>& dp)
-    {
-        if(i < 0 || j < 0) return 0; // No common subsequence
+    int recursionTabuSO(string& text1, string& text2, int index1, int index2){
 
-        if(dp[i][j] != -1) return dp[i][j]; //return if u have the value
-        if(s1[i] == s2[j]) 
-            return dp[i][j] = 1 + recursion_method(s1, s2, i-1, j-1, dp);
-        else 
-            return dp[i][j]= max(recursion_method(s1, s2, i-1, j, dp), recursion_method(s1, s2, i, j-1, dp));
+        //1. create dp
+        vector<int> curr(text1.length()+100);
+        vector<int> next(text1.length()+100);
+        //vector<vector<int>>dp(text1.length()+1, vector<int>(text2.length()+1, 0)); //bc
+
+        //2.for-loop, reversed, copy-paste, rec-fun, index
+        for(int i=text1.size()-1; i>=0; i--){ //bc
+            for(int j = text2.size()-1; j>=0; j--){ //bc
+
+                int ans =0;
+                if(text1[i] == text2[j]){
+                    ans = 1 + next[j+1];
+                }
+                else{
+                    int pattern1 = curr[j+1];
+                    int pattern2 = next[j];
+                    ans = 0 + max(pattern1, pattern2);
+                }
+                //2. store the ans in dp
+                curr[j] = ans;
+            }
+            //shifting
+            next = curr; // its is goign upwards, reverded for loop
+        }
+
+        //3. return accordingly
+        return next[0];
     }
-    int longestPalindromeSubseq(string s1){
-        //int low = 0;
-        //int high = s.length();
-        //return recurssion_method(s, low, high);
+    int longestPalindromeSubseq(string s) {
+        string text1 = s;
+        string text2 = s;
+        reverse(text2.begin(), text2.end());
 
-        //recurssion+memoization method
-        string s2 = s1;
-        reverse(s2.begin(), s2.end());
-        int n = s1.length();
-        int m = s2.length();
-        vector<vector<int>>dp (n, vector<int>(m, -1));
-
-        // Start with the last valid indices: n-1 and m-1
-        int ans = recursion_method(s1, s2, n-1, m-1, dp);
-        return ans;
+        //copy-paste LCS
+        int index1=0, index2=0;
+        //1. create dp
+        //vector<vector<int>>dp(text1.length()+1, vector<int>(text2.length()+1, -1));
+        return recursionTabuSO(text1, text2, index1, index2);
     }
 };
-
-
