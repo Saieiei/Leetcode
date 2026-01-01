@@ -1,45 +1,27 @@
-//M1 recursion (DnC)
-//This is the most easiest method
-//find the left sum, find the right sum, find the crossum, then do recursion with the mid
-//return the max 
+//M2 recursion (Khadanaes Algo)
+//we will start from the end
+//Idea: should we consider this only elem or add up this eleme with the previous1
+//in the end return the max so far found
 class Solution {
 public:
 
-    int crossMaxCalcFun(vector<int>& nums, int start, int mid, int end){
+    int globalMax;
 
-        int leftCalMax = INT_MIN;
-        int sum = 0;
-        for(int i = mid; i >= start; i--){
-            sum = sum + nums[i];
-            leftCalMax = max(leftCalMax, sum);
-        }
-
-        int RightCalMax = INT_MIN;
-        sum = 0;
-        for(int i = mid+1; i <= end; i++){
-            sum = sum + nums[i];
-            RightCalMax = max(RightCalMax, sum);
-        }
-
-        int total = leftCalMax + RightCalMax;
-        return total;
-    }
-
-    int recursion(vector<int>& nums, int start, int end){
+    int recursion(vector<int>& nums, int end){
         //bc
-        if(start == end) return nums[start]; //just return the 1 and only ele
+        if(end == 0) return nums[0]; //just return the 1 and only ele
 
-        int mid = start + (end-start)/2;
-
-        int leftMax = recursion(nums, start, mid); // ...***|...
-        int rightMax = recursion(nums, mid+1, end); // ...|***...
-        int crossMaxCalc = crossMaxCalcFun(nums, start, mid, end); //...***...
- 
-        return max(leftMax, max(rightMax, crossMaxCalc));
+        int PrevIndxMax = recursion(nums, end-1);
+        int currIndxMax = max(nums[end], nums[end] + PrevIndxMax);
+        globalMax = max(globalMax, currIndxMax);
+        //make sure to return 
+        return currIndxMax;
     }
 
     int maxSubArray(vector<int>& nums) {
+        globalMax = nums[0]; //incase we have only ele, this will help
         int n = nums.size()-1;
-        return recursion(nums, 0, n);
+        recursion(nums, n);
+        return globalMax;
     }
 };
