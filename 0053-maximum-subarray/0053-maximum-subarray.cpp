@@ -1,30 +1,34 @@
-//M3 Memoizzation (Khadanaes Algo)
+//M5 SO (Khadanaes Algo)
 //we will start from the end
 //Idea: should we consider this only elem or add up this eleme with the previous1
 //in the end return the max so far found
+//this Tabulation is a little diff because of 1 global variable
 class Solution {
 public:
 
-    int globalMax;
-
-    int recursion(vector<int>& nums, int end, vector<int>& dp){
+    int recursionTabuSO(vector<int>& nums, int end){
         //bc
-        if(end == 0) return nums[0]; //just return the 1 and only ele
-        if(dp[end] != -1) return dp[end];
+        int prev = nums[0];
+        int globalMax = prev;
+        int curr = 0;
 
-        int PrevIndxMax = recursion(nums, end-1, dp);
-        int currIndxMax = max(nums[end], nums[end] + PrevIndxMax);
-        globalMax = max(globalMax, currIndxMax);
-        //make sure to return 
-        dp[end] = currIndxMax;
-        return currIndxMax;
+
+        //2.forloop, reversed, fun-rec, indexing
+        for(int i = 1; i <= end; i++){
+            int PrevIndxMax = prev;
+            curr = max(nums[i], nums[i] + PrevIndxMax);
+            globalMax = max(curr, globalMax);
+
+            //forgetting step
+            prev = curr;
+        }
+
+        return globalMax;
     }
 
     int maxSubArray(vector<int>& nums) {
-        globalMax = nums[0]; //incase we have only ele, this will help
         int n = nums.size()-1;
-        vector<int>dp(nums.size(), -1);
-        recursion(nums, n, dp);
-        return globalMax;
+        return recursionTabuSO(nums, n);
+
     }
 };
