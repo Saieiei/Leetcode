@@ -1,58 +1,45 @@
+//M1 recursion (DnC)
+//This is the most easiest method
+//find the left sum, find the right sum, find the crossum, then do recursion with the mid
+//return the max 
 class Solution {
 public:
-//week 8
-//we will solve this using recursssion and DnC
 
-    int maxSumArrayHelper(vector<int> &nums, int start, int end)
-    {
-        //base case
-        if(start==end) return nums[start]; //single element
-        //calculation
-        int mid=start+((end-start)>>1);
-        //recurssion
-        int maxLeftSum=maxSumArrayHelper(nums, start, mid);
-        int maxRightSum=maxSumArrayHelper(nums, mid+1, end);
+    int crossMaxCalcFun(vector<int>& nums, int start, int mid, int end){
 
-        int maxLeftBorderSum=INT_MIN, maxRightBorderSum=INT_MIN;
-        //max corss border
-        int leftBorderSum=0, rightBorderSum=0;
-        //from mid to left
-        for(int i=mid;i>=start;i--)
-        {
-            leftBorderSum = leftBorderSum + nums[i];
-            maxLeftBorderSum = max(maxLeftBorderSum, leftBorderSum);
+        int leftCalMax = INT_MIN;
+        int sum = 0;
+        for(int i = mid; i >= start; i--){
+            sum = sum + nums[i];
+            leftCalMax = max(leftCalMax, sum);
         }
-        //from mid to right
-        for(int i=mid+1;i<=end;i++)
-        {
-            rightBorderSum = rightBorderSum + nums[i];
-            maxRightBorderSum = max(maxRightBorderSum, rightBorderSum);
+
+        int RightCalMax = INT_MIN;
+        sum = 0;
+        for(int i = mid+1; i <= end; i++){
+            sum = sum + nums[i];
+            RightCalMax = max(RightCalMax, sum);
         }
-        //from right to left through mid
-        int crossBorderSum = maxRightBorderSum + maxLeftBorderSum;
-        return max(crossBorderSum, max(maxLeftSum, maxRightSum));
+
+        int total = leftCalMax + RightCalMax;
+        return total;
+    }
+
+    int recursion(vector<int>& nums, int start, int end){
+        //bc
+        if(start == end) return nums[start]; //just return the 1 and only ele
+
+        int mid = start + (end-start)/2;
+
+        int leftMax = recursion(nums, start, mid); // ...***|...
+        int rightMax = recursion(nums, mid+1, end); // ...|***...
+        int crossMaxCalc = crossMaxCalcFun(nums, start, mid, end); //...***...
+ 
+        return max(leftMax, max(rightMax, crossMaxCalc));
     }
 
     int maxSubArray(vector<int>& nums) {
-        //int ans=maxSumArrayHelper(nums, 0, nums.size()-1);
-        //return ans;
-        // Initialize currentSum and maxSum
-    int currentSum = nums[0];
-    int maxSum = nums[0];
-
-    // Iterate through the array starting from the second element
-    for(int i = 1; i < nums.size(); i++) {
-        // Update currentSum by either adding the current element to the previous sum
-        // or starting a new subarray from the current element
-        currentSum = max(nums[i], currentSum + nums[i]);
-
-        // Update maxSum if currentSum is greater
-        maxSum = max(maxSum, currentSum);
-    }
-
-    // Output the result, which is the maximum sum of any subarray
-    //cout << maxSum << endl;
-
-    return maxSum;
+        int n = nums.size()-1;
+        return recursion(nums, 0, n);
     }
 };
