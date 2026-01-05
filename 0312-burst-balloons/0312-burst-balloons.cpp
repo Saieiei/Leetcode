@@ -1,4 +1,4 @@
-//M2 Tabulation
+//M2 Memoization
 //but bottom up
 class Solution {
 public:
