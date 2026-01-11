@@ -8,7 +8,7 @@
 //after getting the total we will keep updating the max
 class Solution {
 public:
-    int recursion(vector<int>& piles, int i, int m, int AliceTurn, vector<vector<vector<int>>>& dp){
+    int recursionMemo(vector<int>& piles, int i, int m, int AliceTurn, vector<vector<vector<int>>>& dp){
         //bc
         if(i >= piles.size()) return 0;
         if(dp[i][m][AliceTurn] != -1) return dp[i][m][AliceTurn];
@@ -20,10 +20,10 @@ public:
             if(x+i-1 >= piles.size()) break;// out of bound, not needed
             total  = total + piles[x+i-1];
             if(AliceTurn){
-            ans = max(ans, total + recursion(piles, i + x, max(x, m), !AliceTurn, dp));
+            ans = max(ans, total + recursionMemo(piles, i + x, max(x, m), !AliceTurn, dp));
             }
             else{
-                ans = min(ans, recursion(piles, i + x, max(x, m), !AliceTurn, dp)); //dont add it to total
+                ans = min(ans, recursionMemo(piles, i + x, max(x, m), !AliceTurn, dp)); //dont add it to total
             }
         }
         dp[i][m][AliceTurn] = ans;
@@ -34,6 +34,6 @@ public:
         int AliceTurn = 1;
         int m = 1;
         vector<vector<vector<int>>>dp(piles.size()+1, vector<vector<int>>(piles.size()+1, vector<int>(2, -1)));
-        return recursion(piles, i, m, AliceTurn, dp);
+        return recursionMemo(piles, i, m, AliceTurn, dp);
     }
 };
