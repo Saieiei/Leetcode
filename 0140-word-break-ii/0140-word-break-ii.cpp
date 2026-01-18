@@ -1,4 +1,4 @@
-//M1 Recursion
+//M1 Memoization
 //not intuitive and hard to understand
 //instead of using wordDict, we will create a unordered_map and use that
     //for quick look ups
@@ -14,7 +14,7 @@ public:
 
     vector<string> recursion(string& s, unordered_map<string, bool>& DictMP, int indx){
         //bc
-        if(indx >= s.size()) return {""};
+        if(indx >= s.size()) return {""}; //vector<string>, {} important
         vector<string> ans;
 
         //start making the word
@@ -40,6 +40,7 @@ public:
         unordered_map<string, bool>DictMP;
         for(string word: wordDict) DictMP[word] = 1;
         int indx = 0;
+
         return recursion(s, DictMP, indx);
     }
 };
