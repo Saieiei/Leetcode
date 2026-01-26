@@ -1,14 +1,30 @@
+//M2 Memoization
+//either consume 1 char or 2 chars
+//even an empty string is considered (i==n)
 class Solution {
 public:
-    int numDecodings(string s) {
-        int n = s.size();
-        vector<int> dp(n+1, 0);
-        dp[n] = 1;
-        for (int i = n - 1; i >= 0; --i) {
-            if (s[i] != '0') dp[i] += dp[i+1];
-            if (i+1 < s.size() && (s[i] == '1' || s[i] == '2' && s[i+1] <= '6'))
-                dp[i] += dp[i+2];
+    int recursion(string& s, int indx, vector<int>& dp){
+        //bc
+        if(indx == s.size()) return 1; //empty
+        if(s[indx] == '0') return 0; //single
+        if(dp[indx] != -1) return dp[indx];
+
+        int ways = 0;
+        //op1
+        ways = recursion(s, indx + 1, dp); //not 1 + r
+        //op2
+        if(indx + 1 < s.size()){
+            int decoded  = (s[indx] - '0')*10 + (s[indx + 1] - '0');
+            if(decoded >= 10 && decoded <= 26 ) 
+                ways += recursion(s, indx + 2, dp);  //not 1 + r
         }
-        return dp[0];
+        dp[indx] = ways;
+        return ways;
+    }
+    int numDecodings(string s) {
+        int indx = 0;
+        vector<int>dp(s.size() + 1, -1);
+        return recursion(s, indx, dp);
+        
     }
 };
