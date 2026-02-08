@@ -1,6 +1,5 @@
-#include <bits/stdc++.h>
-using namespace std;
-
+//https://www.geeksforgeeks.org/problems/minimum-cost-path3833/1
+//here we used dijkdtras algo but only do right and down
 class Solution
 {
     public:
