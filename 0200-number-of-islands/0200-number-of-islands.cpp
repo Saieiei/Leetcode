@@ -1,50 +1,48 @@
-//DFS
-//https://leetcode.com/problems/number-of-provinces/description/
+//DFS, space optimised -> visited => grid
 class Solution {
 public:
-    // This recursive function replaces the BFS loop + Queue
-    void dfs(vector<vector<char>>& grid, vector<vector<bool>>& visited, int r, int c, int rows, int cols) {
-        // 1. BASE CASE: Boundary Checks (If out of bounds, stop)
-        if (r < 0 || r >= rows || c < 0 || c >= cols) {
-            return;
+    void dfsIterative(vector<vector<char>>& grid, int r, int c) {
+        int rows = grid.size();
+        int cols = grid[0].size();
+        
+        // HERE IS THE STACK! (Explicitly defined)
+        stack<pair<int, int>> s;
+        s.push({r, c});
+        
+        // While stack is not empty (similar to BFS queue loop)
+        while (!s.empty()) {
+            pair<int, int> curr = s.top();
+            s.pop();
+            
+            int row = curr.first;
+            int col = curr.second;
+            
+            // Check bounds and if processed
+            if (row < 0 || col < 0 || row >= rows || col >= cols || grid[row][col] == '0') {
+                continue;
+            }
+            
+            // Mark visited (Sink the island)
+            grid[row][col] = '0';
+            
+            // Push neighbors to stack
+            s.push({row + 1, col}); // Down
+            s.push({row - 1, col}); // Up
+            s.push({row, col + 1}); // Right
+            s.push({row, col - 1}); // Left
         }
-
-        // 2. BASE CASE: If water ('0') or already visited, stop
-        if (grid[r][c] == '0' || visited[r][c]) {
-            return;
-        }
-
-        // 3. Mark as visited
-        visited[r][c] = true;
-
-        // 4. Recursive Step: Visit all 4 neighbors
-        // We don't need a loop here; explicit calls are often faster/clearer in DFS
-        dfs(grid, visited, r + 1, c, rows, cols); // Down
-        dfs(grid, visited, r - 1, c, rows, cols); // Up
-        dfs(grid, visited, r, c + 1, rows, cols); // Right
-        dfs(grid, visited, r, c - 1, rows, cols); // Left
     }
 
     int numIslands(vector<vector<char>>& grid) {
-        int rows = grid.size();
-        if (rows == 0) return 0;
-        int cols = grid[0].size();
-        
-        int countAns = 0;
-        
-        // Keep the visited array (O(M*N) space)
-        vector<vector<bool>> visited(rows, vector<bool>(cols, false));
-
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                // If we find unvisited land
-                if (grid[i][j] == '1' && !visited[i][j]) {
-                    // Start the recursion to sink the whole island
-                    dfs(grid, visited, i, j, rows, cols);
-                    countAns++;
+        int count = 0;
+        for (int i = 0; i < grid.size(); i++) {
+            for (int j = 0; j < grid[0].size(); j++) {
+                if (grid[i][j] == '1') {
+                    count++;
+                    dfsIterative(grid, i, j);
                 }
             }
         }
-        return countAns;
+        return count;
     }
 };
