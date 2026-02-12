@@ -13,47 +13,50 @@
 //in the end outside the 2 loops return count
 class Solution {
 public:
-    bool isSafe(int& newX, int& newY, int& row, int& col){
-        if(newX>=0 && newX<row && newY>=0 && newY<col){
-            return true;
-        }
-        else{
-            return false;
-        }
+    bool isSafe(int newX, int newY, int row, int col) {
+        return (newX >= 0 && newX < row && newY >= 0 && newY < col);
     }
-    void bfs(map<pair<int, int>, bool>& visited, vector<vector<char>>& grid, queue<pair<int, int>>& q, int& row, int& col){
-        while(!q.empty()){
-            pair<int, int> firstNodeIndexs = q.front();
+
+    void bfs(vector<vector<bool>>& visited, vector<vector<char>>& grid, int row, int col, int startX, int startY) {
+        queue<pair<int, int>> q;
+        q.push({startX, startY});
+        visited[startX][startY] = true;
+        int dx[] = {-1, 1, 0, 0};
+        int dy[] = {0, 0, -1, 1};
+
+        while (!q.empty()) {
+            pair<int, int> curr = q.front();
             q.pop();
-            int nodeX = firstNodeIndexs.first;
-            int nodeY = firstNodeIndexs.second;
-            vector<int> dx{-1, 1, 0, 0};
-            vector<int> dy{0, 0, -1, 1};
-            for(int i=0; i<4; i++){
-                int newX = dx[i] + nodeX;
-                int newY = dy[i] + nodeY;
-                if(isSafe(newX, newY, row, col)){
-                    if(!visited[{newX, newY}] && grid[newX][newY] == '1'){
+            int cx = curr.first;
+            int cy = curr.second;
+
+            for (int i = 0; i < 4; i++) {
+                int newX = cx + dx[i];
+                int newY = cy + dy[i];
+
+                if (isSafe(newX, newY, row, col)) {
+                    if (!visited[newX][newY] && grid[newX][newY] == '1') {
+                        visited[newX][newY] = true;
                         q.push({newX, newY});
-                        visited[{newX, newY}] = true;
                     }
                 }
             }
         }
     }
+
     int numIslands(vector<vector<char>>& grid) {
-        map<pair<int, int>, bool>visited; //location, visited or not
-        queue<pair<int, int>>q;
+        int rows = grid.size();
+        if (rows == 0) return 0;
+        int cols = grid[0].size();
+        vector<vector<bool>> visited(rows, vector<bool>(cols, false));
+        
         int countAns = 0;
-        int row = grid.size();
-        int col = grid[0].size();
-        for(int i=0; i<row; i++){
-            for(int j=0; j<col; j++){
-                if(!visited[{i, j}] && grid[i][j] == '1'){
-                    q.push({i, j});
-                    visited[{i, j}] = true;
-                    bfs(visited, grid, q, row, col);
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (grid[i][j] == '1' && !visited[i][j]) {
                     countAns++;
+                    bfs(visited, grid, rows, cols, i, j);
                 }
             }
         }
