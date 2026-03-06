@@ -10,7 +10,7 @@ public:
         vector<int>outgoingEdge(n+1, 0);
 
         //find out incoming and outgoing edges of each node
-        for(vector<int> directions: trust){
+        for(vector<int>& directions: trust){
             int u = directions[0];
             int v = directions[1];
             incomingEdge[v]++;
