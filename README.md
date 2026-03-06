@@ -129,8 +129,8 @@ https://leetcode.com/u/saiei/
 <!---LeetCode Topics Start-->
 # LeetCode Topics
 ## Greedy
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0134-gas-station](https://github.com/Saieiei/Leetcode/tree/master/0134-gas-station) |
 | [0316-remove-duplicate-letters](https://github.com/Saieiei/Leetcode/tree/master/0316-remove-duplicate-letters) |
 | [0624-maximum-distance-in-arrays](https://github.com/Saieiei/Leetcode/tree/master/0624-maximum-distance-in-arrays) |
@@ -152,8 +152,8 @@ https://leetcode.com/u/saiei/
 | [3195-separate-black-and-white-balls](https://github.com/Saieiei/Leetcode/tree/master/3195-separate-black-and-white-balls) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Saieiei/Leetcode/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 ## Graph
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0820-find-eventual-safe-states](https://github.com/Saieiei/Leetcode/tree/master/0820-find-eventual-safe-states) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Saieiei/Leetcode/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [1325-path-with-maximum-probability](https://github.com/Saieiei/Leetcode/tree/master/1325-path-with-maximum-probability) |
@@ -169,8 +169,8 @@ https://leetcode.com/u/saiei/
 | [3235-minimum-cost-to-convert-string-i](https://github.com/Saieiei/Leetcode/tree/master/3235-minimum-cost-to-convert-string-i) |
 | [3517-shortest-distance-after-road-addition-queries-i](https://github.com/Saieiei/Leetcode/tree/master/3517-shortest-distance-after-road-addition-queries-i) |
 ## Sorting
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0148-sort-list](https://github.com/Saieiei/Leetcode/tree/master/0148-sort-list) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Saieiei/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0539-minimum-time-difference](https://github.com/Saieiei/Leetcode/tree/master/0539-minimum-time-difference) |
@@ -204,8 +204,8 @@ https://leetcode.com/u/saiei/
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Saieiei/Leetcode/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 | [3291-find-if-array-can-be-sorted](https://github.com/Saieiei/Leetcode/tree/master/3291-find-if-array-can-be-sorted) |
 ## Heap (Priority Queue)
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0239-sliding-window-maximum](https://github.com/Saieiei/Leetcode/tree/master/0239-sliding-window-maximum) |
 | [0264-ugly-number-ii](https://github.com/Saieiei/Leetcode/tree/master/0264-ugly-number-ii) |
 | [0407-trapping-rain-water-ii](https://github.com/Saieiei/Leetcode/tree/master/0407-trapping-rain-water-ii) |
@@ -228,8 +228,8 @@ https://leetcode.com/u/saiei/
 | [2803-modify-graph-edge-weights](https://github.com/Saieiei/Leetcode/tree/master/2803-modify-graph-edge-weights) |
 | [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/Saieiei/Leetcode/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 ## Hash Table
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0001-two-sum](https://github.com/Saieiei/Leetcode/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Saieiei/Leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
@@ -245,6 +245,7 @@ https://leetcode.com/u/saiei/
 | [0906-walking-robot-simulation](https://github.com/Saieiei/Leetcode/tree/master/0906-walking-robot-simulation) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/Saieiei/Leetcode/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Saieiei/Leetcode/tree/master/0984-most-stones-removed-with-same-row-or-column) |
+| [0997-find-the-town-judge](https://github.com/Saieiei/Leetcode/tree/main/0997-find-the-town-judge/) | Easy |
 | [0999-regions-cut-by-slashes](https://github.com/Saieiei/Leetcode/tree/master/0999-regions-cut-by-slashes) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/Saieiei/Leetcode/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
@@ -281,8 +282,8 @@ https://leetcode.com/u/saiei/
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Saieiei/Leetcode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/Saieiei/Leetcode/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 ## Linked List
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/Saieiei/Leetcode/tree/master/0021-merge-two-sorted-lists) |
 | [0025-reverse-nodes-in-k-group](https://github.com/Saieiei/Leetcode/tree/master/0025-reverse-nodes-in-k-group) |
 | [0061-rotate-list](https://github.com/Saieiei/Leetcode/tree/master/0061-rotate-list) |
@@ -299,8 +300,8 @@ https://leetcode.com/u/saiei/
 | [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/Saieiei/Leetcode/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/Saieiei/Leetcode/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 ## Two Pointers
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0027-remove-element](https://github.com/Saieiei/Leetcode/tree/master/0027-remove-element) |
 | [0061-rotate-list](https://github.com/Saieiei/Leetcode/tree/master/0061-rotate-list) |
 | [0142-linked-list-cycle-ii](https://github.com/Saieiei/Leetcode/tree/master/0142-linked-list-cycle-ii) |
@@ -324,8 +325,8 @@ https://leetcode.com/u/saiei/
 | [3018-make-string-a-subsequence-using-cyclic-increments](https://github.com/Saieiei/Leetcode/tree/master/3018-make-string-a-subsequence-using-cyclic-increments) |
 | [3195-separate-black-and-white-balls](https://github.com/Saieiei/Leetcode/tree/master/3195-separate-black-and-white-balls) |
 ## Recursion
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/Saieiei/Leetcode/tree/master/0021-merge-two-sorted-lists) |
 | [0025-reverse-nodes-in-k-group](https://github.com/Saieiei/Leetcode/tree/master/0025-reverse-nodes-in-k-group) |
 | [0241-different-ways-to-add-parentheses](https://github.com/Saieiei/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
@@ -334,21 +335,21 @@ https://leetcode.com/u/saiei/
 | [1197-parsing-a-boolean-expression](https://github.com/Saieiei/Leetcode/tree/master/1197-parsing-a-boolean-expression) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Saieiei/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## Divide and Conquer
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0053-maximum-subarray](https://github.com/Saieiei/Leetcode/tree/master/0053-maximum-subarray) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0148-sort-list](https://github.com/Saieiei/Leetcode/tree/master/0148-sort-list) |
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
 | [1285-balance-a-binary-search-tree](https://github.com/Saieiei/Leetcode/tree/master/1285-balance-a-binary-search-tree) |
 ## Merge Sort
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0148-sort-list](https://github.com/Saieiei/Leetcode/tree/master/0148-sort-list) |
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
 ## Array
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0001-two-sum](https://github.com/Saieiei/Leetcode/tree/master/0001-two-sum) |
 | [0027-remove-element](https://github.com/Saieiei/Leetcode/tree/master/0027-remove-element) |
 | [0035-search-insert-position](https://github.com/Saieiei/Leetcode/tree/master/0035-search-insert-position) |
@@ -379,6 +380,7 @@ https://leetcode.com/u/saiei/
 | [0921-spiral-matrix-iii](https://github.com/Saieiei/Leetcode/tree/master/0921-spiral-matrix-iii) |
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
 | [0987-reveal-cards-in-increasing-order](https://github.com/Saieiei/Leetcode/tree/master/0987-reveal-cards-in-increasing-order) |
+| [0997-find-the-town-judge](https://github.com/Saieiei/Leetcode/tree/main/0997-find-the-town-judge/) | Easy |
 | [0999-regions-cut-by-slashes](https://github.com/Saieiei/Leetcode/tree/master/0999-regions-cut-by-slashes) |
 | [1002-maximum-width-ramp](https://github.com/Saieiei/Leetcode/tree/master/1002-maximum-width-ramp) |
 | [1025-minimum-cost-for-tickets](https://github.com/Saieiei/Leetcode/tree/master/1025-minimum-cost-for-tickets) |
@@ -475,8 +477,8 @@ https://leetcode.com/u/saiei/
 | [3517-shortest-distance-after-road-addition-queries-i](https://github.com/Saieiei/Leetcode/tree/master/3517-shortest-distance-after-road-addition-queries-i) |
 | [3522-find-the-power-of-k-size-subarrays-i](https://github.com/Saieiei/Leetcode/tree/master/3522-find-the-power-of-k-size-subarrays-i) |
 ## Binary Search
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0035-search-insert-position](https://github.com/Saieiei/Leetcode/tree/master/0035-search-insert-position) |
 | [0209-minimum-size-subarray-sum](https://github.com/Saieiei/Leetcode/tree/master/0209-minimum-size-subarray-sum) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Saieiei/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
@@ -501,8 +503,8 @@ https://leetcode.com/u/saiei/
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/Saieiei/Leetcode/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 | [3427-special-array-ii](https://github.com/Saieiei/Leetcode/tree/master/3427-special-array-ii) |
 ## Simulation
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0592-fraction-addition-and-subtraction](https://github.com/Saieiei/Leetcode/tree/master/0592-fraction-addition-and-subtraction) |
 | [0735-asteroid-collision](https://github.com/Saieiei/Leetcode/tree/master/0735-asteroid-collision) |
 | [0906-walking-robot-simulation](https://github.com/Saieiei/Leetcode/tree/master/0906-walking-robot-simulation) |
@@ -526,8 +528,8 @@ https://leetcode.com/u/saiei/
 | [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/Saieiei/Leetcode/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 | [3447-clear-digits](https://github.com/Saieiei/Leetcode/tree/master/3447-clear-digits) |
 ## String
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Saieiei/Leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0071-simplify-path](https://github.com/Saieiei/Leetcode/tree/master/0071-simplify-path) |
 | [0214-shortest-palindrome](https://github.com/Saieiei/Leetcode/tree/master/0214-shortest-palindrome) |
@@ -586,8 +588,8 @@ https://leetcode.com/u/saiei/
 | [3447-clear-digits](https://github.com/Saieiei/Leetcode/tree/master/3447-clear-digits) |
 | [3451-string-compression-iii](https://github.com/Saieiei/Leetcode/tree/master/3451-string-compression-iii) |
 ## Math
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0241-different-ways-to-add-parentheses](https://github.com/Saieiei/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0264-ugly-number-ii](https://github.com/Saieiei/Leetcode/tree/master/0264-ugly-number-ii) |
 | [0273-integer-to-english-words](https://github.com/Saieiei/Leetcode/tree/master/0273-integer-to-english-words) |
@@ -609,8 +611,8 @@ https://leetcode.com/u/saiei/
 | [2802-find-the-punishment-number-of-an-integer](https://github.com/Saieiei/Leetcode/tree/master/2802-find-the-punishment-number-of-an-integer) |
 | [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/Saieiei/Leetcode/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
 ## Stack
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0071-simplify-path](https://github.com/Saieiei/Leetcode/tree/master/0071-simplify-path) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Saieiei/Leetcode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0094-binary-tree-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0094-binary-tree-inorder-traversal) |
@@ -644,8 +646,8 @@ https://leetcode.com/u/saiei/
 | [2846-robot-collisions](https://github.com/Saieiei/Leetcode/tree/master/2846-robot-collisions) |
 | [3447-clear-digits](https://github.com/Saieiei/Leetcode/tree/master/3447-clear-digits) |
 ## Design
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0155-min-stack](https://github.com/Saieiei/Leetcode/tree/master/0155-min-stack) |
 | [0225-implement-stack-using-queues](https://github.com/Saieiei/Leetcode/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/Saieiei/Leetcode/tree/master/0232-implement-queue-using-stacks) |
@@ -659,8 +661,8 @@ https://leetcode.com/u/saiei/
 | [1497-design-a-stack-with-increment-operation](https://github.com/Saieiei/Leetcode/tree/master/1497-design-a-stack-with-increment-operation) |
 | [2434-design-a-number-container-system](https://github.com/Saieiei/Leetcode/tree/master/2434-design-a-number-container-system) |
 ## Monotonic Stack
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0084-largest-rectangle-in-histogram](https://github.com/Saieiei/Leetcode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0316-remove-duplicate-letters](https://github.com/Saieiei/Leetcode/tree/master/0316-remove-duplicate-letters) |
 | [0739-daily-temperatures](https://github.com/Saieiei/Leetcode/tree/master/0739-daily-temperatures) |
@@ -669,8 +671,8 @@ https://leetcode.com/u/saiei/
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/Saieiei/Leetcode/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
 ## Queue
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0225-implement-stack-using-queues](https://github.com/Saieiei/Leetcode/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/Saieiei/Leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [0239-sliding-window-maximum](https://github.com/Saieiei/Leetcode/tree/master/0239-sliding-window-maximum) |
@@ -681,8 +683,8 @@ https://leetcode.com/u/saiei/
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Saieiei/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2408-number-of-people-aware-of-a-secret](https://github.com/Saieiei/Leetcode/tree/master/2408-number-of-people-aware-of-a-secret) |
 ## Sliding Window
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Saieiei/Leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0209-minimum-size-subarray-sum](https://github.com/Saieiei/Leetcode/tree/master/0209-minimum-size-subarray-sum) |
 | [0239-sliding-window-maximum](https://github.com/Saieiei/Leetcode/tree/master/0239-sliding-window-maximum) |
@@ -697,19 +699,19 @@ https://leetcode.com/u/saiei/
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/Saieiei/Leetcode/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 | [3522-find-the-power-of-k-size-subarrays-i](https://github.com/Saieiei/Leetcode/tree/master/3522-find-the-power-of-k-size-subarrays-i) |
 ## Monotonic Queue
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0239-sliding-window-maximum](https://github.com/Saieiei/Leetcode/tree/master/0239-sliding-window-maximum) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Saieiei/Leetcode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 ## Data Stream
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Saieiei/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0969-number-of-recent-calls](https://github.com/Saieiei/Leetcode/tree/master/0969-number-of-recent-calls) |
 | [1477-product-of-the-last-k-numbers](https://github.com/Saieiei/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 ## Dynamic Programming
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0053-maximum-subarray](https://github.com/Saieiei/Leetcode/tree/master/0053-maximum-subarray) |
 | [0241-different-ways-to-add-parentheses](https://github.com/Saieiei/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0264-ugly-number-ii](https://github.com/Saieiei/Leetcode/tree/master/0264-ugly-number-ii) |
@@ -734,8 +736,8 @@ https://leetcode.com/u/saiei/
 | [2755-extra-characters-in-a-string](https://github.com/Saieiei/Leetcode/tree/master/2755-extra-characters-in-a-string) |
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/Saieiei/Leetcode/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 ## Tree
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/Saieiei/Leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/Saieiei/Leetcode/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
@@ -769,8 +771,8 @@ https://leetcode.com/u/saiei/
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/Saieiei/Leetcode/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Binary Tree
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/Saieiei/Leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/Saieiei/Leetcode/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
@@ -803,8 +805,8 @@ https://leetcode.com/u/saiei/
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/Saieiei/Leetcode/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Depth-First Search
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/Saieiei/Leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
@@ -841,8 +843,8 @@ https://leetcode.com/u/saiei/
 | [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/Saieiei/Leetcode/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/Saieiei/Leetcode/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Breadth-First Search
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/Saieiei/Leetcode/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0112-path-sum](https://github.com/Saieiei/Leetcode/tree/master/0112-path-sum) |
@@ -866,8 +868,8 @@ https://leetcode.com/u/saiei/
 | [2711-minimum-time-to-visit-a-cell-in-a-grid](https://github.com/Saieiei/Leetcode/tree/master/2711-minimum-time-to-visit-a-cell-in-a-grid) |
 | [3517-shortest-distance-after-road-addition-queries-i](https://github.com/Saieiei/Leetcode/tree/master/3517-shortest-distance-after-road-addition-queries-i) |
 ## Backtracking
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0040-combination-sum-ii](https://github.com/Saieiei/Leetcode/tree/master/0040-combination-sum-ii) |
 | [0113-path-sum-ii](https://github.com/Saieiei/Leetcode/tree/master/0113-path-sum-ii) |
 | [1160-letter-tile-possibilities](https://github.com/Saieiei/Leetcode/tree/master/1160-letter-tile-possibilities) |
@@ -876,8 +878,8 @@ https://leetcode.com/u/saiei/
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/Saieiei/Leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2802-find-the-punishment-number-of-an-integer](https://github.com/Saieiei/Leetcode/tree/master/2802-find-the-punishment-number-of-an-integer) |
 ## Matrix
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0407-trapping-rain-water-ii](https://github.com/Saieiei/Leetcode/tree/master/0407-trapping-rain-water-ii) |
 | [0787-sliding-puzzle](https://github.com/Saieiei/Leetcode/tree/master/0787-sliding-puzzle) |
 | [0870-magic-squares-in-grid](https://github.com/Saieiei/Leetcode/tree/master/0870-magic-squares-in-grid) |
@@ -901,16 +903,16 @@ https://leetcode.com/u/saiei/
 | [2711-minimum-time-to-visit-a-cell-in-a-grid](https://github.com/Saieiei/Leetcode/tree/master/2711-minimum-time-to-visit-a-cell-in-a-grid) |
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/Saieiei/Leetcode/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 ## Bucket Sort
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
 ## Radix Sort
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
 ## Counting Sort
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0920-uncommon-words-from-two-sentences](https://github.com/Saieiei/Leetcode/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
 | [1160-letter-tile-possibilities](https://github.com/Saieiei/Leetcode/tree/master/1160-letter-tile-possibilities) |
@@ -924,8 +926,8 @@ https://leetcode.com/u/saiei/
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/Saieiei/Leetcode/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Saieiei/Leetcode/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 ## Shortest Path
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [1325-path-with-maximum-probability](https://github.com/Saieiei/Leetcode/tree/master/1325-path-with-maximum-probability) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/Saieiei/Leetcode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Saieiei/Leetcode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
@@ -935,12 +937,12 @@ https://leetcode.com/u/saiei/
 | [2803-modify-graph-edge-weights](https://github.com/Saieiei/Leetcode/tree/master/2803-modify-graph-edge-weights) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/Saieiei/Leetcode/tree/master/3235-minimum-cost-to-convert-string-i) |
 ## Binary Indexed Tree
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [1511-count-number-of-teams](https://github.com/Saieiei/Leetcode/tree/master/1511-count-number-of-teams) |
 ## Binary Search Tree
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0098-validate-binary-search-tree](https://github.com/Saieiei/Leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/Saieiei/Leetcode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Saieiei/Leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
@@ -950,19 +952,19 @@ https://leetcode.com/u/saiei/
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1285-balance-a-binary-search-tree](https://github.com/Saieiei/Leetcode/tree/master/1285-balance-a-binary-search-tree) |
 ## Union Find
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Saieiei/Leetcode/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [0999-regions-cut-by-slashes](https://github.com/Saieiei/Leetcode/tree/master/0999-regions-cut-by-slashes) |
 | [1396-count-servers-that-communicate](https://github.com/Saieiei/Leetcode/tree/master/1396-count-servers-that-communicate) |
 | [2035-count-sub-islands](https://github.com/Saieiei/Leetcode/tree/master/2035-count-sub-islands) |
 ## Strongly Connected Component
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/Saieiei/Leetcode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 ## Prefix Sum
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/Saieiei/Leetcode/tree/master/0209-minimum-size-subarray-sum) |
 | [0731-my-calendar-ii](https://github.com/Saieiei/Leetcode/tree/master/0731-my-calendar-ii) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Saieiei/Leetcode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
@@ -977,13 +979,13 @@ https://leetcode.com/u/saiei/
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/Saieiei/Leetcode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [3427-special-array-ii](https://github.com/Saieiei/Leetcode/tree/master/3427-special-array-ii) |
 ## Game Theory
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0909-stone-game](https://github.com/Saieiei/Leetcode/tree/master/0909-stone-game) |
 | [1240-stone-game-ii](https://github.com/Saieiei/Leetcode/tree/master/1240-stone-game-ii) |
 ## Bit Manipulation
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0476-number-complement](https://github.com/Saieiei/Leetcode/tree/master/0476-number-complement) |
 | [1054-complement-of-base-10-integer](https://github.com/Saieiei/Leetcode/tree/master/1054-complement-of-base-10-integer) |
 | [1435-xor-queries-of-a-subarray](https://github.com/Saieiei/Leetcode/tree/master/1435-xor-queries-of-a-subarray) |
@@ -1000,36 +1002,36 @@ https://leetcode.com/u/saiei/
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/Saieiei/Leetcode/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 | [3394-minimum-array-end](https://github.com/Saieiei/Leetcode/tree/master/3394-minimum-array-end) |
 ## Number Theory
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [2716-prime-subtraction-operation](https://github.com/Saieiei/Leetcode/tree/master/2716-prime-subtraction-operation) |
 | [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/Saieiei/Leetcode/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
 ## Brainteaser
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/Saieiei/Leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/Saieiei/Leetcode/tree/master/2533-bitwise-xor-of-all-pairings) |
 ## Memoization
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0241-different-ways-to-add-parentheses](https://github.com/Saieiei/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 ## Rolling Hash
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0214-shortest-palindrome](https://github.com/Saieiei/Leetcode/tree/master/0214-shortest-palindrome) |
 ## String Matching
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0214-shortest-palindrome](https://github.com/Saieiei/Leetcode/tree/master/0214-shortest-palindrome) |
 | [0812-rotate-string](https://github.com/Saieiei/Leetcode/tree/master/0812-rotate-string) |
 | [1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/Saieiei/Leetcode/tree/master/1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) |
 ## Hash Function
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0214-shortest-palindrome](https://github.com/Saieiei/Leetcode/tree/master/0214-shortest-palindrome) |
 ## Trie
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0386-lexicographical-numbers](https://github.com/Saieiei/Leetcode/tree/master/0386-lexicographical-numbers) |
 | [0440-k-th-smallest-in-lexicographical-order](https://github.com/Saieiei/Leetcode/tree/master/0440-k-th-smallest-in-lexicographical-order) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/Saieiei/Leetcode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
@@ -1037,30 +1039,34 @@ https://leetcode.com/u/saiei/
 | [2755-extra-characters-in-a-string](https://github.com/Saieiei/Leetcode/tree/master/2755-extra-characters-in-a-string) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Saieiei/Leetcode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## Segment Tree
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0729-my-calendar-i](https://github.com/Saieiei/Leetcode/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/Saieiei/Leetcode/tree/master/0731-my-calendar-ii) |
 ## Ordered Set
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0729-my-calendar-i](https://github.com/Saieiei/Leetcode/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/Saieiei/Leetcode/tree/master/0731-my-calendar-ii) |
 | [2434-design-a-number-container-system](https://github.com/Saieiei/Leetcode/tree/master/2434-design-a-number-container-system) |
 ## Doubly-Linked List
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0432-all-oone-data-structure](https://github.com/Saieiei/Leetcode/tree/master/0432-all-oone-data-structure) |
 ## Enumeration
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/Saieiei/Leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 ## Eulerian Circuit
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [2201-valid-arrangement-of-pairs](https://github.com/Saieiei/Leetcode/tree/master/2201-valid-arrangement-of-pairs) |
 ## Topological Sort
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0820-find-eventual-safe-states](https://github.com/Saieiei/Leetcode/tree/master/0820-find-eventual-safe-states) |
+## Graph Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0997-find-the-town-judge](https://github.com/Saieiei/Leetcode/tree/main/0997-find-the-town-judge/) | Easy |
 <!---LeetCode Topics End-->
