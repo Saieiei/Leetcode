@@ -1,26 +1,30 @@
-//M2
-//this is basic recursion + greedy optimal choices
-//1st we will try out with direct ans
-//trying form target to 0
+//M3
+//no need recursion, just greedy
+//1st we will try out with moves
+//trying form target to 1
 class Solution {
 public:
-    int solve(int target, int maxDoubles){
-        //basecase
-        if(target == 1){
-            return 0; //no operation was done here
-        }
-        if(maxDoubles == 0){ 
-            return target - 1; //these many operations r needed
-        }
-        //DFS
-        if(maxDoubles > 0 && target%2 == 1){
-            return 1 + solve(target-1, maxDoubles);
-        }
-        //if(maxDoubles > 0){
-            return 1 + solve(target/2, maxDoubles-1);
-        //}
-    }
     int minMoves(int target, int maxDoubles) {
-        return solve(target, maxDoubles);
+        int moves = 0;
+        while(target > 1){
+            if(maxDoubles == 0){
+                int remaining = target - 1;
+                moves = moves + remaining;
+                target = 1;
+                break;
+            }
+            else{ //maxDoubles>0 
+                if(target & 1){//if odd
+                    moves++;
+                    target--;
+                }
+                else{//maxDoubles>0 && even
+                    moves++;
+                    target = target >> 1; //divide by 2
+                    maxDoubles--;
+                }
+            }
+        }
+        return moves;
     }
 };
