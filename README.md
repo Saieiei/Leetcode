@@ -144,6 +144,7 @@ https://leetcode.com/u/saiei/
 | [1818-maximum-score-from-removing-substrings](https://github.com/Saieiei/Leetcode/tree/master/1818-maximum-score-from-removing-substrings) |
 | [2089-maximum-matrix-sum](https://github.com/Saieiei/Leetcode/tree/master/2089-maximum-matrix-sum) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/Saieiei/Leetcode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
+| [2139-minimum-moves-to-reach-target-score](https://github.com/Saieiei/Leetcode/tree/main/2139-minimum-moves-to-reach-target-score/) | Medium |
 | [2379-maximum-total-importance-of-roads](https://github.com/Saieiei/Leetcode/tree/master/2379-maximum-total-importance-of-roads) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/Saieiei/Leetcode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/Saieiei/Leetcode/tree/master/2616-maximal-score-after-applying-k-operations) |
@@ -604,6 +605,7 @@ https://leetcode.com/u/saiei/
 | [1477-product-of-the-last-k-numbers](https://github.com/Saieiei/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1642-water-bottles](https://github.com/Saieiei/Leetcode/tree/master/1642-water-bottles) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Saieiei/Leetcode/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [2139-minimum-moves-to-reach-target-score](https://github.com/Saieiei/Leetcode/tree/main/2139-minimum-moves-to-reach-target-score/) | Medium |
 | [2155-find-missing-observations](https://github.com/Saieiei/Leetcode/tree/master/2155-find-missing-observations) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/Saieiei/Leetcode/tree/master/2432-number-of-zero-filled-subarrays) |
 | [2448-count-number-of-bad-pairs](https://github.com/Saieiei/Leetcode/tree/master/2448-count-number-of-bad-pairs) |
