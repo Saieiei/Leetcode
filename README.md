@@ -825,6 +825,7 @@ https://leetcode.com/u/saiei/
 | [0543-diameter-of-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0652-find-duplicate-subtrees](https://github.com/Saieiei/Leetcode/tree/master/0652-find-duplicate-subtrees) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Saieiei/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
+| [0684-redundant-connection](https://github.com/Saieiei/Leetcode/tree/main/0684-redundant-connection/) | Medium |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [0785-is-graph-bipartite](https://github.com/Saieiei/Leetcode/tree/main/0785-is-graph-bipartite/) | Medium |
 | [0820-find-eventual-safe-states](https://github.com/Saieiei/Leetcode/tree/master/0820-find-eventual-safe-states) |
@@ -854,6 +855,7 @@ https://leetcode.com/u/saiei/
 | [0112-path-sum](https://github.com/Saieiei/Leetcode/tree/master/0112-path-sum) |
 | [0407-trapping-rain-water-ii](https://github.com/Saieiei/Leetcode/tree/master/0407-trapping-rain-water-ii) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Saieiei/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
+| [0684-redundant-connection](https://github.com/Saieiei/Leetcode/tree/main/0684-redundant-connection/) | Medium |
 | [0785-is-graph-bipartite](https://github.com/Saieiei/Leetcode/tree/main/0785-is-graph-bipartite/) | Medium |
 | [0787-sliding-puzzle](https://github.com/Saieiei/Leetcode/tree/master/0787-sliding-puzzle) |
 | [0820-find-eventual-safe-states](https://github.com/Saieiei/Leetcode/tree/master/0820-find-eventual-safe-states) |
@@ -1074,11 +1076,13 @@ https://leetcode.com/u/saiei/
 ## Graph Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0684-redundant-connection](https://github.com/Saieiei/Leetcode/tree/main/0684-redundant-connection/) | Medium |
 | [0785-is-graph-bipartite](https://github.com/Saieiei/Leetcode/tree/main/0785-is-graph-bipartite/) | Medium |
 | [0841-keys-and-rooms](https://github.com/Saieiei/Leetcode/tree/main/0841-keys-and-rooms/) | Medium |
 | [0997-find-the-town-judge](https://github.com/Saieiei/Leetcode/tree/main/0997-find-the-town-judge/) | Easy |
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0684-redundant-connection](https://github.com/Saieiei/Leetcode/tree/main/0684-redundant-connection/) | Medium |
 | [0785-is-graph-bipartite](https://github.com/Saieiei/Leetcode/tree/main/0785-is-graph-bipartite/) | Medium |
 <!---LeetCode Topics End-->
