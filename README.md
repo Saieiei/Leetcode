@@ -235,6 +235,7 @@ https://leetcode.com/u/saiei/
 | [0001-two-sum](https://github.com/Saieiei/Leetcode/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Saieiei/Leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
+| [0127-word-ladder](https://github.com/Saieiei/Leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0142-linked-list-cycle-ii](https://github.com/Saieiei/Leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0264-ugly-number-ii](https://github.com/Saieiei/Leetcode/tree/master/0264-ugly-number-ii) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Saieiei/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
@@ -536,6 +537,7 @@ https://leetcode.com/u/saiei/
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Saieiei/Leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0071-simplify-path](https://github.com/Saieiei/Leetcode/tree/master/0071-simplify-path) |
+| [0127-word-ladder](https://github.com/Saieiei/Leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0214-shortest-palindrome](https://github.com/Saieiei/Leetcode/tree/master/0214-shortest-palindrome) |
 | [0241-different-ways-to-add-parentheses](https://github.com/Saieiei/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0273-integer-to-english-words](https://github.com/Saieiei/Leetcode/tree/master/0273-integer-to-english-words) |
@@ -858,6 +860,7 @@ https://leetcode.com/u/saiei/
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/Saieiei/Leetcode/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0112-path-sum](https://github.com/Saieiei/Leetcode/tree/master/0112-path-sum) |
+| [0127-word-ladder](https://github.com/Saieiei/Leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0407-trapping-rain-water-ii](https://github.com/Saieiei/Leetcode/tree/master/0407-trapping-rain-water-ii) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Saieiei/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0684-redundant-connection](https://github.com/Saieiei/Leetcode/tree/main/0684-redundant-connection/) | Medium |
