@@ -34,6 +34,5 @@ public:
         }
         //not possible
         return 0;
-
     }
 };
