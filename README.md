@@ -846,6 +846,7 @@ https://leetcode.com/u/saiei/
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1207-delete-nodes-and-return-forest](https://github.com/Saieiei/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1285-balance-a-binary-search-tree](https://github.com/Saieiei/Leetcode/tree/master/1285-balance-a-binary-search-tree) |
+| [1319-number-of-operations-to-make-network-connected](https://github.com/Saieiei/Leetcode/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/Saieiei/Leetcode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1396-count-servers-that-communicate](https://github.com/Saieiei/Leetcode/tree/master/1396-count-servers-that-communicate) |
 | [1484-linked-list-in-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
@@ -874,6 +875,7 @@ https://leetcode.com/u/saiei/
 | [0841-keys-and-rooms](https://github.com/Saieiei/Leetcode/tree/main/0841-keys-and-rooms/) | Medium |
 | [0999-regions-cut-by-slashes](https://github.com/Saieiei/Leetcode/tree/master/0999-regions-cut-by-slashes) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
+| [1319-number-of-operations-to-make-network-connected](https://github.com/Saieiei/Leetcode/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
 | [1396-count-servers-that-communicate](https://github.com/Saieiei/Leetcode/tree/master/1396-count-servers-that-communicate) |
 | [1484-linked-list-in-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Saieiei/Leetcode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
@@ -1093,10 +1095,12 @@ https://leetcode.com/u/saiei/
 | [0785-is-graph-bipartite](https://github.com/Saieiei/Leetcode/tree/main/0785-is-graph-bipartite/) | Medium |
 | [0841-keys-and-rooms](https://github.com/Saieiei/Leetcode/tree/main/0841-keys-and-rooms/) | Medium |
 | [0997-find-the-town-judge](https://github.com/Saieiei/Leetcode/tree/main/0997-find-the-town-judge/) | Easy |
+| [1319-number-of-operations-to-make-network-connected](https://github.com/Saieiei/Leetcode/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0684-redundant-connection](https://github.com/Saieiei/Leetcode/tree/main/0684-redundant-connection/) | Medium |
 | [0721-accounts-merge](https://github.com/Saieiei/Leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0785-is-graph-bipartite](https://github.com/Saieiei/Leetcode/tree/main/0785-is-graph-bipartite/) | Medium |
+| [1319-number-of-operations-to-make-network-connected](https://github.com/Saieiei/Leetcode/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
 <!---LeetCode Topics End-->
