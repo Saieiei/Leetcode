@@ -733,6 +733,7 @@ https://leetcode.com/u/saiei/
 | [1196-filling-bookcase-shelves](https://github.com/Saieiei/Leetcode/tree/master/1196-filling-bookcase-shelves) |
 | [1240-stone-game-ii](https://github.com/Saieiei/Leetcode/tree/master/1240-stone-game-ii) |
 | [1250-longest-common-subsequence](https://github.com/Saieiei/Leetcode/tree/master/1250-longest-common-subsequence) |
+| [1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/Saieiei/Leetcode/tree/main/1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | Medium |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/Saieiei/Leetcode/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/Saieiei/Leetcode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [1511-count-number-of-teams](https://github.com/Saieiei/Leetcode/tree/master/1511-count-number-of-teams) |
@@ -952,6 +953,7 @@ https://leetcode.com/u/saiei/
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1325-path-with-maximum-probability](https://github.com/Saieiei/Leetcode/tree/master/1325-path-with-maximum-probability) |
+| [1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/Saieiei/Leetcode/tree/main/1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | Medium |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/Saieiei/Leetcode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Saieiei/Leetcode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [2171-second-minimum-time-to-reach-destination](https://github.com/Saieiei/Leetcode/tree/master/2171-second-minimum-time-to-reach-destination) |
@@ -1096,6 +1098,7 @@ https://leetcode.com/u/saiei/
 | [0841-keys-and-rooms](https://github.com/Saieiei/Leetcode/tree/main/0841-keys-and-rooms/) | Medium |
 | [0997-find-the-town-judge](https://github.com/Saieiei/Leetcode/tree/main/0997-find-the-town-judge/) | Easy |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Saieiei/Leetcode/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
+| [1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/Saieiei/Leetcode/tree/main/1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | Medium |
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
