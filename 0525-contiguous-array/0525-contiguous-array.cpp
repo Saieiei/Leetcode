@@ -1,20 +1,29 @@
+//brute force
 class Solution {
 public:
     int findMaxLength(vector<int>& nums) {
         int n = nums.size();
-        unordered_map<int, int> mp;
+        int maxLengthSubarrya = INT_MIN;
+        int start = 0;
+        int end = 0;
         int sum = 0;
-        int subArray_length = 0;
-        for (int i = 0; i < n; i++) {
-            sum += nums[i] == 0 ? -1 : 1; 
-            if (sum == 0) {
-                subArray_length = i + 1;
-            } else if (mp.find(sum) != mp.end()) {
-                subArray_length = max(subArray_length, i - mp[sum]);
-            } else {
-                mp[sum] = i;
+        for(int i = 0; i < n; i++){
+            sum = 0; //reset
+            start = nums[i];
+            for(int j = i; j < n; j++){
+                end = nums[j];
+                if(end == 0){
+                    sum += -1;
+                }
+                else{
+                    sum += 1;
+                }
+                if(sum == 0){
+                    int tempLenght = j - i + 1;
+                    maxLengthSubarrya = max(maxLengthSubarrya, tempLenght);
+                }
             }
         }
-        return subArray_length;
+        return maxLengthSubarrya;
     }
 };
