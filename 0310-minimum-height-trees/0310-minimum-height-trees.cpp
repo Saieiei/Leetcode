@@ -1,53 +1,56 @@
-#include <vector>
-#include <queue>
-#include <algorithm>
-
-using namespace std;
-
+//peeling the onion - indegrees
 class Solution {
 public:
     vector<int> findMinHeightTrees(int n, vector<vector<int>>& edges) {
-        vector<int> counts(n, 0);
-        vector<int> links(n, 0);
-        
-        for (auto& edge : edges) {
-            links[edge[0]] ^= edge[1];
-            counts[edge[0]]++;
-            links[edge[1]] ^= edge[0];
-            counts[edge[1]]++;
+        //bc
+        if (n == 1) return {0};
+
+        //create adjList
+        unordered_map<int, vector<int>> adjList;
+        vector<int> degree(n, 0);
+        for(vector<int> edge: edges){
+            int u = edge[0];
+            int v = edge[1];
+            adjList[u].push_back(v);
+            adjList[v].push_back(u);
+            degree[u]++;
+            degree[v]++;
         }
-        
-        queue<int> Qu;
-        vector<int> dists(n, 0);
-        
-        for (int i = 0; i < n; i++) {
-            if (counts[i] == 1)
-                Qu.push(i);
+
+        queue<int> q;
+        //push all the leaf nodes, degree = 1 in the q
+        for(int i=0; i<n; i++){ //nodes
+            if(degree[i] == 1){
+                q.push(i);
+            }
         }
-        
-        int stp = 1;
-        while (!Qu.empty()) {
-            int size = Qu.size();
-            for (int j = 0; j < size; j++) {
-                int tmp = Qu.front();
-                Qu.pop();
-                links[links[tmp]] ^= tmp;
-                counts[links[tmp]]--;
-                if (counts[links[tmp]] == 1) {
-                    dists[links[tmp]] = max(stp, dists[links[tmp]]);
-                    Qu.push(links[tmp]);
+
+        while(n>2){ //either 1 or 2 nodes remaining
+            int noLeafNodes = q.size();
+            n = n - noLeafNodes; //remainnig nodes
+            //process those leaf nodes
+            for(int i = 0; i < noLeafNodes; i++){
+                int leafNode = q.front();
+                q.pop();
+                //process its nbrs and their degrees
+                for(int nbr: adjList[leafNode]){
+                    degree[nbr]--;
+                    if(degree[nbr] == 1){ 
+                        q.push(nbr);
+                        //after the removal of leaf node, 
+                        //now this node has become leafNode
+                    }
                 }
             }
-            stp++;
         }
-        
-        int max_dist = *max_element(dists.begin(), dists.end());
-        vector<int> res;
-        for (int i = 0; i < n; i++) {
-            if (dists[i] == max_dist)
-                res.push_back(i);
+
+        //push the 1/2 nodes in the ans, which will be in the q
+        vector<int> ans;
+        while(!q.empty()){
+            ans.push_back(q.front());
+            q.pop();
         }
-        
-        return res;
+
+        return ans;
     }
 };
