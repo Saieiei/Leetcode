@@ -211,6 +211,7 @@ https://leetcode.com/u/saiei/
 | [0239-sliding-window-maximum](https://github.com/Saieiei/Leetcode/tree/master/0239-sliding-window-maximum) |
 | [0264-ugly-number-ii](https://github.com/Saieiei/Leetcode/tree/master/0264-ugly-number-ii) |
 | [0407-trapping-rain-water-ii](https://github.com/Saieiei/Leetcode/tree/master/0407-trapping-rain-water-ii) |
+| [0743-network-delay-time](https://github.com/Saieiei/Leetcode/tree/main/0743-network-delay-time/) | Medium |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Saieiei/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Saieiei/Leetcode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
@@ -839,6 +840,7 @@ https://leetcode.com/u/saiei/
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Saieiei/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0684-redundant-connection](https://github.com/Saieiei/Leetcode/tree/main/0684-redundant-connection/) | Medium |
 | [0721-accounts-merge](https://github.com/Saieiei/Leetcode/tree/main/0721-accounts-merge/) | Medium |
+| [0743-network-delay-time](https://github.com/Saieiei/Leetcode/tree/main/0743-network-delay-time/) | Medium |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [0785-is-graph-bipartite](https://github.com/Saieiei/Leetcode/tree/main/0785-is-graph-bipartite/) | Medium |
 | [0820-find-eventual-safe-states](https://github.com/Saieiei/Leetcode/tree/master/0820-find-eventual-safe-states) |
@@ -874,6 +876,7 @@ https://leetcode.com/u/saiei/
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Saieiei/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0684-redundant-connection](https://github.com/Saieiei/Leetcode/tree/main/0684-redundant-connection/) | Medium |
 | [0721-accounts-merge](https://github.com/Saieiei/Leetcode/tree/main/0721-accounts-merge/) | Medium |
+| [0743-network-delay-time](https://github.com/Saieiei/Leetcode/tree/main/0743-network-delay-time/) | Medium |
 | [0785-is-graph-bipartite](https://github.com/Saieiei/Leetcode/tree/main/0785-is-graph-bipartite/) | Medium |
 | [0787-sliding-puzzle](https://github.com/Saieiei/Leetcode/tree/master/0787-sliding-puzzle) |
 | [0820-find-eventual-safe-states](https://github.com/Saieiei/Leetcode/tree/master/0820-find-eventual-safe-states) |
@@ -956,6 +959,7 @@ https://leetcode.com/u/saiei/
 ## Shortest Path
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0743-network-delay-time](https://github.com/Saieiei/Leetcode/tree/main/0743-network-delay-time/) | Medium |
 | [1325-path-with-maximum-probability](https://github.com/Saieiei/Leetcode/tree/master/1325-path-with-maximum-probability) |
 | [1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/Saieiei/Leetcode/tree/main/1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | Medium |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/Saieiei/Leetcode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
@@ -1101,6 +1105,7 @@ https://leetcode.com/u/saiei/
 | ------- | ------- |
 | [0310-minimum-height-trees](https://github.com/Saieiei/Leetcode/tree/main/0310-minimum-height-trees/) | Medium |
 | [0684-redundant-connection](https://github.com/Saieiei/Leetcode/tree/main/0684-redundant-connection/) | Medium |
+| [0743-network-delay-time](https://github.com/Saieiei/Leetcode/tree/main/0743-network-delay-time/) | Medium |
 | [0785-is-graph-bipartite](https://github.com/Saieiei/Leetcode/tree/main/0785-is-graph-bipartite/) | Medium |
 | [0841-keys-and-rooms](https://github.com/Saieiei/Leetcode/tree/main/0841-keys-and-rooms/) | Medium |
 | [0997-find-the-town-judge](https://github.com/Saieiei/Leetcode/tree/main/0997-find-the-town-judge/) | Easy |
