@@ -855,6 +855,7 @@ https://leetcode.com/u/saiei/
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Saieiei/Leetcode/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/Saieiei/Leetcode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1396-count-servers-that-communicate](https://github.com/Saieiei/Leetcode/tree/master/1396-count-servers-that-communicate) |
+| [1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/Saieiei/Leetcode/tree/main/1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero/) | Medium |
 | [1484-linked-list-in-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 | [1653-number-of-good-leaf-nodes-pairs](https://github.com/Saieiei/Leetcode/tree/master/1653-number-of-good-leaf-nodes-pairs) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/Saieiei/Leetcode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
@@ -885,6 +886,7 @@ https://leetcode.com/u/saiei/
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Saieiei/Leetcode/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
 | [1396-count-servers-that-communicate](https://github.com/Saieiei/Leetcode/tree/master/1396-count-servers-that-communicate) |
+| [1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/Saieiei/Leetcode/tree/main/1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero/) | Medium |
 | [1484-linked-list-in-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Saieiei/Leetcode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/Saieiei/Leetcode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
@@ -1111,6 +1113,7 @@ https://leetcode.com/u/saiei/
 | [0997-find-the-town-judge](https://github.com/Saieiei/Leetcode/tree/main/0997-find-the-town-judge/) | Easy |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Saieiei/Leetcode/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
 | [1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/Saieiei/Leetcode/tree/main/1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | Medium |
+| [1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/Saieiei/Leetcode/tree/main/1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero/) | Medium |
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
