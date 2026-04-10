@@ -1,21 +1,6 @@
-//DFS
+//BFS
 class Solution {
 public:
-
-    void dfs(int startingNode, vector<vector<pair<int, int>>>& adjList, vector<bool>& isVisited, int& countAns){
-        //1st mark it as visited
-        isVisited[startingNode] = true;
-        //process its nbrs
-        for(const pair<int, int> nbr: adjList[startingNode]){
-            int nbrNode = nbr.first;
-            int cost = nbr.second;
-            
-            if(!isVisited[nbrNode]){
-                countAns += cost;
-                dfs(nbrNode, adjList, isVisited, countAns);
-            }
-        }
-    }
 
     int minReorder(int n, vector<vector<int>>& connections) {
         //creste adjList
@@ -35,10 +20,27 @@ public:
         vector<bool> isVisited(n, false);
         int countAns = 0;
 
-        //dfs
+        //bfs
+        queue<int> q;
         int startingNode = 0;
+        q.push(startingNode);
+        isVisited[startingNode] = true;
         //no need of a for loop, not discconected graph
-        dfs(startingNode, adjList, isVisited, countAns);
+        while(!q.empty()){
+            int node = q.front();
+            q.pop();
+            //process its nbrs
+            for(const pair<int, int> nbr: adjList[node]){
+                int nbrNode = nbr.first;
+                int cost = nbr.second;
+
+                if(!isVisited[nbrNode]){
+                    q.push(nbrNode);
+                    isVisited[nbrNode] = true;
+                    countAns += cost;
+                }
+            }
+        }
         return countAns;
 
     }
