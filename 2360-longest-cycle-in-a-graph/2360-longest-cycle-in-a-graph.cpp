@@ -1,44 +1,59 @@
-//DFS - cycle detetcion
+//BFS - cyclke detection
+//Traverse the remaining unvisited nodes (which form the cycles)
 class Solution {
 public:
-    void dfs(int node, vector<int>& edges, vector<bool>& isVisited, vector<bool>& isPathVisited, vector<int>& dist, int& maxLen, int currLen){
-        //mark the node as visisted
-        isVisited[node] = true;
-        isPathVisited[node] = true;
-        currLen += 1;
-        dist[node] = currLen;
-
-        //explore the nbr*
-        int nextNode = edges[node];
-        if(nextNode != -1){
-            if(!isVisited[nextNode]){
-                dfs(nextNode, edges, isVisited, isPathVisited, dist, maxLen, currLen);
-            }
-            else if(isPathVisited[nextNode] == true){
-                //cycle detetcted -> use formula
-                int cycleLen = currLen - dist[nextNode] + 1;
-                maxLen = max(maxLen, cycleLen);
-            }
-        }
-        //bt
-        isPathVisited[node] = false;
-    }
     int longestCycle(vector<int>& edges) {
         int n = edges.size();
-        vector<bool> isVisited(n, false);
-        vector<bool> isPathVisited(n, false);
-        vector<int> dist(n, 0);
-        int maxLen = -1;
-        int currLen = -1;
-
-        //disconnectd graph
-        for(int i=0; i<n; i++){
-            if (!isVisited[i]){
-                dfs(i, edges, isVisited, isPathVisited, dist, maxLen, currLen);
+        vector<int> indegree(n, 0);
+        
+        // 1. Calculate in-degrees for all nodes
+        for (int i = 0; i < n; ++i) {
+            int nbrNode = edges[i];
+            if (nbrNode != -1) { //imp
+                indegree[nbrNode]++;
             }
         }
-
-        return maxLen;
-
+        
+        // 2. Queue all nodes with in-degree 0
+        queue<int> q;
+        for (int i = 0; i < n; ++i) {
+            if (indegree[i] == 0) {
+                q.push(i);
+            }
+        }
+        
+        // 3. Kahn's Algorithm to peel away non-cycle nodes
+        vector<bool> visited(n, false);
+        while (!q.empty()) {
+            int node = q.front();
+            q.pop();
+            visited[node] = true; // Mark non-cycle nodes as visited
+            
+            int nbrNode = edges[node];
+            if (nbrNode != -1) {
+                indegree[nbrNode]--;
+                if (indegree[nbrNode] == 0) {
+                    q.push(nbrNode);
+                }
+            }
+        }
+        
+        // 4. Traverse the remaining unvisited nodes (which form the cycles)
+        int maxLength = -1;
+        for (int i = 0; i < n; ++i) {
+            int node = i;
+            if (!visited[node]) {
+                int length = 0;
+                
+                // Count the nodes in this specific cycle
+                while (!visited[node]) {
+                    visited[node] = true;
+                    node = edges[node]; //node becomes the nbr
+                    length++;
+                }
+                maxLength = max(maxLength, length);
+            }
+        }
+        return maxLength;
     }
 };
