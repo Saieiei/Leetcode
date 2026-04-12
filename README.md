@@ -863,6 +863,7 @@ https://leetcode.com/u/saiei/
 | [2035-count-sub-islands](https://github.com/Saieiei/Leetcode/tree/master/2035-count-sub-islands) |
 | [2201-valid-arrangement-of-pairs](https://github.com/Saieiei/Leetcode/tree/master/2201-valid-arrangement-of-pairs) |
 | [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/Saieiei/Leetcode/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
+| [2360-longest-cycle-in-a-graph](https://github.com/Saieiei/Leetcode/tree/main/2360-longest-cycle-in-a-graph/) | Hard |
 | [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/Saieiei/Leetcode/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/Saieiei/Leetcode/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Breadth-First Search
@@ -895,6 +896,7 @@ https://leetcode.com/u/saiei/
 | [1876-map-of-highest-peak](https://github.com/Saieiei/Leetcode/tree/master/1876-map-of-highest-peak) |
 | [2035-count-sub-islands](https://github.com/Saieiei/Leetcode/tree/master/2035-count-sub-islands) |
 | [2171-second-minimum-time-to-reach-destination](https://github.com/Saieiei/Leetcode/tree/master/2171-second-minimum-time-to-reach-destination) |
+| [2360-longest-cycle-in-a-graph](https://github.com/Saieiei/Leetcode/tree/main/2360-longest-cycle-in-a-graph/) | Hard |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/Saieiei/Leetcode/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
 | [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/Saieiei/Leetcode/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
@@ -1105,6 +1107,7 @@ https://leetcode.com/u/saiei/
 | [0310-minimum-height-trees](https://github.com/Saieiei/Leetcode/tree/main/0310-minimum-height-trees/) | Medium |
 | [0802-find-eventual-safe-states](https://github.com/Saieiei/Leetcode/tree/main/0802-find-eventual-safe-states/) | Medium |
 | [0820-find-eventual-safe-states](https://github.com/Saieiei/Leetcode/tree/master/0820-find-eventual-safe-states) |
+| [2360-longest-cycle-in-a-graph](https://github.com/Saieiei/Leetcode/tree/main/2360-longest-cycle-in-a-graph/) | Hard |
 ## Graph Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -1118,6 +1121,7 @@ https://leetcode.com/u/saiei/
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Saieiei/Leetcode/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
 | [1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/Saieiei/Leetcode/tree/main/1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | Medium |
 | [1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/Saieiei/Leetcode/tree/main/1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero/) | Medium |
+| [2360-longest-cycle-in-a-graph](https://github.com/Saieiei/Leetcode/tree/main/2360-longest-cycle-in-a-graph/) | Hard |
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
