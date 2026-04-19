@@ -1,73 +1,80 @@
 //dijstras algo - for each node/city
+//dijstras algo - min heap
 class Solution {
 public:
 
-    vector<int> dijstra(unordered_map<int, vector<pair<int, int>>>& adjList, int src, int n){
-        set<pair<int, int>> st; //wt, v
-        vector<int> dist(n, INT_MAX);
-        st.insert({0, src});
-        dist[src] = 0;
+    void dijstras(int src, vector<vector<pair<int, int>>>& adjList, vector<int>& distDijstra){
+        distDijstra[src] = 0;
+        using p = pair<int, int>;
+        //minHeap
+        priority_queue<p, vector<p>, greater<p>> pq;
+        pq.push({0, src}); //wt, node
 
-        while(!st.empty()){
-            pair<int, int> topPair = *st.begin();
-            int node = topPair.second;
-            int nodeDist = topPair.first;
-            st.erase(st.begin());
-
-            //explore nbrs
-            for(pair<int, int> nbr: adjList[node]){
-                int nbrNode = nbr.first;
-                int nbrDist = nbr.second;
-                if(nodeDist + nbrDist < dist[nbrNode]){
-                    //remove it if it present in the set
-                    auto it = st.find({nbrDist, nbrNode});
-                    if(it != st.end()){ //found it
-                        st.erase({dist[nbrNode], nbrNode});
+        while(!pq.empty()){
+            pair<int, int> frontPair = pq.top();
+            pq.pop();
+            int NodeWt = frontPair.first;
+            int node = frontPair.second;
+            //trick
+            //u dont have to explore
+            if(NodeWt > distDijstra[node]){
+                continue;
+            }
+            else{
+                //explore the nbrs
+                for(pair<int, int>& nbr: adjList[node]){
+                    int nbrWt = nbr.first;
+                    int nbrnode = nbr.second;
+                    if(NodeWt + nbrWt < distDijstra[nbrnode]){
+                        distDijstra[nbrnode] = NodeWt + nbrWt;
+                        pq.push({distDijstra[nbrnode], nbrnode});
                     }
-                    dist[nbrNode] = nodeDist + nbrDist;
-                    st.insert({dist[nbrNode], nbrNode});
-                }
 
+                }
             }
         }
-        return dist;
     }
 
     int findTheCity(int n, vector<vector<int>>& edges, int distanceThreshold) {
-        unordered_map<int, vector<pair<int, int>>> adjList; //u -> {v, w}
-        //set<pair<int, int>> st; //wt, v
-        //vector<int> dist(n, INT_MAX);
-        int smallestCityNoOfNeighbours = 0;
-        int noOfCities = 0;
-        int minNoOfCities = INT_MAX;
-
-
-        for(vector<int> edge: edges){
+        //adjList
+        vector<vector<pair<int, int>>> adjList(n); //u, w, v
+        for(vector<int>& edge: edges){
             int u = edge[0];
             int v = edge[1];
             int w = edge[2];
-            //bidirectional/undirected
-            adjList[u].push_back({v, w});
-            adjList[v].push_back({u, w});
+            //bidirection
+            //u<->v
+            adjList[u].push_back({w, v});
+            adjList[v].push_back({w, u});
         }
 
-        for(int src = 0; src < n; src++){
-            vector<int> dist = dijstra(adjList, src, n);
-            noOfCities = 0;
+        int SmallestNoOfNbrs = INT_MAX;
+        int ansNode = 0;
+        //traverse through the entier noeds, 1 by 1
+        //dont have to worry of the greatest number
+        //because this loop will take care of it
+        for(int src=0; src<n; src++){
+            vector<int> distDijstra(n, INT_MAX);
+            dijstras(src, adjList, distDijstra);
 
-            //find the no of cities possible to be visted under teh threshold
-            for(int u=0; u<n; u++){ //dist
-                if(src != u && dist[u] <= distanceThreshold){
-                    noOfCities++;
+            int noOfThresholdNbrs = 0;
+            //find out noOfThresholdNbrs
+            //not counting sorce node as the nbr
+            for(int index=0; index<n; index++){
+                if(index != src){
+                    if(distDijstra[index] <= distanceThreshold){
+                        noOfThresholdNbrs++;
+                    }
                 }
             }
 
-            //keeping the track of min possible city
-            if(noOfCities <= minNoOfCities){
-                minNoOfCities = noOfCities;
-                smallestCityNoOfNeighbours = src;
+            //keep track of min noOfThresholdNbrs
+            //also we have to retun the largest node
+            if(SmallestNoOfNbrs >= noOfThresholdNbrs){
+                SmallestNoOfNbrs = noOfThresholdNbrs;
+                ansNode = src;
             }
         }
-        return smallestCityNoOfNeighbours;
+        return ansNode;
     }
 };
