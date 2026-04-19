@@ -1,54 +1,67 @@
 //normal dijstars algo
+//set st
 class Solution {
 public:
     int networkDelayTime(vector<vector<int>>& times, int n, int k) {
-       //adjList
-       //the size is n+1 cuz the numbering is from 1-n
-       vector<vector<pair<int, int>>> adjList(n + 1); //u -> w, v
-       for(const vector<int> time: times){
+        //remember, it starts from 1 and not 0
+        //so we have to increase teh size of adjList
+        vector<vector<pair<int, int>>> adjList(n+1);
+        for(vector<int>& time: times){
             int u = time[0];
             int v = time[1];
             int w = time[2];
-            //directed
+            //directional
+            //u->v
             adjList[u].push_back({w, v});
         }
 
-       //so 0 will always be INT_MAX
-       vector<int> dist(n+1, INT_MAX);
+        //remember, it starts from 1 and not 0
+        //so we have to increase teh size of dist
+        vector<int> dist(n + 1, INT_MAX);
+        set<pair<int, int>> st;
+        dist[k] = 0;
+        st.insert({0, k});
 
-       //minheap-priority_queue //wt, node
-       priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
+        while(!st.empty()){
+            pair<int, int> pairValues = *st.begin();
+            st.erase(*st.begin());
+            int nodeWt = pairValues.first;
+            int node = pairValues.second;
 
-       dist[k] = 0;
-       pq.push({0, k});
-
-       //start processing
-       while(!pq.empty()){
-            pair<int, int> topPair = pq.top();
-            pq.pop();
-            int nodeWt = topPair.first;
-            int node = topPair.second;
-            //process its nbrs
-            for(const pair<int, int> nbr: adjList[node]){
+            //explore nbrs
+            for(pair<int, int> nbr: adjList[node]){
                 int nbrWt = nbr.first;
                 int nbrNode = nbr.second;
-                if(nodeWt + nbrWt < dist[nbrNode]){
-                    //update the dist[nbrNode] and push in the pq
-                    dist[nbrNode] = nodeWt + nbrWt;
-                    pq.push({dist[nbrNode], nbrNode});
+                if(nbrWt + nodeWt < dist[nbrNode]){
+                    //update the dist[nbrNode]
+                    //push the updated pair in the set
+                    //tricky
+                    //find if that pair is there in the set
+                    //if so delete it
+                    auto it = st.find({dist[nbrNode], nbrNode});
+                    if(it != st.end()){
+                        //found it
+                        st.erase({dist[nbrNode], nbrNode});
+                    }
+                    dist[nbrNode] = nbrWt + nodeWt;
+                    st.insert({dist[nbrNode], nbrNode});
                 }
             }
         }
-
-        //return the max time from dist[] and ignore 0 index as it is always INT_MAX
-        int ansTime = 0;
+        int ans = INT_MIN;
+        //we will start from 1 directly
+        //because 0 is going to be INT_MAX anyways
+        //if any of the node is still INT_MAX
+        //that means that, it is not able to reach 1 of the nodes
+        //if so then return -1;
         for(int i=1; i<=n; i++){
-            //if any dist[node] from 1 - n is INT_MAX, then dijstars algo didnt work, so not possible
             if(dist[i] == INT_MAX){
                 return -1;
             }
-            ansTime = max(ansTime, dist[i]);
+            else{
+                ans = max(ans, dist[i]);
+            }
         }
-        return ansTime;
+        return ans;
     }
 };
