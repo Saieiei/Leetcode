@@ -1,51 +1,58 @@
-//https://leetcode.com/problems/course-schedule/
-//so we have to follow a specific order -> topological sorting-BFS
-//to detect cycles, we will use TS and return based on number of nodes
+//DFS
+//thinking it as a cycle detection
+//if there is a cycle then we can never complete the courses
 class Solution {
 public:
-    void topoSortHelper(int& numCourses, unordered_map<int, list<int>>& adjList, vector<int>& topoSort){
-        //calculate indegrees
-        vector<int> indegrees(numCourses, 0);
-        for(pair<const int, list<int>> a: adjList){
-            int node = a.first; //nbrs = a.second
-            for(int nbr: a.second){
-                indegrees[nbr]++;
+
+    bool dfs(int node, vector<vector<int>>& adjList, vector<bool>& isVisited, vector<bool>& isPathVisited, vector<int>& numCoursesOrder){
+        //visisted
+        isVisited[node] = true;
+        isPathVisited[node] = true;
+        //explore the nbrs
+        for(const int& nbr: adjList[node]){
+            if(!isVisited[nbr]){
+                if(dfs(nbr, adjList, isVisited, isPathVisited, numCoursesOrder)){
+                    //cycle detected
+                    return true;
+                }
+            }
+            else{
+                if(isPathVisited[nbr]){
+                    //cycle detected
+                    return true;
+                }
             }
         }
-
-        //now push 0 indegrees node in the queue
-        queue<int> q;
-        for(int i=0; i<numCourses; i++){
-            if(indegrees[i] == 0) q.push(i);
-        }
-
-        //keep doing this in q
-        while(!q.empty()){
-            int frontNode = q.front();
-            q.pop();
-            topoSort.push_back(frontNode);
-            //update the indegrees
-            for(int nbr: adjList[frontNode]){
-                indegrees[nbr]--;
-                if(indegrees[nbr] == 0) q.push(nbr);
-            }
-        }
+        isPathVisited[node] = false;
+        numCoursesOrder.push_back(node);
+        return false;
     }
+
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
-        //create adjList
-        unordered_map<int, list<int>> adjList;
-        for(vector<int> i: prerequisites){
-            int u = i[0];
-            int v = i[1];
-            //according to the q
-            adjList[v].push_back(u);
-            //u can calculate ur indegrees here is u want to => v->u
+        
+        //adjList
+        vector<vector<int>> adjList(numCourses);
+        for(const vector<int>& prerequisit: prerequisites){
+            int u = prerequisit[1];
+            int v = prerequisit[0];
+            //direcrted
+            //u->v
+            adjList[u].push_back(v);
         }
-        vector<int> topoSort;
-        topoSortHelper(numCourses, adjList, topoSort);
-        ////detect cycle logic
-        //if(topoSort.size() == numCourses) return true;
-        //return false;
-        return topoSort;
+
+        vector<bool> isVisited(numCourses, false);
+        vector<bool> isPathVisited(numCourses, false);
+        vector<int> numCoursesOrder;
+        //disconnected graph
+        for(int node = 0; node<numCourses; node++){
+            if(!isVisited[node]){
+                if(dfs(node, adjList, isVisited, isPathVisited, numCoursesOrder)){
+                    //there is a cycle in the graph
+                    return {};
+                }
+            }
+        }
+        reverse(numCoursesOrder.begin(), numCoursesOrder.end());
+        return numCoursesOrder; //no cycle
     }
 };
