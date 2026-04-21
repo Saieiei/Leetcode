@@ -4,7 +4,7 @@
 class Solution {
 public:
 
-    bool isSafe(int newX, int newY, int& m, int &n){
+    bool isSafe(int newX, int newY, const int& m, const int &n){
         if((newX < 0 || newX >= m) || (newY < 0 || newY >= n)){
             return false;
         }
