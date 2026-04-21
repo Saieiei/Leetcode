@@ -58,7 +58,7 @@ public:
             int nodeWt = topPair.first;
             int nodeID = topPair.second;
             //explore the nbrs
-            for(pair<int, int> nbr: adjList[nodeID]){
+            for(const pair<int, int>& nbr: adjList[nodeID]){
                 int nbrWt = nbr.first;
                 int nbrNodeID = nbr.second;
                 if(nodeWt + nbrWt < dist[nbrNodeID]){
