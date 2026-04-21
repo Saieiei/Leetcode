@@ -1,77 +1,82 @@
-//dijstras algo - set
+//dijstras algo - minHeap
 //convert the matrix to adjList
 //1D dist[]
 class Solution {
 public:
 
-    bool isSafe(int newX, int newY, const int& m, const int &n){
-        if((newX < 0 || newX >= m) || (newY < 0 || newY >= n)){
+    bool isSafe(int newX, int newY, int& m, int& n){
+        if((newX<0 || newX>=m) || (newY<0 || newY>=n)){
             return false;
         }
         return true;
     }
 
     int minPathSum(vector<vector<int>>& grid) {
+        //create adjList using nodeIDs -> input given matrix
         int m = grid.size();
         int n = grid[0].size();
         int totalNodes = m*n;
-        //create adjList
-        //since matrix, we have to work with nodeID
-        vector<vector<pair<int, int>>> adjList(totalNodes); //we cant say col size for sure 
-        //so we will use push_back -> u.push_back(v)
+        vector<vector<pair<int, int>>> adjList(totalNodes);
+        //dont know of the col size
+        //we will do [u].push_back({_, _})
 
-        //helper, down, right
-        int dx[] = {1, 0};
+        //move down, right
+        int dx[] = {+1, 0};
         int dy[] = {0, +1};
-        //travese through each node
+
+        //travese through the give data
         for(int i=0; i<m; i++){
             for(int j=0; j<n; j++){
-                int nodeID = i*n + j;
-
-                //2 ways
+                int uID =  i*n + j;
+                
+                //edges
                 for(int k=0; k<2; k++){
                     int newX = i + dx[k];
                     int newY = j + dy[k];
-
-                    //check if safe
+                    //check if the new coordinates r safe
                     if(isSafe(newX, newY, m, n)){
-                        int nbrNodeID = newX*n + newY;
-                        int nbrWt = grid[newX][newY];
-                        adjList[nodeID].push_back({nbrWt, nbrNodeID});
+                        //nbrID
+                        int vID = newX*n + newY;
+                        int w = grid[newX][newY];
+                        adjList[uID].push_back({w, vID});
                     }
                 }
             }
         }
 
-        //dijstra algo
-        //set
-        set<pair<int, int>> st;
-        vector<int>dist(totalNodes, INT_MAX);
-        int startNodeID = 0; //i*n+j
-        st.insert({grid[0][0], startNodeID});
-        dist[startNodeID] = grid[0][0];
+        //dijkstras algo
+        //minHeap
+        using p = pair<int, int>;
+        priority_queue<p, vector<p>, greater<p>> pq;
+        vector<int> dist(totalNodes, INT_MAX);
+        //no need of isVisited
+        int startingNodeID = 0; //i*n + j
+        dist[startingNodeID] = grid[0][0];
+        pq.push({dist[startingNodeID], startingNodeID});
 
         //start the process
-        while(!st.empty()){
-            pair<int, int> topPair = *st.begin();
-            st.erase(st.begin());
-            int nodeWt = topPair.first;
-            int nodeID = topPair.second;
+        while(!pq.empty()){
+            pair<int, int> pairData = pq.top();
+            pq.pop();
+            int w = pairData.first;
+            int uID = pairData.second;
+
+            //lazy delete
+            if(w > dist[uID]){
+                continue;
+            }
+
             //explore the nbrs
-            for(const pair<int, int>& nbr: adjList[nodeID]){
-                int nbrWt = nbr.first;
-                int nbrNodeID = nbr.second;
-                if(nodeWt + nbrWt < dist[nbrNodeID]){
-                    //update the dist[nbrNodeID] and push in st
-                    //befpre that, if found in st, erase it
-                    if(dist[nbrNodeID] != INT_MAX){
-                        st.erase({dist[nbrNodeID], nbrNodeID});
-                    }
-                    dist[nbrNodeID] = nodeWt + nbrWt;
-                    st.insert({dist[nbrNodeID], nbrNodeID});
+            for(const pair<int, int>& nbr: adjList[uID]){
+                int nbrW = nbr.first;
+                int nbrID = nbr.second;
+                if(nbrW + w < dist[nbrID]){
+                    //update and push
+                    dist[nbrID] = nbrW + w;
+                    pq.push({dist[nbrID], nbrID});
                 }
             }
         }
-        return dist[totalNodes-1];
+        return dist[totalNodes -1];
     }
 };
