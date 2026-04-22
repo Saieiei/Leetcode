@@ -24,7 +24,7 @@ public:
 
         while(!st.empty()){
             pair<int, int> pairValues = *st.begin();
-            st.erase(*st.begin());
+            st.erase(st.begin());
             int nodeWt = pairValues.first;
             int node = pairValues.second;
 
@@ -38,9 +38,7 @@ public:
                     //tricky
                     //find if that pair is there in the set
                     //if so delete it
-                    auto it = st.find({dist[nbrNode], nbrNode});
-                    if(it != st.end()){
-                        //found it
+                    if(dist[nbrNode] != INT_MAX){
                         st.erase({dist[nbrNode], nbrNode});
                     }
                     dist[nbrNode] = nbrWt + nodeWt;
