@@ -218,6 +218,7 @@ https://leetcode.com/u/saiei/
 | [1304-longest-happy-string](https://github.com/Saieiei/Leetcode/tree/master/1304-longest-happy-string) |
 | [1325-path-with-maximum-probability](https://github.com/Saieiei/Leetcode/tree/master/1325-path-with-maximum-probability) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Saieiei/Leetcode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
+| [1631-path-with-minimum-effort](https://github.com/Saieiei/Leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/Saieiei/Leetcode/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2164-two-best-non-overlapping-events](https://github.com/Saieiei/Leetcode/tree/master/2164-two-best-non-overlapping-events) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/Saieiei/Leetcode/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
@@ -417,6 +418,7 @@ https://leetcode.com/u/saiei/
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/Saieiei/Leetcode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/Saieiei/Leetcode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/Saieiei/Leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
+| [1631-path-with-minimum-effort](https://github.com/Saieiei/Leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/Saieiei/Leetcode/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/Saieiei/Leetcode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [1694-make-sum-divisible-by-p](https://github.com/Saieiei/Leetcode/tree/master/1694-make-sum-divisible-by-p) |
@@ -498,6 +500,7 @@ https://leetcode.com/u/saiei/
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Saieiei/Leetcode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/Saieiei/Leetcode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/Saieiei/Leetcode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
+| [1631-path-with-minimum-effort](https://github.com/Saieiei/Leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/Saieiei/Leetcode/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/Saieiei/Leetcode/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1886-minimum-limit-of-balls-in-a-bag](https://github.com/Saieiei/Leetcode/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
@@ -862,6 +865,7 @@ https://leetcode.com/u/saiei/
 | [1396-count-servers-that-communicate](https://github.com/Saieiei/Leetcode/tree/master/1396-count-servers-that-communicate) |
 | [1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/Saieiei/Leetcode/tree/main/1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero/) | Medium |
 | [1484-linked-list-in-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
+| [1631-path-with-minimum-effort](https://github.com/Saieiei/Leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 | [1653-number-of-good-leaf-nodes-pairs](https://github.com/Saieiei/Leetcode/tree/master/1653-number-of-good-leaf-nodes-pairs) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/Saieiei/Leetcode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [2035-count-sub-islands](https://github.com/Saieiei/Leetcode/tree/master/2035-count-sub-islands) |
@@ -898,6 +902,7 @@ https://leetcode.com/u/saiei/
 | [1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/Saieiei/Leetcode/tree/main/1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero/) | Medium |
 | [1484-linked-list-in-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Saieiei/Leetcode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
+| [1631-path-with-minimum-effort](https://github.com/Saieiei/Leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/Saieiei/Leetcode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [1876-map-of-highest-peak](https://github.com/Saieiei/Leetcode/tree/master/1876-map-of-highest-peak) |
 | [2035-count-sub-islands](https://github.com/Saieiei/Leetcode/tree/master/2035-count-sub-islands) |
@@ -934,6 +939,7 @@ https://leetcode.com/u/saiei/
 | [1402-count-square-submatrices-with-all-ones](https://github.com/Saieiei/Leetcode/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Saieiei/Leetcode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/Saieiei/Leetcode/tree/master/1496-lucky-numbers-in-a-matrix) |
+| [1631-path-with-minimum-effort](https://github.com/Saieiei/Leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/Saieiei/Leetcode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [1876-map-of-highest-peak](https://github.com/Saieiei/Leetcode/tree/master/1876-map-of-highest-peak) |
 | [1972-rotating-the-box](https://github.com/Saieiei/Leetcode/tree/master/1972-rotating-the-box) |
@@ -1140,4 +1146,5 @@ https://leetcode.com/u/saiei/
 | [0721-accounts-merge](https://github.com/Saieiei/Leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0785-is-graph-bipartite](https://github.com/Saieiei/Leetcode/tree/main/0785-is-graph-bipartite/) | Medium |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Saieiei/Leetcode/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
+| [1631-path-with-minimum-effort](https://github.com/Saieiei/Leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 <!---LeetCode Topics End-->
