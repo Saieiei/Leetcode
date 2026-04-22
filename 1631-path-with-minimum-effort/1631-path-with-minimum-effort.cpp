@@ -1,92 +1,90 @@
+//this is little advanced compared to minimum cost path
+//we need to build adjList and then use dijkstras algo - set (foundation)
+//our adjList will be diff
+//because we r talking about the diff in the heights,
+//which will be considered as the current effort
+//the dijkstras algo should track the minimum of
+//maximum effort in the path
+//in general we update dijkstras algo if,
+//nodeWt + nbrWt < dist[nbrNode], but in this case
+//we will update only when the max effort is changed
+//basically keep track of the max effort (alpha)
+//the dijstras algo will automatically keep track of minimum <alphas>
 class Solution {
 public:
-    // Helper to check if a coordinate is inside the grid
-    bool isValid(int r, int c, int n, int m) {
-        return (r >= 0 && r < n && c >= 0 && c < m);
+    bool isSafe(int newX, int newY, int& rows, int& cols){
+        if((newX < 0 || newX >= rows) || (newY < 0 || newY >= cols)){
+            return false;
+        }
+        return true;
     }
 
     int minimumEffortPath(vector<vector<int>>& heights) {
-        int n = heights.size();
-        int m = heights[0].size();
-        int totalNodes = n * m;
+        int rows = heights.size();
+        int cols = heights[0].size();
+        int totalNodes = rows*cols;
 
-        // --- STEP 1: PRE-PROCESSING (Build the Graph) ---
-        // adj[u] stores pairs of {weight, v}
-        // Weight here = Absolute difference in heights between the two cells
-        vector<vector<pair<int, int>>> adj(totalNodes);
-
-        // Directions (Up, Down, Left, Right)
+        //create adjList (nodeIDs)
+        //to explore nbrs in adjList , up down left right
         int dx[] = {-1, 1, 0, 0};
         int dy[] = {0, 0, -1, 1};
-
-        for(int i = 0; i < n; i++) {
-            for(int j = 0; j < m; j++) {
-                
-                int u = i * m + j; // Current Node ID
-
-                for(int k = 0; k < 4; k++) {
-                    int ni = i + dx[k];
-                    int nj = j + dy[k];
-
-                    if(isValid(ni, nj, n, m)) {
-                        int v = ni * m + nj; // Neighbor Node ID
-                        
-                        // EDGE WEIGHT = Absolute difference in heights
-                        int weight = abs(heights[i][j] - heights[ni][nj]);
-                        
-                        adj[u].push_back({weight, v});
+        //traverse through the matrix
+        vector<vector<pair<int, int>>> adjList(totalNodes);
+        for(int i=0; i<rows; i++){
+            for(int j=0; j<cols; j++){
+                int uNodeID = i*cols + j;
+                //explore nbrs of nodeID
+                //should not go out of bounds as well
+                for(int k=0; k<4; k++){
+                    int newX = i + dx[k];
+                    int newY = j + dy[k];
+                    if(isSafe(newX, newY, rows, cols)){
+                        int vNodeID = newX * cols + newY;
+                        int diffWt = abs(heights[i][j] - heights[newX][newY]);
+                        adjList[uNodeID].push_back({diffWt, vNodeID});
                     }
                 }
             }
         }
 
-        // --- STEP 2: DIJKSTRA (Modified for "Effort") ---
-        
-        // Min-heap: {current_max_effort, node_id}
+        //dijkstra algo - set
         set<pair<int, int>> st;
-        
-        // Dist array: Stores the MINIMUM EFFORT required to reach each node
+        int startingNodeID = 0; //i*cols+j
+        int startingWt = 0; //no jumps made yet
+        st.insert({startingWt, startingNodeID});
         vector<int> dist(totalNodes, INT_MAX);
+        dist[startingNodeID] = startingWt;
 
-        int startNode = 0;
-        int targetNode = totalNodes - 1;
-        
-        // Initial effort is 0 (standing at start requires no effort)
-        dist[startNode] = 0;
-        st.insert({0, startNode});
+        //start the process
+        while(!st.empty()){
+            pair<int, int> pairData = *st.begin();
+            st.erase(st.begin());
+            int currentWt = pairData.first;
+            int uNodeID = pairData.second;
+            //explore the nbrs
+            for(const pair<int, int>& nbr: adjList[uNodeID]){
+                int nbrWt = nbr.first;
+                int vNodeID = nbr.second;
 
-        while(!st.empty()) {
-            auto it = st.begin();
-            int currentEffort = it->first;
-            int u = it->second;
-            st.erase(it);
+                //here is the catch
+                //the cost of the path will be the max
+                //of the abs difference in the jump
+                int actualWt = max(currentWt, nbrWt);
 
-            // Optimization: Stop if we reached target
-            if (u == targetNode) return currentEffort;
-
-            // Iterate neighbors
-            for(auto edge : adj[u]) {
-                int edgeWeight = edge.first; // The jump height to this neighbor
-                int v = edge.second;
-
-                // --- THE CRITICAL LOGIC CHANGE ---
-                // The effort to get to 'v' is the MAX of:
-                // 1. The effort it took to get to 'u'
-                // 2. The jump from 'u' to 'v'
-                int newEffort = max(currentEffort, edgeWeight);
-
-                // Relaxation: If we found a route with a smaller "max jump", update it
-                if(newEffort < dist[v]) {
-                    if(dist[v] != INT_MAX) {
-                        st.erase({dist[v], v});
+                //we have to find the min 
+                //of these max jumps routes
+                if(dist[vNodeID] > actualWt){
+                    //update and push
+                    //erase from st
+                    if(dist[vNodeID] != INT_MAX){
+                        st.erase({dist[vNodeID], vNodeID});
                     }
-                    
-                    dist[v] = newEffort;
-                    st.insert({dist[v], v});
+                    dist[vNodeID] = actualWt;
+                    st.insert({dist[vNodeID], vNodeID});
                 }
             }
         }
-        
-        return dist[targetNode]; // Should always find a path
+
+        return dist[totalNodes -1];
     }
 };
