@@ -1,5 +1,5 @@
 //this is little advanced compared to minimum cost path
-//we need to build adjList and then use dijkstras algo - set (foundation)
+//we need to build adjList and then use dijkstras algo - minHeap (foundation)
 //our adjList will be diff
 //because we r talking about the diff in the heights,
 //which will be considered as the current effort
@@ -18,73 +18,69 @@ public:
         }
         return true;
     }
-
     int minimumEffortPath(vector<vector<int>>& heights) {
         int rows = heights.size();
         int cols = heights[0].size();
         int totalNodes = rows*cols;
-
-        //create adjList (nodeIDs)
-        //to explore nbrs in adjList , up down left right
+        //create adjList -> matrix(heights)
+        vector<vector<pair<int, int>>> adjList(totalNodes);
+        //keep track of directions -> up, down, left, right
         int dx[] = {-1, 1, 0, 0};
         int dy[] = {0, 0, -1, 1};
-        //traverse through the matrix
-        vector<vector<pair<int, int>>> adjList(totalNodes);
+
+        //explore each cell
         for(int i=0; i<rows; i++){
             for(int j=0; j<cols; j++){
                 int uNodeID = i*cols + j;
-                //explore nbrs of nodeID
-                //should not go out of bounds as well
+                //explore the Vs
+                //check if the all 4 directions r safe
                 for(int k=0; k<4; k++){
                     int newX = i + dx[k];
                     int newY = j + dy[k];
+                    //check if new coordinates r safe
                     if(isSafe(newX, newY, rows, cols)){
                         int vNodeID = newX * cols + newY;
-                        int diffWt = abs(heights[i][j] - heights[newX][newY]);
-                        adjList[uNodeID].push_back({diffWt, vNodeID});
+                        int actualWt = abs(heights[i][j] - heights[newX][newY]);
+                        adjList[uNodeID].push_back({actualWt, vNodeID});
                     }
                 }
             }
         }
 
-        //dijkstra algo - set
-        set<pair<int, int>> st;
+        //dijkstra algo - minHeap
+        using p = pair<int, int>;
+        priority_queue<p, vector<p>, greater<p>> pq;
+        int startingEffort = 0;
         int startingNodeID = 0; //i*cols+j
-        int startingWt = 0; //no jumps made yet
-        st.insert({startingWt, startingNodeID});
+        pq.push({startingEffort, startingNodeID});
         vector<int> dist(totalNodes, INT_MAX);
-        dist[startingNodeID] = startingWt;
+        dist[startingNodeID] = startingEffort;
 
         //start the process
-        while(!st.empty()){
-            pair<int, int> pairData = *st.begin();
-            st.erase(st.begin());
-            int currentWt = pairData.first;
-            int uNodeID = pairData.second;
-            //explore the nbrs
-            for(const pair<int, int>& nbr: adjList[uNodeID]){
-                int nbrWt = nbr.first;
-                int vNodeID = nbr.second;
+        while(!pq.empty()){
+            pair<int, int> frontPair = pq.top();
+            pq.pop();
+            int currentEffort = frontPair.first;
+            int currentNodeID = frontPair.second;
 
-                //here is the catch
-                //the cost of the path will be the max
-                //of the abs difference in the jump
-                int actualWt = max(currentWt, nbrWt);
+            //catch, lazy deletion
+            if(currentEffort > dist[currentNodeID]){
+                continue;
+            }
 
-                //we have to find the min 
-                //of these max jumps routes
-                if(dist[vNodeID] > actualWt){
+            //explore nbrs
+            for(const pair<int, int>& nbr: adjList[currentNodeID]){
+                int upcomingEffort = nbr.first;
+                int nbrNodeID = nbr.second;
+                int actualEffort = max(currentEffort, upcomingEffort);
+
+                if(actualEffort < dist[nbrNodeID]){
                     //update and push
-                    //erase from st
-                    if(dist[vNodeID] != INT_MAX){
-                        st.erase({dist[vNodeID], vNodeID});
-                    }
-                    dist[vNodeID] = actualWt;
-                    st.insert({dist[vNodeID], vNodeID});
+                    dist[nbrNodeID] = actualEffort;
+                    pq.push({dist[nbrNodeID], nbrNodeID});
                 }
             }
         }
-
         return dist[totalNodes -1];
     }
 };
