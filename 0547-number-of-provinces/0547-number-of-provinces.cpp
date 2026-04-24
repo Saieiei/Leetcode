@@ -1,29 +1,27 @@
-//its simple only
-//we will use dfs
-//dfs will travel where ever it gets path to go
-//when its unreachable then return (backtracking) so that count increases by 1
-//use a loop to get through all the nodes, so nothing is left out, incase unreachable
+//simple dfs traversal
+//without creating adjList
 class Solution {
 public:
-    void dfs(int src, vector<vector<int>>& isConnected, vector<bool>& visited, int& col){
-        //1st mark it as visited
-        visited[src] = true;
-        //figure out its neighbours and see if reachable (iterate through col)
-        for(int j=0; j<col; j++){
-            if(!visited[j] && isConnected[src][j] == 1){
-                dfs(j, isConnected, visited, col);
+    void dfs(int i, int& n, vector<vector<int>>& isConnected, vector<bool>& isVisited){
+        //ASAP, mark is visited
+        isVisited[i] = true;
+        //explore its nbrs
+        for(int j=0; j<n; j++){
+            if(!isVisited[j] && isConnected[i][j] == 1){
+                dfs(j, n, isConnected, isVisited);                                               
             }
         }
     }
     int findCircleNum(vector<vector<int>>& isConnected) {
         int countAns = 0;
-        int row = isConnected.size();
-        int col = isConnected[0].size();
-        vector<bool>visited(row, false);
-        //iterate through all the nodes
-        for(int i=0; i < col; i++){
-            if(!visited[i]){
-                dfs(i, isConnected, visited, col);
+        //its a dfs, so we need isVisited
+        //nxn matrix
+        int n = isConnected.size();
+        vector<bool> isVisited(n, false);
+        //traverse though each node
+        for(int i=0; i<n; i++){
+            if(!isVisited[i]){
+                dfs(i, n, isConnected, isVisited);
                 countAns++;
             }
         }
