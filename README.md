@@ -843,6 +843,7 @@ https://leetcode.com/u/saiei/
 | [0386-lexicographical-numbers](https://github.com/Saieiei/Leetcode/tree/master/0386-lexicographical-numbers) |
 | [0437-path-sum-iii](https://github.com/Saieiei/Leetcode/tree/master/0437-path-sum-iii) |
 | [0543-diameter-of-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/0543-diameter-of-binary-tree) |
+| [0547-number-of-provinces](https://github.com/Saieiei/Leetcode/tree/main/0547-number-of-provinces/) | Medium |
 | [0652-find-duplicate-subtrees](https://github.com/Saieiei/Leetcode/tree/master/0652-find-duplicate-subtrees) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Saieiei/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0684-redundant-connection](https://github.com/Saieiei/Leetcode/tree/main/0684-redundant-connection/) | Medium |
@@ -886,6 +887,7 @@ https://leetcode.com/u/saiei/
 | [0210-course-schedule-ii](https://github.com/Saieiei/Leetcode/tree/main/0210-course-schedule-ii/) | Medium |
 | [0310-minimum-height-trees](https://github.com/Saieiei/Leetcode/tree/main/0310-minimum-height-trees/) | Medium |
 | [0407-trapping-rain-water-ii](https://github.com/Saieiei/Leetcode/tree/master/0407-trapping-rain-water-ii) |
+| [0547-number-of-provinces](https://github.com/Saieiei/Leetcode/tree/main/0547-number-of-provinces/) | Medium |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Saieiei/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0684-redundant-connection](https://github.com/Saieiei/Leetcode/tree/main/0684-redundant-connection/) | Medium |
 | [0721-accounts-merge](https://github.com/Saieiei/Leetcode/tree/main/0721-accounts-merge/) | Medium |
@@ -1129,6 +1131,7 @@ https://leetcode.com/u/saiei/
 | [0207-course-schedule](https://github.com/Saieiei/Leetcode/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/Saieiei/Leetcode/tree/main/0210-course-schedule-ii/) | Medium |
 | [0310-minimum-height-trees](https://github.com/Saieiei/Leetcode/tree/main/0310-minimum-height-trees/) | Medium |
+| [0547-number-of-provinces](https://github.com/Saieiei/Leetcode/tree/main/0547-number-of-provinces/) | Medium |
 | [0684-redundant-connection](https://github.com/Saieiei/Leetcode/tree/main/0684-redundant-connection/) | Medium |
 | [0743-network-delay-time](https://github.com/Saieiei/Leetcode/tree/main/0743-network-delay-time/) | Medium |
 | [0785-is-graph-bipartite](https://github.com/Saieiei/Leetcode/tree/main/0785-is-graph-bipartite/) | Medium |
@@ -1142,6 +1145,7 @@ https://leetcode.com/u/saiei/
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0547-number-of-provinces](https://github.com/Saieiei/Leetcode/tree/main/0547-number-of-provinces/) | Medium |
 | [0684-redundant-connection](https://github.com/Saieiei/Leetcode/tree/main/0684-redundant-connection/) | Medium |
 | [0721-accounts-merge](https://github.com/Saieiei/Leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0785-is-graph-bipartite](https://github.com/Saieiei/Leetcode/tree/main/0785-is-graph-bipartite/) | Medium |
