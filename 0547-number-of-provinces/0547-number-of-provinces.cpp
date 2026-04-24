@@ -1,27 +1,40 @@
-//simple dfs traversal
-//without creating adjList
+//we will work with adjList here
+//u can traverse through the matrix it self,
+//and not use adjList
+//the rest is simple DFS
 class Solution {
 public:
-    void dfs(int i, int& n, vector<vector<int>>& isConnected, vector<bool>& isVisited){
-        //ASAP, mark is visited
+    void dfs(int i, vector<bool>& isVisited, vector<vector<int>>& isConnected, vector<vector<int>>& adjList){
+        //1st mark it as visited
         isVisited[i] = true;
         //explore its nbrs
-        for(int j=0; j<n; j++){
-            if(!isVisited[j] && isConnected[i][j] == 1){
-                dfs(j, n, isConnected, isVisited);                                               
+        for(int nbr: adjList[i]){
+            if(!isVisited[nbr]){
+                dfs(nbr, isVisited, isConnected, adjList);
             }
         }
     }
+
     int findCircleNum(vector<vector<int>>& isConnected) {
-        int countAns = 0;
-        //its a dfs, so we need isVisited
-        //nxn matrix
         int n = isConnected.size();
+        vector<vector<int>> adjList(n);
+        //traverse through the data
+        for(int i=0; i<n; i++){
+            for(int j=0; j<n; j++){
+                //get the the node
+                //not using nodeID
+                if(i != j && isConnected[i][j] == 1){
+                    adjList[i].push_back(j);
+                }
+            }
+        }
+
+        //dfs
+        int countAns = 0;
         vector<bool> isVisited(n, false);
-        //traverse though each node
         for(int i=0; i<n; i++){
             if(!isVisited[i]){
-                dfs(i, n, isConnected, isVisited);
+                dfs(i, isVisited, isConnected, adjList);
                 countAns++;
             }
         }
