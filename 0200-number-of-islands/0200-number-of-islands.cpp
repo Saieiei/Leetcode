@@ -1,44 +1,62 @@
-//dfs
+//bfs
+//traverse through each node
+//traverse its nbrs in 4 directions
+//check if the new coordinates r safe
+//push back in q
+//outside the while loop, increase ans
 class Solution {
 public:
-    void dfs(int i, int j, vector<vector<bool>>& isVisited, vector<vector<char>>& grid){
-        //1st check if that coordiniates r safe
-        int m = grid.size();
-        int n = grid[0].size();
-        if((i<0 || i>=m)||(j<0 || j>=n)||(grid[i][j] == '0')){
-            //not safe
-            return;
+    int isSafe(int newX, int newY, const int& m, const int& n, const vector<vector<char>>& grid, const vector<vector<bool>>& isVisited){
+        if((newX<0 || newX>=m)||(newY<0 || newY>=n)||
+        (grid[newX][newY] == '0') || (isVisited[newX][newY])){
+            return false;
         }
-
-        //check if already visited
-        if(isVisited[i][j]){
-            return;
-        }
-
-        //all safe, mark it is visited
-        isVisited[i][j] = true;
-
-        //spread the infection
-        //up, down, left , right
-        dfs(i-1, j, isVisited, grid);
-        dfs(i+1, j, isVisited, grid);
-        dfs(i, j-1, isVisited, grid);
-        dfs(i, j+1, isVisited, grid);
+        return true;
     }
     int numIslands(vector<vector<char>>& grid) {
         int m = grid.size();
         int n = grid[0].size();
-        //for dfs we need isVisited
+        //we need visited
         vector<vector<bool>> isVisited(m, vector<bool>(n, false));
-
+        //create q
+        using p = pair<int, int>;
+        queue<p> q;
+        //explore nbrs, up, down, left, right
+        int dx[] = {-1, 1, 0, 0};
+        int dy[] = {0, 0, -1, 1};
         int countAns = 0;
-        //start dfs
-        //traverse through each node
+
+        //traverse through the given matrix
         for(int i=0; i<m; i++){
-            for(int j=0; j<n; j++){ 
-                //if land and not visited
+            for(int j=0; j<n; j++){
+                //check if node is land and not visited
                 if(grid[i][j] == '1' && !isVisited[i][j]){
-                    dfs(i, j, isVisited, grid);
+                    //push in the pq
+                    q.push({i, j});
+                    //as soon as u push, mark it visited
+                    isVisited[i][j] = true;
+
+                    while(!q.empty()){
+                        pair<int, int> topPair = q.front();
+                        q.pop();
+                        int x = topPair.first;
+                        int y = topPair.second;
+                        //explore nbrs in all 4 directions
+                        for(int k=0; k<4; k++){
+                            int newX = x + dx[k];
+                            int newY = y + dy[k];
+
+                            //check if these new coordinates r safe
+                            if(isSafe(newX, newY, m, n, grid, isVisited)){
+                                //push that in q
+                                q.push({newX, newY});
+                                //as soon as u push, mark it visited
+                                isVisited[newX][newY] = true;
+
+                            }
+                        }
+                    }
+                    //increase count
                     countAns++;
                 }
             }
