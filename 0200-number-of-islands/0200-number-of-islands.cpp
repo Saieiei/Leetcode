@@ -1,48 +1,48 @@
-//DFS, space optimised -> visited => grid
+//dfs
 class Solution {
 public:
-    void dfsIterative(vector<vector<char>>& grid, int r, int c) {
-        int rows = grid.size();
-        int cols = grid[0].size();
-        
-        // HERE IS THE STACK! (Explicitly defined)
-        stack<pair<int, int>> s;
-        s.push({r, c});
-        
-        // While stack is not empty (similar to BFS queue loop)
-        while (!s.empty()) {
-            pair<int, int> curr = s.top();
-            s.pop();
-            
-            int row = curr.first;
-            int col = curr.second;
-            
-            // Check bounds and if processed
-            if (row < 0 || col < 0 || row >= rows || col >= cols || grid[row][col] == '0') {
-                continue;
-            }
-            
-            // Mark visited (Sink the island)
-            grid[row][col] = '0';
-            
-            // Push neighbors to stack
-            s.push({row + 1, col}); // Down
-            s.push({row - 1, col}); // Up
-            s.push({row, col + 1}); // Right
-            s.push({row, col - 1}); // Left
+    void dfs(int i, int j, vector<vector<bool>>& isVisited, vector<vector<char>>& grid){
+        //1st check if that coordiniates r safe
+        int m = grid.size();
+        int n = grid[0].size();
+        if((i<0 || i>=m)||(j<0 || j>=n)||(grid[i][j] == '0')){
+            //not safe
+            return;
         }
-    }
 
+        //check if already visited
+        if(isVisited[i][j]){
+            return;
+        }
+
+        //all safe, mark it is visited
+        isVisited[i][j] = true;
+
+        //spread the infection
+        //up, down, left , right
+        dfs(i-1, j, isVisited, grid);
+        dfs(i+1, j, isVisited, grid);
+        dfs(i, j-1, isVisited, grid);
+        dfs(i, j+1, isVisited, grid);
+    }
     int numIslands(vector<vector<char>>& grid) {
-        int count = 0;
-        for (int i = 0; i < grid.size(); i++) {
-            for (int j = 0; j < grid[0].size(); j++) {
-                if (grid[i][j] == '1') {
-                    count++;
-                    dfsIterative(grid, i, j);
+        int m = grid.size();
+        int n = grid[0].size();
+        //for dfs we need isVisited
+        vector<vector<bool>> isVisited(m, vector<bool>(n, false));
+
+        int countAns = 0;
+        //start dfs
+        //traverse through each node
+        for(int i=0; i<m; i++){
+            for(int j=0; j<n; j++){ 
+                //if land and not visited
+                if(grid[i][j] == '1' && !isVisited[i][j]){
+                    dfs(i, j, isVisited, grid);
+                    countAns++;
                 }
             }
         }
-        return count;
+        return countAns;
     }
 };
