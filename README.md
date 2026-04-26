@@ -393,6 +393,7 @@ https://leetcode.com/u/saiei/
 | [0921-spiral-matrix-iii](https://github.com/Saieiei/Leetcode/tree/master/0921-spiral-matrix-iii) |
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
 | [0987-reveal-cards-in-increasing-order](https://github.com/Saieiei/Leetcode/tree/master/0987-reveal-cards-in-increasing-order) |
+| [0994-rotting-oranges](https://github.com/Saieiei/Leetcode/tree/main/0994-rotting-oranges/) | Medium |
 | [0997-find-the-town-judge](https://github.com/Saieiei/Leetcode/tree/main/0997-find-the-town-judge/) | Easy |
 | [0999-regions-cut-by-slashes](https://github.com/Saieiei/Leetcode/tree/master/0999-regions-cut-by-slashes) |
 | [1002-maximum-width-ramp](https://github.com/Saieiei/Leetcode/tree/master/1002-maximum-width-ramp) |
@@ -903,6 +904,7 @@ https://leetcode.com/u/saiei/
 | [0802-find-eventual-safe-states](https://github.com/Saieiei/Leetcode/tree/main/0802-find-eventual-safe-states/) | Medium |
 | [0820-find-eventual-safe-states](https://github.com/Saieiei/Leetcode/tree/master/0820-find-eventual-safe-states) |
 | [0841-keys-and-rooms](https://github.com/Saieiei/Leetcode/tree/main/0841-keys-and-rooms/) | Medium |
+| [0994-rotting-oranges](https://github.com/Saieiei/Leetcode/tree/main/0994-rotting-oranges/) | Medium |
 | [0999-regions-cut-by-slashes](https://github.com/Saieiei/Leetcode/tree/master/0999-regions-cut-by-slashes) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Saieiei/Leetcode/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
@@ -943,6 +945,7 @@ https://leetcode.com/u/saiei/
 | [0787-sliding-puzzle](https://github.com/Saieiei/Leetcode/tree/master/0787-sliding-puzzle) |
 | [0870-magic-squares-in-grid](https://github.com/Saieiei/Leetcode/tree/master/0870-magic-squares-in-grid) |
 | [0921-spiral-matrix-iii](https://github.com/Saieiei/Leetcode/tree/master/0921-spiral-matrix-iii) |
+| [0994-rotting-oranges](https://github.com/Saieiei/Leetcode/tree/main/0994-rotting-oranges/) | Medium |
 | [0999-regions-cut-by-slashes](https://github.com/Saieiei/Leetcode/tree/master/0999-regions-cut-by-slashes) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/Saieiei/Leetcode/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1396-count-servers-that-communicate](https://github.com/Saieiei/Leetcode/tree/master/1396-count-servers-that-communicate) |
