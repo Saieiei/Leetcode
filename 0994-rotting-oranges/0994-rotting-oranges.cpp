@@ -1,74 +1,58 @@
-//BFS
-//not dijistra algo
-auto init = [](){
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
-    return 'c';
-};
+//dfs
 class Solution {
 public:
-    bool isSafe(const int newX, const int newY, const int m, const int n, vector<vector<int>>& grid){
-        if((newX<0 || newX>=m)||(newY<0 || newY>=n)||(grid[newX][newY] != 1)){
-            return false;
+    void dfs(int i, int j, int m, int n, vector<vector<int>>&grid, vector<vector<int>>& minTime, int currentTime){
+        //check if the coordinates r safe
+        if((i<0 || i>=m)||(j<0 || j>=n)||(grid[i][j] == 0)){
+            return;
         }
-        return true;
+        // CRITICAL FIX: check if the coordinates r already visited efficiently
+        // This must apply to ALL valid cells, not just 2s!
+        if (currentTime >= minTime[i][j]) {
+            return;
+        }
+
+        //We found a faster route to rot this orange! Update it.
+        minTime[i][j] = currentTime;
+
+        //spread the infection in 4 directions
+        dfs(i-1, j, m, n, grid, minTime, currentTime+1);
+        dfs(i+1, j, m, n, grid, minTime, currentTime+1);
+        dfs(i, j-1, m, n, grid, minTime, currentTime+1);
+        dfs(i, j+1, m, n, grid, minTime, currentTime+1);
     }
     int orangesRotting(vector<vector<int>>& grid) {
         int m = grid.size();
         int n = grid[0].size();
-        //keep track of fresh oranges
-        //just space optimization
-        int freshOranges = 0;
-        //create q and push all initial 2s
-        //with BFS it is guarenteed that 
-        //we will get the shortest possible time
-        queue<pair<pair<int, int>, int>> q; //pair<coordinates, time>
+        int maxTimeAns = 0;
+        //dfs is not guaranteed to give the min ans
+        //so we have to keep track of time
+        vector<vector<int>> minTime(m, vector<int>(n, INT_MAX));
+        int currentTime = 0;
+
+        //traverse through the loop
         for(int i=0; i<m; i++){
             for(int j=0; j<n; j++){
-                if(grid[i][j] == 1){
-                    freshOranges++;
-                }
+                //check if rotten orange
                 if(grid[i][j] == 2){
-                    q.push({{i, j}, 0});
-                    //we dont have to mark anything as visited
-                    //because of in-place optimization
+                    dfs(i, j, m, n, grid, minTime, currentTime);
                 }
             }
         }
-        //we need this to explore nbrs
-        int dx[] = {-1, 1, 0, 0};
-        int dy[] = {0, 0, -1, 1};
-        //we need to to track the ans
-        int TimeAns = 0;
-        //start the BFS process
-        while(!q.empty()){
-            pair<pair<int, int>, int> frontData = q.front();
-            q.pop();
-            pair<int, int> coordinates = frontData.first;
-            int currentTime = frontData.second;
-            int x = coordinates.first;
-            int y = coordinates.second;
-            //explore its nbrs
-            for(int k=0; k<4; k++){
-                int newX = x + dx[k];
-                int newY = y + dy[k];
-                //check if safe
-                if(isSafe(newX, newY, m, n, grid)){
-                    //if not visisted
-                    if(grid[newX][newY] != 2){
-                        //affect it and push it 
-                        q.push({{newX, newY}, currentTime + 1});
-                        freshOranges--;
-                        grid[newX][newY] = 2;
-                        TimeAns = currentTime + 1;
+        // Verify if all fresh oranges were infected and find the max time taken
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] == 1) {
+                    // If it's a fresh orange but its time is still 1e9, it was unreachable
+                    if (minTime[i][j] == INT_MAX) {
+                        return -1;
                     }
+                    // Capture the maximum time it took to reach any orange
+                    maxTimeAns = max(maxTimeAns, minTime[i][j]);
                 }
             }
         }
-        if(freshOranges>0){
-            return -1;
-        }
-        return TimeAns;
+        return maxTimeAns;
+
     }
 };
