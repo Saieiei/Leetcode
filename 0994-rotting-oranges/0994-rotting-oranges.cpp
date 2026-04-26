@@ -1,5 +1,11 @@
 //BFS
 //not dijistra algo
+auto init = [](){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    return 'c';
+};
 class Solution {
 public:
     bool isSafe(const int newX, const int newY, const int m, const int n, vector<vector<int>>& grid){
