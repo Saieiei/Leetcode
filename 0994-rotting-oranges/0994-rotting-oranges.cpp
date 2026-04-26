@@ -1,77 +1,66 @@
-//dfs space optimised
+//BFS
+//not dijistra algo
 class Solution {
 public:
-    // Helper function to check if a cell is valid and needs processing
-    // It is "Safe" if it is within bounds AND it is a FRESH orange ('1')
-    bool isSafe(int i, int j, int n, int m, vector<vector<int>>& grid) {
-        if (i >= 0 && i < n && j >= 0 && j < m && grid[i][j] == 1) {
-            return true;
+    bool isSafe(const int newX, const int newY, const int m, const int n, vector<vector<int>>& grid){
+        if((newX<0 || newX>=m)||(newY<0 || newY>=n)||(grid[newX][newY] != 1)){
+            return false;
         }
-        return false;
+        return true;
     }
-
     int orangesRotting(vector<vector<int>>& grid) {
-        int n = grid.size();
-        int m = grid[0].size();
-        
-        // Structure to store {{row, col}, time}
-        queue<pair<pair<int, int>, int>> q;
-        
-        // REMOVED: vector<vector<int>> temp = grid;
-        // We will now use 'grid' directly for everything.
-        
-        // 1. Traverse grid to find all initially rotten oranges
-        for(int i = 0; i < n; i++) {
-            for(int j = 0; j < m; j++) {
-                if(grid[i][j] == 2) {
-                    // Push all starting rotten oranges with time = 0
+        int m = grid.size();
+        int n = grid[0].size();
+        //create q and push all initial 2s
+        //with BFS it is guarenteed that 
+        //we will get the shortest possible time
+        queue<pair<pair<int, int>, int>> q; //pair<coordinates, time>
+        for(int i=0; i<m; i++){
+            for(int j=0; j<n; j++){
+                if(grid[i][j] == 2){
                     q.push({{i, j}, 0});
+                    //we dont have to mark anything as visited
+                    //because of in-place optimization
                 }
             }
         }
-        
-        int finalTimeAns = 0;
+        //we need this to explore nbrs
         int dx[] = {-1, 1, 0, 0};
         int dy[] = {0, 0, -1, 1};
-        
-        // 2. Start BFS
-        while(!q.empty()) {
-            pair<int, int> currPos = q.front().first;
-            int currTime = q.front().second;
+        //we need to to track the ans
+        int maxTimeAns = 0;
+        //start the BFS process
+        while(!q.empty()){
+            pair<pair<int, int>, int> frontData = q.front();
             q.pop();
-            
-            int r = currPos.first;
-            int c = currPos.second;
-            
-            // Process 4 neighbors
-            for(int i = 0; i < 4; i++) {
-                int newR = r + dx[i];
-                int newC = c + dy[i];
-                
-                // Check if neighbor is valid and is a FRESH orange (1)
-                // Pass 'grid' instead of 'temp'
-                if(isSafe(newR, newC, n, m, grid)) {
-                    // Mark as rotten (visited) immediately in the ORIGINAL grid
-                    grid[newR][newC] = 2;
-                    
-                    // Push to queue with time + 1
-                    q.push({{newR, newC}, currTime + 1});
-
-                    // Update the max time we have reached
-                    finalTimeAns = max(finalTimeAns, currTime + 1);
+            pair<int, int> coordinates = frontData.first;
+            int currentTime = frontData.second;
+            int x = coordinates.first;
+            int y = coordinates.second;
+            //explore its nbrs
+            for(int k=0; k<4; k++){
+                int newX = x + dx[k];
+                int newY = y + dy[k];
+                //check if safe
+                if(isSafe(newX, newY, m, n, grid)){
+                    //if not visisted
+                    if(grid[newX][newY] != 2){
+                        //affect it and push it 
+                        q.push({{newX, newY}, currentTime + 1});
+                        grid[newX][newY] = 2;
+                        maxTimeAns = max(maxTimeAns, currentTime + 1);
+                    }
                 }
             }
         }
-        
-        // 3. Final check: Are there any fresh oranges left in the ORIGINAL grid?
-        for(int i = 0; i < n; i++) {
-            for(int j = 0; j < m; j++) {
-                if(grid[i][j] == 1) {
-                    return -1; // Impossible to rot all oranges
+        for(int i=0; i<m; i++){
+            for(int j=0; j<n; j++){
+                //if any fresh oranges found
+                if(grid[i][j] == 1){
+                    return -1;
                 }
             }
         }
-        
-        return finalTimeAns;
+        return maxTimeAns;
     }
 };
