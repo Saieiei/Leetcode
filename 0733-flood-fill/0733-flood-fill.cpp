@@ -1,4 +1,11 @@
 //dfs
+// This block disables I/O synchronization to speed up execution time on LeetCode
+auto init = []() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    return 'c';
+}();
 class Solution {
 public:
     void dfs(vector<vector<int>>& image, int sr, int sc, const int color, const int m, const int n, const int originalColor){
