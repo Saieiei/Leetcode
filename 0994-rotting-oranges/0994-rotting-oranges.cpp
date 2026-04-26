@@ -17,12 +17,18 @@ public:
     int orangesRotting(vector<vector<int>>& grid) {
         int m = grid.size();
         int n = grid[0].size();
+        //keep track of fresh oranges
+        //just space optimization
+        int freshOranges = 0;
         //create q and push all initial 2s
         //with BFS it is guarenteed that 
         //we will get the shortest possible time
         queue<pair<pair<int, int>, int>> q; //pair<coordinates, time>
         for(int i=0; i<m; i++){
             for(int j=0; j<n; j++){
+                if(grid[i][j] == 1){
+                    freshOranges++;
+                }
                 if(grid[i][j] == 2){
                     q.push({{i, j}, 0});
                     //we dont have to mark anything as visited
@@ -34,7 +40,7 @@ public:
         int dx[] = {-1, 1, 0, 0};
         int dy[] = {0, 0, -1, 1};
         //we need to to track the ans
-        int maxTimeAns = 0;
+        int TimeAns = 0;
         //start the BFS process
         while(!q.empty()){
             pair<pair<int, int>, int> frontData = q.front();
@@ -53,20 +59,16 @@ public:
                     if(grid[newX][newY] != 2){
                         //affect it and push it 
                         q.push({{newX, newY}, currentTime + 1});
+                        freshOranges--;
                         grid[newX][newY] = 2;
-                        maxTimeAns = max(maxTimeAns, currentTime + 1);
+                        TimeAns = currentTime + 1;
                     }
                 }
             }
         }
-        for(int i=0; i<m; i++){
-            for(int j=0; j<n; j++){
-                //if any fresh oranges found
-                if(grid[i][j] == 1){
-                    return -1;
-                }
-            }
+        if(freshOranges>0){
+            return -1;
         }
-        return maxTimeAns;
+        return TimeAns;
     }
 };
