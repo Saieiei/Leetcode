@@ -1,34 +1,36 @@
-//simple bfs
+//dfs
 class Solution {
 public:
-    bool bfs(vector<int>& arr, int start, vector<bool>& visited, queue<int>& q){
-        //keep doing until q is empty
-        while(!q.empty()){
-            //mark it as visited
-            int frontEle = q.front();
-            q.pop();
-            visited[frontEle] = true;
-            //check if 0
-            if(arr[frontEle] == 0){
-                return true;
-            }
-            //push the rest
-            int leftBFS = frontEle-arr[frontEle];
-            int rightBFS = frontEle+arr[frontEle];
-            if(leftBFS>=0 && !visited[leftBFS]){
-                q.push(leftBFS);
-            }
-            if(rightBFS<arr.size() && !visited[rightBFS]){
-                q.push(rightBFS);
-            }
+    bool dfs(vector<int>& arr, int index, vector<bool>& isVisited){
+        //if this index is safe or not
+        if(index<0 || index>=arr.size()){
+            return false;
         }
-        //not found
-        return false;
+        //check if we have reached the target
+        if(arr[index] == 0){
+            return true;
+        }
+        //check if already visited
+        if(isVisited[index] == true){
+            return false;
+        }
+
+        //all safe now
+        //1st mark it as visited
+        isVisited[index] = true;
+
+        //2 options to explore
+        int rightIndex = index + arr[index];
+        int leftIndex = index - arr[index];
+        bool rightPath = dfs(arr, rightIndex, isVisited);
+        bool leftPath = dfs(arr, leftIndex, isVisited);
+
+        return (rightPath||leftPath);
     }
     bool canReach(vector<int>& arr, int start) {
-        vector<bool> visited(arr.size(), false);
-        queue<int> q;
-        q.push(start);
-        return bfs(arr, start, visited, q);
+        int n = arr.size();
+        vector<bool> isVisited(n, false);
+        bool ans = dfs(arr, start, isVisited);
+        return ans;
     }
 };
