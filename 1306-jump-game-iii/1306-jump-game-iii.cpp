@@ -4,39 +4,47 @@ auto init = [](){
     cout.tie(NULL);
     return 'c';
 };
-//dfs
+//bfs
 class Solution {
 public:
-    void dfs(vector<int>& arr, int index, vector<bool>& isVisited, bool& ans){
-        //if this index is safe or not
+    bool isSafe(int index, vector<int>& arr){
         if(index<0 || index>=arr.size()){
-            return;
+            return false;
         }
-        //check if we have reached the target
-        if(arr[index] == 0){
-            ans = true;
-            return;
-        }
-        //check if already visited
-        if(isVisited[index] == true){
-            return;
-        }
-
-        //all safe now
-        //1st mark it as visited
-        isVisited[index] = true;
-
-        //2 options to explore
-        int rightIndex = index + arr[index];
-        int leftIndex = index - arr[index];
-        dfs(arr, rightIndex, isVisited, ans);
-        dfs(arr, leftIndex, isVisited, ans);
+        return true;
     }
     bool canReach(vector<int>& arr, int start) {
-        int n = arr.size();
-        vector<bool> isVisited(n, false);
-        bool ans = false;
-        dfs(arr, start, isVisited, ans);
-        return ans;
+        queue<int> q;
+        vector<bool> isVisited(arr.size(), false);
+        q.push(start);
+        //mark it visited
+        isVisited[start] = true;
+
+        while(!q.empty()){
+            int index = q.front();
+            q.pop();
+            if(arr[index] == 0){
+                return true;
+            }
+            //explore the nbrs
+            int leftIndex = index - arr[index];
+            int rightIndex = index + arr[index];
+            //check if safe
+            if(isSafe(leftIndex, arr)){
+                //check if visited
+                if(!isVisited[leftIndex]){
+                    q.push(leftIndex);
+                    isVisited[leftIndex] = true;
+                }
+            }
+            if(isSafe(rightIndex, arr)){
+                //check if visited
+                if(!isVisited[rightIndex]){
+                    q.push(rightIndex);
+                    isVisited[rightIndex] = true;
+                }
+            }
+        }
+        return false;
     }
 };
