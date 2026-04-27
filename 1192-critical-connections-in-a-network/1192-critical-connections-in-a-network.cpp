@@ -1,56 +1,67 @@
-//Tarjans Algo
+//u should know tarjans algo
+//without thats its impossible
 class Solution {
-private:
-    int timer = 1;
-    
-    void dfs(int src, int parent, vector<int>& vis, vector<vector<int>>& adj, 
-             vector<int>& tin, vector<int>& low, vector<vector<int>>& bridges) {
-        
-        vis[src] = 1;
-        tin[src] = low[src] = timer;
-        timer++;
-        
-        for (auto nbr : adj[src]) {
-            if (nbr == parent) continue;
-            
-            if (vis[nbr] == 0) {
-                // If unvisited, perform DFS
-                dfs(nbr, src, vis, adj, tin, low, bridges);
-                
-                // On backtracking, update low time of the current node
-                low[src] = min(low[src], low[nbr]);
-                
-                // Check bridge condition
-                if (low[nbr] > tin[src]) {
-                    bridges.push_back({src, nbr});
-                }
-            } else {
-                // Back-edge found, update low time
-                low[src] = min(low[src], low[nbr]);
+public:
+    void dfs(int parent, int child, vector<vector<int>>& adjList, vector<int>& tin, vector<int>& low, vector<bool>& isVisited, int& time, vector<vector<int>>& bridgesAns){
+        //we dont have to check if its safe or not cuz we have adjListy with is
+        //1st mark it as visited
+        isVisited[child] = true;
+        //update the trackers
+        tin[child] = time;
+        low[child] = time;
+        time++;
+
+        //explore the nbrs
+        //child->parent, child->nbr
+        for(int nbr: adjList[child]){
+            //if nbr is parent then skip
+            if(nbr == parent){
+                continue;
             }
+            //dfs
+            if(!isVisited[nbr]){
+                dfs(child, nbr, adjList, tin, low, isVisited, time, bridgesAns);
+
+                low[child] = min(low[child], low[nbr]);
+
+                //brige condition
+                if(low[nbr]>tin[child]){
+                    bridgesAns.push_back({nbr, child});
+                }
+            }
+            else{
+                low[child] = min(low[child], tin[nbr]);
+            }
+
         }
     }
-    
-public:
     vector<vector<int>> criticalConnections(int n, vector<vector<int>>& connections) {
-        // 1. Create the adjacency list from the given connections
-        vector<vector<int>> adj(n);
-        for (auto& conn : connections) {
-            adj[conn[0]].push_back(conn[1]);
-            adj[conn[1]].push_back(conn[0]);
+        //create adjList
+        vector<vector<int>>adjList(n);
+        //traverse through the connections given data
+        for(vector<int> connection: connections){
+            int u = connection[0];
+            int v = connection[1];
+            //bidirectional
+            adjList[u].push_back(v);
+            adjList[v].push_back(u);
         }
-        
-        // 2. Initialize tracking arrays
-        vector<int> vis(n, 0);
-        vector<int> tin(n);
-        vector<int> low(n);
-        vector<vector<int>> bridges;
-        
-        // 3. The problem states it's a connected graph, 
-        // so a single DFS starting from node 0 is sufficient
-        int src = 0, parent = -1;
-        dfs(src, parent, vis, adj, tin, low, bridges);
-        
-        return bridges;
+
+        //create the necessary trackers
+        vector<int> tin(n, -1);
+        vector<int> low(n, -1);
+        vector<bool> isVisited(n, false);
+        int time = 0;
+        vector<vector<int>> bridgesAns;
+        //if disconnected graph
+        for(int i=0; i<n; i++){
+            //process the ones that r not visited
+            if(!isVisited[i]){
+                int parent = -1;
+                int child = i;
+                dfs(parent, child, adjList, tin, low, isVisited, time, bridgesAns);
+            }
+        }
+        return bridgesAns;
     }
 };
