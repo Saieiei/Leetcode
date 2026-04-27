@@ -7,18 +7,19 @@ auto init = [](){
 //dfs
 class Solution {
 public:
-    bool dfs(vector<int>& arr, int index, vector<bool>& isVisited){
+    void dfs(vector<int>& arr, int index, vector<bool>& isVisited, bool& ans){
         //if this index is safe or not
         if(index<0 || index>=arr.size()){
-            return false;
+            return;
         }
         //check if we have reached the target
         if(arr[index] == 0){
-            return true;
+            ans = true;
+            return;
         }
         //check if already visited
         if(isVisited[index] == true){
-            return false;
+            return;
         }
 
         //all safe now
@@ -28,15 +29,14 @@ public:
         //2 options to explore
         int rightIndex = index + arr[index];
         int leftIndex = index - arr[index];
-        bool rightPath = dfs(arr, rightIndex, isVisited);
-        bool leftPath = dfs(arr, leftIndex, isVisited);
-
-        return (rightPath||leftPath);
+        dfs(arr, rightIndex, isVisited, ans);
+        dfs(arr, leftIndex, isVisited, ans);
     }
     bool canReach(vector<int>& arr, int start) {
         int n = arr.size();
         vector<bool> isVisited(n, false);
-        bool ans = dfs(arr, start, isVisited);
+        bool ans = false;
+        dfs(arr, start, isVisited, ans);
         return ans;
     }
 };
