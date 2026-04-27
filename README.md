@@ -405,6 +405,7 @@ https://leetcode.com/u/saiei/
 | [1231-replace-elements-with-greatest-element-on-right-side](https://github.com/Saieiei/Leetcode/tree/master/1231-replace-elements-with-greatest-element-on-right-side) |
 | [1240-stone-game-ii](https://github.com/Saieiei/Leetcode/tree/master/1240-stone-game-ii) |
 | [1256-rank-transform-of-an-array](https://github.com/Saieiei/Leetcode/tree/master/1256-rank-transform-of-an-array) |
+| [1306-jump-game-iii](https://github.com/Saieiei/Leetcode/tree/main/1306-jump-game-iii/) | Medium |
 | [1325-path-with-maximum-probability](https://github.com/Saieiei/Leetcode/tree/master/1325-path-with-maximum-probability) |
 | [1333-sort-the-jumbled-numbers](https://github.com/Saieiei/Leetcode/tree/master/1333-sort-the-jumbled-numbers) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/Saieiei/Leetcode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
@@ -867,6 +868,7 @@ https://leetcode.com/u/saiei/
 | [1192-critical-connections-in-a-network](https://github.com/Saieiei/Leetcode/tree/main/1192-critical-connections-in-a-network/) | Hard |
 | [1207-delete-nodes-and-return-forest](https://github.com/Saieiei/Leetcode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1285-balance-a-binary-search-tree](https://github.com/Saieiei/Leetcode/tree/master/1285-balance-a-binary-search-tree) |
+| [1306-jump-game-iii](https://github.com/Saieiei/Leetcode/tree/main/1306-jump-game-iii/) | Medium |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Saieiei/Leetcode/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/Saieiei/Leetcode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1396-count-servers-that-communicate](https://github.com/Saieiei/Leetcode/tree/master/1396-count-servers-that-communicate) |
@@ -908,6 +910,7 @@ https://leetcode.com/u/saiei/
 | [0994-rotting-oranges](https://github.com/Saieiei/Leetcode/tree/main/0994-rotting-oranges/) | Medium |
 | [0999-regions-cut-by-slashes](https://github.com/Saieiei/Leetcode/tree/master/0999-regions-cut-by-slashes) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Saieiei/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
+| [1306-jump-game-iii](https://github.com/Saieiei/Leetcode/tree/main/1306-jump-game-iii/) | Medium |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Saieiei/Leetcode/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
 | [1396-count-servers-that-communicate](https://github.com/Saieiei/Leetcode/tree/master/1396-count-servers-that-communicate) |
 | [1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/Saieiei/Leetcode/tree/main/1466-reorder-routes-to-make-all-paths-lead-to-the-city-zero/) | Medium |
