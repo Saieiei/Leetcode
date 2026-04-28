@@ -1,10 +1,4 @@
 //dfs
-auto init = [](){
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
-    return 'c';
-};
 class Solution {
 public:
     void dfs(int x, int y, const int m, const int n, vector<vector<int>>& heights, 
