@@ -1,61 +1,61 @@
-#include <iostream>
-#include <vector>
-
-using namespace std;
-
+//to identify usless bridges -> kruskals Algo
 class Solution {
 public:
-    int findParent(int node, vector<int>& parents){
-        if(parents[node] == node){
-            return node;
-        }
-        // Path compression
-        return parents[node] = findParent(parents[node], parents);
-    }
-
-    void unionSet(int uParent, int vParent, vector<int>& parents, vector<int>& ranks){
-        // Only increment rank if both ranks are equal
-        if(ranks[uParent] < ranks[vParent]){
-            parents[uParent] = vParent;
-        }
-        else if(ranks[vParent] < ranks[uParent]){
+    void findUnion(int uParent, int vParent, vector<int>& ranks, vector<int>& parents){
+        //get ranks
+        int uRank = ranks[uParent];
+        int vRank = ranks[vParent];
+        //update
+        if(uRank >= vRank){
+            ranks[uParent]++;
             parents[vParent] = uParent;
         }
         else{
-            parents[vParent] = uParent;
-            ranks[uParent]++;
+            ranks[vParent]++;
+            parents[uParent] = vParent;
         }
     }
-
-    vector<int> findRedundantConnection(vector<vector<int>>& edges) {
-        int V = edges.size();
-        
-        // Size is V + 1 to safely handle 1-based indexing (nodes 1 to V)
-        vector<int> parents(V + 1);
-        vector<int> ranks(V + 1, 0);
-        
-        for(int u = 0; u <= V; u++){
-            parents[u] = u;
+    int findParent(int node, vector<int>& parents ){
+        //return if self parents
+        if(parents[node] == node){
+            return node;
         }
+        //else do path compression
+        return parents[node] = findParent(parents[node], parents);
+    }
+    vector<int> findRedundantConnection(vector<vector<int>>& edges) {
+        int n = edges.size();
+        //there is no wts in this, so we dont have to sort 1st
 
-        // Start processing the edges in their original order
-        for(auto& edge: edges){
+        //trackers
+        vector<int> parents(n + 1);
+        vector<int> ranks(n + 1, 0); //not -1;
+        //self parents at the begining
+        for(int i=0; i<n; i++){
+            parents[i] = i;
+        }
+        //vector<int> ans;
+
+        //traverse through the edges
+        for(vector<int> edge: edges){
             int u = edge[0];
             int v = edge[1];
 
+            //find the parents
             int uParent = findParent(u, parents);
             int vParent = findParent(v, parents);
 
-            // Process only when the parents are not the same
+            //only process those whos parents r diff
+            //the rest is a redundant connection
             if(uParent != vParent){
-                unionSet(uParent, vParent, parents, ranks);
+                //process findUnion
+                findUnion(uParent, vParent, ranks, parents);
+                //dont have to process anything about wts
             }
-            else {
-                // If parents are the same, this edge creates a cycle!
-                return {u, v}; 
+            else{
+                return {u, v};
             }
         }
-        
-        return {}; // Return empty if no cycle is found
+        return {};
     }
 };
