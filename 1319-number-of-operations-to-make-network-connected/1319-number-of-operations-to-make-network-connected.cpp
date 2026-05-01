@@ -18,8 +18,8 @@ public:
     }
     void findUnion(vector<int>& parents, vector<int>&ranks, int uParent, int vParent){
         //get the ranks
-        int uParentRank = ranks[uParentRank];
-        int vParentRank = ranks[vParentRank];
+        int uParentRank = ranks[uParent];
+        int vParentRank = ranks[vParent];
 
         //now compare
         if(uParentRank >= vParentRank){
