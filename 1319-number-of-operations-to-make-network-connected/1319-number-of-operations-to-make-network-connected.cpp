@@ -38,7 +38,7 @@ public:
 
         //start the process
         //traverse though the edgelist
-        for(vector<int> connection: connections){
+        for(const vector<int>& connection: connections){
             int u = connection[0];
             int v = connection[1];
             //find their parents
