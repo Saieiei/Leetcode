@@ -1,74 +1,86 @@
+//kruskals algo
 class Solution {
 public:
-//to solve this u should know kruskals algo (Union, findParent)
-//convert accounts into a map <string, int>
-//proper union will be done in preAns <int, set<string>>
-//convert preAns into ans (which pushes the nodeName) and return
     int findParent(vector<int>& parents, int node){
+        //check if same
         if(parents[node] == node){
             return node;
         }
         //path compression
         return parents[node] = findParent(parents, parents[node]);
     }
-    void unionSet(vector<int>& parents, vector<int>& ranks, int u, int v){
-        int uParent = findParent(parents, u);
-        int vParent = findParent(parents, v);
+    void findUnion(vector<int>& parents, vector<int>& ranks, int currentRowID, int alreadyRowID){
+        int parentCurrentRowID = findParent(parents, currentRowID);
+        int parentAlreadyRowID = findParent(parents, alreadyRowID);
 
-        if(ranks[uParent] > ranks[vParent]){
-            parents[vParent] = uParent;
-            ranks[uParent]++;
-        }
-        else if(ranks[vParent] > ranks[uParent]){
-            parents[uParent] = vParent;
-            ranks[vParent]++;
+        //start the process
+        int rankCurrentRowID = ranks[parentCurrentRowID];
+        int rankAlreadyRowID = ranks[parentAlreadyRowID];
+        if(rankCurrentRowID >= rankAlreadyRowID){
+            ranks[parentCurrentRowID]++;
+            parents[parentAlreadyRowID] = parentCurrentRowID;
         }
         else{
-            parents[vParent] = uParent;
-            ranks[uParent]++;
+            ranks[parentAlreadyRowID]++;
+            parents[parentCurrentRowID] = parentAlreadyRowID;
         }
     }
     vector<vector<string>> accountsMerge(vector<vector<string>>& accounts) {
+        //1st create mp
+        unordered_map<string, int> mp;
         int n = accounts.size();
+        vector<int> ranks(n, 0);
         vector<int> parents(n);
-        //self parents
         for(int i=0; i<n; i++){
             parents[i] = i;
         }
-        vector<int> ranks(n, 0);
-        unordered_map<string, int> mp;
-        int i = 0;
+        //process givenData -> mp
+        int rowID = 0;
         for(vector<string> account: accounts){
-            for(int j=1; j<account.size(); j++){
-                string emailID = account[j];
-                auto it = mp.find(emailID);
+            int colSize = account.size();
+            //we dont require the title here -> account[0]
+            for(int j=1; j<colSize; j++){
+                //check if the characteristics is already there in the mp
+                string characteristic = accounts[rowID][j];
+                auto it = mp.find(characteristic);
                 if(it == mp.end()){
-                    mp[emailID] = i;
+                    //did not find it in the mp
+                    //push it in the mp
+                    mp[characteristic] = rowID;
                 }
                 else{
-                    unionSet(parents, ranks, i, it->second);
+                    //already there in the mp
+                    //do findUnion
+                    int currentRowID = rowID;
+                    int alreadyRowID = it->second;
+                    findUnion(parents, ranks, currentRowID, alreadyRowID);
                 }
             }
-            i++;
+            rowID++;
         }
-        //componets have been built here
+
+        //create the preAns
         unordered_map<int, set<string>> preAns;
-        for(auto it: mp){
-            int accountNO = it.second;
-            string emailID = it.first;
-            int parent = findParent(parents, accountNO);
-            preAns[parent].insert(emailID);
+        //traverse through the mp
+        for(pair<const string, int> data: mp){
+            string characteristic = data.first;
+            int rowID = data.second;
+            //forgot this step
+            int parentRowID = findParent(parents, rowID);
+            preAns[parentRowID].insert(characteristic);
         }
-        //final ans
+
+        //create ans
         vector<vector<string>> ans;
-        for(auto it: preAns){
-            int accountNO = it.first;
-            set<string> emailIDs = it.second;
+        //traverse through preAns
+        for(pair<const int, set<string>> data: preAns){
+            int parentRowID = data.first;
+            set<string> characteristics = data.second;
+            string title = accounts[parentRowID][0];
             vector<string> temp;
-            string accountName = accounts[accountNO][0];
-            temp.push_back(accountName);
-            for(string emailID: emailIDs){
-                temp.push_back(emailID);
+            temp.push_back(title);
+            for(string characteristic: characteristics){
+                temp.push_back(characteristic);
             }
             ans.push_back(temp);
         }
