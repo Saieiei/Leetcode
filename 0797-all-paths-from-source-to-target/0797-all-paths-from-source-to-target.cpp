@@ -1,3 +1,9 @@
+auto init = [](){
+    ios_nase::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    return 'c';
+}();
 //bfs
 //not normal, u have to push in the whole path 
 class Solution {
