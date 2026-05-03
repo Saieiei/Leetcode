@@ -1,37 +1,35 @@
 //traversal
-//BFS
+//dfs
 class Solution {
 public:
-    bool canVisitAllRooms(vector<vector<int>>& rooms) {
-        int n = rooms.size();
-        //dont have to create adjList because rooms is same
-        vector<bool> isVisited(n, false);
-
-        queue<int> q;
-        q.push(0);
-        isVisited[0] = true;
-
-        while(!q.empty()){
-            int frontNode = q.front();
-            q.pop();
-            //explore its nbrs
-            for(const int& nbr: rooms[frontNode]){
-                //check if not visitied
-                if(isVisited[nbr] == false){
-                    //mark it as visited and push it in 
-                    q.push(nbr);
-                    isVisited[nbr] = true;
-                }
+    void dfs(int node, vector<bool>& isVisited, vector<vector<int>>& rooms){
+        //mark it as visited
+        isVisited[node] = true;
+        //explore its nbrs
+        for(int nbr: rooms[node]){
+            //check if not visited
+            if(isVisited[nbr] == false){
+                dfs(nbr, isVisited, rooms);
             }
         }
+    }
+    bool canVisitAllRooms(vector<vector<int>>& rooms) {
+        int n = rooms.size();
+        //no need of adjList cuz rooms is the same
 
-        //check if possible
+        //trackers
+        vector<bool> isVisited(n, false);
+
+        int startNode = 0;
+        dfs(startNode, isVisited, rooms);
+
+        //check
         for(int i=0; i<n; i++){
             if(isVisited[i] == false){
                 return false;
             }
         }
-        //else possible
+        //else return true
         return true;
     }
 };
