@@ -14,7 +14,7 @@ public:
 
         //we dont need a adjList here for the nbrs
         //traverse through the given data
-        for(vector<int> data: trust){
+        for(const vector<int> &data: trust){
             int u = data[0];
             int v = data[1];
             //directed
