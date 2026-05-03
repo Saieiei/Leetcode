@@ -6,7 +6,7 @@ public:
         //mark it as visited
         isVisited[node] = true;
         //explore its nbrs
-        for(int nbr: rooms[node]){
+        for(const int& nbr: rooms[node]){
             //check if not visited
             if(isVisited[nbr] == false){
                 dfs(nbr, isVisited, rooms);
