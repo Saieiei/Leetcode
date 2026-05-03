@@ -1,50 +1,35 @@
-//dfs
+//bfs
+//not normal, u have to push in the whole path 
 class Solution {
 public:
-    void dfs(int src, int n, vector<vector<int>>& graph, vector<int>& tempPath, 
-    vector<vector<int>>& ans){
-        //check if already visited
-        //if(isVisited[src] == true){
-        //    return;
-        //}
-
-        //all safe now
-        //mark it as visited
-        //isVisited[src] = true;
-        tempPath.push_back(src);
-
-        //check we have reached the end
-        if(src == n-1){
-            ans.push_back(tempPath);
-        }
-
-        //explore its nbrs now
-        for(int nbr: graph[src]){
-            dfs(nbr, n, graph, tempPath, ans);
-        }
-
-        //backtracking
-        //mark it as unvisited for others paths to visit it
-        //isVisited[src] = false;
-        //pop it
-        tempPath.pop_back();
-    }
     vector<vector<int>> allPathsSourceTarget(vector<vector<int>>& graph) {
         int n = graph.size();
-
-        //no need of adjList
-        //the given data is already adjList
-
-        //isVisited is actually not needed
-        //because it is a DAG
-        //vector<bool> isVisited(n, false);
-
-        vector<int> tempPath;
+        //no disconnected graph
+        //no edge cases
+        queue<vector<int>>q;
+        q.push({0});
         vector<vector<int>> ans;
-        int src = 0;
 
-        //start the process
-        dfs(src, n, graph, tempPath, ans);
+        while(!q.empty()){
+            vector<int> currentPath = q.front();
+            q.pop();
+            int lastNode = currentPath.back();
+
+            //check if we have rached the destination
+            int destination = n-1;
+            if(lastNode == destination){
+                //push it in the ans
+                ans.push_back(currentPath);
+            }
+            else{
+                //explore the nbrs
+                for(int nbr: graph[lastNode]){
+                    vector<int> newPath = currentPath;
+                    newPath.push_back(nbr);
+                    q.push(newPath);
+                }
+            }
+        }
         return ans;
     }
 };
