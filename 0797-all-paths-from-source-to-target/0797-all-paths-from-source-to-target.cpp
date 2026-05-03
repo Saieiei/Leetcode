@@ -1,5 +1,5 @@
 auto init = [](){
-    ios_nase::sync_with_stdio(false);
+    ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
     return 'c';
