@@ -1,30 +1,44 @@
-//M3
-//no need recursion, just greedy
-//1st we will try out with moves
-//trying form target to 1
+//ulta q
+//bfs
 class Solution {
 public:
     int minMoves(int target, int maxDoubles) {
         int moves = 0;
-        while(target > 1){
-            if(maxDoubles == 0){
-                int remaining = target - 1;
-                moves = moves + remaining;
+        //bc
+        if(maxDoubles == 0){
+            //-1 because the traget should reach 1 and not 0
+            moves = target - 1;
+            //now my target becomes 1
+            target = 1;
+            return moves;
+        }
+        if(target == 1){
+            return moves;
+        }
+        while(true){
+            if(maxDoubles == 0 && target > 1){
+                //-1 because the traget should reach 1 and not 0
+                moves = moves + (target - 1);
+                //now my target becomes 1
                 target = 1;
-                break;
+                return moves;
             }
-            else{ //maxDoubles>0 
-                if(target & 1){//if odd
+            else{
+                //if target is odd, then make it even
+                if(target & 1){
                     moves++;
-                    target--;
+                    target --;
                 }
-                else{//maxDoubles>0 && even
-                    moves++;
-                    target = target >> 1; //divide by 2
+                else{
+                    //if even then use maxDoubles
                     maxDoubles--;
+                    moves++;
+                    target = target >> 1;
+                    if(target == 1){
+                        return moves;
+                    }
                 }
             }
         }
-        return moves;
     }
 };
