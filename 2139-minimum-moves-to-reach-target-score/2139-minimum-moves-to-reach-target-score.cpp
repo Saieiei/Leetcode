@@ -25,7 +25,7 @@ public:
             }
             else{
                 //if target is odd, then make it even
-                if(target & 1){
+                if(target & 1 == 1){
                     moves++;
                     target --;
                 }
