@@ -1,59 +1,61 @@
-//to solve this we will use BFS
-//cuz i colour is 0 and another is 1
-//To use BFS we have to use queue
-//mark the initial node with 0, mark it as visted and save the colour
-//use unordered_map<int, int> isVisted, NodeColour
-//since it can be discountinuous graph, use a for loop
-//only pass through when its not visited
-//inside the q while loop, u if the nbr colour is same as the frontNode colour then return false
-//if diff colout then we can ignore
-//if the nbr is not at all visted, then invert the from frontNode colou and mark it as visted and same teh colour
-//if u reach the end just return true
+//bfs
+//2 colors
 class Solution {
 public:
     bool isBipartite(vector<vector<int>>& graph) {
         int n = graph.size();
-        unordered_map<int, bool> isVisted;
-        unordered_map<int, int> NodeColour;
-        queue<int> q;
-        int colour = 0;
-        //initial none are coloured (-1)
+        //no need for adjList
+        //given data is sufficeint
+
+        //trackers
+        vector<bool> isVisited(n, false);
+        vector<int> colors(n, -1);
+        //-1 indicated no color yet
+        //0 is red and 1 is blue
+        //!color will change it
+        //we will start with red
+        int color = 0;
+
+        //since its disconnected graph, we need a for loop
         for(int i=0; i<n; i++){
-            NodeColour[i] = -1;
-        }
-        //colour 1 = 0, colour 2 = 1
-        //discontinuous graph
-        for(int i=0; i<n; i++){
-            if(!isVisted[i]){
-                //initial process
-                int src = i;
-                isVisted[src] = true;
-                NodeColour[src] = colour;
-                q.push(src);
-                //process its nbrs
+            //process those only if not visited
+            int node = i;
+            if(isVisited[node] == false){
+                //start with bfs
+                queue<int> q;
+                q.push(node);
+                //mark it as visited
+                isVisited[node] = true;
+                //give it the color
+                colors[node] = color;
+
+                //start the process
                 while(!q.empty()){
-                    int FrontNode = q.front();
+                    int frontNode = q.front();
                     q.pop();
-                    int frontNodeColour = NodeColour[FrontNode];
-                    colour = !frontNodeColour;
-                    for(int nbr: graph[FrontNode]){
-                        //nbr is not visted
-                        if(!isVisted[nbr]){
-                            isVisted[nbr] = true;
-                            NodeColour[nbr] = colour;
+                    int frontColor = colors[frontNode];
+                    //explore its nbrs if not visited
+                    for(int nbr: graph[frontNode]){
+                        if(isVisited[nbr] == false){
+                            //give the color, mark it as visited
+                            //and push it
+                            int newColor = !frontColor;
+                            colors[nbr] = newColor;
                             q.push(nbr);
+                            isVisited[nbr] = true;
                         }
-                        else{ //if visted and colour is same, return false
-                            if(frontNodeColour == NodeColour[nbr]){
+                        else{
+                            //if already visited then color should not be the same
+                            int nbrColor = colors[nbr];
+                            if(nbrColor == frontColor){
                                 return false;
                             }
-                            //else //if visted but diff colour, simple ignore
                         }
                     }
                 }
             }
         }
-        //reached end return true
+        //no cases of false, then return true
         return true;
     }
 };
