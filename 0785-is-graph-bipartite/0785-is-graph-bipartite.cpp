@@ -1,6 +1,12 @@
 //dfs
 //2 colors
 //space optimized
+auto init = [](){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    return 'c';
+};
 class Solution {
 public:
     bool dfs(int node, vector<vector<int>>& graph, vector<int>& colors){
