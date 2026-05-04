@@ -12,7 +12,11 @@ public:
             if(colors[nbr] == -1){
                 //mark it as visited
                 colors[nbr] = !nodeColor;
-                dfs(nbr, graph, colors);
+                //CRITICAL
+                int ans = dfs(nbr, graph, colors);
+                if(ans == false){
+                    return false;
+                }
             }
             else{ //marked a visited
                 if(nodeColor == colors[nbr]){
@@ -46,7 +50,11 @@ public:
                 //mark it as visited
                 //give it the color
                 colors[node] = color;
-                return dfs(node, graph, colors);
+                //CRITICAL
+                int ans = dfs(node, graph, colors);
+                if(ans == false){
+                    return false;
+                }
             }
         }
         //no cases of false, then return true
