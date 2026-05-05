@@ -9,17 +9,20 @@ public:
         ///    return 1;
         ///}
         //we have to keep the track of visited
-        unordered_map<string, bool> isVisited;
-        for(int i = 0; i < n; i++) {
-            isVisited[wordList[i]] = false; 
-        }
+        //unordered_map<string, bool> isVisited;
+        //for(int i = 0; i < n; i++) {
+        //    isVisited[wordList[i]] = false; 
+        //}
+        //we can skip all this if we use unordered_set
+        //we can remove isvisited as we can remove it from the wordList
+        unordered_set<string> dupWordList(wordList.begin(), wordList.end());
 
         int number = 1;
         //now lets start the bfs
         queue<pair<string, int>>q;
         q.push({beginWord, number});
         //mark it as visited
-        isVisited[beginWord] = true;
+        //isVisited[beginWord] = true;
 
         //start
         while(!q.empty()){
@@ -42,17 +45,18 @@ public:
                     string newWord = frontWord;
                     newWord[index] = ch;
                     //find this new word
-                    auto it = isVisited.find(newWord);
-                    if(it != isVisited.end()){
+                    auto it = dupWordList.find(newWord);
+                    if(it != dupWordList.end()){
                         //this word exits in the list
                         //make sure its no visited
-                        if(isVisited[newWord] == false){
+                        //if(isVisited[newWord] == false){
                             //its not visited
                             //mark it, push it in
                             int newNumber = frontNumber + 1;
                             q.push({newWord, newNumber});
-                            isVisited[newWord] = true;
-                        }
+                            //isVisited[newWord] = true;
+                            dupWordList.erase(newWord);
+                        //}
                     }
                 }
             }
