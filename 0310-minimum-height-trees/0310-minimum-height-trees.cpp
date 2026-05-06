@@ -25,7 +25,7 @@ public:
         //and also update the indegrees
         vector<vector<int>> adjList(n);
         vector<int> indegrees(n, 0);
-        for(vector<int> edge: edges){
+        for(const vector<int>& edge: edges){
             int u = edge[0];
             int v = edge[1];
             //bidirectional
