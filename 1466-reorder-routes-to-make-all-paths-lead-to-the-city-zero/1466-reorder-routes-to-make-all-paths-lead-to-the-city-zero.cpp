@@ -1,47 +1,43 @@
-//BFS
+//ulta q
+//DFS
 class Solution {
 public:
+    void dfs(int node, vector<vector<pair<int, int>>>& adjList, vector<bool>& isVisited, int& ans){
+        //dont have to check if its safe
+        //just mark it as visited
 
-    int minReorder(int n, vector<vector<int>>& connections) {
-        //creste adjList
-        vector<vector<pair<int, int>>> adjList(n); //u->{v, cost}
-        //in the Q
-        //u->v cost is 0 (n-1 nodes to 0)
-        //but for us we go from v->u (from 0 to n-1 nodes)
-        //so u->v cost is 1 for us, the rest 0
-        for(vector<int> connection: connections){
-            int u = connection[0];
-            int v = connection[1];
-            //u->v is ulta for us
-            adjList[u].push_back({v, 1});
-            //v->u is correct for us
-            adjList[v].push_back({u, 0});
-        }
-        vector<bool> isVisited(n, false);
-        int countAns = 0;
-
-        //bfs
-        queue<int> q;
-        int startingNode = 0;
-        q.push(startingNode);
-        isVisited[startingNode] = true;
-        //no need of a for loop, not discconected graph
-        while(!q.empty()){
-            int node = q.front();
-            q.pop();
-            //process its nbrs
-            for(const pair<int, int> nbr: adjList[node]){
-                int nbrNode = nbr.first;
-                int cost = nbr.second;
-
-                if(!isVisited[nbrNode]){
-                    q.push(nbrNode);
-                    isVisited[nbrNode] = true;
-                    countAns += cost;
-                }
+        //explore nbrs if not visited
+        for(const pair<int, int>& nbr: adjList[node]){
+            int nbrNode = nbr.first;
+            int nbrCost = nbr.second;
+            if(!isVisited[nbrNode]){
+                //mark it as visited and push it in
+                isVisited[nbrNode] = true;
+                ans += nbrCost;
+                dfs(nbrNode, adjList, isVisited, ans);
             }
         }
-        return countAns;
+    }
+    int minReorder(int n, vector<vector<int>>& connections) {
+        //create adjList and indegerees
+        vector<vector<pair<int, int>>> adjList(n); //{node, cost}
 
+        //before that we will take this Q as, 0 -> to all possibel nodes
+        for(const vector<int>& connecton: connections){
+            int u = connecton[0];
+            int v = connecton[1];
+            //u->v is costly for us (ulta)
+            //v->u is what we r expecting
+            adjList[u].push_back({v, 1});
+            adjList[v].push_back({u, 0});
+        }
+
+        int ans = 0;
+        vector<bool> isVisited(n, false);
+        //we wish to move from 0 to all possible nodes
+        int startingNode = 0;
+        isVisited[startingNode] = true;
+        dfs(startingNode, adjList, isVisited, ans);
+        return ans;
     }
 };
