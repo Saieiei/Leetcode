@@ -1,6 +1,12 @@
 //we have to do topological sorting
 //even though it is undirected, we will consider it as bydirectional
 //any leaf node is a node which has indegree[] == 1
+auto init = [](){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    return 'c';
+}();
 class Solution {
 public:
     vector<int> findMinHeightTrees(int n, vector<vector<int>>& edges) {
