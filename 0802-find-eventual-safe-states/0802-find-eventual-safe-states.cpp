@@ -1,47 +1,64 @@
+//any node which can cause cycle is not a safe node
+//topological sorting
+//but safe node is a node which has no outgoing edges
+//so its better if we built an adjList in ulta with indegrees
+//or use the same data but with outdegrees, which can be challenging
 //BFS
-//reverse topologocal sorting
-//any nodes whos indegree is 0 is a safe node
-//finaly sort it
 class Solution {
 public:
     vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
         int n = graph.size();
-        vector<int> indegree(n);
-        //reversed adjList
+        //bc
+        if(n == 1){
+            return graph[0];
+        }
+        //we dont need ulta adjList becase we have to track outdegrees
+        //but with indegrees
+        //but we have to create indegrees
         vector<vector<int>> adjList(n);
-        for(int node = 0; node<n; node++){
-            for(const int nbr: graph[node]){
-                //nbr->node
-                adjList[nbr].push_back(node);
-                indegree[node]++;
+        vector<int> indegrees(n, 0);
+        vector<bool> isVisited(n, false);
+        for(int i=0; i<n; i++){
+            int u = i;
+            //explore the nbrs
+            for(int nbr: graph[u]){
+                adjList[nbr].push_back(u);
+                indegrees[u]++;
+            } 
+        }
+
+        vector<int> ans;
+        //BFS
+        queue<int>q;
+        //push all with indegree 0
+        for(int i=0; i<n; i++){
+            if(indegrees[i] == 0){
+                q.push(i);
+                isVisited[i] = true;
             }
         }
-        queue<int> q;
-        for(int node=0; node<n; node++){
-            if(indegree[node] == 0){
-                q.push(node);
-            }
-        }
-        vector<int> safeNodes;
+
+        //start the process
         while(!q.empty()){
             int frontNode = q.front();
             q.pop();
-            safeNodes.push_back(frontNode);
-            //explore nbrs
-            for(const int nbrNode: adjList[frontNode]){
-                indegree[nbrNode]--;
-                if(indegree[nbrNode] == 0){
-                    q.push(nbrNode);
+            //this is a safe node, push it in the ans
+            ans.push_back(frontNode);
+            //explore its nbrs, if not visited
+            for(int nbr: adjList[frontNode]){
+                //check if already visited
+                if(isVisited[nbr] == false){
+                    indegrees[nbr]--;
+                    if(indegrees[nbr] == 0){
+                        q.push(nbr);
+                        isVisited[nbr] = true;
+                    }
                 }
             }
-
         }
-        //sort it
-        sort(safeNodes.begin(), safeNodes.end());
-        return safeNodes;
 
-        
-
-
+        //we need it in ascending order
+        sort(ans.begin(), ans.end());
+        return ans;
     }
 };
