@@ -26,7 +26,7 @@ public:
         for(int i=0; i<n; i++){
             int u = i;
             //explore the nbrs
-            for(int nbr: graph[u]){
+            for(const int& nbr: graph[u]){
                 adjList[nbr].push_back(u);
                 indegrees[u]++;
             } 
@@ -50,7 +50,7 @@ public:
             //this is a safe node, push it in the ans
             ans.push_back(frontNode);
             //explore its nbrs, if not visited
-            for(int nbr: adjList[frontNode]){
+            for(const int& nbr: adjList[frontNode]){
                 //check if already visited
                 if(isVisited[nbr] == false){
                     indegrees[nbr]--;
