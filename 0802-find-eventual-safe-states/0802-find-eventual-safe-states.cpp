@@ -1,68 +1,52 @@
-auto init = [](){
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
-    return 'c';
-}();
-//any node which can cause cycle is not a safe node
-//topological sorting
-//but safe node is a node which has no outgoing edges
-//so its better if we built an adjList in ulta with indegrees
-//or use the same data but with outdegrees, which can be challenging
-//BFS
+//using DFS better than BFS
+//because of ulta adjList and outdegrees -> indegrees
 class Solution {
 public:
-    vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
-        int n = graph.size();
-        //bc
-        if(n == 1){
-            return graph[0];
-        }
-        //we need ulta adjList becase we have to track outdegrees
-        //but with indegrees
-        vector<vector<int>> adjList(n);
-        vector<int> indegrees(n, 0);
-        vector<bool> isVisited(n, false);
-        for(int i=0; i<n; i++){
-            int u = i;
-            //explore the nbrs
-            for(const int& nbr: graph[u]){
-                adjList[nbr].push_back(u);
-                indegrees[u]++;
-            } 
-        }
-
-        vector<int> ans;
-        //BFS
-        queue<int>q;
-        //push all with indegree 0
-        for(int i=0; i<n; i++){
-            if(indegrees[i] == 0){
-                q.push(i);
-                isVisited[i] = true;
-            }
-        }
-
-        //start the process
-        while(!q.empty()){
-            int frontNode = q.front();
-            q.pop();
-            //this is a safe node, push it in the ans
-            ans.push_back(frontNode);
-            //explore its nbrs, if not visited
-            for(const int& nbr: adjList[frontNode]){
-                //check if already visited
-                if(isVisited[nbr] == false){
-                    indegrees[nbr]--;
-                    if(indegrees[nbr] == 0){
-                        q.push(nbr);
-                        isVisited[nbr] = true;
-                    }
+    bool dfs(int node, vector<bool>& isVisited, vector<bool>& isPathVisited, 
+    vector<vector<int>>& graph, vector<int>& ans){
+        //mark it as visited
+        isVisited[node] = true;
+        isPathVisited[node] = true;
+        //explore the nbrs
+        for(int nbr: graph[node]){
+            //check if already visited
+            if(!isVisited[nbr]){
+                //cycle present, DFS
+                if(dfs(nbr, isVisited, isPathVisited, graph, ans)){
+                    return true;
                 }
             }
-        }
+            else{
+                //not visited but check if isPathVisited already
+                if(isPathVisited[nbr]){
+                    //cycle found
+                    return true;
+                }
 
-        //we need it in ascending order
+            }
+        }
+        //backtracking
+        isPathVisited[node] = false;
+        //this is a safe node
+        ans.push_back(node);
+        return false;
+    }
+    vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
+        int n = graph.size();
+        //dont have to create adjLits here given data is enough
+        vector<bool> isVisited(n, false);
+        vector<bool> isPathVisited(n, false);
+        vector<int> ans;
+
+        //disconnected graph?
+        for(int i=0; i<n; i++){
+            int node = i;
+            if(!isVisited[node]){
+                //dont have to worry about the return value
+                dfs(node, isVisited, isPathVisited, graph, ans);
+            }
+        }
+        //sort it
         sort(ans.begin(), ans.end());
         return ans;
     }
