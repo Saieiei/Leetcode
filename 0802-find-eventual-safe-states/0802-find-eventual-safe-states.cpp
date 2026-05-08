@@ -1,3 +1,9 @@
+auto init = [](){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    return 'c';
+}();
 //any node which can cause cycle is not a safe node
 //topological sorting
 //but safe node is a node which has no outgoing edges
@@ -12,9 +18,8 @@ public:
         if(n == 1){
             return graph[0];
         }
-        //we dont need ulta adjList becase we have to track outdegrees
+        //we need ulta adjList becase we have to track outdegrees
         //but with indegrees
-        //but we have to create indegrees
         vector<vector<int>> adjList(n);
         vector<int> indegrees(n, 0);
         vector<bool> isVisited(n, false);
