@@ -1,59 +1,56 @@
-//BFS - cyclke detection
-//Traverse the remaining unvisited nodes (which form the cycles)
+//there is a cycle anyways -> topological sorting
+//and per 1 disconnected graph, there might be 1 ctcle
+//because it says that there is only atmost 1 outgoing edge
+//so we dont have to create adjList because given data is enough
+//we need to keep track of the dists, for each noce, so we need dist[]
+//DFS
 class Solution {
 public:
+    //in this DFS, we dont have to return anything
+    //if we the DFS return bool, then it will stop early
+    //because of which we will not be able to get the correct size
+    void dfs(int currLen, int& ans, vector<int>& edges, vector<bool>& isVisited, 
+    vector<bool>& isPathVisited, int node, vector<int>& dist){
+        //1st mark it as visited
+        isVisited[node] = true;
+        isPathVisited[node] = true;
+        currLen++;
+        dist[node] = currLen;
+        //explore nbrs
+        int nbr = edges[node];
+        //imp
+        if(nbr != -1){
+            if(!isVisited[nbr]){
+                //check for cycle, but dont stop early
+                dfs(currLen, ans, edges, isVisited, isPathVisited, nbr, dist);
+            }
+            else{
+                if(isPathVisited[nbr]){
+                    //cycle found
+                    int cycleLen = currLen - dist[nbr]  +1;
+                    ans = max(ans, cycleLen);
+                }
+            }
+        }
+        //backtracking
+        isPathVisited[node] = false;
+    }
     int longestCycle(vector<int>& edges) {
         int n = edges.size();
-        vector<int> indegree(n, 0);
-        
-        // 1. Calculate in-degrees for all nodes
-        for (int i = 0; i < n; ++i) {
-            int nbrNode = edges[i];
-            if (nbrNode != -1) { //imp
-                indegree[nbrNode]++;
-            }
-        }
-        
-        // 2. Queue all nodes with in-degree 0
-        queue<int> q;
-        for (int i = 0; i < n; ++i) {
-            if (indegree[i] == 0) {
-                q.push(i);
-            }
-        }
-        
-        // 3. Kahn's Algorithm to peel away non-cycle nodes
-        vector<bool> visited(n, false);
-        while (!q.empty()) {
-            int node = q.front();
-            q.pop();
-            visited[node] = true; // Mark non-cycle nodes as visited
-            
-            int nbrNode = edges[node];
-            if (nbrNode != -1) {
-                indegree[nbrNode]--;
-                if (indegree[nbrNode] == 0) {
-                    q.push(nbrNode);
-                }
-            }
-        }
-        
-        // 4. Traverse the remaining unvisited nodes (which form the cycles)
-        int maxLength = -1;
-        for (int i = 0; i < n; ++i) {
+        vector<bool> isVisited(n, false);
+        vector<bool> isPathVisited(n, false);
+        vector<int> dist(n, 0);
+        int ans = -1;
+        int currLen = 0;
+
+        //start DFS, disconnected
+        for(int i=0; i<n; i++){
             int node = i;
-            if (!visited[node]) {
-                int length = 0;
-                
-                // Count the nodes in this specific cycle
-                while (!visited[node]) {
-                    visited[node] = true;
-                    node = edges[node]; //node becomes the nbr
-                    length++;
-                }
-                maxLength = max(maxLength, length);
+            int currLen = 0;
+            if(!isVisited[node]){
+                dfs(currLen, ans, edges, isVisited, isPathVisited, node, dist);
             }
         }
-        return maxLength;
+        return ans;
     }
 };
