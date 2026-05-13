@@ -1,55 +1,47 @@
-//DFS
-//thinking it as a cycle detection
-//if there is a cycle then we can never complete the courses
+//topological
+//BFS 
 class Solution {
 public:
-
-    bool dfs(int node, vector<vector<int>>& adjList, vector<bool>& isVisited, vector<bool>& isPathVisited){
-        //visisted
-        isVisited[node] = true;
-        isPathVisited[node] = true;
-        //explore the nbrs
-        for(const int& nbr: adjList[node]){
-            if(!isVisited[nbr]){
-                if(dfs(nbr, adjList, isVisited, isPathVisited)){
-                    //cycle detected
-                    return true;
-                }
-            }
-            else{
-                if(isPathVisited[nbr]){
-                    //cycle detected
-                    return true;
-                }
-            }
-        }
-        isPathVisited[node] = false;
-        return false;
-    }
-
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
-        
-        //adjList
+        vector<bool> isVisited(numCourses, false);
+        vector<int> indegrees(numCourses, 0);
         vector<vector<int>> adjList(numCourses);
-        for(const vector<int>& prerequisit: prerequisites){
-            int u = prerequisit[1];
-            int v = prerequisit[0];
-            //direcrted
-            //u->v
-            adjList[u].push_back(v);
+        for(vector<int> prerequisit: prerequisites){
+            int u = prerequisit[0];
+            int v = prerequisit[1];
+            adjList[v].push_back(u);
+            indegrees[u]++;
         }
 
-        vector<bool> isVisited(numCourses, false);
-        vector<bool> isPathVisited(numCourses, false);
-        //disconnected graph
-        for(int node = 0; node<numCourses; node++){
-            if(!isVisited[node]){
-                if(dfs(node, adjList, isVisited, isPathVisited)){
-                    //there is a cycle in the graph
-                    return false;
+        queue<int>q;
+        for(int i=0; i<numCourses; i++){
+            if(indegrees[i] == 0){
+                q.push(i);
+                isVisited[i] = true;
+            }
+        }
+
+        //start the process
+        int courseNumber = 0;
+        while(!q.empty()){
+            int frontNode = q.front();
+            courseNumber++;
+            q.pop();
+            //explore its nbrs
+            for(int nbr: adjList[frontNode]){
+                if(!isVisited[nbr]){
+                    indegrees[nbr]--;
+                    if(indegrees[nbr] == 0){
+                        q.push(nbr);
+                        isVisited[nbr] = true;
+                    }
                 }
             }
         }
-        return true; //no cycle
+
+        if(courseNumber == numCourses){
+            return true;
+        }
+        return false;
     }
 };
