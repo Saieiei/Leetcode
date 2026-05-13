@@ -1,67 +1,42 @@
-//not like toposorting, alien dictionary
-//have to consider each word, each letter
+//traversal
 class Solution {
 public:
     int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
-        int n = wordList.size();
-        //bc, already mentioned
-        ///if(beginWord == endWord){
-        ///    return 1;
-        ///}
-        //we have to keep the track of visited
-        //unordered_map<string, bool> isVisited;
-        //for(int i = 0; i < n; i++) {
-        //    isVisited[wordList[i]] = false; 
-        //}
-        //we can skip all this if we use unordered_set
-        //we can remove isvisited as we can remove it from the wordList
-        unordered_set<string> dupWordList(wordList.begin(), wordList.end());
-
-        int number = 1;
-        //now lets start the bfs
+        set<string> dupWordList(wordList.begin(), wordList.end());
+        int level = 1;
         queue<pair<string, int>>q;
-        q.push({beginWord, number});
-        //mark it as visited
-        //isVisited[beginWord] = true;
+        q.push({beginWord, level});
+        dupWordList.erase(beginWord);
 
         //start
         while(!q.empty()){
-            //now we have to swap each letter with the alpha
-            //create the new word
-            //check if its there and push
             pair<string, int> frontData = q.front();
             q.pop();
-            string frontWord = frontData.first;
-            int frontNumber = frontData.second;
-            //check if we have reached the end
-            if(frontWord == endWord){
-                return frontNumber;
+            string word = frontData.first;
+            int level = frontData.second;
+            //check if this is the endword
+            if(word == endWord){
+                return level;
             }
-            //we have to create new words
-            int wordLength = frontWord.size();
-            for(int index = 0; index<wordLength; index++){
-                //for each index, replace the char with alphabets
-                for(char ch = 'a'; ch<='z'; ch++){
-                    string newWord = frontWord;
+            //create new words // explore the nbrs
+            int wordSize = word.length();
+            for(int index=0; index<wordSize; index++){
+                //change the char in the index
+                //alphabets
+                for(char ch='a'; ch<='z'; ch++){
+                    string newWord = word;
                     newWord[index] = ch;
-                    //find this new word
-                    auto it = dupWordList.find(newWord);
-                    if(it != dupWordList.end()){
-                        //this word exits in the list
-                        //make sure its no visited
-                        //if(isVisited[newWord] == false){
-                            //its not visited
-                            //mark it, push it in
-                            int newNumber = frontNumber + 1;
-                            q.push({newWord, newNumber});
-                            //isVisited[newWord] = true;
-                            dupWordList.erase(newWord);
-                        //}
+                    if(dupWordList.count(newWord)){
+                        //found it
+                        //mark it as visited
+                        int newLevel = level + 1;
+                        q.push({newWord, newLevel});
+                        dupWordList.erase(newWord);
                     }
                 }
             }
         }
-        //didnt find the endWord
+        //not possible 
         return 0;
     }
 };
