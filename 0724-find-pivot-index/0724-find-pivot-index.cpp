@@ -1,27 +1,27 @@
-#include <vector>
-
+//prefix sum
 class Solution {
 public:
-    int pivotIndex(std::vector<int>& nums) {
+    int pivotIndex(vector<int>& nums) {
         int n = nums.size();
-        std::vector<int> lsum(n, 0);
-        std::vector<int> rsum(n, 0);
+        vector<int> prefixSum(n, 0);
+        vector<int> postfixSum(n, 0);
 
-        lsum[0] = 0;
-        rsum[n - 1] = 0;
-        int flag = 0;
-
-        for (int i = 1; i < n; i++) {
-            lsum[i] = lsum[i - 1] + nums[i - 1];
+        //populate prefixSum
+        for(int index=1; index<n; index++){
+            //we start from 1 and not 0 because
+            //0 index the prefixSum is 0
+            prefixSum[index] = prefixSum[index-1] + nums[index-1];
         }
-
-        for (int i = n - 2; i >= 0; i--) {
-            rsum[i] = rsum[i + 1] + nums[i + 1];
+        //populate postfixSum
+        for(int index=n-2; index>=0; index--){ 
+            //we start from n-2 and not n-1 because
+            //n-1 index the postfixSum is 0
+            postfixSum[index] = postfixSum[index+1] + nums[index+1];
         }
-
-        for (int i = 0; i < n; i++) {
-            if (lsum[i] == rsum[i]) {
-                return i;
+        //find the index whos value is the same
+        for(int index=0; index<n; index++){
+            if(prefixSum[index] == postfixSum[index]){
+                return index;
             }
         }
         return -1;
