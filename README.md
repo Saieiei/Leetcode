@@ -172,6 +172,7 @@ https://leetcode.com/u/saiei/
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0015-3sum](https://github.com/Saieiei/Leetcode/tree/main/0015-3sum/) | Medium |
 | [0148-sort-list](https://github.com/Saieiei/Leetcode/tree/master/0148-sort-list) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Saieiei/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0539-minimum-time-difference](https://github.com/Saieiei/Leetcode/tree/master/0539-minimum-time-difference) |
@@ -310,6 +311,7 @@ https://leetcode.com/u/saiei/
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0015-3sum](https://github.com/Saieiei/Leetcode/tree/main/0015-3sum/) | Medium |
 | [0027-remove-element](https://github.com/Saieiei/Leetcode/tree/master/0027-remove-element) |
 | [0061-rotate-list](https://github.com/Saieiei/Leetcode/tree/master/0061-rotate-list) |
 | [0142-linked-list-cycle-ii](https://github.com/Saieiei/Leetcode/tree/master/0142-linked-list-cycle-ii) |
@@ -360,6 +362,7 @@ https://leetcode.com/u/saiei/
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/Saieiei/Leetcode/tree/master/0001-two-sum) |
+| [0015-3sum](https://github.com/Saieiei/Leetcode/tree/main/0015-3sum/) | Medium |
 | [0027-remove-element](https://github.com/Saieiei/Leetcode/tree/master/0027-remove-element) |
 | [0035-search-insert-position](https://github.com/Saieiei/Leetcode/tree/master/0035-search-insert-position) |
 | [0040-combination-sum-ii](https://github.com/Saieiei/Leetcode/tree/master/0040-combination-sum-ii) |
