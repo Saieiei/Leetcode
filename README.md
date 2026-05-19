@@ -174,6 +174,7 @@ https://leetcode.com/u/saiei/
 | ------- | ------- |
 | [0015-3sum](https://github.com/Saieiei/Leetcode/tree/main/0015-3sum/) | Medium |
 | [0148-sort-list](https://github.com/Saieiei/Leetcode/tree/master/0148-sort-list) |
+| [0268-missing-number](https://github.com/Saieiei/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Saieiei/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0539-minimum-time-difference](https://github.com/Saieiei/Leetcode/tree/master/0539-minimum-time-difference) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/Saieiei/Leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
@@ -242,6 +243,7 @@ https://leetcode.com/u/saiei/
 | [0127-word-ladder](https://github.com/Saieiei/Leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0142-linked-list-cycle-ii](https://github.com/Saieiei/Leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0264-ugly-number-ii](https://github.com/Saieiei/Leetcode/tree/master/0264-ugly-number-ii) |
+| [0268-missing-number](https://github.com/Saieiei/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Saieiei/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0432-all-oone-data-structure](https://github.com/Saieiei/Leetcode/tree/master/0432-all-oone-data-structure) |
 | [0525-contiguous-array](https://github.com/Saieiei/Leetcode/tree/main/0525-contiguous-array/) | Medium |
@@ -377,6 +379,7 @@ https://leetcode.com/u/saiei/
 | [0200-number-of-islands](https://github.com/Saieiei/Leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0209-minimum-size-subarray-sum](https://github.com/Saieiei/Leetcode/tree/master/0209-minimum-size-subarray-sum) |
 | [0239-sliding-window-maximum](https://github.com/Saieiei/Leetcode/tree/master/0239-sliding-window-maximum) |
+| [0268-missing-number](https://github.com/Saieiei/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Saieiei/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0407-trapping-rain-water-ii](https://github.com/Saieiei/Leetcode/tree/master/0407-trapping-rain-water-ii) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Saieiei/Leetcode/tree/main/0417-pacific-atlantic-water-flow/) | Medium |
@@ -506,6 +509,7 @@ https://leetcode.com/u/saiei/
 | ------- | ------- |
 | [0035-search-insert-position](https://github.com/Saieiei/Leetcode/tree/master/0035-search-insert-position) |
 | [0209-minimum-size-subarray-sum](https://github.com/Saieiei/Leetcode/tree/master/0209-minimum-size-subarray-sum) |
+| [0268-missing-number](https://github.com/Saieiei/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Saieiei/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/Saieiei/Leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0729-my-calendar-i](https://github.com/Saieiei/Leetcode/tree/master/0729-my-calendar-i) |
@@ -624,6 +628,7 @@ https://leetcode.com/u/saiei/
 | [0189-rotate-array](https://github.com/Saieiei/Leetcode/tree/main/0189-rotate-array/) | Medium |
 | [0241-different-ways-to-add-parentheses](https://github.com/Saieiei/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0264-ugly-number-ii](https://github.com/Saieiei/Leetcode/tree/master/0264-ugly-number-ii) |
+| [0268-missing-number](https://github.com/Saieiei/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0273-integer-to-english-words](https://github.com/Saieiei/Leetcode/tree/master/0273-integer-to-english-words) |
 | [0539-minimum-time-difference](https://github.com/Saieiei/Leetcode/tree/master/0539-minimum-time-difference) |
 | [0564-find-the-closest-palindrome](https://github.com/Saieiei/Leetcode/tree/master/0564-find-the-closest-palindrome) |
@@ -1077,6 +1082,7 @@ https://leetcode.com/u/saiei/
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0268-missing-number](https://github.com/Saieiei/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0476-number-complement](https://github.com/Saieiei/Leetcode/tree/master/0476-number-complement) |
 | [1054-complement-of-base-10-integer](https://github.com/Saieiei/Leetcode/tree/master/1054-complement-of-base-10-integer) |
 | [1435-xor-queries-of-a-subarray](https://github.com/Saieiei/Leetcode/tree/master/1435-xor-queries-of-a-subarray) |
