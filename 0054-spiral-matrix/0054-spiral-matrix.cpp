@@ -1,50 +1,47 @@
 class Solution {
 public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
-        vector<int> result;
-        if (matrix.empty()) return result;
-        
         int m = matrix.size();
         int n = matrix[0].size();
-        
-        // Your exact 4 pointers
-        int rowStart = 0;
-        int rowEnd = m - 1;
-        int colStart = 0;
-        int colEnd = n - 1;
-        
-        // Loop until boundaries cross
-        while (rowStart <= rowEnd && colStart <= colEnd) {
-            
-            // 1. Move Right
-            for (int j = colStart; j <= colEnd; j++) {
-                result.push_back(matrix[rowStart][j]);
+
+        int startRow = 0;
+        int endRow = m-1;
+        int startCol = 0;
+        int endCol = n-1;
+
+        vector<int> ans;
+
+        //start the process
+        while((startRow<=endRow) && (startCol<=endCol)){
+            //1st move right, explore cols, increase startRow
+            for(int i=startCol; i<=endCol; i++){
+                ans.push_back(matrix[startRow][i]);
             }
-            rowStart++; // Shrink top boundary
-            
-            // 2. Move Down
-            for (int i = rowStart; i <= rowEnd; i++) {
-                result.push_back(matrix[i][colEnd]);
+            startRow++;
+            //2nd move down, explore rows, decrease endCol
+            for(int i=startRow; i<=endRow; i++){
+                ans.push_back(matrix[i][endCol]);
             }
-            colEnd--; // Shrink right boundary
-            
-            // 3. Move Left (Check if we still have a valid row)
-            if (rowStart <= rowEnd) {
-                for (int j = colEnd; j >= colStart; j--) {
-                    result.push_back(matrix[rowEnd][j]);
+            endCol--;
+            //3rd move left, explore cols, decrease endRow
+            //but safety check, for 1x3 matrix
+            //require more rows
+            if(startRow<=endRow){
+                for(int i=endCol; i>=startCol; i--){
+                    ans.push_back(matrix[endRow][i]);
                 }
-                rowEnd--; // Shrink bottom boundary
             }
-            
-            // 4. Move Up (Check if we still have a valid column)
-            if (colStart <= colEnd) {
-                for (int i = rowEnd; i >= rowStart; i--) {
-                    result.push_back(matrix[i][colStart]);
+            endRow--;
+            //4th move up, explore rows, increase startCol
+            //but safetly check, for 3x1 matrix
+            //require more cols
+            if(startCol<=endCol){
+                for(int i=endRow; i>=startRow; i--){
+                    ans.push_back(matrix[i][startCol]);
                 }
-                colStart++; // Shrink left boundary
             }
+            startCol++;
         }
-        
-        return result;
+        return ans;
     }
 };
