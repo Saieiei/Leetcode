@@ -16,20 +16,25 @@ public:
         //return 0;
 
         //M2 in place, marking - as visisted
-        for(int i=0; i<n; i++){
-            //marked as visisted
-            int index = abs(nums[i]);
-            if(nums[index]<0){
-                return index;
-            }
-            else{
-                //mark it as visisted
-                //mark it -
-                //2s compliment
-                nums[index] = ~nums[index] + 1;
-            }
-        }
-        return 0;
+        //for(int i=0; i<n; i++){
+        //    //marked as visisted
+        //    int index = abs(nums[i]);
+        //    if(nums[index]<0){
+        //        return index;
+        //    }
+        //    else{
+        //        //mark it as visisted
+        //        //mark it -
+        //        //2s compliment
+        //        nums[index] = ~nums[index] + 1;
+        //    }
+        //}
+        //return 0;
         
+        //M3 0th position
+        while(nums[0] != nums[nums[0]]){
+            swap(nums[0], nums[nums[0]]);
+        }
+        return nums[0];
     }
 };
