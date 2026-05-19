@@ -38,16 +38,42 @@ public:
         //return nums[0];
 
         //M4 hashing, freq
-        unordered_map<int, int>mp;
-        for(int i=0; i<n; i++){
-            //check if the elemnt is already visited
-            if(mp.count(nums[i])){
-                //already there
-                return nums[i];
+        //unordered_map<int, int>mp;
+        //for(int i=0; i<n; i++){
+        //    //check if the elemnt is already visited
+        //    if(mp.count(nums[i])){
+        //        //already there
+        //        return nums[i];
+        //    }
+        //    //else mark it as visisted, increasse frew
+        //    mp[nums[i]]++;
+        //}
+        //return 0;
+
+        //M5 binary search
+        //we dont care about the value, we will guess based on the index
+        int lowIndex = 0;
+        int highIndex = n-1; //because 1 is duplicate
+
+        //start the process
+        while(lowIndex < highIndex){
+            int midIndex = lowIndex + (highIndex - lowIndex)/2;
+            int count = 0;
+
+            //find out how many values r less than the midIndex
+            for(int i=0; i<n; i++){
+                if(nums[i] <= midIndex){
+                    count++;
+                }
             }
-            //else mark it as visisted, increasse frew
-            mp[nums[i]]++;
+            // If count is greater than mid, duplicate is in the lower half
+            if (count > midIndex) {
+                highIndex = midIndex;
+            } 
+            else {
+                lowIndex = midIndex + 1;
+            }
         }
-        return 0;
+        return lowIndex; // or return high, they will converge to the duplicate
     }
 };
