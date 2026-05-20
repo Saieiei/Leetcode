@@ -27,11 +27,14 @@ public:
             int freq = i;
             if(!buckets[freq].empty()){
                 //found something
-                //traverse through this non-empty row
-                for(int num: buckets[freq]){
-                    ans = ans + freq;
-                }
-                break; // CRITICAL: Stop after processing the max frequency
+                ////traverse through this non-empty row
+                //for(int num: buckets[freq]){
+                //    ans = ans + freq;
+                //}
+                //break; // CRITICAL: Stop after processing the max frequency
+                int tempSize = buckets[freq].size();
+                ans = freq * tempSize;
+                break;
             }
         }
         return ans;
