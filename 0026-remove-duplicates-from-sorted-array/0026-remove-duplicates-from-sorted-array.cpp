@@ -1,53 +1,20 @@
+//2 pointers
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-
-        //set approach didnt work
-        //set<int>st;
-        //vector<int>ans;
-        //int n=nums.size();
-        //for(int i=0;i<n;i++)
-        //{
-        //    st.insert(i);
-        //}
-        //int count=0;
-        //for(auto i: st)
-        //{
-        //    count++;
-        //}
-        ////for(auto i: st)
-        ////{
-        ////    ans.push_back(i);
-        ////}
-        ////int rem=n-count;
-        ////for(int i=0;i<rem;i++)
-        ////{
-        ////    ans.push_back("_");
-        ////}
-        ////nums=ans;
-        //return count;
-
-        //2 pointers approach
-        //elements before j are all unique elemnts, j converts the lements to a unique element
-
-        int j=0;
-        int i=1;
-
-        while(i<nums.size())
-        {
-            if(nums[j]==nums[i]) //not unique
-            {
-                i++;
-            }
-            else
-            {
-                j++;
-                nums[j]=nums[i];
-                i++;
-            }
-
+        int n = nums.size();
+        //initially i = 0 and j = 1
+        //we will only move i when j has found a unique elemnt
+        //get that value from j and put it in i
+        //keep processing until j has hit the end
+        int i = 0;
+        for(int j=1; j<n; j++){
+           if(nums[i] != nums[j]){
+            //unique element found
+            i++;
+            nums[i] = nums[j];
+           } 
         }
-        return j+1;
-
+        return i + 1;
     }
 };
