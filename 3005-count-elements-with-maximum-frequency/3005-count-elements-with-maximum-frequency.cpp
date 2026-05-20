@@ -1,27 +1,34 @@
 class Solution {
 public:
     int maxFrequencyElements(vector<int>& nums) {
-        //we shall use mapping 
-        unordered_map<int, int>freqArray;
-        for(int num: nums)
-        {
-            freqArray[num]++;
+        //M1 hash maps
+        //create hash map
+        unordered_map<int, int> mp;
+        //populate the freq
+        for(int num: nums){
+            mp[num]++;
         }
 
-        //now we shall find the maximum frequency
-        int maxFreq=0;
-        for(auto num:freqArray)
-        {
-            maxFreq=max(maxFreq, num.second);
+        //traverse through the mp and find the highest freq
+        int maxFreq = INT_MIN;
+        for(pair<const int, int>& it: mp){
+            int num = it.first;
+            int freq = it.second;
+            maxFreq = max(maxFreq, freq);
         }
 
+        //find out hpw many numbers have the max freq
         int count = 0;
-        for (const auto& num : freqArray) {
-            if (num.second == maxFreq) {
-                count += num.second;
+        for(pair<const int, int>& it: mp){
+            int num = it.first;
+            int freq = it.second;
+            if(freq == maxFreq){
+                count++;
             }
         }
 
-       return count;
+        //return ans
+        return count*maxFreq;
+
     }
 };
