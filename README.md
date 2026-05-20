@@ -319,6 +319,7 @@ https://leetcode.com/u/saiei/
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0015-3sum](https://github.com/Saieiei/Leetcode/tree/main/0015-3sum/) | Medium |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/Saieiei/Leetcode/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0027-remove-element](https://github.com/Saieiei/Leetcode/tree/master/0027-remove-element) |
 | [0061-rotate-list](https://github.com/Saieiei/Leetcode/tree/master/0061-rotate-list) |
 | [0142-linked-list-cycle-ii](https://github.com/Saieiei/Leetcode/tree/master/0142-linked-list-cycle-ii) |
@@ -373,6 +374,7 @@ https://leetcode.com/u/saiei/
 | ------- | ------- |
 | [0001-two-sum](https://github.com/Saieiei/Leetcode/tree/master/0001-two-sum) |
 | [0015-3sum](https://github.com/Saieiei/Leetcode/tree/main/0015-3sum/) | Medium |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/Saieiei/Leetcode/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0027-remove-element](https://github.com/Saieiei/Leetcode/tree/master/0027-remove-element) |
 | [0035-search-insert-position](https://github.com/Saieiei/Leetcode/tree/master/0035-search-insert-position) |
 | [0040-combination-sum-ii](https://github.com/Saieiei/Leetcode/tree/master/0040-combination-sum-ii) |
