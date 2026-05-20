@@ -400,6 +400,7 @@ https://leetcode.com/u/saiei/
 | [0525-contiguous-array](https://github.com/Saieiei/Leetcode/tree/main/0525-contiguous-array/) | Medium |
 | [0539-minimum-time-difference](https://github.com/Saieiei/Leetcode/tree/master/0539-minimum-time-difference) |
 | [0624-maximum-distance-in-arrays](https://github.com/Saieiei/Leetcode/tree/master/0624-maximum-distance-in-arrays) |
+| [0643-maximum-average-subarray-i](https://github.com/Saieiei/Leetcode/tree/main/0643-maximum-average-subarray-i/) | Easy |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/Saieiei/Leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0721-accounts-merge](https://github.com/Saieiei/Leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0724-find-pivot-index](https://github.com/Saieiei/Leetcode/tree/main/0724-find-pivot-index/) | Easy |
@@ -743,6 +744,7 @@ https://leetcode.com/u/saiei/
 | [0209-minimum-size-subarray-sum](https://github.com/Saieiei/Leetcode/tree/master/0209-minimum-size-subarray-sum) |
 | [0239-sliding-window-maximum](https://github.com/Saieiei/Leetcode/tree/master/0239-sliding-window-maximum) |
 | [0567-permutation-in-string](https://github.com/Saieiei/Leetcode/tree/master/0567-permutation-in-string) |
+| [0643-maximum-average-subarray-i](https://github.com/Saieiei/Leetcode/tree/main/0643-maximum-average-subarray-i/) | Easy |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Saieiei/Leetcode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1755-defuse-the-bomb](https://github.com/Saieiei/Leetcode/tree/master/1755-defuse-the-bomb) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/Saieiei/Leetcode/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
