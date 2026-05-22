@@ -1,108 +1,26 @@
+//floyds
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
-        int n = nums.size();
-        ////M1 brute force, sort
-        //sort(nums.begin(), nums.end());
-        //int i = 0;
-        //int j = 0;
-        //for(int i=0; i<n-1; i++){
-        //    j = i+1;
-        //    if(nums[i] == nums[j]){
-        //        return nums[i];
-        //    }
-        //}
-        ////else
-        //return 0;
-//
-        ////M2 in place, marking - as visisted
-        //for(int i=0; i<n; i++){
-        //    //marked as visisted
-        //    int index = abs(nums[i]);
-        //    if(nums[index]<0){
-        //        return index;
-        //    }
-        //    else{
-        //        //mark it as visisted
-        //        //mark it -
-        //        //2s compliment
-        //        nums[index] = ~nums[index] + 1;
-        //    }
-        //}
-        //return 0;
-    //
-        ////M3 0th position
-        //while(nums[0] != nums[nums[0]]){
-        //    swap(nums[0], nums[nums[0]]);
-        //}
-        //return nums[0];
-//
-        ////M4 hashing, freq
-        //unordered_map<int, int>mp;
-        //for(int i=0; i<n; i++){
-        //    //check if the elemnt is already visited
-        //    if(mp.count(nums[i])){
-        //        //already there
-        //        return nums[i];
-        //    }
-        //    //else mark it as visisted, increasse frew
-        //    mp[nums[i]]++;
-        //}
-        //return 0;
-//
-        ////M5 binary search
-        ////we dont care about the value, we will guess based on the index
-        //int lowIndex = 0;
-        //int highIndex = n-1; //because 1 is duplicate
-//
-        ////start the process
-        //while(lowIndex < highIndex){
-        //    int midIndex = lowIndex + (highIndex - lowIndex)/2;
-        //    int count = 0;
-//
-        //    //find out how many values r less than the midIndex
-        //    for(int i=0; i<n; i++){
-        //        if(nums[i] <= midIndex){
-        //            count++;
-        //        }
-        //    }
-        //    // If count is greater than mid, duplicate is in the lower half
-        //    if (count > midIndex) {
-        //        highIndex = midIndex;
-        //    } 
-        //    else {
-        //        lowIndex = midIndex + 1;
-        //    }
-        //}
-        //return lowIndex; // or return high, they will converge to the duplicate
+        int slow = nums[0];
+        int fast = nums[0];
 
-        //M6 floyds algo
-        //1 step
-        int tortoise = nums[0];
-        //2 steps
-        int hare = nums[0];
-
-        //find the intersection point
+        //intersection point
         while(true){
-            tortoise = nums[tortoise];
-            hare = nums[nums[hare]];
-            if(tortoise == hare){
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+            if(slow == fast){
                 break;
             }
         }
-        //the while loop should break when intersection point is found
-        //basically both r same now
 
-        //this is a formula
-        //now move the tutoise back to the start, 0th index
-        //and move both 1 step at a time, kerp moving until both values r same
-        //if so return the index
-        tortoise = nums[0];
-        while(tortoise != hare){
-            tortoise = nums[tortoise];
-            hare = nums[hare];
+        //now we have the intersection point
+        //now find the starting point of the loop
+        slow = nums[0];
+        while(slow != fast){
+            slow = nums[slow];
+            fast = nums[fast];
         }
-        //now we found the starting point of the loop
-        return tortoise;
+        return slow;
     }
 };
