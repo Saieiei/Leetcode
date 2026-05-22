@@ -1,43 +1,30 @@
 class Solution {
 public:
     int maxFrequencyElements(vector<int>& nums) {
-        int n = nums.size();
-        //M2 bucket sorting
-        //1st hashing
-        unordered_map<int, int>mp;
-        //populate the freq
-        for(int num: nums){
+        //M3 maxheap
+        //hashing
+        unordered_map<int, int> mp;
+        for(const int& num: nums){
             mp[num]++;
         }
 
-        //2nd bucketing
-        vector<vector<int>> buckets(n+1);
-        //traverse through the mp and populate the buckets
-        for(pair<const int, int>& it: mp){
+        //maxHeap
+        priority_queue<int> q;
+        //populate the q with the freq
+        //traverse through the mp
+        for(const pair<const int, int>& it: mp){
             int num = it.first;
             int freq = it.second;
-            //populate
-            buckets[freq].push_back(num);
+            q.push(freq);
         }
-        //find out the bucket which has the maximum freq
-        //should not be empty
+
+        //now keep poping until u dont get the freq anymore
+        int maxFreq = q.top();
         int ans = 0;
-        for(int i=n; i>=0; i--){
-            //basically the row should have cols inside it
-            int freq = i;
-            if(!buckets[freq].empty()){
-                //found something
-                ////traverse through this non-empty row
-                //for(int num: buckets[freq]){
-                //    ans = ans + freq;
-                //}
-                //break; // CRITICAL: Stop after processing the max frequency
-                int tempSize = buckets[freq].size();
-                ans = freq * tempSize;
-                break;
-            }
+        while(!q.empty() && q.top() == maxFreq){
+            q.pop();
+            ans = ans + maxFreq;
         }
         return ans;
-
     }
 };
