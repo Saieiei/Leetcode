@@ -2,22 +2,39 @@ class Solution {
 public:
     vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {
         //this is similar to merge intervals qs
-        //naive method - insert newInterval in intervals
-        //NlogN instead of N
-        intervals.push_back(newInterval);
-        //continue with the rest of the merge interval process
-        //it was already sorted, but then since we pushed, 
-        //we have to sort it again
-        sort(intervals.begin(), intervals.end());
-        vector<vector<int>> ans;
-        //push the 1st row as it is in the ans
-        ans.push_back(intervals[0]);
+        //we will use BS cuz its sorted
+        //X NlogN its just N
+        //we will insert newInterval in the interval based on BS
         int n = intervals.size();
-        //star the loop till n
+        int low = 0;
+        int high = n-1;
+        //initially we have decided to insert the newInterval in the last index
+        int toInsert = n;
+        //BS start the process
+        while(low<=high){
+            int mid = low + (high - low)/2;
+            if(intervals[mid][0] >= newInterval[0]){
+                //we have found a possible case
+                toInsert = mid;
+                high = mid -1;
+            }
+            //bring the low to mid
+            else{
+                low = mid + 1;
+            }
+        }
+        //so now we know where to insert it
+        intervals.insert(intervals.begin() + toInsert, newInterval);
+        //the rest of the process is same as the merge interval
+        vector<vector<int>>ans;
+        //push the initial 1
+        ans.push_back(intervals[0]);
+        //process the rest
+        n = intervals.size();
         for(int i=1; i<n; i++){
-            //check if they r overlapping
+            //check if ist overlapping
             if(ans.back()[1] >= intervals[i][0]){
-                //if so merge them
+                //we have to merge now
                 ans.back()[1] = max(ans.back()[1], intervals[i][1]);
             }
             else{
