@@ -4,35 +4,27 @@ public:
         int m = matrix.size();
         int n = matrix[0].size();
         //brute force method, N^2
-        //traverse through the matrix and find out which
-        //coordinates have the value 0
-        vector<vector<bool>> is0(m, vector<bool>(n, false));
-        //travese through the matrix
+        //this is like ur setting up lazers on the wall
+        //where u get the value as 0
+        //1st traverse through it
+        vector<bool> rows(m, false);
+        vector<bool> cols(n, false);
         for(int i=0; i<m; i++){
             for(int j=0; j<n; j++){
-                //check if the coordinates leads to 0
                 if(matrix[i][j] == 0){
-                    //mark it as true
-                    is0[i][j] = true;
+                    rows[i] = true;
+                    cols[j] = true;
                 }
             }
         }
-        //now we have all the coordinates whos value is 0
-        //now travese through the matrix and update its rows and cols to 0
+
+        //now while traversing again
+        //check if its row or col was marked
+        //if so change that cell to 0
         for(int i=0; i<m; i++){
             for(int j=0; j<n; j++){
-                //check if this coordinates point to 0
-                if(is0[i][j] == true){
-                    //make the whole row and col to 0
-                    //row
-                    for(int k=0; k<n; k++){
-                        matrix[i][k] = 0;
-                    }
-                    //col
-                    for(int k=0; k<m; k++){
-                        matrix[k][j] = 0;
-                    }
-
+                if(rows[i] || cols[j]){
+                    matrix[i][j] = 0;
                 }
             }
         }
