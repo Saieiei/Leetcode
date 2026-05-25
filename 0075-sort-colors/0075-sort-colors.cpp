@@ -1,39 +1,33 @@
 class Solution {
 public:
     void sortColors(vector<int>& nums) {
-        //since only 3 elements we could rather count them
-        //N
+        //Optimised N in 1pass
+        //3 pointers (dutch flag)
         int n = nums.size();
-        int zeros = 0;
-        int ones = 0;
-        int twos = 0;
-        //traverse through the vector
-        for(int num: nums){
-            if(num == 0){
-                zeros++;
+        int low = 0;
+        int high = n-1;
+        int mid = 0;
+        //we just have to swap low and mid or mid and high
+        //u swap mid with low when its value is 0
+        //if u swap low and mid increase both
+        //u swap mid with high when its value is 2
+        //if u swap mid and high, just decrease high
+        //if u get mid value as 1, then simply move forward
+        //we will stop when mid crosses high
+        while(mid <= high){
+            if(nums[mid] == 0){
+                swap(nums[mid], nums[low]);
+                mid++;
+                low++;
             }
-            else if(num == 1){
-                ones++;
-            }
-            else{
-                twos;
-            }
-        }    
-        //rearrange now
-        for(int i=0; i<n; i++){
-            if(zeros > 0){
-                nums[i] = 0;
-                zeros--;
-            }
-            else if(ones > 0){
-                nums[i] = 1;
-                ones--;
+            else if(nums[mid] == 2){
+                swap(nums[mid], nums[high]);
+                high--;
             }
             else{
-                nums[i] = 2;
-                twos--;
+                mid++;
             }
         }
-        return;    
+        return;
     }
 };
