@@ -1,25 +1,26 @@
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        map<int, int> mp; 
-        int n = nums.size() / 2; 
+        int n = nums.size();
+        //Brute force, use hash map with N space
 
-        
-        for (auto a : nums) {
-            mp[a]++;
+        //find the freq
+        unordered_map<int, int>mp;
+        for(const int& num: nums){
+            mp[num]++;
         }
 
-        int ans = 0; 
-
-        
-        for (auto a : mp) {
-            if (a.second > n) {
-                ans = a.first; 
+        //traverse through the mp
+        //if u find any ele whos freq is > n/2
+        //return that
+        for(const pair<const int, int>& it: mp){
+            int num = it.first;
+            int freq = it.second;
+            if(freq >n/2){
+                return num;
             }
         }
-
-        return ans; 
+        //if not possible
+        return -1;
     }
 };
-
-
