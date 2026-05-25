@@ -2,25 +2,25 @@ class Solution {
 public:
     int majorityElement(vector<int>& nums) {
         int n = nums.size();
-        //Brute force, use hash map with N space
+        //optimised, O(1) space, Boyer-Moore voting.
 
-        //find the freq
-        unordered_map<int, int>mp;
+        //candidate
+        int count = 0;
+        int candidate = nums[0];
         for(const int& num: nums){
-            mp[num]++;
-        }
-
-        //traverse through the mp
-        //if u find any ele whos freq is > n/2
-        //return that
-        for(const pair<const int, int>& it: mp){
-            int num = it.first;
-            int freq = it.second;
-            if(freq >n/2){
-                return num;
+            //CRITICAL
+            if (count == 0) {
+                candidate = num;
+            }
+            //part of the army
+            if(num == candidate){
+                count++;
+            }
+            //not part of the army
+            else{
+                count--;
             }
         }
-        //if not possible
-        return -1;
+        return candidate;
     }
 };
