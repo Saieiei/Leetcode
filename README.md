@@ -174,6 +174,7 @@ https://leetcode.com/u/saiei/
 | ------- | ------- |
 | [0015-3sum](https://github.com/Saieiei/Leetcode/tree/main/0015-3sum/) | Medium |
 | [0056-merge-intervals](https://github.com/Saieiei/Leetcode/tree/main/0056-merge-intervals/) | Medium |
+| [0075-sort-colors](https://github.com/Saieiei/Leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0148-sort-list](https://github.com/Saieiei/Leetcode/tree/master/0148-sort-list) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Saieiei/Leetcode/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
 | [0268-missing-number](https://github.com/Saieiei/Leetcode/tree/main/0268-missing-number/) | Easy |
@@ -326,6 +327,7 @@ https://leetcode.com/u/saiei/
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Saieiei/Leetcode/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0027-remove-element](https://github.com/Saieiei/Leetcode/tree/master/0027-remove-element) |
 | [0061-rotate-list](https://github.com/Saieiei/Leetcode/tree/master/0061-rotate-list) |
+| [0075-sort-colors](https://github.com/Saieiei/Leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0142-linked-list-cycle-ii](https://github.com/Saieiei/Leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0148-sort-list](https://github.com/Saieiei/Leetcode/tree/master/0148-sort-list) |
 | [0189-rotate-array](https://github.com/Saieiei/Leetcode/tree/main/0189-rotate-array/) | Medium |
@@ -391,6 +393,7 @@ https://leetcode.com/u/saiei/
 | [0057-insert-interval](https://github.com/Saieiei/Leetcode/tree/main/0057-insert-interval/) | Medium |
 | [0064-minimum-path-sum](https://github.com/Saieiei/Leetcode/tree/main/0064-minimum-path-sum/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/Saieiei/Leetcode/tree/main/0073-set-matrix-zeroes/) | Medium |
+| [0075-sort-colors](https://github.com/Saieiei/Leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0084-largest-rectangle-in-histogram](https://github.com/Saieiei/Leetcode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0134-gas-station](https://github.com/Saieiei/Leetcode/tree/master/0134-gas-station) |
