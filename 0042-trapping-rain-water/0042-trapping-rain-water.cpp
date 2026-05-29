@@ -1,22 +1,29 @@
-//https://www.youtube.com/watch?v=CeYBuGXglTE
 class Solution {
 public:
     int trap(vector<int>& height) {
-        //1st we will check the max height from left (pre[])
-        //2nd we will check the max height from right (suf[])
-        //then we will use the formula to calc the water/col = min(pre[i], suf[i])-height[i]
-        vector<int> pre(height.size()), suf(height.size());
-        pre[0]=height[0]; suf[height.size()-1]=height[height.size()-1];
-        for(int i=1;i<height.size();i++)
-        {
-            pre[i]=max(height[i], pre[i-1]);
-            suf[height.size()-1-i]=max(height[height.size()-1-i],suf[height.size()-i] );
+        int n = height.size();
+        //approach 1
+        //N, N
+        vector<int> leftMax(n);
+        vector<int> rightMax(n);
+
+        //populate the maxHeights in its respective dir
+        //left
+        leftMax[0] = height[0];
+        for(int i=1; i<n; i++){
+            leftMax[i] = max(height[i], leftMax[i-1]);
         }
-        int ans=0;
-        for(int i=1;i<height.size()-1;i++)
-        {
-            ans+=min(pre[i], suf[i])-height[i];
+        //right
+        rightMax[n-1] = height[n-1];
+        for(int i=n-2; i>=0; i--){
+            rightMax[i] = max(height[i], rightMax[i+1]);
         }
-        return ans;
+
+        //start the process
+        int totalWater = 0;
+        for(int i=0; i<n; i++){
+            totalWater = totalWater + (min(leftMax[i], rightMax[i]) - height[i]);
+        }
+        return totalWater;
     }
 };
