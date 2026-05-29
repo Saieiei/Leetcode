@@ -2,36 +2,36 @@ class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
         int n = nums.size();
-        //sorting NlogN
-        sort(nums.begin(), nums.end());
-        //bc
+        //optimial N
+        //basecase
         if(nums.size() == 0){
             return 0;
         }
-        //traverse through each element
-        //check if teh next ele is correct
-        //if so increase count
-        int currElement = 0;
+        //we will use set for O(1) look ups
+        //and also avoid dups
+        unordered_set<int> st(nums.begin(), nums.end());
+        int currElemenet = 0;
         int currSequence = 1;
         int maxSequence = 1;
-        for(int i=1; i<n; i++){
-            currElement = nums[i];
-            //eliminate dups
-            if(currElement != nums[i-1]){
-                //this is safe
-                //check if its in sequence
-                if(currElement == nums[i - 1] + 1){
-                    //sequence is correct
+        //start to Traverse through the SET, not the original array
+        for(int num : st){
+            currElemenet = num;
+            //we will only proceed if the previous element is not there
+            //this is like an optimization and a catch
+            if(st.find(currElemenet-1) == st.end()){
+                //the prev element is not there
+                currSequence = 1;
+                currElemenet = num;
+                //move forward and check
+                while(st.find(currElemenet + 1) != st.end()) {
+                    //found it, move forward
+                    currElemenet++;
                     currSequence++;
                 }
-                else{
-                    //some other element, have to reset the sequence
-                    maxSequence = max(maxSequence, currSequence);
-                    currSequence = 1;
-                }
+                // Update the maximum streak found so far
+                maxSequence = max(maxSequence, currSequence);
             }
         }
-        // Final check in case the longest streak ends at the very last number
-        return max(maxSequence, currSequence);
+        return maxSequence;
     }
 };
