@@ -2,28 +2,46 @@ class Solution {
 public:
     int trap(vector<int>& height) {
         int n = height.size();
-        //approach 1
-        //N, N
-        vector<int> leftMax(n);
-        vector<int> rightMax(n);
-
-        //populate the maxHeights in its respective dir
-        //left
-        leftMax[0] = height[0];
-        for(int i=1; i<n; i++){
-            leftMax[i] = max(height[i], leftMax[i-1]);
+        //approach 2 2 pointer
+        //N, 1
+        int leftIndex = 0;
+        int rightIndex = n-1;
+        int leftMax = 0;
+        int rightMax = 0;
+        int waterCollected = 0;
+        //left should not be right
+        //if leftht is smaller than right then execute left
+        //if the maxHt needs updatign then do that 1st
+        //else get the water and it
+        //then update the pointers
+        while(leftIndex < rightIndex){
+            if(height[leftIndex] < height[rightIndex]){
+                //execute left
+                //check if max needs updating
+                if(height[leftIndex] > leftMax){
+                    leftMax = height[leftIndex];
+                }
+                else{
+                    //no need of updating, just add the water
+                    waterCollected = waterCollected + (leftMax - height[leftIndex]);
+                }
+                //update the index
+                leftIndex++;
+            }
+            else{
+                //execute right
+                //check if max needs updating
+                if(height[rightIndex] > rightMax){
+                    rightMax = height[rightIndex];
+                }
+                else{
+                    //no need of updating, just add the water
+                    waterCollected = waterCollected + (rightMax - height[rightIndex]);
+                }
+                //update the index
+                rightIndex--;
+            }
         }
-        //right
-        rightMax[n-1] = height[n-1];
-        for(int i=n-2; i>=0; i--){
-            rightMax[i] = max(height[i], rightMax[i+1]);
-        }
-
-        //start the process
-        int totalWater = 0;
-        for(int i=0; i<n; i++){
-            totalWater = totalWater + (min(leftMax[i], rightMax[i]) - height[i]);
-        }
-        return totalWater;
+        return waterCollected;
     }
 };
