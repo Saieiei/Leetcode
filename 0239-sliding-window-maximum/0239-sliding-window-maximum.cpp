@@ -1,29 +1,35 @@
-//basically we will push in the 1st k elements in the heap and get the top
-//the next next what we have to do is play with index to remove them as we move forward
-//the formula is top->index <= i-k then keep poping
-//to keep the track of the index too with the eleemnt we will use pairs in the heap
-
 class Solution {
 public:
     vector<int> maxSlidingWindow(vector<int>& nums, int k) {
-        priority_queue<pair<int, int>> pq;
+        int n = nums.size();
+        //maxHeap NlogN
+        //autiomatically, the front() has the value
+        //of the sliding window
         vector<int> ans;
-
-        //proceess teh 1st k elements
+        priority_queue<pair<int, int>>pq; //value, index
+        //push the 1st k inside
         for(int i=0; i<k; i++){
             pq.push({nums[i], i});
         }
-        ans.push_back(pq.top().first);
 
-        //now we will process the rest of the elemets
-        for(int i=k; i<nums.size(); i++){
+        //get the 1st max element
+        int maxValue = pq.top().first;
+        ans.push_back(maxValue);
+
+        for(int i=k; i<n; i++){
+            //push new element
             pq.push({nums[i], i});
-
-            while(pq.top().second <= i-k) pq.pop();
-
-            ans.push_back(pq.top().first);
+            //LAZY DELETION
+            //now we have to remove the k+1th element
+            //if its taking the 1st position we will kill it
+            while(!pq.empty() && pq.top().second <=i-k){
+                //pop
+                pq.pop();
+            }
+            //now simply get the maxValue
+            maxValue = pq.top().first;
+            ans.push_back(maxValue);
         }
-
         return ans;
     }
 };
