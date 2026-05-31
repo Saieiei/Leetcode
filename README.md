@@ -405,6 +405,7 @@ https://leetcode.com/u/saiei/
 | [0075-sort-colors](https://github.com/Saieiei/Leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0084-largest-rectangle-in-histogram](https://github.com/Saieiei/Leetcode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/Saieiei/Leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0128-longest-consecutive-sequence](https://github.com/Saieiei/Leetcode/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0134-gas-station](https://github.com/Saieiei/Leetcode/tree/master/0134-gas-station) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Saieiei/Leetcode/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
@@ -801,6 +802,7 @@ https://leetcode.com/u/saiei/
 | [0042-trapping-rain-water](https://github.com/Saieiei/Leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0053-maximum-subarray](https://github.com/Saieiei/Leetcode/tree/master/0053-maximum-subarray) |
 | [0064-minimum-path-sum](https://github.com/Saieiei/Leetcode/tree/main/0064-minimum-path-sum/) | Medium |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/Saieiei/Leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0241-different-ways-to-add-parentheses](https://github.com/Saieiei/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0264-ugly-number-ii](https://github.com/Saieiei/Leetcode/tree/master/0264-ugly-number-ii) |
 | [0516-longest-palindromic-subsequence](https://github.com/Saieiei/Leetcode/tree/master/0516-longest-palindromic-subsequence) |
