@@ -1,34 +1,23 @@
-//M5 SO (Khadanaes Algo)
-//we will start from the end
-//Idea: should we consider this only elem or add up this eleme with the previous1
-//in the end return the max so far found
-//this Tabulation is a little diff because of 1 global variable
 class Solution {
 public:
-
-    int recursionTabuSO(vector<int>& nums, int end){
-        //bc
-        int prev = nums[0];
-        int globalMax = prev;
-        int curr = 0;
-
-
-        //2.forloop, reversed, fun-rec, indexing
-        for(int i = 1; i <= end; i++){
-            int PrevIndxMax = prev;
-            curr = max(nums[i], nums[i] + PrevIndxMax);
-            globalMax = max(curr, globalMax);
-
-            //forgetting step
-            prev = curr;
-        }
-
-        return globalMax;
-    }
-
     int maxSubArray(vector<int>& nums) {
-        int n = nums.size()-1;
-        return recursionTabuSO(nums, n);
-
+        int n = nums.size();
+        //kadane algo O(N)
+        //main: if sum < 0 , reset it to 0
+        //alsways maSum in the begining should be nums[0]
+        int maxSum = nums[0];
+        int currSum = 0;
+        //traverse
+        for(int i=0; i<n; i++){
+            currSum += nums[i];
+            maxSum = max(maxSum, currSum);
+            //negavtive check
+            if(currSum < 0){
+                //reset it to 0
+                currSum = 0;
+            }
+        }
+        return maxSum;
+        
     }
 };
