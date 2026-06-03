@@ -429,6 +429,7 @@ https://leetcode.com/u/saiei/
 | [0560-subarray-sum-equals-k](https://github.com/Saieiei/Leetcode/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0624-maximum-distance-in-arrays](https://github.com/Saieiei/Leetcode/tree/master/0624-maximum-distance-in-arrays) |
 | [0643-maximum-average-subarray-i](https://github.com/Saieiei/Leetcode/tree/main/0643-maximum-average-subarray-i/) | Easy |
+| [0704-binary-search](https://github.com/Saieiei/Leetcode/tree/main/0704-binary-search/) | Easy |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/Saieiei/Leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0721-accounts-merge](https://github.com/Saieiei/Leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0724-find-pivot-index](https://github.com/Saieiei/Leetcode/tree/main/0724-find-pivot-index/) | Easy |
@@ -559,6 +560,7 @@ https://leetcode.com/u/saiei/
 | [0268-missing-number](https://github.com/Saieiei/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0287-find-the-duplicate-number](https://github.com/Saieiei/Leetcode/tree/main/0287-find-the-duplicate-number/) | Medium |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Saieiei/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0704-binary-search](https://github.com/Saieiei/Leetcode/tree/main/0704-binary-search/) | Easy |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/Saieiei/Leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0729-my-calendar-i](https://github.com/Saieiei/Leetcode/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/Saieiei/Leetcode/tree/master/0731-my-calendar-ii) |
