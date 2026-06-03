@@ -440,6 +440,7 @@ https://leetcode.com/u/saiei/
 | [0735-asteroid-collision](https://github.com/Saieiei/Leetcode/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/Saieiei/Leetcode/tree/master/0739-daily-temperatures) |
 | [0787-sliding-puzzle](https://github.com/Saieiei/Leetcode/tree/master/0787-sliding-puzzle) |
+| [0852-peak-index-in-a-mountain-array](https://github.com/Saieiei/Leetcode/tree/main/0852-peak-index-in-a-mountain-array/) | Medium |
 | [0859-design-circular-deque](https://github.com/Saieiei/Leetcode/tree/master/0859-design-circular-deque) |
 | [0870-magic-squares-in-grid](https://github.com/Saieiei/Leetcode/tree/master/0870-magic-squares-in-grid) |
 | [0883-car-fleet](https://github.com/Saieiei/Leetcode/tree/master/0883-car-fleet) |
@@ -566,6 +567,7 @@ https://leetcode.com/u/saiei/
 | [0719-find-k-th-smallest-pair-distance](https://github.com/Saieiei/Leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0729-my-calendar-i](https://github.com/Saieiei/Leetcode/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/Saieiei/Leetcode/tree/master/0731-my-calendar-ii) |
+| [0852-peak-index-in-a-mountain-array](https://github.com/Saieiei/Leetcode/tree/main/0852-peak-index-in-a-mountain-array/) | Medium |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Saieiei/Leetcode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/Saieiei/Leetcode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/Saieiei/Leetcode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
