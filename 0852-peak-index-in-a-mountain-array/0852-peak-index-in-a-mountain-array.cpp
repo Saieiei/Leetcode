@@ -3,12 +3,15 @@ public:
     int peakIndexInMountainArray(vector<int>& arr) {
         int n = arr.size();
         //brute force N
-        priority_queue<pair<int, int>> pq; //num, index
-        //populate pq
+        //space optimised O(1)
+        int max = 0;
+        int ans = 0;
         for(int i=0; i<n; i++){
-            pq.push({arr[i], i});
+            if(arr[i] > max){
+                ans = i;
+                max = arr[i];
+            }
         }
-        int ans = pq.top().second;
         return ans;
     }
 };
