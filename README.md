@@ -558,6 +558,7 @@ https://leetcode.com/u/saiei/
 | [0033-search-in-rotated-sorted-array](https://github.com/Saieiei/Leetcode/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/Saieiei/Leetcode/tree/main/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium |
 | [0035-search-insert-position](https://github.com/Saieiei/Leetcode/tree/master/0035-search-insert-position) |
+| [0069-sqrtx](https://github.com/Saieiei/Leetcode/tree/main/0069-sqrtx/) | Easy |
 | [0074-search-a-2d-matrix](https://github.com/Saieiei/Leetcode/tree/main/0074-search-a-2d-matrix/) | Medium |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Saieiei/Leetcode/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0162-find-peak-element](https://github.com/Saieiei/Leetcode/tree/main/0162-find-peak-element/) | Medium |
@@ -681,6 +682,7 @@ https://leetcode.com/u/saiei/
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/Saieiei/Leetcode/tree/main/0048-rotate-image/) | Medium |
+| [0069-sqrtx](https://github.com/Saieiei/Leetcode/tree/main/0069-sqrtx/) | Easy |
 | [0189-rotate-array](https://github.com/Saieiei/Leetcode/tree/main/0189-rotate-array/) | Medium |
 | [0241-different-ways-to-add-parentheses](https://github.com/Saieiei/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0264-ugly-number-ii](https://github.com/Saieiei/Leetcode/tree/master/0264-ugly-number-ii) |
