@@ -2,11 +2,19 @@ class Solution {
 public:
     int singleNonDuplicate(vector<int>& nums) {
         //brute force
-        //XOR O(n)
-        int ans = 0;
+        //unorderedMap O(n) O(n)
+        unordered_map<int, int>mp;
+        //populate the mp
         for(const int& num: nums){
-            ans = ans ^ num;
+            mp[num]++;
         }
-        return ans;
+        //traverse through the mp 
+        //and find out the single piece
+        for(const pair<const int, int>it: mp){
+            if(it.second == 1){
+                return it.first;
+            }
+        }
+        return -1;
     }
 };
