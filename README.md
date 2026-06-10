@@ -193,6 +193,7 @@ https://leetcode.com/u/saiei/
 | [1256-rank-transform-of-an-array](https://github.com/Saieiei/Leetcode/tree/master/1256-rank-transform-of-an-array) |
 | [1333-sort-the-jumbled-numbers](https://github.com/Saieiei/Leetcode/tree/master/1333-sort-the-jumbled-numbers) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/Saieiei/Leetcode/tree/master/1468-check-if-n-and-its-double-exist) |
+| [1552-magnetic-force-between-two-balls](https://github.com/Saieiei/Leetcode/tree/main/1552-magnetic-force-between-two-balls/) | Medium |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/Saieiei/Leetcode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/Saieiei/Leetcode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/Saieiei/Leetcode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
@@ -478,6 +479,7 @@ https://leetcode.com/u/saiei/
 | [1496-lucky-numbers-in-a-matrix](https://github.com/Saieiei/Leetcode/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1497-design-a-stack-with-increment-operation](https://github.com/Saieiei/Leetcode/tree/master/1497-design-a-stack-with-increment-operation) |
 | [1511-count-number-of-teams](https://github.com/Saieiei/Leetcode/tree/master/1511-count-number-of-teams) |
+| [1552-magnetic-force-between-two-balls](https://github.com/Saieiei/Leetcode/tree/main/1552-magnetic-force-between-two-balls/) | Medium |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/Saieiei/Leetcode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/Saieiei/Leetcode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/Saieiei/Leetcode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
@@ -575,6 +577,7 @@ https://leetcode.com/u/saiei/
 | [0852-peak-index-in-a-mountain-array](https://github.com/Saieiei/Leetcode/tree/main/0852-peak-index-in-a-mountain-array/) | Medium |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Saieiei/Leetcode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/Saieiei/Leetcode/tree/master/1468-check-if-n-and-its-double-exist) |
+| [1552-magnetic-force-between-two-balls](https://github.com/Saieiei/Leetcode/tree/main/1552-magnetic-force-between-two-balls/) | Medium |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/Saieiei/Leetcode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1631-path-with-minimum-effort](https://github.com/Saieiei/Leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/Saieiei/Leetcode/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
