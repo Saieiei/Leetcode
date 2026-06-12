@@ -18,23 +18,20 @@ public:
     }
     int findPairs(vector<int>& nums, int k) {
         int n = nums.size();
-        //Binary Search NlogN, 1
-        //no extra space 
+        //Binary Search NlogN, N
+        set<pair<int, int>>st;
         int uniquePairs = 0;
         //sort it 1st
         sort(nums.begin(), nums.end());
         for (int i = 0; i < n; i++){
-            if (i > 0 && nums[i] == nums[i - 1]) {
-                continue;
-            }
             int low = i+1;
             int high = n-1;
             int target = nums[i] + k;
             if(BS(nums, low, high, target)!= -1){
                 //we found 1
-                uniquePairs++;
+                st.insert({nums[i], nums[i]+k});
             }
         }
-        return uniquePairs;
+        return st.size();
     }
 };
