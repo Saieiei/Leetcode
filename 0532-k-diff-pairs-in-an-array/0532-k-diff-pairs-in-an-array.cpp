@@ -1,37 +1,40 @@
 class Solution {
 public:
-    int findPairs(vector<int>& nums, int k) {
-        int n = nums.size();
-        //2 pointers NlogN, N
-        //we will use set to remove duplicates
-        set<pair<int ,int>>st;
-        //sort it 1st
-        sort(nums.begin(), nums.end());
-        int i = 0;
-        int j = 1;
-        //dw it wont go out of loop, easily
-        while(i<n && j<n){
-            if(i==j){
-                //we cant accept it bot r at the same pos
-                //just move j ptr fowd
-                j++;
-                continue;
+    int BS(vector<int>& nums, int low, int high, int target){
+        //start the process
+        while(low<=high){
+            int mid = low + (high - low)/2;
+            if(target == nums[mid]){
+                return 1;
             }
-            int diff = nums[j] - nums[i];
-            if(k == diff){
-                //found it, push it and move fwd
-                st.insert({nums[i], nums[j]}); //make_pair(i, j)
-                i++;
-                j++;
-            }
-            else if(diff>k){
-                //bring i closer
-                i++;
+            else if(target > nums[mid]){
+                low = mid + 1;
             }
             else{
-                j++;
+                high  = mid - 1;
             }
         }
-        return st.size();
+        return -1;
+    }
+    int findPairs(vector<int>& nums, int k) {
+        int n = nums.size();
+        //Binary Search NlogN, 1
+        //no extra space 
+        int uniquePairs = 0;
+        //sort it 1st
+        sort(nums.begin(), nums.end());
+        for (int i = 0; i < n; i++){
+            if (i > 0 && nums[i] == nums[i - 1]) {
+                continue;
+            }
+            int low = i+1;
+            int high = n-1;
+            int target = nums[i] + k;
+            if(BS(nums, low, high, target)!= -1){
+                //we found 1
+                uniquePairs++;
+            }
+        }
+        return uniquePairs;
     }
 };
