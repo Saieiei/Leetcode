@@ -2,25 +2,24 @@ class Solution {
 public:
     vector<int> findClosestElements(vector<int>& arr, int k, int x) {
         int n = arr.size();
-        //binnary search X 2 pointsers ✅ O(n-k)
+        //proper Binary Search O(N-K)
+        //the left boundry of our k-sized window
+        // should be atmost size-k
         int low = 0;
-        int high = n-1;
-        //we hve to maintain the size of k elements
-        //and it should be greater
-        while(high - low >= k){
-            //if they have teh same dist then clearly low wins
-            //because there is no =
-            if(x-arr[low]>arr[high]-x){
-                //move the low closer to the x
-                low++;
+        int high = n-k;
+        while(low<high){
+            int mid = low + (high - low)/2;
+            if(x-arr[mid]>arr[mid + k]-x){
+                //move low closer to mid
+                low = mid + 1;
             }
             else{
-                high--;
+                //move high closer to mid but not -1
+                high = mid;
             }
         }
-        //add 1 to the end because the ;last element in not taken
-        //into consoderation when using exclusive iterator bounds
-        vector<int>ans(arr.begin()+low, arr.begin()+high+1);
+        //get the ans
+        vector<int>ans(arr.begin()+low, arr.begin()+low+k);
         return ans;
     }
 };
