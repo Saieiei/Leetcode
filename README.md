@@ -276,6 +276,7 @@ https://leetcode.com/u/saiei/
 | [0721-accounts-merge](https://github.com/Saieiei/Leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0726-number-of-atoms](https://github.com/Saieiei/Leetcode/tree/master/0726-number-of-atoms) |
 | [0870-magic-squares-in-grid](https://github.com/Saieiei/Leetcode/tree/master/0870-magic-squares-in-grid) |
+| [0890-find-and-replace-pattern](https://github.com/Saieiei/Leetcode/tree/main/0890-find-and-replace-pattern/) | Medium |
 | [0906-walking-robot-simulation](https://github.com/Saieiei/Leetcode/tree/master/0906-walking-robot-simulation) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/Saieiei/Leetcode/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Saieiei/Leetcode/tree/master/0984-most-stones-removed-with-same-row-or-column) |
@@ -462,6 +463,7 @@ https://leetcode.com/u/saiei/
 | [0870-magic-squares-in-grid](https://github.com/Saieiei/Leetcode/tree/master/0870-magic-squares-in-grid) |
 | [0883-car-fleet](https://github.com/Saieiei/Leetcode/tree/master/0883-car-fleet) |
 | [0890-lemonade-change](https://github.com/Saieiei/Leetcode/tree/master/0890-lemonade-change) |
+| [0890-find-and-replace-pattern](https://github.com/Saieiei/Leetcode/tree/main/0890-find-and-replace-pattern/) | Medium |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Saieiei/Leetcode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0906-walking-robot-simulation](https://github.com/Saieiei/Leetcode/tree/master/0906-walking-robot-simulation) |
 | [0909-stone-game](https://github.com/Saieiei/Leetcode/tree/master/0909-stone-game) |
@@ -662,6 +664,7 @@ https://leetcode.com/u/saiei/
 | [0721-accounts-merge](https://github.com/Saieiei/Leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0726-number-of-atoms](https://github.com/Saieiei/Leetcode/tree/master/0726-number-of-atoms) |
 | [0812-rotate-string](https://github.com/Saieiei/Leetcode/tree/master/0812-rotate-string) |
+| [0890-find-and-replace-pattern](https://github.com/Saieiei/Leetcode/tree/main/0890-find-and-replace-pattern/) | Medium |
 | [0920-uncommon-words-from-two-sentences](https://github.com/Saieiei/Leetcode/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/Saieiei/Leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1045-check-if-word-is-valid-after-substitutions](https://github.com/Saieiei/Leetcode/tree/master/1045-check-if-word-is-valid-after-substitutions) |
