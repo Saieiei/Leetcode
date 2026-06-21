@@ -2,14 +2,16 @@ class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
         //same as valid anagram
-        //sorting + hashmap
-        //N.klogK, N.K
+        //fingerprinting + hashmap
+        //N.k, N.k
         unordered_map<string, vector<string>> mp;
         //iterate through each word
         for(string s: strs){
             //get the key
-            string key = s;
-            sort(key.begin(), key.end());
+            string key(26, 0);
+            for(const char& ch: s){
+                key[ch - 'a']++;
+            }
             //map it
             mp[key].push_back(s);
         }
