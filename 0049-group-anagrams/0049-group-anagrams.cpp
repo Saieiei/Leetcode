@@ -1,20 +1,26 @@
-//the most easiest way is to use hashmaps
 class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
-        vector<vector<string>> ans;
-
+        //same as valid anagram
+        //sorting + hashmap
+        //N.klogK, N.K
         unordered_map<string, vector<string>> mp;
-
-        for(string str: strs){
-            string sorted_str = str;
-            sort(sorted_str.begin(), sorted_str.end());
-            mp[sorted_str].push_back(str);
-
+        //iterate through each word
+        for(string s: strs){
+            //get the key
+            string key = s;
+            sort(key.begin(), key.end());
+            //map it
+            mp[key].push_back(s);
         }
-        for(auto& [sorted_str, groups]: mp){
-            ans.push_back(groups);
+        //return answer in any order
+        vector<vector<string>> result;
+        //traverse through the map
+        for(const pair<const string, const vector<string>>& it: mp){
+            vector<string> values = it.second;
+            result.push_back({values});
         }
-        return ans;
+        return result;
+
     }
 };
