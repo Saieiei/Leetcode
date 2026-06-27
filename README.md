@@ -345,6 +345,7 @@ https://leetcode.com/u/saiei/
 | [0042-trapping-rain-water](https://github.com/Saieiei/Leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0061-rotate-list](https://github.com/Saieiei/Leetcode/tree/master/0061-rotate-list) |
 | [0075-sort-colors](https://github.com/Saieiei/Leetcode/tree/main/0075-sort-colors/) | Medium |
+| [0125-valid-palindrome](https://github.com/Saieiei/Leetcode/tree/main/0125-valid-palindrome/) | Easy |
 | [0142-linked-list-cycle-ii](https://github.com/Saieiei/Leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0148-sort-list](https://github.com/Saieiei/Leetcode/tree/master/0148-sort-list) |
 | [0189-rotate-array](https://github.com/Saieiei/Leetcode/tree/main/0189-rotate-array/) | Medium |
@@ -645,6 +646,7 @@ https://leetcode.com/u/saiei/
 | [0003-longest-substring-without-repeating-characters](https://github.com/Saieiei/Leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0049-group-anagrams](https://github.com/Saieiei/Leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0071-simplify-path](https://github.com/Saieiei/Leetcode/tree/master/0071-simplify-path) |
+| [0125-valid-palindrome](https://github.com/Saieiei/Leetcode/tree/main/0125-valid-palindrome/) | Easy |
 | [0126-word-ladder-ii](https://github.com/Saieiei/Leetcode/tree/main/0126-word-ladder-ii/) | Hard |
 | [0127-word-ladder](https://github.com/Saieiei/Leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0205-isomorphic-strings](https://github.com/Saieiei/Leetcode/tree/main/0205-isomorphic-strings/) | Easy |
