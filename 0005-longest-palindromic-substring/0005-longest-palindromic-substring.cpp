@@ -10,7 +10,7 @@ public:
     string longestPalindrome(string s) {
         int n = s.length();
         //expland from centre
-        //N
+        //N^2
         //traverse through the chars in s
         //try to expand from the centre
         //we have to find len for both even and odd
