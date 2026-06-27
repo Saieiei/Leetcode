@@ -1,32 +1,26 @@
 class Solution {
 public:
-    bool isPalindrome(const string &s) {
-        //we dont have to make a new string, filter out shit and then use 2 pointers
-        //we  can directly start offf with 2 pointers
-        int start = 0;
-        int end   = (int)s.size() - 1;
-        
-        while (start < end) {
-            // skip left
-            if (!isalnum(s[start])) {
-                start++;
-                continue;
+    bool isPalindrome(string s) {
+        //2 pointers
+        //N
+        int left = 0;
+        int right = s.size()-1;
+        //check if both r same
+        while(left < right){
+            //1st keep clearing anythign thats not apha
+            while(left < right && !isalnum(s[left])){
+                left++;
             }
-            // skip right
-            if (!isalnum(s[end])) {
-                end--;
-                continue;
+            while(left < right && !isalnum(s[right])){
+                right--;
             }
-            
-            // if they don’t match (case‐insensitive for letters), we’re done
-            if (tolower(s[start]) != tolower(s[end]))
+            if(tolower(s[left]) != tolower(s[right])){
                 return false;
-            
-            // otherwise advance both pointers
-            start++;
-            end--;
+            }
+            //move them forward
+            left++;
+            right--;
         }
-        
         return true;
     }
 };
