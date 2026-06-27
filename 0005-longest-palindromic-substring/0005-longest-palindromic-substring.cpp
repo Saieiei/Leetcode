@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int expandFromCentre(string s, int left, int right){
+    int expandFromCentre(string& s, int left, int right){
         while(left >= 0 && right < s.length() && s[left] == s[right]){
             left--;
             right++;
