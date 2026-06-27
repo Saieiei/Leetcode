@@ -1,49 +1,36 @@
 class Solution {
 public:
-
-    bool palindromeChecker(string s, int i, int j)
-    {
-        while(i<j)
-        {
-            if(s[i]==s[j])
-            {
-                i++;
-                j--;
-            }
-            else
+    bool isPalindrome(string s, int left, int right){
+        while(left<right){
+            if(s[left] != s[right]){
                 return false;
+            }
+            left++;
+            right--;
         }
         return true;
     }
-
-
     bool validPalindrome(string s) {
-        //we will use 2 pointers
-        //1st pointer at the begining
-        //2nd pointer in the end
-        //keep check if same
-        //if not same 
-            //u have the seachspace from the 1st pointer till the last pointer
-            //for 1st pointer delete the 1st character and check if palindrome
-            //for last pointer delete the last charcter and check if palindme
-            //if any1 is possible return true
-        int i=0, j=s.length()-1;
-        bool possible1,  possible2;
-        while(i<j)
-        {
-            if(s[i]==s[j])
-            {
-                i++;
-                j--;
+        //more of a formula/BH
+        //N
+        //2 pointers
+        int left = 0;
+        int right = s.size()-1;
+        //start the process
+        while(left<right){
+            if(s[left] != s[right]){
+                //it should be palindrime if they r symetric
+                //we have to check from both the sides
+                if(isPalindrome(s, left+1, right) || isPalindrome(s, left, right-1)){
+                    return true;
+                }
+                else{
+                    return false;
+                }
             }
-            else
-            {
-                possible1=palindromeChecker(s, i+1, j);
-                possible2=palindromeChecker(s, i, j-1);
-                return possible1 || possible2;
-            }
+            left++;
+            right--;
         }
         return true;
-        
     }
 };
