@@ -355,6 +355,7 @@ https://leetcode.com/u/saiei/
 | [0287-find-the-duplicate-number](https://github.com/Saieiei/Leetcode/tree/main/0287-find-the-duplicate-number/) | Medium |
 | [0344-reverse-string](https://github.com/Saieiei/Leetcode/tree/master/0344-reverse-string) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Saieiei/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0443-string-compression](https://github.com/Saieiei/Leetcode/tree/main/0443-string-compression/) | Medium |
 | [0532-k-diff-pairs-in-an-array](https://github.com/Saieiei/Leetcode/tree/main/0532-k-diff-pairs-in-an-array/) | Medium |
 | [0567-permutation-in-string](https://github.com/Saieiei/Leetcode/tree/master/0567-permutation-in-string) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Saieiei/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
@@ -661,6 +662,7 @@ https://leetcode.com/u/saiei/
 | [0316-remove-duplicate-letters](https://github.com/Saieiei/Leetcode/tree/master/0316-remove-duplicate-letters) |
 | [0344-reverse-string](https://github.com/Saieiei/Leetcode/tree/master/0344-reverse-string) |
 | [0394-decode-string](https://github.com/Saieiei/Leetcode/tree/master/0394-decode-string) |
+| [0443-string-compression](https://github.com/Saieiei/Leetcode/tree/main/0443-string-compression/) | Medium |
 | [0516-longest-palindromic-subsequence](https://github.com/Saieiei/Leetcode/tree/master/0516-longest-palindromic-subsequence) |
 | [0539-minimum-time-difference](https://github.com/Saieiei/Leetcode/tree/master/0539-minimum-time-difference) |
 | [0564-find-the-closest-palindrome](https://github.com/Saieiei/Leetcode/tree/master/0564-find-the-closest-palindrome) |
