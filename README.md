@@ -680,6 +680,7 @@ https://leetcode.com/u/saiei/
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/Saieiei/Leetcode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1160-letter-tile-possibilities](https://github.com/Saieiei/Leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1197-parsing-a-boolean-expression](https://github.com/Saieiei/Leetcode/tree/master/1197-parsing-a-boolean-expression) |
+| [1209-remove-all-adjacent-duplicates-in-string-ii](https://github.com/Saieiei/Leetcode/tree/main/1209-remove-all-adjacent-duplicates-in-string-ii/) | Medium |
 | [1250-longest-common-subsequence](https://github.com/Saieiei/Leetcode/tree/master/1250-longest-common-subsequence) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Saieiei/Leetcode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1302-delete-characters-to-make-fancy-string](https://github.com/Saieiei/Leetcode/tree/master/1302-delete-characters-to-make-fancy-string) |
@@ -768,6 +769,7 @@ https://leetcode.com/u/saiei/
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/Saieiei/Leetcode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1197-parsing-a-boolean-expression](https://github.com/Saieiei/Leetcode/tree/master/1197-parsing-a-boolean-expression) |
+| [1209-remove-all-adjacent-duplicates-in-string-ii](https://github.com/Saieiei/Leetcode/tree/main/1209-remove-all-adjacent-duplicates-in-string-ii/) | Medium |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Saieiei/Leetcode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1497-design-a-stack-with-increment-operation](https://github.com/Saieiei/Leetcode/tree/master/1497-design-a-stack-with-increment-operation) |
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/Saieiei/Leetcode/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
