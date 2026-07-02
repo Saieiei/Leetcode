@@ -1,41 +1,40 @@
 class Solution {
 public:
     string removeDuplicates(string s, int k) {
-        //stacks
+        //vectors
         //N, N
-        stack<pair<char, int>> st; //char, freq
+        vector<pair<char, int>> countVec; //char, freq
         //traverse through the string
         for(const char& ch: s){
             //check is it matched with the previous 1
-            if(!st.empty() && st.top().first == ch){
+            if(!countVec.empty() && countVec.back().first == ch){
                 //increase the freq
-                st.top().second++;
+                countVec.back().second++;
 
                 //since freq has increased, check if we met the condition
-                if(st.top().second == k){
+                if(countVec.back().second == k){
                     //pop it
-                    st.pop();
+                    countVec.pop_back();
                 }
             }
             else{
                 //empty or not matching
-                st.push({ch, 1});
+                countVec.push_back({ch, 1});
             }
         }
         //make the string now
         string ans = "";
         //pop it 1 by 1 then reverse it
-        while(!st.empty()){
-            pair<char, int> topPair = st.top();
-            st.pop();
-            char ch = topPair.first;
-            int freq = topPair.second;
+        for(const pair<char, int>& it: countVec){
+            char ch = it.first;
+            int freq = it.second;
             while(freq){
+                //very imp, do not do ans = ans + ch
+                //u will go into memory issues
                 ans += ch;
                 freq--;
             }
         }
-        reverse(ans.begin(), ans.end());
         return ans;
     }
 };
