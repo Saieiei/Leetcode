@@ -137,6 +137,7 @@ https://leetcode.com/u/saiei/
 | [0624-maximum-distance-in-arrays](https://github.com/Saieiei/Leetcode/tree/master/0624-maximum-distance-in-arrays) |
 | [0670-maximum-swap](https://github.com/Saieiei/Leetcode/tree/master/0670-maximum-swap) |
 | [0680-valid-palindrome-ii](https://github.com/Saieiei/Leetcode/tree/main/0680-valid-palindrome-ii/) | Easy |
+| [0767-reorganize-string](https://github.com/Saieiei/Leetcode/tree/main/0767-reorganize-string/) | Medium |
 | [0890-lemonade-change](https://github.com/Saieiei/Leetcode/tree/master/0890-lemonade-change) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/Saieiei/Leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1285-balance-a-binary-search-tree](https://github.com/Saieiei/Leetcode/tree/master/1285-balance-a-binary-search-tree) |
@@ -191,6 +192,7 @@ https://leetcode.com/u/saiei/
 | [0719-find-k-th-smallest-pair-distance](https://github.com/Saieiei/Leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0721-accounts-merge](https://github.com/Saieiei/Leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0726-number-of-atoms](https://github.com/Saieiei/Leetcode/tree/master/0726-number-of-atoms) |
+| [0767-reorganize-string](https://github.com/Saieiei/Leetcode/tree/main/0767-reorganize-string/) | Medium |
 | [0883-car-fleet](https://github.com/Saieiei/Leetcode/tree/master/0883-car-fleet) |
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
 | [0987-reveal-cards-in-increasing-order](https://github.com/Saieiei/Leetcode/tree/master/0987-reveal-cards-in-increasing-order) |
@@ -229,6 +231,7 @@ https://leetcode.com/u/saiei/
 | [0407-trapping-rain-water-ii](https://github.com/Saieiei/Leetcode/tree/master/0407-trapping-rain-water-ii) |
 | [0658-find-k-closest-elements](https://github.com/Saieiei/Leetcode/tree/main/0658-find-k-closest-elements/) | Medium |
 | [0743-network-delay-time](https://github.com/Saieiei/Leetcode/tree/main/0743-network-delay-time/) | Medium |
+| [0767-reorganize-string](https://github.com/Saieiei/Leetcode/tree/main/0767-reorganize-string/) | Medium |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Saieiei/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Saieiei/Leetcode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
@@ -276,6 +279,7 @@ https://leetcode.com/u/saiei/
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Saieiei/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0721-accounts-merge](https://github.com/Saieiei/Leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0726-number-of-atoms](https://github.com/Saieiei/Leetcode/tree/master/0726-number-of-atoms) |
+| [0767-reorganize-string](https://github.com/Saieiei/Leetcode/tree/main/0767-reorganize-string/) | Medium |
 | [0870-magic-squares-in-grid](https://github.com/Saieiei/Leetcode/tree/master/0870-magic-squares-in-grid) |
 | [0890-find-and-replace-pattern](https://github.com/Saieiei/Leetcode/tree/main/0890-find-and-replace-pattern/) | Medium |
 | [0906-walking-robot-simulation](https://github.com/Saieiei/Leetcode/tree/master/0906-walking-robot-simulation) |
@@ -674,6 +678,7 @@ https://leetcode.com/u/saiei/
 | [0680-valid-palindrome-ii](https://github.com/Saieiei/Leetcode/tree/main/0680-valid-palindrome-ii/) | Easy |
 | [0721-accounts-merge](https://github.com/Saieiei/Leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0726-number-of-atoms](https://github.com/Saieiei/Leetcode/tree/master/0726-number-of-atoms) |
+| [0767-reorganize-string](https://github.com/Saieiei/Leetcode/tree/main/0767-reorganize-string/) | Medium |
 | [0812-rotate-string](https://github.com/Saieiei/Leetcode/tree/master/0812-rotate-string) |
 | [0890-find-and-replace-pattern](https://github.com/Saieiei/Leetcode/tree/main/0890-find-and-replace-pattern/) | Medium |
 | [0920-uncommon-words-from-two-sentences](https://github.com/Saieiei/Leetcode/tree/master/0920-uncommon-words-from-two-sentences) |
@@ -1117,6 +1122,7 @@ https://leetcode.com/u/saiei/
 | ------- | ------- |
 | [0169-majority-element](https://github.com/Saieiei/Leetcode/tree/main/0169-majority-element/) | Easy |
 | [0347-top-k-frequent-elements](https://github.com/Saieiei/Leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
+| [0767-reorganize-string](https://github.com/Saieiei/Leetcode/tree/main/0767-reorganize-string/) | Medium |
 | [0920-uncommon-words-from-two-sentences](https://github.com/Saieiei/Leetcode/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0948-sort-an-array](https://github.com/Saieiei/Leetcode/tree/master/0948-sort-an-array) |
 | [1160-letter-tile-possibilities](https://github.com/Saieiei/Leetcode/tree/master/1160-letter-tile-possibilities) |
