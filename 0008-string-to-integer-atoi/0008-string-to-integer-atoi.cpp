@@ -1,30 +1,38 @@
 class Solution {
 public:
-    int myAtoi(const string& s) {
-        int i = 0, n = s.size();
-        // 1) skip leading spaces
-        while (i < n && isspace(s[i])) 
-            ++i;
-        // 2) handle optional sign
-        int sign = 1;
-        if (i < n && (s[i] == '+' || s[i] == '-')) {
-            sign = (s[i] == '-') ? -1 : 1;
-            ++i;
+    int myAtoi(string s) {
+        int n = s.size();
+        //this is more like a systematic way of approaching the q
+        //1st we have to deal with space, then sign then digits then overflow
+        int ans = 0;
+        //by default its positive
+        int sign = 1 ;
+        int index = 0;
+        //skip spaces
+        while(index < n && s[index] == ' '){
+            //skip it
+            index++;
         }
-        // 3) if next char isn't a digit, we return 0
-        if (i >= n || !isdigit(s[i])) 
-            return 0;
-        // 4) parse digits
-        long long result = 0;  // use long long to detect overflow
-        while (i < n && isdigit(s[i])) {
-            result = result * 10 + (s[i] - '0');
-            // 5) clamp if overflow
-            if (sign == 1 && result > INT_MAX) 
-                return INT_MAX;
-            if (sign == -1 && -result < INT_MIN) 
-                return INT_MIN;
-            ++i;
+        //next is the sign, and only 1 should be accepted
+        if(index<n && (s[index] == '-' || s[index] == '+')){
+            //sign presense has been confirmed
+            //now use it
+            sign = (s[index] == '-')? -1 : 1;
+            index++;
         }
-        return int(sign * result);
+        //now go for the digits but also keep buffer overflow in mind
+        //if the ans > 21,38,37,83,64,7 then 
+        //return INT_MAX or INT_MIN depending on sign 
+        while(index < n && isdigit(s[index])){
+            int digit = s[index] - '0';
+            //digit confirmed
+            //check overflow
+            if(ans > INT_MAX/10 || (ans == INT_MAX/10 && digit > 7)){
+                return (sign == -1)? INT_MIN : INT_MAX;
+            }
+            ans =  ans*10 + digit;
+            index++;
+        }
+        return ans * sign;
     }
 };
