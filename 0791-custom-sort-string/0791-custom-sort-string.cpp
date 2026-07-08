@@ -1,9 +1,5 @@
-static string globalOrder;
 class Solution {
 public:
-    static bool mycmp(const char& a, const char& b){
-        return globalOrder.find(a) < globalOrder.find(b);
-    }
     string customSortString(string order, string s) {
         //NlogM
         //use custome sorting lambda function
