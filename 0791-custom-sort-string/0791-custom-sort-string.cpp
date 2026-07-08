@@ -29,18 +29,18 @@ public:
 
         //now after we have arranged the chars of order, 
         //we have to also append the chars of s
-        for(char ch: s){
+        for(int i=0; i<26; i++){
             //check if that frq > 0
-            if(freq[ch - 'a'] > 0){
+            if(freq[i] > 0){
                 //if so append it 
-                ans.append(freq[ch - 'a'], ch);
+                ans.append(freq[i], (i + 'a'));
                 //or
                 //for(int i=0; i<freq[ch - 'a']; i++){
                     //ans += ch;
                 //}
             }
             //after using all the freq of the ch, mark it to 0
-            freq[ch - 'a'] = 0;
+            freq[i] = 0;
         }
         return ans;
     }
