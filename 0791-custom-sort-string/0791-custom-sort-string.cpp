@@ -1,17 +1,18 @@
-//this is easy if we use custom sort comparator, but custom sort comparator has a different format in strings
-//week5_cl3
+static string globalOrder;
 class Solution {
 public:
-    static string globalOrder;
-    static bool customComparator(char ch1, char ch2)//we cannot pass a string in this fucntion, hence we have to use global variable, but we come wirh static problems, so we have to define static at 2 places
-    {
-        return (globalOrder.find(ch1) < globalOrder.find(ch2));
+    static bool mycmp(const char& a, const char& b){
+        return globalOrder.find(a) < globalOrder.find(b);
     }
     string customSortString(string order, string s) {
-
-        globalOrder=order;
-        sort(s.begin(), s.end(), customComparator);
+        //NlogM
+        //use custome sorting function
+        //make sure of the static problem
+        //but if u use a globa variable and a static function
+        //this is bad because it will keep chnaging and may cause race cnditions
+        globalOrder = order;
+        //custome sorting
+        sort(s.begin(), s.end(), mycmp);
         return s;
     }
 };
-string Solution::globalOrder;
