@@ -2,6 +2,7 @@ class Solution {
 public:
     int myAtoi(string s) {
         int n = s.size();
+        //N
         //this is more like a systematic way of approaching the q
         //1st we have to deal with space, then sign then digits then overflow
         int ans = 0;
@@ -21,7 +22,7 @@ public:
             index++;
         }
         //now go for the digits but also keep buffer overflow in mind
-        //if the ans > 21,38,37,83,64,7 then 
+        //if the ans > 21,47,48,83,64,7 then 
         //return INT_MAX or INT_MIN depending on sign 
         while(index < n && isdigit(s[index])){
             int digit = s[index] - '0';
