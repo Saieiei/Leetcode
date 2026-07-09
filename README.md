@@ -629,6 +629,7 @@ https://leetcode.com/u/saiei/
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0054-spiral-matrix](https://github.com/Saieiei/Leetcode/tree/main/0054-spiral-matrix/) | Medium |
+| [0415-add-strings](https://github.com/Saieiei/Leetcode/tree/main/0415-add-strings/) | Easy |
 | [0592-fraction-addition-and-subtraction](https://github.com/Saieiei/Leetcode/tree/master/0592-fraction-addition-and-subtraction) |
 | [0735-asteroid-collision](https://github.com/Saieiei/Leetcode/tree/master/0735-asteroid-collision) |
 | [0906-walking-robot-simulation](https://github.com/Saieiei/Leetcode/tree/master/0906-walking-robot-simulation) |
@@ -671,6 +672,7 @@ https://leetcode.com/u/saiei/
 | [0316-remove-duplicate-letters](https://github.com/Saieiei/Leetcode/tree/master/0316-remove-duplicate-letters) |
 | [0344-reverse-string](https://github.com/Saieiei/Leetcode/tree/master/0344-reverse-string) |
 | [0394-decode-string](https://github.com/Saieiei/Leetcode/tree/master/0394-decode-string) |
+| [0415-add-strings](https://github.com/Saieiei/Leetcode/tree/main/0415-add-strings/) | Easy |
 | [0443-string-compression](https://github.com/Saieiei/Leetcode/tree/main/0443-string-compression/) | Medium |
 | [0516-longest-palindromic-subsequence](https://github.com/Saieiei/Leetcode/tree/master/0516-longest-palindromic-subsequence) |
 | [0539-minimum-time-difference](https://github.com/Saieiei/Leetcode/tree/master/0539-minimum-time-difference) |
@@ -737,6 +739,7 @@ https://leetcode.com/u/saiei/
 | [0264-ugly-number-ii](https://github.com/Saieiei/Leetcode/tree/master/0264-ugly-number-ii) |
 | [0268-missing-number](https://github.com/Saieiei/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0273-integer-to-english-words](https://github.com/Saieiei/Leetcode/tree/master/0273-integer-to-english-words) |
+| [0415-add-strings](https://github.com/Saieiei/Leetcode/tree/main/0415-add-strings/) | Easy |
 | [0539-minimum-time-difference](https://github.com/Saieiei/Leetcode/tree/master/0539-minimum-time-difference) |
 | [0564-find-the-closest-palindrome](https://github.com/Saieiei/Leetcode/tree/master/0564-find-the-closest-palindrome) |
 | [0592-fraction-addition-and-subtraction](https://github.com/Saieiei/Leetcode/tree/master/0592-fraction-addition-and-subtraction) |
