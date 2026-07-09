@@ -1,37 +1,41 @@
-//we can solve this using recurssion, week6
 class Solution {
 public:
-
-    string addRE(string num1, int p1, string num2, int p2, int carry=0)
-    {
-        //base case
-        if(p1<0 && p2 <0)
-        {
-            if(carry!=0)
-            {
-                return string(1,carry+'0');
-            }
-            return "";
-        }
-
-        //calculations
-        int n1=(p1>=0?num1[p1]:'0')-'0';
-        int n2=(p2>=0?num2[p2]:'0')-'0';
-        int csum=n1+n2+carry;
-        int digit =csum%10;
-        carry=csum/10;
-        string ans="";
-        ans.push_back(digit+'0');
-
-        //RE
-        ans+=addRE(num1, p1-1, num2, p2-1, carry);
-        return ans;
-    }
     string addStrings(string num1, string num2) {
-        int carry=0;
-        string ans=addRE(num1, num1.size()-1, num2, num2.size()-1, carry);
+        //this is simple school grade problem
+        //we will start from right side and move to left side
+        //wee will keep travelling until all of them have no digits 
+        //in the end we have to reverse it as well
+        string ans = "";
+        int index1 = num1.size()-1;
+        int index2 = num2.size()-1;
+        int carry = 0;
+        while(index1>=0 || index2>=0 || carry>0){
+            //now we dont know if any of these have the digit
+            //if they dont, then we have to mark them as 0
+            int digit1 = 0;
+            int digit2 = 0;
+            if(index1<0){
+                digit1 = 0;
+            }
+            else{
+                digit1 = num1[index1] - '0';
+                index1--;
+            }
+            if(index2<0){
+                digit2 = 0;
+            }
+            else{
+                digit2 = num2[index2] - '0';
+                index2--;
+            }
+            int sum = digit1 + digit2 + carry;
+            //the remainder will go in the ans
+            //the rest will go as carry
+            char rem = sum%10 + '0';
+            ans += rem;
+            carry = sum/10;
+        }
         reverse(ans.begin(), ans.end());
         return ans;
-        
     }
 };
