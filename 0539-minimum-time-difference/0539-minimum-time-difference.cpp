@@ -1,40 +1,43 @@
 class Solution {
 public:
-
-    int Convert_to_minstime(string& time)
-    {
-        int Total_time=0;
-        //1st 2 chars
-        int hrs=stoi(time.substr(0, 2));
-        hrs=hrs*60;
-        //last 2 chars
-        int mins=stoi(time.substr(3, 2));
-        Total_time=hrs+mins;
-        return Total_time;
-
+    int minutesCreater(const string& timePoint){
+        int totalMinutes = 0;
+        //u can use stoi() if u want
+        int hours = (timePoint[0] - '0') * 10 + (timePoint[1] - '0');
+        int minutes = (timePoint[3] - '0') * 10 + (timePoint[4] - '0');
+        totalMinutes = hours*60 + minutes;
+        return totalMinutes;
     }
     int findMinDifference(vector<string>& timePoints) {
-        
-        //1st we will create a new vector to store the min of each input in timePoints
-        //then we will sort it
-        //then we will find the min of the difference of each min 
-        //then we will also subtract the value from 1st index (1440+timePoints[0] to the last index of timePoints) (reverse)
-        //then again we will find the min by including this as well
-
-        vector<int>mins;
-        int ans=INT_MAX;
-        for(string time:timePoints)
-        {
-            mins.push_back(Convert_to_minstime(time));
+        const int totalMin = 1440;
+        //M1 - brute force
+        //compare each time with each other
+        //and compare the roudabout time as well.
+        //N^2
+        //point to remember that the total mins in a day is 1440
+        //1st convert all of timePoints into min ans save it in a vector
+        vector<int> minutes;
+        for(const string& timePoint: timePoints){
+            int mintue = minutesCreater(timePoint);
+            minutes.push_back(mintue);
         }
-        sort(mins.begin(), mins.end());
-        for(int i=0;i<mins.size()-1;i++)
-        {
-            ans=min(ans, (mins[i+1]-mins[i]));
+        //bc, optimization/pegion hole principle
+        if(minutes.size() > 1440){
+            //not possible, we only have 1440 min in a day
+            return 0;
         }
-        //it is obvious that to find out teh reverse time we will have to subtarct the largest time with the smallest time (think of a loop, circle etc)
-        int reverseTime=(1440+mins[0])-(mins[mins.size()-1]);
-        ans=min(ans, reverseTime);
+        int ans = 1440;
+        //now we have to compare each min to each other min 
+        //and also find out its roundtime
+        for(int i = 0; i < minutes.size()-1; i++){
+            //find the roundtime
+            for(int j = i+1; j < minutes.size(); j++){
+                int diff = abs(minutes[i] - minutes[j]);
+                int roundTime = 1440 - diff;
+                int minTime = min(diff, roundTime);
+                ans = min(ans, minTime);
+            }
+        }
         return ans;
     }
 };
