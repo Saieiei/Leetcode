@@ -265,6 +265,7 @@ https://leetcode.com/u/saiei/
 | [0128-longest-consecutive-sequence](https://github.com/Saieiei/Leetcode/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0142-linked-list-cycle-ii](https://github.com/Saieiei/Leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0169-majority-element](https://github.com/Saieiei/Leetcode/tree/main/0169-majority-element/) | Easy |
+| [0187-repeated-dna-sequences](https://github.com/Saieiei/Leetcode/tree/main/0187-repeated-dna-sequences/) | Medium |
 | [0205-isomorphic-strings](https://github.com/Saieiei/Leetcode/tree/main/0205-isomorphic-strings/) | Easy |
 | [0242-valid-anagram](https://github.com/Saieiei/Leetcode/tree/main/0242-valid-anagram/) | Easy |
 | [0264-ugly-number-ii](https://github.com/Saieiei/Leetcode/tree/master/0264-ugly-number-ii) |
@@ -664,6 +665,7 @@ https://leetcode.com/u/saiei/
 | [0125-valid-palindrome](https://github.com/Saieiei/Leetcode/tree/main/0125-valid-palindrome/) | Easy |
 | [0126-word-ladder-ii](https://github.com/Saieiei/Leetcode/tree/main/0126-word-ladder-ii/) | Hard |
 | [0127-word-ladder](https://github.com/Saieiei/Leetcode/tree/main/0127-word-ladder/) | Hard |
+| [0187-repeated-dna-sequences](https://github.com/Saieiei/Leetcode/tree/main/0187-repeated-dna-sequences/) | Medium |
 | [0205-isomorphic-strings](https://github.com/Saieiei/Leetcode/tree/main/0205-isomorphic-strings/) | Easy |
 | [0214-shortest-palindrome](https://github.com/Saieiei/Leetcode/tree/master/0214-shortest-palindrome) |
 | [0241-different-ways-to-add-parentheses](https://github.com/Saieiei/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
@@ -837,6 +839,7 @@ https://leetcode.com/u/saiei/
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Saieiei/Leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0187-repeated-dna-sequences](https://github.com/Saieiei/Leetcode/tree/main/0187-repeated-dna-sequences/) | Medium |
 | [0209-minimum-size-subarray-sum](https://github.com/Saieiei/Leetcode/tree/master/0209-minimum-size-subarray-sum) |
 | [0239-sliding-window-maximum](https://github.com/Saieiei/Leetcode/tree/master/0239-sliding-window-maximum) |
 | [0567-permutation-in-string](https://github.com/Saieiei/Leetcode/tree/master/0567-permutation-in-string) |
@@ -1210,6 +1213,7 @@ https://leetcode.com/u/saiei/
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0187-repeated-dna-sequences](https://github.com/Saieiei/Leetcode/tree/main/0187-repeated-dna-sequences/) | Medium |
 | [0268-missing-number](https://github.com/Saieiei/Leetcode/tree/main/0268-missing-number/) | Easy |
 | [0287-find-the-duplicate-number](https://github.com/Saieiei/Leetcode/tree/main/0287-find-the-duplicate-number/) | Medium |
 | [0476-number-complement](https://github.com/Saieiei/Leetcode/tree/master/0476-number-complement) |
@@ -1244,6 +1248,7 @@ https://leetcode.com/u/saiei/
 ## Rolling Hash
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0187-repeated-dna-sequences](https://github.com/Saieiei/Leetcode/tree/main/0187-repeated-dna-sequences/) | Medium |
 | [0214-shortest-palindrome](https://github.com/Saieiei/Leetcode/tree/master/0214-shortest-palindrome) |
 ## String Matching
 | Problem Name | Difficulty |
@@ -1255,6 +1260,7 @@ https://leetcode.com/u/saiei/
 ## Hash Function
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0187-repeated-dna-sequences](https://github.com/Saieiei/Leetcode/tree/main/0187-repeated-dna-sequences/) | Medium |
 | [0214-shortest-palindrome](https://github.com/Saieiei/Leetcode/tree/master/0214-shortest-palindrome) |
 ## Trie
 | Problem Name | Difficulty |
