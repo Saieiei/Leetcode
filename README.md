@@ -414,6 +414,7 @@ https://leetcode.com/u/saiei/
 | ------- | ------- |
 | [0001-two-sum](https://github.com/Saieiei/Leetcode/tree/master/0001-two-sum) |
 | [0011-container-with-most-water](https://github.com/Saieiei/Leetcode/tree/main/0011-container-with-most-water/) | Medium |
+| [0014-longest-common-prefix](https://github.com/Saieiei/Leetcode/tree/main/0014-longest-common-prefix/) | Easy |
 | [0015-3sum](https://github.com/Saieiei/Leetcode/tree/main/0015-3sum/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Saieiei/Leetcode/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0027-remove-element](https://github.com/Saieiei/Leetcode/tree/master/0027-remove-element) |
@@ -659,6 +660,7 @@ https://leetcode.com/u/saiei/
 | [0003-longest-substring-without-repeating-characters](https://github.com/Saieiei/Leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0005-longest-palindromic-substring](https://github.com/Saieiei/Leetcode/tree/main/0005-longest-palindromic-substring/) | Medium |
 | [0008-string-to-integer-atoi](https://github.com/Saieiei/Leetcode/tree/main/0008-string-to-integer-atoi/) | Medium |
+| [0014-longest-common-prefix](https://github.com/Saieiei/Leetcode/tree/main/0014-longest-common-prefix/) | Easy |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Saieiei/Leetcode/tree/main/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
 | [0049-group-anagrams](https://github.com/Saieiei/Leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0071-simplify-path](https://github.com/Saieiei/Leetcode/tree/master/0071-simplify-path) |
@@ -1265,6 +1267,7 @@ https://leetcode.com/u/saiei/
 ## Trie
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0014-longest-common-prefix](https://github.com/Saieiei/Leetcode/tree/main/0014-longest-common-prefix/) | Easy |
 | [0386-lexicographical-numbers](https://github.com/Saieiei/Leetcode/tree/master/0386-lexicographical-numbers) |
 | [0440-k-th-smallest-in-lexicographical-order](https://github.com/Saieiei/Leetcode/tree/master/0440-k-th-smallest-in-lexicographical-order) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/Saieiei/Leetcode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
