@@ -362,6 +362,7 @@ https://leetcode.com/u/saiei/
 | [0283-move-zeroes](https://github.com/Saieiei/Leetcode/tree/main/0283-move-zeroes/) | Easy |
 | [0287-find-the-duplicate-number](https://github.com/Saieiei/Leetcode/tree/main/0287-find-the-duplicate-number/) | Medium |
 | [0344-reverse-string](https://github.com/Saieiei/Leetcode/tree/master/0344-reverse-string) |
+| [0345-reverse-vowels-of-a-string](https://github.com/Saieiei/Leetcode/tree/main/0345-reverse-vowels-of-a-string/) | Easy |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Saieiei/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0443-string-compression](https://github.com/Saieiei/Leetcode/tree/main/0443-string-compression/) | Medium |
 | [0532-k-diff-pairs-in-an-array](https://github.com/Saieiei/Leetcode/tree/main/0532-k-diff-pairs-in-an-array/) | Medium |
@@ -675,6 +676,7 @@ https://leetcode.com/u/saiei/
 | [0273-integer-to-english-words](https://github.com/Saieiei/Leetcode/tree/master/0273-integer-to-english-words) |
 | [0316-remove-duplicate-letters](https://github.com/Saieiei/Leetcode/tree/master/0316-remove-duplicate-letters) |
 | [0344-reverse-string](https://github.com/Saieiei/Leetcode/tree/master/0344-reverse-string) |
+| [0345-reverse-vowels-of-a-string](https://github.com/Saieiei/Leetcode/tree/main/0345-reverse-vowels-of-a-string/) | Easy |
 | [0394-decode-string](https://github.com/Saieiei/Leetcode/tree/master/0394-decode-string) |
 | [0415-add-strings](https://github.com/Saieiei/Leetcode/tree/main/0415-add-strings/) | Easy |
 | [0443-string-compression](https://github.com/Saieiei/Leetcode/tree/main/0443-string-compression/) | Medium |
