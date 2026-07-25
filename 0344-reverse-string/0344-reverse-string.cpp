@@ -1,40 +1,17 @@
 class Solution {
 public:
     void reverseString(vector<char>& s) {
-        //using STL
-       //reverse(s.begin(), s.end());
-       //return;
-
-       //using 2 pointers approach
-       //int p1 = 0;
-       //int p2 = s.size() -1;
-       //while(p1<p2)
-       //{
-       //     char temp = s[p1];
-       //     s[p1] = s[p2];
-       //     s[p2] = temp;
-       //     p1++;
-       //     p2--;
-       //}
-       //return;
-
-        //using stacks
-        stack<char> st;
- 
-        for(int i=0; i<s.size(); i++)
-        {
-             char ch = s[i];
-             st.push(ch);
+        int n = static_cast<int>(s.size());
+        //2 pointers
+        int leftPointer = 0;
+        int rightPointer = n - 1;
+        //keep swapping until they come on the same index
+        while(leftPointer<rightPointer){
+            char temp = s[leftPointer];
+            s[leftPointer] = s[rightPointer];
+            s[rightPointer] = temp;
+            leftPointer++;
+            rightPointer--;
         }
-
-        int i=0; 
-        while(!st.empty())
-        {
-            char ch = st.top();
-            s[i] = ch;
-            i++;
-            st.pop();
-        }
-        return;
     }
 };
