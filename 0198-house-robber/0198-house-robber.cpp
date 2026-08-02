@@ -3,22 +3,14 @@ public:
     int recursion(vector<int>& nums, int index, const int n){
         //move dp inside, do not intialize this to -1
         vector<int> dp(n+5, 0);
-        //bc
+        //bc, but anyways, we have it defined already
         dp[n] = 0;
         //create the loop
         for(int index = n-1; index>=0; index--){
-            //we will create a temp variable because of the border values when it comes to include
-            int temp;
-            if(index == n-1){
-                temp = 0;
-            }
-            else{
-                temp = dp[index+2];
-            }
             //we have 2 options, either include the house and follow the rest
             //else exclude the house and follow the rest
             //include
-            int include = nums[index] + temp;
+            int include = nums[index] + dp[index+2];
             //exclude
             int exclude = 0 + dp[index+1];
             //returning dp
