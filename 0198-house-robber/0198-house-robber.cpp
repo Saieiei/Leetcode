@@ -1,31 +1,38 @@
 class Solution {
 public:
-    int recursion(vector<int>& nums, int index, const int n, vector<int>& dp){
+    int recursion(vector<int>& nums, int index, const int n){
+        //move dp inside, do not intialize this to -1
+        vector<int> dp(n+5, 0);
         //bc
-        if(index >= n){
-            return 0;
+        dp[n] = 0;
+        //create the loop
+        for(int index = n-1; index>=0; index--){
+            //we will create a temp variable because of the border values when it comes to include
+            int temp;
+            if(index == n-1){
+                temp = 0;
+            }
+            else{
+                temp = dp[index+2];
+            }
+            //we have 2 options, either include the house and follow the rest
+            //else exclude the house and follow the rest
+            //include
+            int include = nums[index] + temp;
+            //exclude
+            int exclude = 0 + dp[index+1];
+            //returning dp
+            dp[index] = max(include, exclude);
         }
-        //return if already found
-        if(dp[index] != -1){
-            return dp[index];
-        }
-        //we have 2 options, either include the house and follow the rest
-        //else exclude the house and follow the rest
-        //include
-        int include = nums[index] + recursion(nums, index+2, n, dp);
-        //exclude
-        int exclude = 0 + recursion(nums, index+1, n, dp);
-        //returning dp
-        dp[index] = max(include, exclude);
-        return dp[index];
+        return dp[0];
     }
     int rob(vector<int>& nums) {
         int n = nums.size();
-        //Memoization (check if already found, returning dp)
+        //Tabulation 
+        //(move dp inside, change BC, create a loop in the oppo dir, remove recursion, return opo extreme index)
         //include exclude principal
 
         int index = 0;
-        vector<int>dp(n+5, -1);
-        return recursion(nums, index, n, dp);
+        return recursion(nums, index, n);
     }
 };
