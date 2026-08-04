@@ -390,6 +390,7 @@ https://leetcode.com/u/saiei/
 | ------- | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/Saieiei/Leetcode/tree/master/0021-merge-two-sorted-lists) |
 | [0025-reverse-nodes-in-k-group](https://github.com/Saieiei/Leetcode/tree/master/0025-reverse-nodes-in-k-group) |
+| [0050-powx-n](https://github.com/Saieiei/Leetcode/tree/main/0050-powx-n/) | Medium |
 | [0241-different-ways-to-add-parentheses](https://github.com/Saieiei/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0273-integer-to-english-words](https://github.com/Saieiei/Leetcode/tree/master/0273-integer-to-english-words) |
 | [0394-decode-string](https://github.com/Saieiei/Leetcode/tree/master/0394-decode-string) |
@@ -742,6 +743,7 @@ https://leetcode.com/u/saiei/
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/Saieiei/Leetcode/tree/main/0048-rotate-image/) | Medium |
+| [0050-powx-n](https://github.com/Saieiei/Leetcode/tree/main/0050-powx-n/) | Medium |
 | [0069-sqrtx](https://github.com/Saieiei/Leetcode/tree/main/0069-sqrtx/) | Easy |
 | [0189-rotate-array](https://github.com/Saieiei/Leetcode/tree/main/0189-rotate-array/) | Medium |
 | [0241-different-ways-to-add-parentheses](https://github.com/Saieiei/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
