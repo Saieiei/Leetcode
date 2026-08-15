@@ -1,53 +1,42 @@
 class Solution {
 public:
-//week8
-//we will be doing it using recurssion and backtracking
-
-    void combinationHelper(vector<int>& candidates, int target, vector<int> &temp, vector<vector<int>> &ans, int index)
-    {
-        //base cases
-        //we have reached 0
-        if(target==0) 
-        {
-            ans.push_back(temp);
+    void recursion(vector<int>& candidates, int target, vector<int>& currAns, 
+            vector<vector<int>>& ans, int index){
+        //bc
+        if(target == 0){
+            ans.push_back(currAns);
             return;
         }
-        if(target<0) //it becomes negative which means that the number is big
-        {
-            //dont do anythign just return as we have the pop function in the main body itself
-            return;
-        }
-
-        //calculations
-        for(int i=index;i<candidates.size();i++)
-        {
-            if(i>index && candidates[i]==candidates[i-1]) continue; //this is imp or else TLE 172/176
-            temp.push_back(candidates[i]);
-            combinationHelper(candidates, target-candidates[i], temp, ans, i+1); 
-            //backtracking
-            temp.pop_back();
+        for(int j = index; j<candidates.size(); j++){
+            // Skip duplicate choices at the same level.
+            if(j > index && candidates[j] == candidates[j - 1]) {
+                continue;
+            }
+            // Since array is sorted,
+            // no later candidate can work either.
+            if(candidates[j] > target) {
+                break;
+            }
+            //we will continue if the adj r duplicate or the target has gone neagtives
+            //use it
+            currAns.push_back(candidates[j]);
+            //recursion, we should do j+1, cuz we cannot us eteh same cnadidate again
+            recursion(candidates, target - candidates[j], currAns, ans, j+1);
+            //undo
+            currAns.pop_back();
         }
     }
-    
     vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
-        //we will sort it because look at the sample vectors, they r in sorted order only
+        //same as combination 1
+        //the most easiest way is to push the final findings in a set
+        //but it is not cor rect cuz we will watse time in duplicate brnaches
+        //better to avoid them by checking duplicates
+        //1st we have to sort to keep the duplicates adjacent
         sort(candidates.begin(), candidates.end());
+        vector<int> currAns;
         vector<vector<int>> ans;
-        vector<int> temp;
-        //temp ans ans vectors r going to be dynapic, hence no returns
-        combinationHelper(candidates, target, temp, ans, 0);
-        //we will put in ans into set and remove any duplicate vectors
-        set<vector<int>> st;
-        for(auto x: ans)
-        {
-            st.insert(x); //dont use push_back, it wont work, with set u should  use 'insert' or, st(ans.begin(), ans.end());
-        }
-        //now again we the correct ans in st and not in ans vector, so lets remove all the elements from ans vectors and put in the correct values into ans vectors
-        ans.clear();
-        for(auto x: st)
-        {
-            ans.push_back(x);
-        }
+        int index = 0;
+        recursion(candidates, target, currAns, ans, index);
         return ans;
     }
 };
