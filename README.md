@@ -176,6 +176,7 @@ https://leetcode.com/u/saiei/
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0015-3sum](https://github.com/Saieiei/Leetcode/tree/main/0015-3sum/) | Medium |
+| [0047-permutations-ii](https://github.com/Saieiei/Leetcode/tree/main/0047-permutations-ii/) | Medium |
 | [0049-group-anagrams](https://github.com/Saieiei/Leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0056-merge-intervals](https://github.com/Saieiei/Leetcode/tree/main/0056-merge-intervals/) | Medium |
 | [0075-sort-colors](https://github.com/Saieiei/Leetcode/tree/main/0075-sort-colors/) | Medium |
@@ -427,6 +428,7 @@ https://leetcode.com/u/saiei/
 | [0040-combination-sum-ii](https://github.com/Saieiei/Leetcode/tree/master/0040-combination-sum-ii) |
 | [0042-trapping-rain-water](https://github.com/Saieiei/Leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0046-permutations](https://github.com/Saieiei/Leetcode/tree/main/0046-permutations/) | Medium |
+| [0047-permutations-ii](https://github.com/Saieiei/Leetcode/tree/main/0047-permutations-ii/) | Medium |
 | [0048-rotate-image](https://github.com/Saieiei/Leetcode/tree/main/0048-rotate-image/) | Medium |
 | [0049-group-anagrams](https://github.com/Saieiei/Leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0053-maximum-subarray](https://github.com/Saieiei/Leetcode/tree/master/0053-maximum-subarray) |
@@ -1086,6 +1088,7 @@ https://leetcode.com/u/saiei/
 | ------- | ------- |
 | [0040-combination-sum-ii](https://github.com/Saieiei/Leetcode/tree/master/0040-combination-sum-ii) |
 | [0046-permutations](https://github.com/Saieiei/Leetcode/tree/main/0046-permutations/) | Medium |
+| [0047-permutations-ii](https://github.com/Saieiei/Leetcode/tree/main/0047-permutations-ii/) | Medium |
 | [0113-path-sum-ii](https://github.com/Saieiei/Leetcode/tree/master/0113-path-sum-ii) |
 | [0126-word-ladder-ii](https://github.com/Saieiei/Leetcode/tree/main/0126-word-ladder-ii/) | Hard |
 | [0797-all-paths-from-source-to-target](https://github.com/Saieiei/Leetcode/tree/main/0797-all-paths-from-source-to-target/) | Medium |
