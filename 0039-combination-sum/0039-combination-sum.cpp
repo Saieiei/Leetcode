@@ -1,38 +1,36 @@
 class Solution {
 public:
-//week8
-//we will be doing it using recurssion and backtracking
-
-    void combinationHelper(vector<int>& candidates, int target, vector<int> &temp, vector<vector<int>> &ans, int index)
-    {
-        //base cases
-        //we have reached 0
-        if(target==0) 
-        {
-            ans.push_back(temp);
+    void recursion(vector<int>& candidates, int target, vector<int>& currAns, 
+        vector<vector<int>>& ans, int index){
+        //bc
+        if(target == 0){
+            ans.push_back(currAns);
             return;
         }
-        if(target<0) //it becomes negative which means that the number is big
-        {
-            //dont do anythign just return as we have the pop function in the main body itself
+        if(target < 0){
+            //simply return, as the candicate used was very high
             return;
         }
-
-        //calculations
-        for(int i=index;i<candidates.size();i++)
-        {
-            temp.push_back(candidates[i]);
-            combinationHelper(candidates, target-candidates[i], temp, ans, i);
-            //backtracking
-            temp.pop_back();
+        //traverse through the loop
+        for(int j = index; j<candidates.size(); j++){
+            //use it
+            currAns.push_back(candidates[j]);
+            //recursion, we can pass teh same index, because that candate can be reused
+            recursion(candidates, target - candidates[j], currAns, ans, j);
+            //undo recursion
+            currAns.pop_back();
         }
     }
-    
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+        //if we r using the candiddate, we ahve to reduce the target
+        //we will use currAns and push it in ans and return ans
+        //if the target becomes - then we have ditch it
+        //if the target becomes 0, then we have achieved it
+        //we need index as well to traverse through the loop
+        vector<int> currAns;
         vector<vector<int>> ans;
-        vector<int> temp;
-        //temp ans ans vectors r going to be dynapic, hence no returns
-        combinationHelper(candidates, target, temp, ans, 0);
+        int index = 0;
+        recursion(candidates, target, currAns, ans, index);
         return ans;
     }
 };
