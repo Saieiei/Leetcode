@@ -432,6 +432,7 @@ https://leetcode.com/u/saiei/
 | [0047-permutations-ii](https://github.com/Saieiei/Leetcode/tree/main/0047-permutations-ii/) | Medium |
 | [0048-rotate-image](https://github.com/Saieiei/Leetcode/tree/main/0048-rotate-image/) | Medium |
 | [0049-group-anagrams](https://github.com/Saieiei/Leetcode/tree/main/0049-group-anagrams/) | Medium |
+| [0051-n-queens](https://github.com/Saieiei/Leetcode/tree/main/0051-n-queens/) | Hard |
 | [0053-maximum-subarray](https://github.com/Saieiei/Leetcode/tree/master/0053-maximum-subarray) |
 | [0054-spiral-matrix](https://github.com/Saieiei/Leetcode/tree/main/0054-spiral-matrix/) | Medium |
 | [0056-merge-intervals](https://github.com/Saieiei/Leetcode/tree/main/0056-merge-intervals/) | Medium |
@@ -1091,6 +1092,7 @@ https://leetcode.com/u/saiei/
 | [0040-combination-sum-ii](https://github.com/Saieiei/Leetcode/tree/master/0040-combination-sum-ii) |
 | [0046-permutations](https://github.com/Saieiei/Leetcode/tree/main/0046-permutations/) | Medium |
 | [0047-permutations-ii](https://github.com/Saieiei/Leetcode/tree/main/0047-permutations-ii/) | Medium |
+| [0051-n-queens](https://github.com/Saieiei/Leetcode/tree/main/0051-n-queens/) | Hard |
 | [0113-path-sum-ii](https://github.com/Saieiei/Leetcode/tree/master/0113-path-sum-ii) |
 | [0126-word-ladder-ii](https://github.com/Saieiei/Leetcode/tree/main/0126-word-ladder-ii/) | Hard |
 | [0797-all-paths-from-source-to-target](https://github.com/Saieiei/Leetcode/tree/main/0797-all-paths-from-source-to-target/) | Medium |
@@ -1360,4 +1362,8 @@ https://leetcode.com/u/saiei/
 | ------- | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/Saieiei/Leetcode/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
 | [0347-top-k-frequent-elements](https://github.com/Saieiei/Leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
+## Algorithm X
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0051-n-queens](https://github.com/Saieiei/Leetcode/tree/main/0051-n-queens/) | Hard |
 <!---LeetCode Topics End-->
