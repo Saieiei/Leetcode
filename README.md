@@ -334,6 +334,7 @@ https://leetcode.com/u/saiei/
 | [0061-rotate-list](https://github.com/Saieiei/Leetcode/tree/master/0061-rotate-list) |
 | [0142-linked-list-cycle-ii](https://github.com/Saieiei/Leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0148-sort-list](https://github.com/Saieiei/Leetcode/tree/master/0148-sort-list) |
+| [0206-reverse-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0206-reverse-linked-list/) | Easy |
 | [0432-all-oone-data-structure](https://github.com/Saieiei/Leetcode/tree/master/0432-all-oone-data-structure) |
 | [0707-design-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0707-design-linked-list/) | Medium |
 | [0725-split-linked-list-in-parts](https://github.com/Saieiei/Leetcode/tree/master/0725-split-linked-list-in-parts) |
@@ -393,6 +394,7 @@ https://leetcode.com/u/saiei/
 | [0021-merge-two-sorted-lists](https://github.com/Saieiei/Leetcode/tree/master/0021-merge-two-sorted-lists) |
 | [0025-reverse-nodes-in-k-group](https://github.com/Saieiei/Leetcode/tree/master/0025-reverse-nodes-in-k-group) |
 | [0050-powx-n](https://github.com/Saieiei/Leetcode/tree/main/0050-powx-n/) | Medium |
+| [0206-reverse-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0206-reverse-linked-list/) | Easy |
 | [0241-different-ways-to-add-parentheses](https://github.com/Saieiei/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0273-integer-to-english-words](https://github.com/Saieiei/Leetcode/tree/master/0273-integer-to-english-words) |
 | [0394-decode-string](https://github.com/Saieiei/Leetcode/tree/master/0394-decode-string) |
