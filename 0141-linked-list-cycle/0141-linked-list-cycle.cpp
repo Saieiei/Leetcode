@@ -9,23 +9,22 @@
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
-        
-        //tortoise/rabit
+        //floyd algo, same as finding the mid ele
+        //slow and fast pointer
+        //slow goes 1 step and fast goes 2 steps
+        //if its not a cycle it will break the loop at
+        //fast = null and fast->next = null
+        //just break, when both r equal
         ListNode* slow = head;
         ListNode* fast = head;
-
-        while(fast != NULL)
-        {
-            fast = fast->next;
-            if(fast != NULL && slow != NULL)
-            {
-                fast = fast->next;
-                slow = slow->next;
-
-                //condition
-                if(slow == fast) return 1;
+        while(fast != NULL && fast->next != NULL){
+            slow = slow->next;
+            fast = fast->next->next;
+            if(slow == fast){
+                return slow;
             }
         }
+        //not possible
         return false;
     }
 };
