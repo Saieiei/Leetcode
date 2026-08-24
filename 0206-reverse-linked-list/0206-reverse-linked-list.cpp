@@ -11,22 +11,19 @@
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-
+        //we need 3 pointers
+        //prev, curr and forward
+        //keep going until we make the curr null
+        //make the head point to prev,
+        //make prev curr and make curr forward
         ListNode* prev = NULL;
         ListNode* curr = head;
-        //case where we need to stop
-        while (curr != NULL) 
-        {
-            //we  will mark a node that is always ahead of current, as when we assign current->next = prev we will lose the rest of the LL
-            ListNode* nextTemp = curr->next;
-
-            //point it in the reverse direction
+        while(curr != NULL){
+            ListNode* forward = curr->next;
             curr->next = prev;
-            
-            //move ur prev and current pointers 1 step ahead
             prev = curr;
-            curr = nextTemp;
+            curr = forward;
         }
-        return prev; //which is now our starting point of the LL and the LL will go in the reverse order
+        return prev;
     }
 };
