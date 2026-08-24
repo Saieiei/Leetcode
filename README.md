@@ -335,6 +335,7 @@ https://leetcode.com/u/saiei/
 | [0142-linked-list-cycle-ii](https://github.com/Saieiei/Leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0148-sort-list](https://github.com/Saieiei/Leetcode/tree/master/0148-sort-list) |
 | [0432-all-oone-data-structure](https://github.com/Saieiei/Leetcode/tree/master/0432-all-oone-data-structure) |
+| [0707-design-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0707-design-linked-list/) | Medium |
 | [0725-split-linked-list-in-parts](https://github.com/Saieiei/Leetcode/tree/master/0725-split-linked-list-in-parts) |
 | [0859-design-circular-deque](https://github.com/Saieiei/Leetcode/tree/master/0859-design-circular-deque) |
 | [1267-remove-zero-sum-consecutive-nodes-from-linked-list](https://github.com/Saieiei/Leetcode/tree/master/1267-remove-zero-sum-consecutive-nodes-from-linked-list) |
@@ -818,6 +819,7 @@ https://leetcode.com/u/saiei/
 | [0225-implement-stack-using-queues](https://github.com/Saieiei/Leetcode/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/Saieiei/Leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [0432-all-oone-data-structure](https://github.com/Saieiei/Leetcode/tree/master/0432-all-oone-data-structure) |
+| [0707-design-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0707-design-linked-list/) | Medium |
 | [0729-my-calendar-i](https://github.com/Saieiei/Leetcode/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/Saieiei/Leetcode/tree/master/0731-my-calendar-ii) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Saieiei/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
