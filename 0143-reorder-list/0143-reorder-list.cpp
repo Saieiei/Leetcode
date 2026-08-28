@@ -10,46 +10,44 @@
  */
 class Solution {
 public:
+    ListNode* reverse(ListNode* head){
+        ListNode* prev = NULL;
+        ListNode* curr = head;
+        while(curr){
+            ListNode* forward = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = forward;
+        }
+        return prev;
+    }
     void reorderList(ListNode* head) {
-        ListNode *slow = head, *fast = head;
+        //simple
+        //find the mid element
+        //reverse the 2nd half
+        //merge both of them
 
-        //finding the middle element
-        while (fast && fast->next) {
+        ListNode* slow = head;
+        ListNode* fast = head;
+        //find the mid element
+        while(fast && fast->next){
             slow = slow->next;
             fast = fast->next->next;
         }
-        //reverse the 2nd half (but take the next element)
-        ListNode* second_half = reverse(slow->next);
-
-        //break the LL into 2 separate LL
-        slow->next = nullptr;
-        
-        //join both of them now
-        ListNode* first_half = head;
-        while (second_half) {
-            ListNode *temp1 = first_half->next;
-            ListNode *temp2 = second_half->next;
-            first_half->next = second_half;
-            second_half->next = temp1;
-            first_half = temp1;
-            second_half = temp2;
+        ListNode* secondHalfHead = slow->next;
+        //disconnect the 2 halfs
+        slow->next = NULL;
+        //reverse it
+        ListNode* head2 = reverse(secondHalfHead);
+        //merge both now
+        ListNode* head1 = head;
+        while(head2){
+            ListNode* forward2 = head2->next;
+            ListNode* forward1 = head1->next;
+            head1->next = head2;
+            head2->next = forward1;
+            head1 = forward1;
+            head2 = forward2;
         }
-    }
-    
-    //reverse the 2nd half
-    ListNode* reverse(ListNode* head) {
-        if (head == nullptr || head->next == nullptr)
-            return head;
-        
-        ListNode* prev = nullptr;
-        ListNode* curr = head;
-        while (curr != nullptr) {
-            ListNode* temp = curr->next;
-            curr->next = prev;
-            prev = curr;
-            curr = temp;
-        }
-        
-        return prev; // Return the new head of the reversed list
     }
 };
