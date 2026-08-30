@@ -10,43 +10,49 @@
  */
 class Solution {
 public:
-    ListNode* rotateRight(ListNode* head, int k) {
-
-        if (!head || k == 0) return head;
-        
-        //there are 2 methods to this
-        //1 is using the iterative approach
-        //another is using the circular approach
-
-        //1st we have to figure out actual rotations
-        // to do so we need to figure out the length of it
-        ListNode* curr = head;
-        int length =1;
-        while(curr->next != nullptr)
-        {
-            length++;
-            curr = curr->next;
+    ListNode* getKthNode(ListNode* head, int& l, int& k){
+        int stepsToGetKthNode = l -k -1;
+        for(int i=0; i<stepsToGetKthNode; i++){
+            head = head->next;
         }
-
-        //so now we have our curr at the last node and also the length of the ll
-        //now to figure out actual rotations 
-        k = k % length;
-        int stepsToGoAhead = length - k;
-
-        //make the ll circular
-        curr->next = head;
-
-        //now lets move forward to the last point of roatation and cut the chain
+        return head;
+    }
+    ListNode* rotateRight(ListNode* head, int k) {
+        //for this, we will not be using the array method
+        //that is reverse the whole array , then reverse k ele
+        //then reverse the rest of them
+        //instead, 1st we will mkae it circular at the same time find its length
+        //then find teh new tail that is going to to be length -k -1
+        //and then the next element should be ur tail
+        //before u break the LL to get the tail get the newHead
+        //which should be tail->next
+        //bc, alone or nothign or nothing to rotate
+        if(head == NULL || head->next == NULL || k == 0){
+            return head;
+        }
+        //1st make it circular, in the process get the length
+        //we r doing from 1 because we will stop before tail becomes NULL
+        int l = 1; 
         ListNode* tail = head;
-        for(int i=1; i<stepsToGoAhead; i++)
-        {
+        while(tail->next != NULL){
+            l++;
             tail = tail->next;
         }
-        //before we destroy the connection we will have to get the correct head
-        ListNode* newHead = tail->next;
-        //now destroy the link
-        tail->next = nullptr;
-
+        tail->next = head;
+        //we dont have to do k times
+        k = k%l;
+        //bc, dont have to do anythign
+        if(k == 0){
+            //before u return break the cycle u just created
+            tail->next = NULL;
+            return head;
+        }
+        //kth Node should be the newTail
+        ListNode* newTail = getKthNode(head, l, k);
+        //get the newHead
+        ListNode* newHead = newTail->next;
+        //break teh circular loop
+        newTail->next = NULL;
         return newHead;
     }
 };
