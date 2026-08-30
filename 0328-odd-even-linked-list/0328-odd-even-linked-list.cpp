@@ -11,24 +11,23 @@
 class Solution {
 public:
     ListNode* oddEvenList(ListNode* head) {
-        if (!head || !head->next) return head;
-
-        //its simple only, while iterating ther LL we will rearrange its next pointers
+        //this is simple too
+        //bc
+        if(head == NULL || head->next == NULL || head->next->next == NULL){
+            return head;
+        }
         ListNode* odd = head;
-        ListNode* even = head->next;
-
-        //we will need to save the even head because, when we r done iterating, the odd->next =evenHead
+        ListNode* even = odd->next;
         ListNode* evenHead = even;
-
-        //we will have to stop when there is no more even nodes
-        while (even && even->next) {
+        //even odd LL
+        while(even && even->next){
             odd->next = even->next;
             odd = odd->next;
-            
+            //we have moved odd forward
             even->next = odd->next;
             even = even->next;
         }
-
+        //join them now
         odd->next = evenHead;
         return head;
     }
