@@ -8,50 +8,51 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
-
- //O(n)
 class Solution {
 public:
+    ListNode* reverse(ListNode* head){
+        ListNode* prev = NULL;
+        ListNode* curr = head;
+        while(curr){
+            ListNode* forward = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = forward;
+        }
+        return prev;
+    } 
     bool isPalindrome(ListNode* head) {
-        //1st we will try to eliminate the starting conditions
-         //if there is only 1 node in the LL
-        if(head->next==nullptr) return true;
-         //if there are only 2 nodde in the LL
-        if(head->next->next==nullptr)
-        {
-            if(head->val==head->next->val) return true;
-        }
+        //easy
+        //middle point (divide the vector in 2 halfs)
+        //reverse the 2nd half
+        //compare both of them
 
-        //2nd we will find the middle element
-        ListNode* slow=head; ListNode* fast=head;
-        while (fast && fast->next) 
-        {
-            slow=slow->next;
-            fast=fast->next->next;
+        //bc, single node or no node
+        if(head == NULL || head->next == NULL){
+            return true;  
         }
-
-        //3rd we will reverse the 2nd half of the LL
-        ListNode* prev=nullptr; ListNode* temp;
-        while(slow)
-        {
-            temp=slow->next;
-            slow->next=prev;
-            prev=slow;
-            slow=temp;
+        //get the middle node
+        ListNode* dummy = new ListNode(0);
+        dummy->next = head;
+        ListNode* slow = dummy;
+        ListNode* fast = dummy;
+        while(fast && fast->next){
+            slow = slow->next;
+            fast = fast->next->next;
         }
+        ListNode* secondHalfHead = reverse(slow->next);
 
-        //4th we will check if its palindrome or not
-        while(prev)
-        {
-            if(prev->val != head->val) return false;
-            prev=prev->next;
-            head=head->next;
+        //now compare both the LLs
+        while(secondHalfHead){
+            if(secondHalfHead->val != head->val){
+                return false;
+            }
+            else{
+                secondHalfHead = secondHalfHead->next;
+                head = head->next;
+            }
         }
-
+        //all passed
         return true;
-
-
-        
-        
     }
 };
