@@ -25,14 +25,12 @@ public:
             tail = tail->next;
         }
         //push in the remaining
-        while(head1){
+        if(head1){
             tail->next = head1;
-            head1 = head1->next;
             tail = tail->next;
         }
-        while(head2){
+        else{
             tail->next = head2;
-            head2 = head2->next;
             tail = tail->next;
         }
         ListNode* newHead = tempHead->next;
