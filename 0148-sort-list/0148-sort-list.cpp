@@ -10,86 +10,62 @@
  */
 class Solution {
 public:
-    //week 10
-    ListNode* merge(ListNode* list1ptr, ListNode* list2ptr) {
-        //lets go with the base cases 1st
-        if(!list1ptr) return list2ptr;
-        if(!list2ptr) return list1ptr;
-
-        //go we will start with a dummy node called ans
-        ListNode* ans = new ListNode(-1);
-        //we will start with the iterator whih is pointing to ans
-        ListNode* iterator = ans;
-
-        //now we will point each 1 of them in ascending order
-        while(list1ptr && list2ptr)
-        {
-            if(list1ptr->val  <= list2ptr->val)
-            {
-                iterator->next = list1ptr;
-                iterator = list1ptr;
-                list1ptr = list1ptr->next;
+    ListNode* merge(ListNode* head1, ListNode* head2){
+        ListNode* tempHead = new ListNode(0);
+        ListNode* tail = tempHead;
+        while(head1 && head2){
+            if(head1->val <= head2->val){
+                tail->next = head1;
+                head1 = head1->next;
             }
-            else //list1ptr->val  >= list2ptr->val
-            {
-                iterator->next = list2ptr;
-                iterator = list2ptr;
-                list2ptr = list2ptr->next;
+            else{
+                tail->next = head2;
+                head2 = head2->next;
             }
+            tail = tail->next;
         }
-
-        //if 1 of the lists expires
-        while(list1ptr) //list2ptr expired, and it will continue until list1ptr expires
-        {
-            iterator->next = list1ptr;
-            iterator = list1ptr;
-            list1ptr = list1ptr->next;
+        //push in the remaining
+        while(head1){
+            tail->next = head1;
+            head1 = head1->next;
+            tail = tail->next;
         }
-        while(list2ptr) //list1ptr expired, and it will continue until list2ptr expires
-        {
-            iterator->next = list2ptr;
-            iterator = list2ptr;
-            list2ptr = list2ptr->next;
+        while(head2){
+            tail->next = head2;
+            head2 = head2->next;
+            tail = tail->next;
         }
-        return ans->next; //head of the sorted list
+        ListNode* newHead = tempHead->next;
+        delete tempHead;
+        return newHead;
     }
-
-    ListNode* findmid(ListNode*  head)
-    {
-        //we will find the mid using slow fast approach, where if the length is even the middle element will be at the back, not front
-        ListNode* slow = head;
-        ListNode* fast = head->next;
-
-        while(fast && fast->next)
-        {
+    ListNode* sortList(ListNode* head) {
+        //we will sort this using merge sort 
+        //NlogN, logN
+        //sortList(), sortList(), merge()
+        //bc, single or no node
+        if(head == NULL || head->next == NULL){
+            return head;
+        }
+        //1st find the middle element
+        ListNode* dummy = new ListNode(0);
+        dummy->next = head;
+        ListNode* fast = dummy;
+        ListNode* slow = dummy;
+        while(fast && fast->next){
             slow = slow->next;
             fast = fast->next->next;
-        } 
-        return slow; //slow is ur mid
+        }
+        ListNode* secondHalfHead = slow->next;
+        ListNode* firstHalfHead = head;
+        //VIMP
+        //break the connection
+        slow->next = NULL;
+        //recursion
+        firstHalfHead = sortList(firstHalfHead);
+        secondHalfHead = sortList(secondHalfHead);
+        //merge
+        ListNode* newHead = merge(firstHalfHead, secondHalfHead);
+        return newHead;
     }
-
-    ListNode* sortList(ListNode* head) {
-        //we will sort the list using merge sort method, where we will keep dividing it untill we get a single element
-        //in the end we will merge then in correct order 
-        //all this will be done using recurssion
-
-        //lets finish the bases cases 
-        //if the lists  has no elements or only 1 element then we cannot sort them
-        if(head == NULL || head->next == NULL) return head;
-
-        //1st step in merge sort is to find the middle element and split it into 2 separate lists (left and right)
-        ListNode* mid = findmid(head);
-        ListNode* left = head;
-        ListNode* right = mid->next;
-        //break the connection btw left and right lists
-        mid->next = NULL;
-
-        //2nd step is to keep on doing recurssion and keep on breaking them untill we get a single element
-        left = sortList(left);
-        right = sortList(right);
-        
-        //3rd step is to merge the lists
-        ListNode* sortedLL = merge(left, right);
-        return sortedLL;
-    } 
 };
