@@ -9,81 +9,29 @@
 class Solution {
 public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
-        //its simple only
-        //if the length of the LLs r the same, then Node a == Node b at some point of iterations
-        //if they are not the same then, obio some LL is bigger than the other
-        //we will have to figure out which LL is bigger than the other and by how much
-            //this will help us find out by how much we should keep our Head ahead such that Node a == Node b at some point of iterations
-        //there can also be a case where the LL doesnt intersect and they could be of the same length
-            //in that case, both the LL will be pointing to NULL and the nodes can never be the same, then return NULL;
-
-        if (!headA || !headB) return nullptr;
-
-        //if the length of the LLs r the same, then Node a == Node b at some point of iterations
+        //this is simple only, 2 pointer approach, O(N+M) O(1)
+        //we should match the node and not the value
+        //we will keep on trying to match the LLs
+        //if they come to a NULL then we will make it go as a head to the other LL
         ListNode* a = headA;
         ListNode* b = headB;
-
-        while(a->next && b->next)
-        {
-            if(a == b)
-            {
-                return a;
+        while(a != b){
+            //before moving it ahead, check if its NULL
+            if(a == NULL){
+                a = headB;
             }
-            a= a->next;
-            b= b->next;
-        }
-
-        //there can also be a case where the LL doesnt intersect and they could be of the same length
-            //in that case, both the LL will be pointing to NULL and the nodes can never be the same, then return NULL;
-        if(!a->next && !b->next && a!=b) return NULL;
-
-        //if they are not the same then, obio some LL is bigger than the other
-        //we will have to figure out which LL is bigger than the other and by how much
-            //this will help us find out by how much we should keep our Head ahead such that Node a == Node b at some point of iterations
-        int count =0;
-        if(b->next == NULL)
-        {
-            while(a->next)
-            {
-                a=a->next;
-                count++;
+            else{
+                a = a->next;
             }
-            while(count--)
-            {
-                headA = headA->next;
+            //the same goes for b as well
+            if(b == NULL){
+                b = headA;
             }
-            while(headA && headB)
-            {
-                if(headA == headB)
-                {
-                    return headA;
-                }
-                headA= headA->next;
-                headB= headB->next;
-            }
-            
-        }
-        else
-        {
-            while(b->next)
-            {
-                b=b->next;
-                count++;
-            }
-            while(count--)
-            {
-                headB = headB->next;
-            }
-            while(headA && headB)
-            {
-                if(headA == headB)
-                {
-                    return headA;
-                }
-                headA= headA->next;
-                headB= headB->next;
+            else{
+                b = b->next;
             }
         }
-        return nullptr;
+        //return any1, since they r now at the same node
+        return a;
     }
 };
