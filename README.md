@@ -347,6 +347,7 @@ https://leetcode.com/u/saiei/
 | [0148-sort-list](https://github.com/Saieiei/Leetcode/tree/master/0148-sort-list) |
 | [0160-intersection-of-two-linked-lists](https://github.com/Saieiei/Leetcode/tree/main/0160-intersection-of-two-linked-lists/) | Easy |
 | [0206-reverse-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0206-reverse-linked-list/) | Easy |
+| [0234-palindrome-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0234-palindrome-linked-list/) | Easy |
 | [0432-all-oone-data-structure](https://github.com/Saieiei/Leetcode/tree/master/0432-all-oone-data-structure) |
 | [0707-design-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0707-design-linked-list/) | Medium |
 | [0725-split-linked-list-in-parts](https://github.com/Saieiei/Leetcode/tree/master/0725-split-linked-list-in-parts) |
@@ -378,6 +379,7 @@ https://leetcode.com/u/saiei/
 | [0148-sort-list](https://github.com/Saieiei/Leetcode/tree/master/0148-sort-list) |
 | [0160-intersection-of-two-linked-lists](https://github.com/Saieiei/Leetcode/tree/main/0160-intersection-of-two-linked-lists/) | Easy |
 | [0189-rotate-array](https://github.com/Saieiei/Leetcode/tree/main/0189-rotate-array/) | Medium |
+| [0234-palindrome-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0234-palindrome-linked-list/) | Easy |
 | [0283-move-zeroes](https://github.com/Saieiei/Leetcode/tree/main/0283-move-zeroes/) | Easy |
 | [0287-find-the-duplicate-number](https://github.com/Saieiei/Leetcode/tree/main/0287-find-the-duplicate-number/) | Medium |
 | [0344-reverse-string](https://github.com/Saieiei/Leetcode/tree/master/0344-reverse-string) |
@@ -413,6 +415,7 @@ https://leetcode.com/u/saiei/
 | [0050-powx-n](https://github.com/Saieiei/Leetcode/tree/main/0050-powx-n/) | Medium |
 | [0143-reorder-list](https://github.com/Saieiei/Leetcode/tree/main/0143-reorder-list/) | Medium |
 | [0206-reverse-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0206-reverse-linked-list/) | Easy |
+| [0234-palindrome-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0234-palindrome-linked-list/) | Easy |
 | [0241-different-ways-to-add-parentheses](https://github.com/Saieiei/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0273-integer-to-english-words](https://github.com/Saieiei/Leetcode/tree/master/0273-integer-to-english-words) |
 | [0394-decode-string](https://github.com/Saieiei/Leetcode/tree/master/0394-decode-string) |
@@ -811,6 +814,7 @@ https://leetcode.com/u/saiei/
 | [0155-min-stack](https://github.com/Saieiei/Leetcode/tree/master/0155-min-stack) |
 | [0225-implement-stack-using-queues](https://github.com/Saieiei/Leetcode/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/Saieiei/Leetcode/tree/master/0232-implement-queue-using-stacks) |
+| [0234-palindrome-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0234-palindrome-linked-list/) | Easy |
 | [0316-remove-duplicate-letters](https://github.com/Saieiei/Leetcode/tree/master/0316-remove-duplicate-letters) |
 | [0394-decode-string](https://github.com/Saieiei/Leetcode/tree/master/0394-decode-string) |
 | [0726-number-of-atoms](https://github.com/Saieiei/Leetcode/tree/master/0726-number-of-atoms) |
