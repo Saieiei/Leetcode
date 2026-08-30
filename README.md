@@ -349,6 +349,7 @@ https://leetcode.com/u/saiei/
 | [0160-intersection-of-two-linked-lists](https://github.com/Saieiei/Leetcode/tree/main/0160-intersection-of-two-linked-lists/) | Easy |
 | [0206-reverse-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0206-reverse-linked-list/) | Easy |
 | [0234-palindrome-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0234-palindrome-linked-list/) | Easy |
+| [0328-odd-even-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0328-odd-even-linked-list/) | Medium |
 | [0432-all-oone-data-structure](https://github.com/Saieiei/Leetcode/tree/master/0432-all-oone-data-structure) |
 | [0707-design-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0707-design-linked-list/) | Medium |
 | [0725-split-linked-list-in-parts](https://github.com/Saieiei/Leetcode/tree/master/0725-split-linked-list-in-parts) |
