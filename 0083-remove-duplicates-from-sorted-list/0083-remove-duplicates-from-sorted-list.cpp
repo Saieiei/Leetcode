@@ -11,30 +11,26 @@
 class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
-        //we will use 2 pointers (curr and prev)
-        //if both are the same then we will eliminate 1, we will eliminate current
-
-        //base conditions
-        if(head == NULL) return head; //empty list
-        if(head->next == NULL) return head; //both of them diff
-
-        ListNode* prev = head;
-        ListNode* curr = prev->next;
-
-        while(curr != NULL) //should not go out
-        {
-            //check if they r the same
-            if(curr->val != prev->val)
-            {
-                curr = curr->next;
-                prev = prev->next;
+        //this is simple
+        //check if the the curr node and the next node r the same
+        //if they r same then move the next pointer to next->next
+        ListNode* dummy = new ListNode(0);
+        dummy->next = head;
+        ListNode* curr = head;
+        //start checking now
+        while(curr && curr->next){
+            //check if the next node is duplicate
+            if(curr->val == curr->next->val){
+                //duplicate
+                ListNode* nodeToDelete = curr->next;
+                curr->next = curr->next->next;
+                delete nodeToDelete;
+                //dont move curr forward immediately
+                //TC: 1, 1, 1, 2 -> 1, 2
             }
-            else //they r the same, we should isolate, delete and revibe curr
-            {
-                prev->next = curr->next;
-                curr->next = NULL;
-                delete curr;
-                curr = prev->next;
+            else{
+                //move curr forward, only when they r not the same 
+                curr = curr->next;
             }
         }
         return head;
