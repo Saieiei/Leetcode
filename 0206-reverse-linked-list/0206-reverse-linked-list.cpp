@@ -11,18 +11,20 @@
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        //we need 3 pointers
-        //prev, curr and forward
-        //keep going until we make the curr null
-        //make the head point to prev,
-        //make prev curr and make curr forward
+        //bc
+        if(head == NULL){
+            return head;
+        }
+        if(head->next == NULL){
+            return head;
+        }
         ListNode* prev = NULL;
         ListNode* curr = head;
         while(curr != NULL){
-            ListNode* forward = curr->next;
+            ListNode* fwd = curr->next;
             curr->next = prev;
             prev = curr;
-            curr = forward;
+            curr = fwd;
         }
         return prev;
     }
