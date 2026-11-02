@@ -702,6 +702,7 @@ https://leetcode.com/u/saiei/
 | [0005-longest-palindromic-substring](https://github.com/Saieiei/Leetcode/tree/main/0005-longest-palindromic-substring/) | Medium |
 | [0008-string-to-integer-atoi](https://github.com/Saieiei/Leetcode/tree/main/0008-string-to-integer-atoi/) | Medium |
 | [0014-longest-common-prefix](https://github.com/Saieiei/Leetcode/tree/main/0014-longest-common-prefix/) | Easy |
+| [0020-valid-parentheses](https://github.com/Saieiei/Leetcode/tree/main/0020-valid-parentheses/) | Easy |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Saieiei/Leetcode/tree/main/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
 | [0049-group-anagrams](https://github.com/Saieiei/Leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0071-simplify-path](https://github.com/Saieiei/Leetcode/tree/master/0071-simplify-path) |
@@ -810,6 +811,7 @@ https://leetcode.com/u/saiei/
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0020-valid-parentheses](https://github.com/Saieiei/Leetcode/tree/main/0020-valid-parentheses/) | Easy |
 | [0042-trapping-rain-water](https://github.com/Saieiei/Leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0071-simplify-path](https://github.com/Saieiei/Leetcode/tree/master/0071-simplify-path) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Saieiei/Leetcode/tree/master/0084-largest-rectangle-in-histogram) |
@@ -1413,4 +1415,8 @@ https://leetcode.com/u/saiei/
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/Saieiei/Leetcode/tree/main/0023-merge-k-sorted-lists/) | Hard |
+## Bracket Sequences
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0020-valid-parentheses](https://github.com/Saieiei/Leetcode/tree/main/0020-valid-parentheses/) | Easy |
 <!---LeetCode Topics End-->
