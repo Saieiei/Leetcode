@@ -714,6 +714,7 @@ https://leetcode.com/u/saiei/
 | [0187-repeated-dna-sequences](https://github.com/Saieiei/Leetcode/tree/main/0187-repeated-dna-sequences/) | Medium |
 | [0205-isomorphic-strings](https://github.com/Saieiei/Leetcode/tree/main/0205-isomorphic-strings/) | Easy |
 | [0214-shortest-palindrome](https://github.com/Saieiei/Leetcode/tree/master/0214-shortest-palindrome) |
+| [0227-basic-calculator-ii](https://github.com/Saieiei/Leetcode/tree/main/0227-basic-calculator-ii/) | Medium |
 | [0241-different-ways-to-add-parentheses](https://github.com/Saieiei/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0242-valid-anagram](https://github.com/Saieiei/Leetcode/tree/main/0242-valid-anagram/) | Easy |
 | [0273-integer-to-english-words](https://github.com/Saieiei/Leetcode/tree/master/0273-integer-to-english-words) |
@@ -787,6 +788,7 @@ https://leetcode.com/u/saiei/
 | [0050-powx-n](https://github.com/Saieiei/Leetcode/tree/main/0050-powx-n/) | Medium |
 | [0069-sqrtx](https://github.com/Saieiei/Leetcode/tree/main/0069-sqrtx/) | Easy |
 | [0189-rotate-array](https://github.com/Saieiei/Leetcode/tree/main/0189-rotate-array/) | Medium |
+| [0227-basic-calculator-ii](https://github.com/Saieiei/Leetcode/tree/main/0227-basic-calculator-ii/) | Medium |
 | [0241-different-ways-to-add-parentheses](https://github.com/Saieiei/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0264-ugly-number-ii](https://github.com/Saieiei/Leetcode/tree/master/0264-ugly-number-ii) |
 | [0268-missing-number](https://github.com/Saieiei/Leetcode/tree/main/0268-missing-number/) | Easy |
@@ -823,6 +825,7 @@ https://leetcode.com/u/saiei/
 | [0145-binary-tree-postorder-traversal](https://github.com/Saieiei/Leetcode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0155-min-stack](https://github.com/Saieiei/Leetcode/tree/master/0155-min-stack) |
 | [0225-implement-stack-using-queues](https://github.com/Saieiei/Leetcode/tree/master/0225-implement-stack-using-queues) |
+| [0227-basic-calculator-ii](https://github.com/Saieiei/Leetcode/tree/main/0227-basic-calculator-ii/) | Medium |
 | [0232-implement-queue-using-stacks](https://github.com/Saieiei/Leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [0234-palindrome-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0234-palindrome-linked-list/) | Easy |
 | [0316-remove-duplicate-letters](https://github.com/Saieiei/Leetcode/tree/master/0316-remove-duplicate-letters) |
