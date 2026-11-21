@@ -354,6 +354,7 @@ https://leetcode.com/u/saiei/
 | [0234-palindrome-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0234-palindrome-linked-list/) | Easy |
 | [0328-odd-even-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0328-odd-even-linked-list/) | Medium |
 | [0432-all-oone-data-structure](https://github.com/Saieiei/Leetcode/tree/master/0432-all-oone-data-structure) |
+| [0622-design-circular-queue](https://github.com/Saieiei/Leetcode/tree/main/0622-design-circular-queue/) | Medium |
 | [0707-design-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0707-design-linked-list/) | Medium |
 | [0725-split-linked-list-in-parts](https://github.com/Saieiei/Leetcode/tree/master/0725-split-linked-list-in-parts) |
 | [0859-design-circular-deque](https://github.com/Saieiei/Leetcode/tree/master/0859-design-circular-deque) |
@@ -502,6 +503,7 @@ https://leetcode.com/u/saiei/
 | [0539-minimum-time-difference](https://github.com/Saieiei/Leetcode/tree/master/0539-minimum-time-difference) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Saieiei/Leetcode/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/Saieiei/Leetcode/tree/main/0560-subarray-sum-equals-k/) | Medium |
+| [0622-design-circular-queue](https://github.com/Saieiei/Leetcode/tree/main/0622-design-circular-queue/) | Medium |
 | [0624-maximum-distance-in-arrays](https://github.com/Saieiei/Leetcode/tree/master/0624-maximum-distance-in-arrays) |
 | [0643-maximum-average-subarray-i](https://github.com/Saieiei/Leetcode/tree/main/0643-maximum-average-subarray-i/) | Easy |
 | [0658-find-k-closest-elements](https://github.com/Saieiei/Leetcode/tree/main/0658-find-k-closest-elements/) | Medium |
@@ -861,6 +863,7 @@ https://leetcode.com/u/saiei/
 | [0225-implement-stack-using-queues](https://github.com/Saieiei/Leetcode/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/Saieiei/Leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [0432-all-oone-data-structure](https://github.com/Saieiei/Leetcode/tree/master/0432-all-oone-data-structure) |
+| [0622-design-circular-queue](https://github.com/Saieiei/Leetcode/tree/main/0622-design-circular-queue/) | Medium |
 | [0707-design-linked-list](https://github.com/Saieiei/Leetcode/tree/main/0707-design-linked-list/) | Medium |
 | [0729-my-calendar-i](https://github.com/Saieiei/Leetcode/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/Saieiei/Leetcode/tree/master/0731-my-calendar-ii) |
@@ -887,6 +890,7 @@ https://leetcode.com/u/saiei/
 | [0225-implement-stack-using-queues](https://github.com/Saieiei/Leetcode/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/Saieiei/Leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [0239-sliding-window-maximum](https://github.com/Saieiei/Leetcode/tree/master/0239-sliding-window-maximum) |
+| [0622-design-circular-queue](https://github.com/Saieiei/Leetcode/tree/main/0622-design-circular-queue/) | Medium |
 | [0859-design-circular-deque](https://github.com/Saieiei/Leetcode/tree/master/0859-design-circular-deque) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Saieiei/Leetcode/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0969-number-of-recent-calls](https://github.com/Saieiei/Leetcode/tree/master/0969-number-of-recent-calls) |
